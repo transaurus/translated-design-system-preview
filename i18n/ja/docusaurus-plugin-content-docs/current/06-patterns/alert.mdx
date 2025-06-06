@@ -1,0 +1,82 @@
+---
+title: Alert
+description: Alerts display important messages in a way that attracts the user's attention without interrupting their task.
+hide_title: true
+---
+
+# アラート <Badge text='draft' color='orange'></Badge> <a href='https://developers.grafana.com/ui/latest/index.html?path=/story/overlays-alert--examples' target='_blank' className='header-links'>Storybook <Icon name="external-link-alt"/> </a>
+
+アラートは、ユーザーのタスクを中断することなく、重要なメッセージを目立つように表示します。
+
+## 動作
+
+| Type           | Purpose                                                                                                       |
+| -------------- | ------------------------------------------------------------------------------------------------------------- |
+| **Persistent** | <p>They are usually urgent and intrusive, require immediate attention and require action to be dismissed.</p> |
+| **Passive**    | <p>Are informational, report a system issue that does not require any action by users.</p>                    |
+
+## タイプ
+
+Grafanaでは、3種類のアラートがあり、コンテキストと内容に応じて使用されます。
+
+| Type       | Purpose                                                                                                                                                                                                        | Behavior                       |
+| ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ |
+| **Inline** | <p>To notify users of the status of an action. They appear at the top or bottom of the main content area</p>                                                                                                   | <p> Passive or Persistent </p> |
+| **Toast**  | <p>These temporary window elements are used to display short messages; they appear at the top-right corner of the screen and can be dismissed by clicking the [x] or it will disappear after a few seconds</p> | <p>Passive</p>                 |
+| **Banner** | <p>It will remain until the user rejects it or until the status that triggered the banner is resolved</p>                                                                                                      | <p> Persistent </p>            |
+
+## メッセージタイプ
+
+| Status            | Usage                                                                                                                  | Action                                                                                                                                      | Color                    | Icon                        |
+| ----------------- | ---------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ | --------------------------- |
+| **Informational** | <p>Provide information to users, and don’t interrupt any current actions</p>                                           | <p>Do not require immediate action and can be dismissed by a user clicking the [X] or passively display until the display timer expires</p> | <p>Blue background</p>   | <p>Info-circle</p>          |
+| **Success**       | <p>When any action is successful, it is confirmed when a task is completed as expected</p>                             | <p>Typically do not require further action and can be dismissed automatically or persist in a nonintrusive manner</p>                       | <p>Green background</p>  | <p>Check</p>                |
+| **Warning**       | <p>Informing users that an action is undesirable</p>                                                                   | <p>Often persists until users have taken action to dismiss the notification or taken steps to resolve the issue</p>                         | <p>Yellow background</p> | <p>Exclamation-triangle</p> |
+| **Error**         | <p>When an action doesn't happen as expected, usually something has failed and the user is expected to take action</p> | <p>Always persists until the user has taken steps to remedy the issue that triggered the notification</p>                                   | <p>Red background</p>    | <p>Exclamation-circle</p>   |
+
+## コンテンツ
+
+アラートには単一のアクションを含めることができ、閉じるまたは解除するアクションはオプションです。
+
+### 主要な要素
+
+- アイコンステータス
+
+  - 各ステータスの色とアイコンでメッセージの重要性を表現します。
+
+- アラートコピー/タイトル
+
+  - 情報の最も重要な部分を説明する、明確で簡潔な内容である必要があります。
+
+- 詳細
+
+  - 通知の正確な説明で、ユーザーが何をすべきかを伝えます。
+
+- ボタンとテキストリンク
+
+  - 永続的な通知のみにテキストリンクやボタンを含めるべきです。
+
+- 閉じるアイコン
+  - ユーザーが通知を解除できる場合に表示されます。
+
+## フォーマット
+
+### 構成
+
+![Image description](/img/alerts.anatomy.png 'alerts-anatomy')
+
+1. **アイコンステータス**: 通知のステータスをユーザーに伝えます
+2. **アラートコピー/タイトル**: メッセージの概要を簡潔に通知します
+3. **詳細**: ユーザーが取るべき行動について、より詳細に説明します
+4. **アクション** (オプション): 詳細ページに移動できるテキストリンクボタンまたはデフォルトボタン
+
+## 関連項目
+
+- **[アラートコンポーネント](/components/alert/)**
+
+### 参考資料
+
+- [NNG — インジケーター、バリデーション、通知: 適切なコミュニケーションオプションを選択する](https://www.nngroup.com/articles/indicators-validations-notifications/)
+- [NNG — フォームのエラー報告方法: 10のデザインガイドライン](https://www.nngroup.com/articles/errors-forms-design-guidelines/)
+- [NNG - ユーザーのための10のユーザビリティヒューリスティック](https://www.nngroup.com/articles/ten-usability-heuristics/)
+- [NNG - 平易な言葉は誰のためでもある](https://www.nngroup.com/articles/plain-language-experts/)

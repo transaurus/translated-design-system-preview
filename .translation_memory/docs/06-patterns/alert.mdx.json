@@ -1,0 +1,232 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "docs/06-patterns/alert.mdx",
+  "source_file_content_hash": "c15dbb354efa068f1bd45bf967d2b9c97f6edf8036ad096b99e3b0634e02b161",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\ntitle: Alert\ndescription: Alerts display important messages in a way that attracts the user's attention without interrupting their task.\nhide_title: true\n---",
+      "source_content_hash": "280ba10be2c34aed6b5986528a643aab93257cb15ca1e79e0b18e76330991536",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "a703643c",
+      "source_content": "# Alert <Badge text='draft' color='orange'></Badge> <a href='https://developers.grafana.com/ui/latest/index.html?path=/story/overlays-alert--examples' target='_blank' className='header-links'>Storybook <Icon name=\"external-link-alt\"/> </a>",
+      "source_content_hash": "bd9c18ae563ae2350903386d213a342f97a1858e98d5291f7e20c2f08077a804",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "# アラート <Badge text='draft' color='orange'></Badge> <a href='https://developers.grafana.com/ui/latest/index.html?path=/story/overlays-alert--examples' target='_blank' className='header-links'>Storybook <Icon name=\"external-link-alt\"/> </a>"
+      }
+    },
+    {
+      "segment_id": "53eaf0e1",
+      "source_content": "Alerts display important messages in a way that attracts the user's attention without interrupting their task.",
+      "source_content_hash": "c1c46874aa113a38f39dd1ea7dbf958ad78f4104dfc9a78b1cf0a2110092e112",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "アラートは、ユーザーのタスクを中断することなく、重要なメッセージを目立つように表示します。"
+      }
+    },
+    {
+      "segment_id": "8a5f6a7b",
+      "source_content": "## Behaviors",
+      "source_content_hash": "cd4a64ac57da688c892c9d1dde696c00af3092a4a60f55e4ea176a0deeb555f4",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 動作"
+      }
+    },
+    {
+      "segment_id": "50a3a013",
+      "source_content": "| Type           | Purpose                                                                                                       |\n| -------------- | ------------------------------------------------------------------------------------------------------------- |\n| **Persistent** | <p>They are usually urgent and intrusive, require immediate attention and require action to be dismissed.</p> |\n| **Passive**    | <p>Are informational, report a system issue that does not require any action by users.</p>                    |",
+      "source_content_hash": "7a88b0786a4b5e78a825d64206b4485fbee4fac7da28c6a3c864ce1909632d77",
+      "node_type": "table",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_50a3a013"
+      }
+    },
+    {
+      "segment_id": "d350c018",
+      "source_content": "## Types",
+      "source_content_hash": "d3501a7dcfa1381a6da5936cfbc54568288cfa6d68304d6725d36311896e982c",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## タイプ"
+      }
+    },
+    {
+      "segment_id": "1acb9a05",
+      "source_content": "Within Grafana, we have three different types of alerts and they can be used depending on the context and content.",
+      "source_content_hash": "565fd304632d11db26690deade8515e9f68c6108d8b12bf9d386d5260821b6b5",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Grafanaでは、3種類のアラートがあり、コンテキストと内容に応じて使用されます。"
+      }
+    },
+    {
+      "segment_id": "e1ffabf9",
+      "source_content": "| Type       | Purpose                                                                                                                                                                                                        | Behavior                       |\n| ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ |\n| **Inline** | <p>To notify users of the status of an action. They appear at the top or bottom of the main content area</p>                                                                                                   | <p> Passive or Persistent </p> |\n| **Toast**  | <p>These temporary window elements are used to display short messages; they appear at the top-right corner of the screen and can be dismissed by clicking the [x] or it will disappear after a few seconds</p> | <p>Passive</p>                 |\n| **Banner** | <p>It will remain until the user rejects it or until the status that triggered the banner is resolved</p>                                                                                                      | <p> Persistent </p>            |",
+      "source_content_hash": "8a8964eb58a352311654869991eb0043a957de4b4d76642daf88d29a2daafd1d",
+      "node_type": "table",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_e1ffabf9"
+      }
+    },
+    {
+      "segment_id": "3c36424c",
+      "source_content": "## Message Type",
+      "source_content_hash": "869536fb372cfd15a5882c81fd282a806951565a15ed1967c807ccfde95175b6",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## メッセージタイプ"
+      }
+    },
+    {
+      "segment_id": "74b94380",
+      "source_content": "| Status            | Usage                                                                                                                  | Action                                                                                                                                      | Color                    | Icon                        |\n| ----------------- | ---------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ | --------------------------- |\n| **Informational** | <p>Provide information to users, and don’t interrupt any current actions</p>                                           | <p>Do not require immediate action and can be dismissed by a user clicking the [X] or passively display until the display timer expires</p> | <p>Blue background</p>   | <p>Info-circle</p>          |\n| **Success**       | <p>When any action is successful, it is confirmed when a task is completed as expected</p>                             | <p>Typically do not require further action and can be dismissed automatically or persist in a nonintrusive manner</p>                       | <p>Green background</p>  | <p>Check</p>                |\n| **Warning**       | <p>Informing users that an action is undesirable</p>                                                                   | <p>Often persists until users have taken action to dismiss the notification or taken steps to resolve the issue</p>                         | <p>Yellow background</p> | <p>Exclamation-triangle</p> |\n| **Error**         | <p>When an action doesn't happen as expected, usually something has failed and the user is expected to take action</p> | <p>Always persists until the user has taken steps to remedy the issue that triggered the notification</p>                                   | <p>Red background</p>    | <p>Exclamation-circle</p>   |",
+      "source_content_hash": "b9f3f5d6373cd080685f08d05bab7ccc8cf649cc99392d5b0bdfcd15be0561a3",
+      "node_type": "table",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_74b94380"
+      }
+    },
+    {
+      "segment_id": "3b7478ea",
+      "source_content": "## Content",
+      "source_content_hash": "8a7454c28fea26099276cbed1827658cd2a47942d6ef32e76e645c81358bf357",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## コンテンツ"
+      }
+    },
+    {
+      "segment_id": "c3a738de",
+      "source_content": "An Alert can contain a single action, dismiss or close actions are optional.",
+      "source_content_hash": "6218437072b2ba949a951134cce8df28fa50f7117b19073df4f17e744334dbdc",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "アラートには単一のアクションを含めることができ、閉じるまたは解除するアクションはオプションです。"
+      }
+    },
+    {
+      "segment_id": "9f9e64f5",
+      "source_content": "### Main elements",
+      "source_content_hash": "b0000e569a1893adb0f2d5b12bd5a6187f0267a1a5f60e37841e13fe825d22a5",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 主要な要素"
+      }
+    },
+    {
+      "segment_id": "bdfae007",
+      "source_content": "- Icon Status\n\n  - Represent the importance of the message through the color and icon for each status.\n\n- Alert Copy/Title\n\n  - Should be explicit, clear and short that explain the most important part of the information.\n\n- Details\n\n  - Precise description for the notification, telling users what they need to do.\n\n- Button and text links\n\n  - Only persistent notifications should contain text links or buttons.\n\n- Close Icon\n  - Appears when the notification can be dismissed by the user.",
+      "source_content_hash": "e5ec88045b7d03af1d1f022d515ab47ed599cf8bdf926e6bc81a43c8fa82100e",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- アイコンステータス\n\n  - 各ステータスの色とアイコンでメッセージの重要性を表現します。\n\n- アラートコピー/タイトル\n\n  - 情報の最も重要な部分を説明する、明確で簡潔な内容である必要があります。\n\n- 詳細\n\n  - 通知の正確な説明で、ユーザーが何をすべきかを伝えます。\n\n- ボタンとテキストリンク\n\n  - 永続的な通知のみにテキストリンクやボタンを含めるべきです。\n\n- 閉じるアイコン\n  - ユーザーが通知を解除できる場合に表示されます。"
+      }
+    },
+    {
+      "segment_id": "c431704b",
+      "source_content": "## Formating",
+      "source_content_hash": "01379ce2b7fc38a78c12f7494d7192de9fe1b7995c3a13ad3fdbc2968cbe0566",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## フォーマット"
+      }
+    },
+    {
+      "segment_id": "c315c636",
+      "source_content": "### Anatomy",
+      "source_content_hash": "ed10eaa0642d1e95db06d74e961546b7fe21b7d98225e7b3355c72eb9c1afdc2",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 構成"
+      }
+    },
+    {
+      "segment_id": "531437ca",
+      "source_content": "![Image description](/img/alerts.anatomy.png 'alerts-anatomy')",
+      "source_content_hash": "b6ede7ffed181834bd1831c054f44dbe808545de82446e4ce1af589b6b4d2337",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "![Image description](/img/alerts.anatomy.png 'alerts-anatomy')"
+      }
+    },
+    {
+      "segment_id": "645e08e3",
+      "source_content": "1. **Icon Status**: Informs user what is the notification status\n2. **Alert Copy/Title**: Notifying with a quick summary of what the message is about\n3. **Details**: Short description explaining in more detail what the user has to do\n4. **Action** (optional): Text link button or default button which allows users to navigate to a page with more details",
+      "source_content_hash": "86281b2aa4278cb4855b275332f1f233624bbae15a44f6ee122f894e23f5a157",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "1. **アイコンステータス**: 通知のステータスをユーザーに伝えます\n2. **アラートコピー/タイトル**: メッセージの概要を簡潔に通知します\n3. **詳細**: ユーザーが取るべき行動について、より詳細に説明します\n4. **アクション** (オプション): 詳細ページに移動できるテキストリンクボタンまたはデフォルトボタン"
+      }
+    },
+    {
+      "segment_id": "d422fb13",
+      "source_content": "## Related",
+      "source_content_hash": "630a5d69a70931054a3387840411306fb495280bfa0b3554006321cccbae0d00",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 関連項目"
+      }
+    },
+    {
+      "segment_id": "aa0bd54f",
+      "source_content": "- **[Alert Components](/components/alert/)**",
+      "source_content_hash": "dc0ffb4b60c9b57b626efac752436105293705e06ad32651a231fc64708b7a76",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- **[アラートコンポーネント](/components/alert/)**"
+      }
+    },
+    {
+      "segment_id": "93028a4e",
+      "source_content": "### Further Reading & Sources",
+      "source_content_hash": "37196dc650fdb5bc8fd42c8dfeb22541acbf11893379b55c534799ab87551971",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 参考資料"
+      }
+    },
+    {
+      "segment_id": "1316cb90",
+      "source_content": "- [NNG — Indicators, Validations, and Notifications: Pick the Correct Communication Option](https://www.nngroup.com/articles/indicators-validations-notifications/)\n- [NNG — How to Report Errors in Forms: 10 Design Guidelines](https://www.nngroup.com/articles/errors-forms-design-guidelines/)\n- [NNG - 10 Usability Heuristics for Users](https://www.nngroup.com/articles/ten-usability-heuristics/)\n- [NNG - Plain Language is for Everyone](https://www.nngroup.com/articles/plain-language-experts/)",
+      "source_content_hash": "4da20c2343e5b4626eda192859d7d7e6720319424b17801d7e2f6e26ea06290e",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- [NNG — インジケーター、バリデーション、通知: 適切なコミュニケーションオプションを選択する](https://www.nngroup.com/articles/indicators-validations-notifications/)\n- [NNG — フォームのエラー報告方法: 10のデザインガイドライン](https://www.nngroup.com/articles/errors-forms-design-guidelines/)\n- [NNG - ユーザーのための10のユーザビリティヒューリスティック](https://www.nngroup.com/articles/ten-usability-heuristics/)\n- [NNG - 平易な言葉は誰のためでもある](https://www.nngroup.com/articles/plain-language-experts/)"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-docs/current/06-patterns/alert.mdx",
+  "last_updated_timestamp": "2025-06-06T08:53:12.757535+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "c15dbb354efa068f1bd45bf967d2b9c97f6edf8036ad096b99e3b0634e02b161"
+  }
+}

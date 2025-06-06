@@ -1,0 +1,68 @@
+---
+title: Modal
+description: Grafana Labs Modal component
+draft: false
+---
+
+# モーダル <Badge text='draft' color='orange'></Badge> <StorybookLink path='/docs/overlays-modal--basic'/>
+
+## 概要
+
+`モーダル`は、ユーザーに対して即時の対応が必要なコンテンツや、現在のユーザーフローにおいて重要な情報を表示するために使用されます。モーダルが開いている間、ユーザーはモーダルの背後にあるページコンテンツとやり取りできず、要件を完了するかモーダルを閉じるまで前のワークフローに戻ることができません。
+
+### 使用する場合
+
+- ユーザーからの即時の応答が必要な場合
+- ユーザーの現在の作業に関する緊急の情報を通知する場合
+- ユーザーの決定を確認する場合
+
+### 使用しない場合
+
+- ユーザーが繰り返し行う必要があるタスクにはモーダルを使用しないでください
+- 現在のワークフローに関係のない非必須情報にはモーダルを使用しないでください
+
+## 使用方法
+
+メインコンポーネントには以下のpropsがあります:
+
+- `title` - モーダルのタイトルまたはカスタムヘッダー要素
+- `className`
+- `contentClassName` - モーダルのコンテンツに適用する特定のクラス
+- `closeOnEscape`
+- `closeOnBackdropClick`
+- `trapFocus` - フォーカススコープがアンマウントされた後、フォーカススコープがマウントされたときにフォーカスされていた要素にフォーカスを戻すかどうか
+- `isOpen`
+- `onDismiss`
+- `onClickBackdrop` - 設定されていない場合、`onDismiss`が設定されていればそれを呼び出します
+
+ModalTabsHeader - タブ付きのカスタムヘッダー要素で、以下のpropsがあります:
+
+- `icon`
+- `title`
+- `tabs`
+- `activeTab`
+- `onChangeTab`
+
+## タイプと動作
+
+1. [基本モーダル](https://developers.grafana.com/ui/latest/index.html?path=/story/overlays-modal--basic): デフォルトのヘッダー、メインコンテンツ、閉じるボタン、および/またはアクションボタンを持つ基本的なモーダル。
+
+2. [contentClassNameプロパティを使用したモーダル](https://developers.grafana.com/ui/latest/index.html?path=/story/overlays-modal--using-content-class-name): この場合、モーダルコンテンツに特定のクラスが適用されています。
+
+3. [タブ付きモーダル](https://developers.grafana.com/ui/latest/index.html?path=/story/overlays-modal--with-tabs): この場合、モーダルにはタブがあり、それぞれにメインコンテンツとボタンがあります。
+
+## アクセシビリティ
+
+[ダイアログ（モーダル）パターン](https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/)
+モーダルを構築する際は、キーボードの動作を確認してください。コンテンツがオーバーフローしている場合、以下の場合を除いてユーザーはスクロールできないことに注意してください:
+
+- モーダルにボタンなどのインタラクティブ要素が下部にある場合
+- コンテンツに`tabIndex = 0`があり、キーボードでフォーカス可能な場合
+
+## リンクとリソース
+
+### [Storybookライブラリ](https://developers.grafana.com/ui/latest/index.html?path=/docs/overlays-modal--basic)
+
+## プレイグラウンド
+
+<ComponentEmbed path='/story/overlays-modal--basic&full=1&shortcuts=false&singleStory=true' />

@@ -1,0 +1,132 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "docs/05-components/checkbox.mdx",
+  "source_file_content_hash": "80ef0ec65d8579d0e04bf2064785aba98509acea68d5ee7fc5f55a2516a6061d",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\ntitle: Checkbox\ndescription: Grafana Labs Checkbox component\ndraft: true\n---",
+      "source_content_hash": "6c3816c454ce3850b6dd0d08e0b528335e3068a32f713251b924b65c6bbef622",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "a703643c",
+      "source_content": "# Checkbox <Badge text='draft' color='orange'></Badge> <a href='https://developers.grafana.com/ui/latest/index.html?path=/story/forms-checkbox--basic' target='_blank' className='header-links'>Storybook <Icon name=\"external-link-alt\"/> </a>",
+      "source_content_hash": "b554d97b4cf74277fe8c4a4f4022a9fba2f3cb2be9448c003e373622736946e6",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "# チェックボックス <Badge text='draft' color='orange'></Badge> <a href='https://developers.grafana.com/ui/latest/index.html?path=/story/forms-checkbox--basic' target='_blank' className='header-links'>Storybook <Icon name=\"external-link-alt\"/> </a>"
+      }
+    },
+    {
+      "segment_id": "d912d376",
+      "source_content": "## When to use",
+      "source_content_hash": "d57fe8233a0bcc964af649dd3059fbd5aa2ba0bba9b4b44f225cdd2f0dd1c432",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 使用場面"
+      }
+    },
+    {
+      "segment_id": "8ac585fb",
+      "source_content": "Checked represents true, un-checked represents false. So you can use them to select a binary option or multiple options in a set. `Checkbox` can be used in groups, where the single checkboxes have no dependencies. That means that selecting one doesn’t affect any other `Checkbox`. When adding a description to your `Checkbox`, write positive statements so that \"checked\" means \"yes\" and not \"no\". That way, you can avoid confusion.",
+      "source_content_hash": "eab06be554194ce3b41de396866dbc85db09346dba1b70e4bc485d21ad3f757e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "チェック状態は「真」、未チェック状態は「偽」を表します。そのため、バイナリオプションの選択や複数選択可能なセット内での選択に使用できます。`Checkbox`はグループで使用可能で、個々のチェックボックス間に依存関係はありません。つまり、1つを選択しても他の`Checkbox`に影響を与えません。`Checkbox`に説明を追加する際は、肯定的な表現を使用し、「チェック済み」が「はい」を意味するようにしてください。これにより混乱を防げます。"
+      }
+    },
+    {
+      "segment_id": "5da3670c",
+      "source_content": "<iframe\n  src=\"https://developers.grafana.com/ui/latest/index.html?path=/story/forms-checkbox--basic&full=1&shortcuts=false&singleStory=true\"\n  width=\"100%\"\n  height=\"500px\"\n></iframe>",
+      "source_content_hash": "a6b867564e4d177a3dd9f4b65d9a4667dfc086560fb418e6a72537313933cd1d",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_5da3670c"
+      }
+    },
+    {
+      "segment_id": "aee0e40d",
+      "source_content": "### Do’s",
+      "source_content_hash": "96969fa9c3edac6b2a52fa582cc432e51609894e1c5870efe82c9f4fe7f06ad6",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 推奨事例"
+      }
+    },
+    {
+      "segment_id": "0787cf7f",
+      "source_content": "- [ ]Hide options\n- Show series [ ] A-series [ ] B-series [ ] C-series",
+      "source_content_hash": "a7428b3f114a52dbae4b5f423f644212bbf5ea433178c436efa58e9e625ff84c",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- [ ]オプションを非表示\n- シリーズを表示 [ ] Aシリーズ [ ] Bシリーズ [ ] Cシリーズ"
+      }
+    },
+    {
+      "segment_id": "95b38f97",
+      "source_content": "### Don’ts",
+      "source_content_hash": "10a29e689467403a41094904f95701105e5679d03a4d001390e97ed74a34be5c",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 非推奨事例"
+      }
+    },
+    {
+      "segment_id": "0cc488ed",
+      "source_content": "- [ ]Do not show options\n- Show only [ ] A-series [ ] B-series [ ] C-series",
+      "source_content_hash": "3dfe546975b68802eee3e63c434d19cf4153d7ca9d26f8c0bd85b87645fa3e5c",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- [ ]オプションを表示しない\n- 以下のみ表示 [ ] Aシリーズ [ ] Bシリーズ [ ] Cシリーズ"
+      }
+    },
+    {
+      "segment_id": "4b1d2d7d",
+      "source_content": "Checkboxes typically only trigger changes after sending a form. If your component should trigger a change immediately, it's better to use a toggle switch instead. Furthermore, checkboxes are not mutually exclusive. That means that selecting one will not disable the others or impact them in any other way. If you want to offer a mutually exclusive choice, use `RadioButtonGroup` or a `Select` dropdown.",
+      "source_content_hash": "77caaf7ddf8e8ae4aaf45628e790f0bc3aa5c4b1a9c3f727ae3fd2ebfbaf21dc",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "チェックボックスは通常、フォーム送信後に変更を反映します。即時に変更をトリガーする必要がある場合は、トグルスイッチの使用が適しています。また、チェックボックスは相互排他的ではありません。つまり、1つを選択しても他の選択肢が無効になったり影響を受けたりすることはありません。相互排他的な選択を提供する場合は、`RadioButtonGroup`または`Select`ドロップダウンを使用してください。"
+      }
+    },
+    {
+      "segment_id": "48847fd4",
+      "source_content": "## Usage",
+      "source_content_hash": "63bfd61a0561b255a2caa0a2e3add091ca7e327f2fa06a407cbb2ff341b858d8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 使用方法"
+      }
+    },
+    {
+      "segment_id": "a2110253",
+      "source_content": "```jsx\nimport { Forms } from '@grafana/ui';\n\n<Checkbox value={true|false} label={...} description={...} onChange={...} />\n```",
+      "source_content_hash": "c33c3a4f2cd64e0ef62da4821eed3c44c306f1d44e7cd2cdfc8b4529572bf114",
+      "node_type": "code",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_a2110253"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-docs/current/05-components/checkbox.mdx",
+  "last_updated_timestamp": "2025-06-06T08:53:12.754820+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "80ef0ec65d8579d0e04bf2064785aba98509acea68d5ee7fc5f55a2516a6061d"
+  }
+}

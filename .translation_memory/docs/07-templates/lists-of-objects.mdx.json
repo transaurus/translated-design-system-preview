@@ -1,0 +1,212 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "docs/07-templates/lists-of-objects.mdx",
+  "source_file_content_hash": "f83aa198218dc50891be2fa427def041e863a680bdb55b1ee598dbfcc5610109",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\ntitle: Lists of Objects\ndescription: Designing screens to show lists of objects\nsidebar_position: 2\nhide_title: true\nhide_table_of_contents: true\ndraft: false\n---",
+      "source_content_hash": "d5bd6194027dfc653a42d3ea9f704f2e9a458b4fe6e2fc90a46fe30b7febef44",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "1cc03ec8",
+      "source_content": "## Overview",
+      "source_content_hash": "7337f3d0aa29e9a82b8f1650b743a98eef90794631fa763a319686e69c546821",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 概要"
+      }
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "One of the most common screens in a data-oriented product is a list of objects. This may be a list of user-created content (like dashboards), monitored entities (like Kubernetes clusters), or even arbitrary tabular data (from a SQL statement).",
+      "source_content_hash": "e11ab27393be7951732abbf739cbecd7b6bf4056cc2349e0ebb59634f36d3b5f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "データ指向の製品で最も一般的な画面の1つが、オブジェクトのリストです。これは、ユーザーが作成したコンテンツ（ダッシュボードなど）、監視対象エンティティ（Kubernetesクラスターなど）、または任意の表形式データ（SQLステートメントからのもの）のリストである可能性があります。"
+      }
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "We recommend the following structure for these types of screens.",
+      "source_content_hash": "9f626b3bca90cd39f70687d6993a0d0ca9a92db32b32da63935c9f4ae36e23c4",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "この種の画面には、以下の構造を推奨します。"
+      }
+    },
+    {
+      "segment_id": "cc3676fa",
+      "source_content": "<Image src={'/img/templates/object_list_screen_anatomy.png'} alt=\"Object list screen visual anatomy\" />",
+      "source_content_hash": "2c8a3eedf79674ae42edadfeedaa0ad6f30109feec8ac241aef9aa8472ab9b17",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_cc3676fa"
+      }
+    },
+    {
+      "segment_id": "11c829ab",
+      "source_content": "1. **Header** - Contains the screen title and short helper text. In certain very specific cases (filters or selectors that apply across child tabs) it can be appropriate to place controls in the header. But in general, this is best avoided. Even if the controls make sense today, they make not make sense with future tabs.\n2. **Tabs** - Screen-level tabs should be the second level in the IA to reinforce the independence of each tab's content.\n3. **Banner** - Use this sparingly. If an exception condition causes the screen's data to be unable to render, steal the table row space to notify the user. \n4. **Data viz** - If additional viz is required to help users work with or contextualize the data set, put it here. Even if it feels like it should be below filters in the IA. It’s more important to keep data-manipulation controls in close proximity (to each other and data). Try to keep this under 200px high. More than that and the identity/function of the screen becomes muddled (is this a dashboard?).\n5. **Search and filter** - These controls are tightly linked to the list of items, so keep them nearby. Consider starting with a small number of filters and allowing users to add more as needed.\n6. **Action buttons** - Anything that mutates the data set should appear here. If necessary, this can also include links to distant (but related) screens.\n7. **Table header** - If you’re presenting the list as a table, include a header. Even if there is no data to display, keep the header around to reinforce that this is table view and this is where data would live.\n8. **The actual data** - If the data set contains any elements, show them here. If the set is empty (or cannot be loaded due to a problem), steal this space to explain why and offer remediation advice.\n9. **Pager** - Use if applicable. Omit when there is no data to page.",
+      "source_content_hash": "f5bb9288ec2d89e84c76c70fe8facc16a9221b3789d8dfa81cf5a97141655817",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "1. **ヘッダー** - 画面タイトルと短いヘルパーテキストを含みます。特定の非常に限られたケース（子タブ全体に適用されるフィルターやセレクター）では、ヘッダーにコントロールを配置することが適切な場合があります。しかし、一般的にはこれは避けるのが最善です。現在はコントロールが意味をなす場合でも、将来のタブでは意味をなさない可能性があります。\n2. **タブ** - 画面レベルのタブは、IA（情報アーキテクチャ）の第2レベルとし、各タブのコンテンツの独立性を強化する必要があります。\n3. **バナー** - これは控えめに使用してください。例外状態により画面のデータがレンダリングできない場合、テーブルの行スペースを利用してユーザーに通知します。\n4. **データ可視化** - データセットを操作したり文脈化したりするために追加の可視化が必要な場合は、ここに配置します。IA上でフィルターの下にあるべきだと感じる場合でもです。データ操作コントロールを（互いに、またデータに）近接させておくことがより重要です。高さは200px以下に保つようにしてください。それ以上だと、画面のアイデンティティや機能が曖昧になります（これはダッシュボードなのか？）。\n5. **検索とフィルター** - これらのコントロールはアイテムのリストと密接に関連しているため、近くに配置します。最初は少数のフィルターから始め、必要に応じてユーザーが追加できるようにすることを検討してください。\n6. **アクションボタン** - データセットを変更するものはすべてここに表示します。必要に応じて、遠く離れた（しかし関連する）画面へのリンクも含めることができます。\n7. **テーブルヘッダー** - リストをテーブルとして表示する場合は、ヘッダーを含めてください。表示するデータがない場合でも、ヘッダーを残して、これがテーブルビューであり、ここにデータが表示されることを強調します。\n8. **実際のデータ** - データセットに要素が含まれている場合は、ここに表示します。セットが空の場合（または問題により読み込めない場合）、このスペースを利用して理由を説明し、修正のアドバイスを提供します。\n9. **ページャー** - 該当する場合は使用します。ページングするデータがない場合は省略します。"
+      }
+    },
+    {
+      "segment_id": "d9172fa4",
+      "source_content": "This structure is not obligatory, but using a consistent layout can help users locate key functions on unfamiliar screens.",
+      "source_content_hash": "cd80ad899763464a3ba43e14ffaa73fa7777aaecd92c31acb3d10e1e7ba806a5",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "この構造は必須ではありませんが、一貫したレイアウトを使用することで、ユーザーが慣れない画面上で主要な機能を見つけやすくなります。"
+      }
+    },
+    {
+      "segment_id": "d06306f7",
+      "source_content": "## Displaying data",
+      "source_content_hash": "dcd539ae2baf58b9d7fecfa10213b0ba102abad4e12c939eb36338ec49f25625",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## データの表示"
+      }
+    },
+    {
+      "segment_id": "b25f21be",
+      "source_content": "### Tables",
+      "source_content_hash": "308b8b03123113821ee1e2a97f28d840c5b99989fedaa828ec8a6b42be1c4de3",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### テーブル"
+      }
+    },
+    {
+      "segment_id": "d0d484a6",
+      "source_content": "<Image src={'/img/templates/example_table.png'} alt=\"Example of a table\" />",
+      "source_content_hash": "4feaf270991d20641dd7b86194db9c59db1b9fc744b55015451c01321e697408",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_d0d484a6"
+      }
+    },
+    {
+      "segment_id": "517051a7",
+      "source_content": "Tables are a good choice for open-ended exploration as they impose minimal visual structure on the data. This less-opinionated view is useful when you can't predict how users will engage with the data. Use a table when a screen must support many diverse use cases or when you can't be sure of the shape, quality, or completeness of the data set.",
+      "source_content_hash": "37f9e73418eb2dc07e40dc274a60bd6633219a0d62fee313933d0393da6f873e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "テーブルは、データに最小限の視覚的構造しか課さないため、オープンエンドな探索に適しています。このような意見の少ないビューは、ユーザーがデータとどのように関わるか予測できない場合に有用です。画面が多様なユースケースをサポートする必要がある場合や、データセットの形状、品質、完全性を確信できない場合にテーブルを使用します。"
+      }
+    },
+    {
+      "segment_id": "5d66c9dc",
+      "source_content": "- [Saga table template](/templates/table)\n- [Table component](https://developers.grafana.com/ui/latest/index.html?path=/docs/visualizations-table--basic)\n- [InteractiveTable component](https://developers.grafana.com/ui/latest/index.html?path=/docs/experimental-interactivetable--basic)",
+      "source_content_hash": "244cd882e16e981c35188e985ba065c62a9d972ae9f47e14b21c2dffda5dfc17",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- [Sagaテーブルテンプレート](/templates/table)\n- [テーブルコンポーネント](https://developers.grafana.com/ui/latest/index.html?path=/docs/visualizations-table--basic)\n- [InteractiveTableコンポーネント](https://developers.grafana.com/ui/latest/index.html?path=/docs/experimental-interactivetable--basic)"
+      }
+    },
+    {
+      "segment_id": "9f9e64f5",
+      "source_content": "### Lists",
+      "source_content_hash": "3f1494896a9c44d8e6b0e42ee19cbe68faacee47a9ae2717125ec29922df6929",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### リスト"
+      }
+    },
+    {
+      "segment_id": "f4a3226e",
+      "source_content": "<Image src={'/img/templates/example_list.png'} alt=\"Example of a list\" />",
+      "source_content_hash": "17d061a3e1b2424faad5dfe606de31a10858d2e4e708d9fa701250284ada78cd",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_f4a3226e"
+      }
+    },
+    {
+      "segment_id": "aa1e7006",
+      "source_content": "Lists work best when the user is working with a set of named objects which have a well-understood data structure. Lists allow you to use typography and layout to emphasize important fields and deemphasize supplemental data. Use a list when your screen is focused on a limited number of use cases and you can optimize for them.",
+      "source_content_hash": "0d37e186668c167972b12a4075e0d68fd006209588ce259dee6f7747b7e08708",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "リストは、ユーザーが名前付きオブジェクトのセットを操作していて、そのデータ構造がよく理解されている場合に最適です。リストを使用すると、タイポグラフィとレイアウトを活用して重要なフィールドを強調し、補足データを控えめに表示できます。画面が限られた数のユースケースに焦点を当てており、それらに最適化できる場合にリストを使用します。"
+      }
+    },
+    {
+      "segment_id": "824626b3",
+      "source_content": "- [Saga list template](/templates/list-page)",
+      "source_content_hash": "74e2e5d994cea9bebf56c0c70f10679f91656b4af8de80ed6067179010bda29a",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- [Sagaリストテンプレート](/templates/list-page)"
+      }
+    },
+    {
+      "segment_id": "c674e260",
+      "source_content": "### Tiled cards",
+      "source_content_hash": "37a066d50d379077bd131832a1bae01531df99758a1990b0512a66044fc9d889",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### タイル状のカード"
+      }
+    },
+    {
+      "segment_id": "ece60464",
+      "source_content": "<Image src={'/img/templates/example_tiled_cards.png'} alt=\"Example of a tiled card grid\" />",
+      "source_content_hash": "c137616997c969ebc487f8fca6ea191749c1d609397bc5c047f5656bdc40653d",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_ece60464"
+      }
+    },
+    {
+      "segment_id": "f7ef78f9",
+      "source_content": "Tiled cards are ideal when displaying a data set with a rich visual component, such as images or data visualizations. Effective use of [small multiples](https://en.wikipedia.org/wiki/Small_multiple) can allow users to perform complex comparisons which would be impossible using other layouts.",
+      "source_content_hash": "4cd1c6d59daff9d60f38dc9e7e79ef91b6280fae1d5f0743d81f70a5c34557e8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "タイル状のカードは、画像やデータ可視化など、視覚的に豊富なコンポーネントを持つデータセットを表示するのに理想的です。[スモールマルチプル](https://en.wikipedia.org/wiki/Small_multiple)を効果的に使用することで、他のレイアウトでは不可能な複雑な比較をユーザーが行えるようになります。"
+      }
+    },
+    {
+      "segment_id": "310e47b7",
+      "source_content": "- [Saga grid template](/templates/grid-page)\n- [Card component](https://developers.grafana.com/ui/latest/index.html?path=/docs/general-card--basic)",
+      "source_content_hash": "de2a5c2f1dcbc047386a9f120b822492526da218ca78fe20bc29a3a1b80e88eb",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- [Sagaグリッドテンプレート](/templates/grid-page)\n- [カードコンポーネント](https://developers.grafana.com/ui/latest/index.html?path=/docs/general-card--basic)"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-docs/current/07-templates/lists-of-objects.mdx",
+  "last_updated_timestamp": "2025-06-06T08:53:12.760617+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "f83aa198218dc50891be2fa427def041e863a680bdb55b1ee598dbfcc5610109"
+  }
+}

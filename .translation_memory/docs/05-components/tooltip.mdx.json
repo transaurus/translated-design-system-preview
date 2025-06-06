@@ -1,0 +1,352 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "docs/05-components/tooltip.mdx",
+  "source_file_content_hash": "34c951aebc11e8eff5c90b88a310e898cdef66b4616b00a49cfd9ffa090079f5",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\ntitle: Tooltip\ndescription: Tooltips display additional information upon hover or focus. The information included should be contextual, helpful, and non-critical to the user’s task-at-hand.\nhide_title: true\n---",
+      "source_content_hash": "7e018b17fb5ec2318052cc271cd204b5fe7f5e00c03a6446f2c2a525acd65fe9",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "a703643c",
+      "source_content": "# Tooltip <Badge text='ready' color='green'></Badge> <StorybookLink path='/story/overlays-tooltip--basic' />",
+      "source_content_hash": "6bb1fb895ff2946c5b8d0bec5a3dd1e60ea054bb100db3872ba4c746a27f5a00",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "# ツールチップ <Badge text='ready' color='green'></Badge> <StorybookLink path='/story/overlays-tooltip--basic' />"
+      }
+    },
+    {
+      "segment_id": "53eaf0e1",
+      "source_content": "Tooltips display additional information upon hover or focus. The information included should be contextual, helpful, and non-critical to the user’s task-at-hand. The information should be concise and provide clarity to the user.",
+      "source_content_hash": "1ef1efe0f5862a5198a35bf9c719e5a86d1a17a96d953b1648d1b59e7b96ee6c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "ツールチップは、ホバーまたはフォーカス時に追加情報を表示します。含まれる情報は文脈に沿ったもので、ユーザーのタスクにとって補助的で非必須な内容であるべきです。情報は簡潔にまとめ、ユーザーに明確な理解を提供するようにします。"
+      }
+    },
+    {
+      "segment_id": "43a8bc7e",
+      "source_content": "```tsx live\n<Tooltip content=\"This is a tooltip\">\n  <Button>Hover me for Tooltip</Button>\n</Tooltip>\n```",
+      "source_content_hash": "8599862e578f59ddcdd8f16055e73d10038a50ea84116d571a9ba90eb6ca7c66",
+      "node_type": "code",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_43a8bc7e"
+      }
+    },
+    {
+      "segment_id": "3daf1b88",
+      "source_content": "## Usage",
+      "source_content_hash": "63bfd61a0561b255a2caa0a2e3add091ca7e327f2fa06a407cbb2ff341b858d8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 使用方法"
+      }
+    },
+    {
+      "segment_id": "aee0e40d",
+      "source_content": "### Do's",
+      "source_content_hash": "008161705968c1d0413c660ae0e4ffc700a2dc52b83eb054133f9d4218531097",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 推奨事項"
+      }
+    },
+    {
+      "segment_id": "0787cf7f",
+      "source_content": "- Provide supportive, explanatory text for icons (i.e. \"search\" as a label for a magnifying glass icon).\n- Offer concise information about the intended use of an element.\n- Allow tooltips to be triggered by keyboard navigation.\n- Use arrows to indicate which element the tooltip relates to.\n- Use tooltips consistently (i.e., all icon buttons have them, all tooltips are styled the same).\n- Use ARIA tags when building tooltips to ensure they are accessible.",
+      "source_content_hash": "f875262a1c8d221595bfbb7c15f5ced018d5ad5ac460058c33bf5e9bef1e901c",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- アイコンに対する補助的な説明テキストを提供する（例：虫眼鏡アイコンに「検索」というラベルを付ける）。\n- 要素の使用目的について簡潔な情報を提供する。\n- キーボードナビゲーションでツールチップをトリガーできるようにする。\n- ツールチップがどの要素に関連しているかを示すために矢印を使用する。\n- ツールチップを一貫して使用する（例：すべてのアイコンボタンにツールチップを付ける、すべてのツールチップを同じスタイルにする）。\n- アクセシビリティを確保するため、ツールチップ作成時にARIAタグを使用する。"
+      }
+    },
+    {
+      "segment_id": "3c36424c",
+      "source_content": "### Don'ts",
+      "source_content_hash": "37ab6eb691c9d1c36bd5dbb1295c8878324b276d3841524f9fa68146a3f08116",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 非推奨事項"
+      }
+    },
+    {
+      "segment_id": "5da9e02b",
+      "source_content": "- Do not house information critical to a user’s task completion in the tooltip.\n- Do not duplicate information such as labels for calls to action, as this creates information pollution.\n- Do not use interactive components within a tooltip.\n- Do not force the user to dismiss the tooltip.",
+      "source_content_hash": "638b85075638b46194af82464487f49223846a36a04b3d34f7ab4188224af674",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- ユーザーのタスク完了に必須の情報をツールチップに含めない。\n- コールトゥアクションのラベルなど、情報を重複させない（情報汚染を防ぐため）。\n- ツールチップ内にインタラクティブなコンポーネントを使用しない。\n- ユーザーにツールチップを強制的に閉じさせない。"
+      }
+    },
+    {
+      "segment_id": "f422383e",
+      "source_content": "## Variants",
+      "source_content_hash": "f4ace3b7f4ca4d7185db7e0f3b58b6f2dd737dafa3bcdb3562310455d4b6527e",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## バリエーション"
+      }
+    },
+    {
+      "segment_id": "50a89587",
+      "source_content": "| Variants               | Purpose                                                |\n| ---------------------- | ------------------------------------------------------ |\n| **Info (aka default)** | Provides contextual supportive information to the user |\n| **info-alt**           | Not sure on what this is                               |\n| **Error**              | Acts as inline validation                              |",
+      "source_content_hash": "3d2dea7dac2e4510d839753730389b164ee384acf8a1ab04d3f380c1d2c3474d",
+      "node_type": "table",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_50a89587"
+      }
+    },
+    {
+      "segment_id": "06c0f776",
+      "source_content": "## Accessibility",
+      "source_content_hash": "5905e6d1f8fe9000c019119d1b35481573e90f36f72c18c510ba2efec231093d",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## アクセシビリティ"
+      }
+    },
+    {
+      "segment_id": "4c077b92",
+      "source_content": "- Use ARIA tags when building tooltips to ensure they are accessible:\n- Use `aria-labelledby` if the tooltip acts as a primary label (i.e., to name an IconButton action).\n- Use `aria-describedby` if the tooltip acts as a supporting label (i.e., to provide additional information on an input).\n- Tooltips must be visible when their trigger is tabbed to or focused on via keyboard navigation.",
+      "source_content_hash": "a3f7844b18ed0407fd901547fddb055783569c0595f590becbda1ec88452d57e",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- ツールチップのアクセシビリティを確保するため、ARIAタグを使用する：\n  - ツールチップが主要なラベルとして機能する場合（例：IconButtonのアクション名を付ける場合）は、`aria-labelledby`を使用する。\n  - ツールチップが補助的なラベルとして機能する場合（例：入力欄に対する追加情報を提供する場合）は、`aria-describedby`を使用する。\n  - ツールチップは、トリガーがタブで選択されたりキーボードナビゲーションでフォーカスされたときに表示されなければならない。"
+      }
+    },
+    {
+      "segment_id": "6d28a77c",
+      "source_content": "## Formatting",
+      "source_content_hash": "cb82e74c9e00ff9a5e2865caca13ab1d7cb66c586dfd902974890130b34e22b8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## フォーマット"
+      }
+    },
+    {
+      "segment_id": "cb5b269c",
+      "source_content": "### Anatomy",
+      "source_content_hash": "ed10eaa0642d1e95db06d74e961546b7fe21b7d98225e7b3355c72eb9c1afdc2",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 構成要素"
+      }
+    },
+    {
+      "segment_id": "b36c6338",
+      "source_content": "![Image calling out parts of the tooltip](/img/tooltip.anatomy.png 'Image calling out parts of the tooltip')",
+      "source_content_hash": "69d27959589d57f90982f94e63fcc7cbbaa5bbfe1ca5fba55da55c55f4880849",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "![ツールチップの各部分を示す画像](/img/tooltip.anatomy.png 'ツールチップの各部分を示す画像')"
+      }
+    },
+    {
+      "segment_id": "9b797309",
+      "source_content": "1. **Trigger** - The UI control users interact with to display tooltips.\n2. **Tip** - The triangle piece that points to the trigger element.\n3. **Body** - The container that houses the content of the tooltip.",
+      "source_content_hash": "89c20e7591dea2eb2a287dbfd1e864a999a8fa4eb954722398e06c5a765d7203",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "1. **トリガー** - ユーザーが操作してツールチップを表示するUIコントロール。\n2. **チップ** - トリガー要素を指し示す三角形の部分。\n3. **ボディ** - ツールチップのコンテンツを格納するコンテナ。"
+      }
+    },
+    {
+      "segment_id": "ab5fc5b5",
+      "source_content": "### Placement",
+      "source_content_hash": "51e334c4f8d29f81432136a3e68f98019240174ae8ced469dd8bf0c1bb9fb02c",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 配置"
+      }
+    },
+    {
+      "segment_id": "24c174ca",
+      "source_content": "- Auto: Displays tooltip on the side with most space available.\n  - Auto-start: Aligns to the top of the trigger.\n  - Auto: Aligns to the center of the trigger.\n  - Auto-end: Aligns to the bottom of the trigger.\n- Top:\n  - Top-Left\n  - Top-Center\n  - Top-Right\n- Bottom:\n  - Bottom-Left\n  - Bottom-Center\n  - Bottom-Right\n- Left:\n  - Left-Top\n  - Left-Center\n  - Left-Bottom\n- Right:\n  - Right-Top\n  - Right-Center\n  - Right-Bottom",
+      "source_content_hash": "7f6f17a551c736d7a0267c0992cd06ad1a96afc32ae3b6f4e378e89b2340427d",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- 自動: 利用可能なスペースが最も多い側にツールチップを表示する。\n  - 自動-開始: トリガーの上部に揃える。\n  - 自動: トリガーの中央に揃える。\n  - 自動-終了: トリガーの下部に揃える。\n- 上部:\n  - 上部-左\n  - 上部-中央\n  - 上部-右\n- 下部:\n  - 下部-左\n  - 下部-中央\n  - 下部-右\n- 左:\n  - 左-上部\n  - 左-中央\n  - 左-下部\n- 右:\n  - 右-上部\n  - 右-中央\n  - 右-下部"
+      }
+    },
+    {
+      "segment_id": "66819c78",
+      "source_content": "## Content",
+      "source_content_hash": "8a7454c28fea26099276cbed1827658cd2a47942d6ef32e76e645c81358bf357",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## コンテンツ"
+      }
+    },
+    {
+      "segment_id": "0a103a02",
+      "source_content": "### Main Elements",
+      "source_content_hash": "bdbaf3780d4f2222cb7e8a9cbcd628bff1813e6afd2c0336738fd7e57e0cf90d",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 主要要素"
+      }
+    },
+    {
+      "segment_id": "8126f763",
+      "source_content": "**Trigger** - The UI control users interact with to display tooltips - standard **info-circle icon**",
+      "source_content_hash": "bc39e162614e233440a23243aea40a6abf6906f3eb1a283531844354c05a621b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**トリガー** - ユーザーが操作してツールチップを表示するUIコントロール - 標準的な**情報アイコン（info-circle）**"
+      }
+    },
+    {
+      "segment_id": "74dd7937",
+      "source_content": "**Tip** - The triangle piece that points to the trigger element.",
+      "source_content_hash": "6ee609f122f10bb13c67622164a074c8d3b372659c5fc22260b206381ca7af41",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**チップ** - トリガー要素を指し示す三角形の部分。"
+      }
+    },
+    {
+      "segment_id": "5803caac",
+      "source_content": "**Body** - The container that houses the content of the tooltip.",
+      "source_content_hash": "f53982034777669121930d24114c43e6751be45f0fdd3a14f92e64821be90962",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**ボディ** - ツールチップのコンテンツを格納するコンテナ。"
+      }
+    },
+    {
+      "segment_id": "39db08de",
+      "source_content": "## Behaviors",
+      "source_content_hash": "cd4a64ac57da688c892c9d1dde696c00af3092a4a60f55e4ea176a0deeb555f4",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 動作"
+      }
+    },
+    {
+      "segment_id": "e33a2404",
+      "source_content": "### Triggers",
+      "source_content_hash": "c79bdd74972636decab7b3be25997b1c1fe72f6258f0782d72d3fa4468235217",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### トリガー"
+      }
+    },
+    {
+      "segment_id": "b264104e",
+      "source_content": "- Icons (commonly information icon)\n- Buttons\n- Links",
+      "source_content_hash": "c86f9b25e15f96ba9f4c644d0a5b5c44fec9ae6d81f17d1eed2a1488d9f00c7c",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- アイコン（一般的に情報アイコン）\n- ボタン\n- リンク"
+      }
+    },
+    {
+      "segment_id": "99d0dd9b",
+      "source_content": "### User Interactions",
+      "source_content_hash": "56f9e5611503ae4f1d288b309709ad1aa86f24f9af5b526173ff68ced742c317",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### ユーザー操作"
+      }
+    },
+    {
+      "segment_id": "d79a4831",
+      "source_content": "Tooltips are triggered when the mouse hovers over or focuses on the UI trigger. The tooltip persists as long as the mouse remains over the active container or the UI trigger, or there is focus on the active container or UI trigger. The tooltip is dismissed by hovering away or moving focus to another element.",
+      "source_content_hash": "dd6edc6005f453bc3db49954a877b650c395fc102a6544282d9119ac0c890531",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "ツールチップは、UIトリガーにマウスをホバーまたはフォーカスしたときに表示されます。ツールチップは、マウスがアクティブなコンテナまたはUIトリガー上にある間、またはアクティブなコンテナ/UIトリガーにフォーカスがある間表示され続けます。ツールチップは、ホバーを外すか、別の要素にフォーカスを移すことで非表示になります。"
+      }
+    },
+    {
+      "segment_id": "54bafb10",
+      "source_content": "## Related",
+      "source_content_hash": "630a5d69a70931054a3387840411306fb495280bfa0b3554006321cccbae0d00",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 関連コンポーネント"
+      }
+    },
+    {
+      "segment_id": "4be28ed1",
+      "source_content": "If interactive elements are needed, consider using a **[ToggleTip](/components/toggletip)**.",
+      "source_content_hash": "4fe61037d6e1cdfa3ff412f1c164e96d447e603901027c474c8a56f93130fc3a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "インタラクティブな要素が必要な場合は、**[トグルチップ（ToggleTip）](/components/toggletip)**の使用を検討してください。"
+      }
+    },
+    {
+      "segment_id": "f947c8e4",
+      "source_content": "### Further Reading & Sources",
+      "source_content_hash": "37196dc650fdb5bc8fd42c8dfeb22541acbf11893379b55c534799ab87551971",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 参考資料"
+      }
+    },
+    {
+      "segment_id": "38417f80",
+      "source_content": "- [Inclusive Components; Tooltips and Toggletips](https://inclusive-components.design/tooltips-toggletips/)\n- [NNG; Tooltip Guidelines](https://www.nngroup.com/articles/tooltip-guidelines/)\n- [Using the aria-describedby property to provide a descriptive label for user interface controls](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA1)\n- [Providing Accessible Names and Descriptions](https://www.w3.org/WAI/ARIA/apg/practices/names-and-descriptions/)",
+      "source_content_hash": "a9763b3955880128fba6393af859fda55076234d8dae16c8a17d377dc7d93684",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- [Inclusive Components; ツールチップとトグルチップ](https://inclusive-components.design/tooltips-toggletips/)\n- [NNG; ツールチップのガイドライン](https://www.nngroup.com/articles/tooltip-guidelines/)\n- [aria-describedbyプロパティを使用してユーザーインターフェースコントロールに説明的なラベルを提供する](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA1)\n- [アクセシブルな名前と説明の提供](https://www.w3.org/WAI/ARIA/apg/practices/names-and-descriptions/)"
+      }
+    },
+    {
+      "segment_id": "d87ff8e0",
+      "source_content": "<ComponentEmbed path=\"/story/overlays-tooltip--basic\" />",
+      "source_content_hash": "dfedc2020cc3a717b868bab0194fb676d1bae97ba26ddc7a7e8ee278cec3e0ec",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_d87ff8e0"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-docs/current/05-components/tooltip.mdx",
+  "last_updated_timestamp": "2025-06-06T08:53:12.748733+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "34c951aebc11e8eff5c90b88a310e898cdef66b4616b00a49cfd9ffa090079f5"
+  }
+}

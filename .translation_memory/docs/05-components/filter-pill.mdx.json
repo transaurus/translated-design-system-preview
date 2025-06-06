@@ -1,0 +1,72 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "docs/05-components/filter-pill.mdx",
+  "source_file_content_hash": "782ae491714af9e1136a62043f6eea3378d67888c4408900e63a1d0b5f1ba4de",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\ntitle: Filter Pill\ndescription: Grafana Labs Filter Pill component\ndraft: true\n---",
+      "source_content_hash": "19307274c7e5c070ec53b61ba4c295cbce1e5d45eb9041c5f8ca53b234e91e98",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "a703643c",
+      "source_content": "# FilterPill <Badge text='draft' color='orange'></Badge> <a href='https://developers.grafana.com/ui/latest/index.html?path=/story/general-filterpill--basic' target='_blank' className='header-links'>Storybook <Icon name=\"external-link-alt\"/> </a>",
+      "source_content_hash": "321d1400e19bbaf3a67ba7fb03bc57fc220c82ec8b44a137b4e4aa3debc7fb93",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "# FilterPill <Badge text='draft' color='orange'></Badge> <a href='https://developers.grafana.com/ui/latest/index.html?path=/story/general-filterpill--basic' target='_blank' className='header-links'>Storybook <Icon name=\"external-link-alt\"/> </a>"
+      }
+    },
+    {
+      "segment_id": "53eaf0e1",
+      "source_content": "A component used for quick toggling on/off filters. Mostly used in inline form components and transformation/query editors.",
+      "source_content_hash": "03e8bc89be9cbbd8063f38675b919d872de54b5842d13268b0dd0199b8ba34b3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "フィルターのオン/オフを素早く切り替えるためのコンポーネント。主にインラインフォームコンポーネントや変換/クエリエディターで使用されます。"
+      }
+    },
+    {
+      "segment_id": "88aa2da8",
+      "source_content": "<iframe\n  src=\"https://developers.grafana.com/ui/latest/index.html?path=/story/general-filterpill--basic&full=1&shortcuts=false&singleStory=true\"\n  width=\"100%\"\n  height=\"500px\"\n></iframe>",
+      "source_content_hash": "6af237a5f2445e60a0a647e0a505770d35c19e57adf1ac122bd555421193f0be",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_88aa2da8"
+      }
+    },
+    {
+      "segment_id": "3daf1b88",
+      "source_content": "## Usage",
+      "source_content_hash": "63bfd61a0561b255a2caa0a2e3add091ca7e327f2fa06a407cbb2ff341b858d8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 使用方法"
+      }
+    },
+    {
+      "segment_id": "940e34e3",
+      "source_content": "```jsx\nimport { FilterPill } from '@grafana/ui';\n\n<FilterPill label={'Test'} onClick={() => console.log('toggle')} />;\n```",
+      "source_content_hash": "74676e489fc6af1f686db6d58dcf3b9fb042739503a02f3d21a25b3bfb5f26eb",
+      "node_type": "code",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_940e34e3"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-docs/current/05-components/filter-pill.mdx",
+  "last_updated_timestamp": "2025-06-06T08:53:12.747645+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "782ae491714af9e1136a62043f6eea3378d67888c4408900e63a1d0b5f1ba4de"
+  }
+}

@@ -1,0 +1,192 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "docs/05-components/switch.mdx",
+  "source_file_content_hash": "1c16817d22af99702389fbafc9f27ac755fe6c6446d8b13e80409ca0386dea21",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\ntitle: Switch\ndescription: The Switch component is used to toggle between two states, typically representing an on/off or enabled/disabled state.\n---",
+      "source_content_hash": "f0091c94f66661c9d63a3c14a8c047f93fd075949a9e3e38b37c8770b3466789",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "b3de8742",
+      "source_content": "# Switch <Badge text='ready' color='green'></Badge> <StorybookLink path='/story/forms-switch--controlled' />",
+      "source_content_hash": "5ab0634e6c5ad3fac89db2efef002223de9ec28373174697b3a72baa13e37ba6",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "# スイッチ <Badge text='ready' color='green'></Badge> <StorybookLink path='/story/forms-switch--controlled' />"
+      }
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "The `Switch` component is used to toggle between two states, typically representing an on/off or enabled/disabled state.",
+      "source_content_hash": "4dc595a7218395aae447ed1c697c7dc9570461dd62e4cb86c4848e83148d27e2",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "`Switch`コンポーネントは、通常オン/オフや有効/無効といった2つの状態を切り替えるために使用されます。"
+      }
+    },
+    {
+      "segment_id": "1cc03ec8",
+      "source_content": "## When to Use",
+      "source_content_hash": "07933d588e413e733d6a8dd23c2a8d0a1d1f22a351438b584c3bb1c5ca610a65",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 使用する場面"
+      }
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "Use the `Switch` component when you need to provide users with the ability to toggle between two states, such as enabling or disabling a feature, setting preferences, or making binary choices.",
+      "source_content_hash": "41ebae55fc016c2091bcba748cb3403b9bb0f8d29bfa260aaddf7dc666baf32c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "機能の有効化/無効化、設定の変更、二者択一の選択肢を提供する場合など、ユーザーが2つの状態を切り替えられる必要がある場合に`Switch`コンポーネントを使用します。"
+      }
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "Switches trigger changes immediately. If your component should trigger a change only after sending a form, it's better to use either `RadioButtonGroup` or `Checkbox` instead.",
+      "source_content_hash": "b31637c58849d7a6685d9796d4d864d4f8365cd87f197d58ae98a7f80ff8891f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "スイッチは変更を即座に反映します。フォーム送信後にのみ変更を反映させたい場合は、`RadioButtonGroup`または`Checkbox`の使用を検討してください。"
+      }
+    },
+    {
+      "segment_id": "86b54d44",
+      "source_content": "Furthermore, switches cannot be grouped – each `Switch` triggers an independent state update. If you want multiple mutually exclusive choices, the `RadioButtonGroup` is the better option. To offer multiple choices within the same group or context which are not mutually exclusive, use `Checkbox` instead.",
+      "source_content_hash": "1549f4e13e6824312711c2f4009b837b0476d6f096e481390b2d9d87514f08b8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "さらに、スイッチはグループ化できません。各`Switch`は独立した状態更新をトリガーします。相互に排他的な複数の選択肢を提供したい場合は、`RadioButtonGroup`が適しています。同じグループまたはコンテキスト内で相互に排他的でない複数の選択肢を提供する場合は、代わりに`Checkbox`を使用してください。"
+      }
+    },
+    {
+      "segment_id": "d350c018",
+      "source_content": "## Implementation / Options",
+      "source_content_hash": "3a0afb06ad162cceca636b7c4095a0eb370acea7ea3534d4976e5a2cb174c458",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 実装/オプション"
+      }
+    },
+    {
+      "segment_id": "bc633244",
+      "source_content": "### Props",
+      "source_content_hash": "baa92851a939354e97720b8ba77c4bc4b0d775d18cc4530a40f19c053a1c52f9",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### プロパティ"
+      }
+    },
+    {
+      "segment_id": "2df4f75f",
+      "source_content": "The `Switch` component accepts the following props:",
+      "source_content_hash": "a3bd0b22ea2e635980cf58ec0a957d5fd4f88049ce3018ca1524c639d68f7d31",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "`Switch`コンポーネントは以下のプロパティを受け付けます:"
+      }
+    },
+    {
+      "segment_id": "8cf6d045",
+      "source_content": "- `value` (boolean, optional): Sets the initial value of the switch. When true, the switch is in the \"on\" state; when false, it is in the \"off\" state.\n- `transparent` (boolean, optional): Makes the switch's background and border transparent for inline use.\n- `invalid` (boolean, optional): Shows an invalid state around the input, typically for indicating errors.",
+      "source_content_hash": "4ee29f02395c10616bb8a18c3f34879956392753fccf27271bcf1b53ae1ddc4c",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- `value` (boolean, オプション): スイッチの初期値を設定します。trueの場合、スイッチは「オン」状態、falseの場合は「オフ」状態になります。\n- `transparent` (boolean, オプション): インライン使用のためにスイッチの背景と境界線を透明にします。\n- `invalid` (boolean, オプション): 入力周辺に無効状態を表示し、通常はエラーを示すために使用されます。"
+      }
+    },
+    {
+      "segment_id": "3c36424c",
+      "source_content": "### Example Usage",
+      "source_content_hash": "aa93022ea86aa0f7bb7551a9c7997ed6450f717c99b219575776307df8b32637",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 使用例"
+      }
+    },
+    {
+      "segment_id": "d06306f7",
+      "source_content": "### Switch",
+      "source_content_hash": "2636faf1cbf794130f8a8a13ed570f6688daecaa423cd75ae3e6184c9bd58770",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### スイッチ"
+      }
+    },
+    {
+      "segment_id": "b017063d",
+      "source_content": "```jsx live\n<Switch invalid={false} label=\"Toggle feature\" disabled={false} />\n```",
+      "source_content_hash": "b8b1efbb5464fc15c697258d176ce608e5a56bce6f9118c1ae96ddebf4ccdb4f",
+      "node_type": "code",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_b017063d"
+      }
+    },
+    {
+      "segment_id": "109ace10",
+      "source_content": "### InlineSwitch",
+      "source_content_hash": "32af94db73c0af0b0347d78651481fe1b0440e943ce1e8c763f44715bdcd0382",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### インラインスイッチ"
+      }
+    },
+    {
+      "segment_id": "4dd51304",
+      "source_content": "```jsx live\n<InlineSwitch />\n```",
+      "source_content_hash": "1be214520edc4bda16a7ad522f2d77a5aa83ef4d9d4930f71544bac49a79af3b",
+      "node_type": "code",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_4dd51304"
+      }
+    },
+    {
+      "segment_id": "8d04259b",
+      "source_content": "## Playground",
+      "source_content_hash": "54192e25d4cfb303fa3f3761b5d777cd0a2b671840c2cd9c87abb3ab38f58e62",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## プレイグラウンド"
+      }
+    },
+    {
+      "segment_id": "e2ae1ac7",
+      "source_content": "<ComponentEmbed path=\"/story/forms-switch--controlled\" />",
+      "source_content_hash": "6bea82b71c032a070a54aaebf79daae90790feb2dd2c5bafdc8e3d497b77ab8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_e2ae1ac7"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-docs/current/05-components/switch.mdx",
+  "last_updated_timestamp": "2025-06-06T08:53:12.755370+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "1c16817d22af99702389fbafc9f27ac755fe6c6446d8b13e80409ca0386dea21"
+  }
+}

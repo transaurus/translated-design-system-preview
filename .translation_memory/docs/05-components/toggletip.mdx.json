@@ -1,0 +1,352 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "docs/05-components/toggletip.mdx",
+  "source_file_content_hash": "6aa375f9c8cc11fd97e2007173b4ecdb62b15ed099742b7fe49f684eeb9e080e",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\ntitle: Toggletip\ndescription: Toggletips, similar to Tooltips, provide contextual support for users when needed. They are hidden by default, a UI trigger or text link is clicked to set them to their visible state.\nhide_title: true\n---",
+      "source_content_hash": "8953de8ced5c983237bde6e4190b13c941d4660a99dc7131ac978c6f7cf4a860",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "a703643c",
+      "source_content": "# Toggletip <Badge text='ready' color='green'></Badge> <StorybookLink path=\"/story/overlays-toggletip--basic\" />",
+      "source_content_hash": "8b38c80bb29909eccd734580cb4b92e1bd368486957c81fd32daa5375f63d2bb",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "# Toggletip <Badge text='ready' color='green'></Badge> <StorybookLink path=\"/story/overlays-toggletip--basic\" />"
+      }
+    },
+    {
+      "segment_id": "53eaf0e1",
+      "source_content": "Toggletips, similar to [Tooltips](/components/tooltip), provide contextual support for users when needed. They are hidden by default, a UI trigger or text link is clicked to set them to their visible state. Toggletips, unlike tooltips, are persistent until a user takes action to dismiss them by clicking on the required `X` (close) trigger.",
+      "source_content_hash": "57889c875c89bbaf22bba34f6728b7fbb3e91ed3ed24d8b85d2cc6c3f9cdb336",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Toggletipは[Tooltip](/components/tooltip)と同様に、ユーザーが必要な際にコンテキストサポートを提供します。デフォルトでは非表示になっており、UIトリガーまたはテキストリンクをクリックすることで表示状態になります。Tooltipとは異なり、Toggletipはユーザーが「X」（閉じる）トリガーをクリックして明示的に閉じるまで表示されたままになります。"
+      }
+    },
+    {
+      "segment_id": "43a8bc7e",
+      "source_content": "```tsx live\n<Toggletip\n  title={'Title of the Toggletip'}\n  content={'This is the content of the Toggletip'}\n  footer={'Footer of the Toggletip'}\n>\n  <Button>Click to show Toggletip with header and footer!</Button>\n</Toggletip>\n```",
+      "source_content_hash": "2e7652d77e8a33b1a60d6355ce7c0ea857f1a8fa8a628fe18046d34063a0f756",
+      "node_type": "code",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_43a8bc7e"
+      }
+    },
+    {
+      "segment_id": "418617bd",
+      "source_content": "## When to use",
+      "source_content_hash": "d57fe8233a0bcc964af649dd3059fbd5aa2ba0bba9b4b44f225cdd2f0dd1c432",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 使用するタイミング"
+      }
+    },
+    {
+      "segment_id": "2fdadb08",
+      "source_content": "Toggletips reveal **supplemental content** when a user clicks a button or another UI element and remains actively open until a user dismisses it.",
+      "source_content_hash": "c724308605387c080cf1e2af778bd8b2a06b2b407140cba91e21f3080b263734",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Toggletipは、ユーザーがボタンや他のUI要素をクリックしたときに**補足コンテンツ**を表示し、ユーザーが閉じるまでアクティブに開いたままになります。"
+      }
+    },
+    {
+      "segment_id": "ed7dde9c",
+      "source_content": "### Do's",
+      "source_content_hash": "008161705968c1d0413c660ae0e4ffc700a2dc52b83eb054133f9d4218531097",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 推奨する使い方"
+      }
+    },
+    {
+      "segment_id": "b3f5c97c",
+      "source_content": "- Use when further context is needed to understand a topic.\n- Link to supporting documentation or content via a link.\n- Use when an interactive element must be placed within a tooltip-like component.\n- Use content that needs to persist for users to reference until they dismiss it.\n- Use for content that is informational to what a user is actively working on.\n- Provide users ways to navigate to docs for further learning.",
+      "source_content_hash": "a78d108031264fbc9699cb9e01f6665029f224bcd4a03bb0d507bd7b83ebf688",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- トピックを理解するために追加のコンテキストが必要な場合に使用します。\n- サポートドキュメントやコンテンツへのリンクを提供します。\n- ツールチップのようなコンポーネント内にインタラクティブ要素を配置する必要がある場合に使用します。\n- ユーザーが参照できるように、閉じるまでコンテンツを保持する必要がある場合に使用します。\n- ユーザーが現在取り組んでいる内容に関連する情報を提供する場合に使用します。\n- さらに学習するためのドキュメントへのナビゲーション方法をユーザーに提供します。"
+      }
+    },
+    {
+      "segment_id": "a1b3d8cb",
+      "source_content": "### Don'ts",
+      "source_content_hash": "37ab6eb691c9d1c36bd5dbb1295c8878324b276d3841524f9fa68146a3f08116",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 非推奨の使い方"
+      }
+    },
+    {
+      "segment_id": "7a2e981c",
+      "source_content": "- Do not use if a user would be configuring, selecting, entering data, or editing content on a page through the toggletip.\n- Do not use when a [Tooltip](/components/tooltip) with clarifying text would suffice.\n- Do not house information critical to a user’s task completion.\n- Do not hide required information from a user to complete a task or workflow.\n- Do not use to surface actions to users.",
+      "source_content_hash": "00628c8d1a3078cf140e4f771dfe488aae45906486a4546df95ec8fcae6afeb6",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- ユーザーがページ上で設定、選択、データ入力、またはコンテンツの編集を行う場合には使用しないでください。\n- [Tooltip](/components/tooltip)で説明文を表示するだけで十分な場合には使用しないでください。\n- ユーザーのタスク完了に不可欠な情報を格納しないでください。\n- ユーザーがタスクやワークフローを完了するために必要な情報を隠さないでください。\n- ユーザーにアクションを表示するために使用しないでください。"
+      }
+    },
+    {
+      "segment_id": "8d04259b",
+      "source_content": "## Accessibility",
+      "source_content_hash": "5905e6d1f8fe9000c019119d1b35481573e90f36f72c18c510ba2efec231093d",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## アクセシビリティ"
+      }
+    },
+    {
+      "segment_id": "95e9ba12",
+      "source_content": "Toggletips are revealed by clicking rather than by hovering and focusing. It's important for them to prompt screen readers to announce the information after the click event.",
+      "source_content_hash": "9bf414c54d1cdf5bb82ae51b826a00f8518adae911a382765e031c74e83f4cf8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Toggletipはホバーやフォーカスではなく、クリックによって表示されます。クリックイベントの後にスクリーンリーダーが情報をアナウンスできるようにすることが重要です。"
+      }
+    },
+    {
+      "segment_id": "824626b3",
+      "source_content": "- Include [ARIA live region](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions).\n- Use **type=\"button\"** to avoid mistaking the trigger as a submit button.\n- Use a describable label or aria-label on the UI-Trigger to ensure the user understands what extra information is in the Toggletip content (i.e. “More information”).",
+      "source_content_hash": "b411b2e722bc0db1b4112d13a48f17ce89840d0a4616fcaa0a5b40421c2442c9",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- [ARIAライブリージョン](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions)を含めます。\n- トリガーが送信ボタンと誤解されないように、**type=\"button\"**を使用します。\n- UIトリガーに説明可能なラベルまたはaria-labelを使用し、ユーザーがToggletipコンテンツ内の追加情報を理解できるようにします（例：「詳細情報」）。"
+      }
+    },
+    {
+      "segment_id": "6d28a77c",
+      "source_content": "## Content",
+      "source_content_hash": "8a7454c28fea26099276cbed1827658cd2a47942d6ef32e76e645c81358bf357",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## コンテンツ"
+      }
+    },
+    {
+      "segment_id": "f7ef78f9",
+      "source_content": "Toggletips may contain a variety of information, from descriptive text to interactive elements such as buttons or links.",
+      "source_content_hash": "ca17ad361cbbd75d18d14d05d99795733c94d23e59b4a3ba104fae554f1176f3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Toggletipには、説明テキストからボタンやリンクなどのインタラクティブ要素まで、さまざまな情報を含めることができます。"
+      }
+    },
+    {
+      "segment_id": "60410af6",
+      "source_content": "## Behaviors",
+      "source_content_hash": "cd4a64ac57da688c892c9d1dde696c00af3092a4a60f55e4ea176a0deeb555f4",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 動作"
+      }
+    },
+    {
+      "segment_id": "2c1b51df",
+      "source_content": "### Triggers",
+      "source_content_hash": "c79bdd74972636decab7b3be25997b1c1fe72f6258f0782d72d3fa4468235217",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### トリガー"
+      }
+    },
+    {
+      "segment_id": "e3321a43",
+      "source_content": "- Toggletips display on:\n  - **User click** of UI trigger.\n  - Pressing **ENTER** or **SPACE** on a keyboard while the trigger element has focus.\n- Toggletips dismiss by:\n  - **User click** of the close icon (x) — optional.\n  - Clicking outside the popover container.\n  - Pressing the **ESC** key.",
+      "source_content_hash": "a2656cc4168dcd0a92d19b7d55b3f0b9140720fb8b6461480f67d6c50ba85b36",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- Toggletipは以下の場合に表示されます：\n  - UIトリガーの**ユーザークリック**。\n  - トリガー要素にフォーカスがある状態で**ENTER**または**SPACE**キーを押したとき。\n- Toggletipは以下の場合に閉じます：\n  - 閉じるアイコン（x）の**ユーザークリック**（オプション）。\n  - ポップオーバーコンテナの外側をクリックしたとき。\n  - **ESC**キーを押したとき。"
+      }
+    },
+    {
+      "segment_id": "8c6d7ee7",
+      "source_content": "### User Interactions",
+      "source_content_hash": "56f9e5611503ae4f1d288b309709ad1aa86f24f9af5b526173ff68ced742c317",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### ユーザーインタラクション"
+      }
+    },
+    {
+      "segment_id": "645e08e3",
+      "source_content": "- Toggletips are intended to house interactive elements within them. UI elements such as buttons, text links, dropdowns, etc. are able to be fully interacted with inside of the toggletip.",
+      "source_content_hash": "8a1dfa013e53cfb01251f5d68c3b12dccedd938bf214ff55cbe2e2aba620145e",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- Toggletipは内部にインタラクティブ要素を含めることを想定しています。ボタン、テキストリンク、ドロップダウンなどのUI要素は、Toggletip内で完全に操作可能です。"
+      }
+    },
+    {
+      "segment_id": "ee8401db",
+      "source_content": "### Scrolling",
+      "source_content_hash": "f73a955e1385c104d5ba3c2a0264a48489d0032d1d793954be7e00320d934f70",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### スクロール"
+      }
+    },
+    {
+      "segment_id": "76dbcc76",
+      "source_content": "- In the instance that a toggletip requires scrolling of content (e.g. with a dropdown) the header and the footer of the toggletip remain fixed with the body enabling scroll.",
+      "source_content_hash": "59bd4f2a3669d9352c5165678cc6826daddbe6163ff638e2bcaeb1ef999bd85f",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- Toggletipがコンテンツのスクロールを必要とする場合（例：ドロップダウンがある場合）、Toggletipのヘッダーとフッターは固定されたまま、ボディ部分がスクロール可能になります。"
+      }
+    },
+    {
+      "segment_id": "daed5acb",
+      "source_content": "### States",
+      "source_content_hash": "3537e9d887c6d473abebe638d9379e6cfd16bd30955fa8380ac0f9637719f0e3",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 状態"
+      }
+    },
+    {
+      "segment_id": "6cc549f2",
+      "source_content": "Toggletips have two states.",
+      "source_content_hash": "ea8816fc8a875338587e05b5496c0873aefa15f18a5691c5a5687372a01f4809",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Toggletipには2つの状態があります。"
+      }
+    },
+    {
+      "segment_id": "6384b3d4",
+      "source_content": "- Hidden — the default state of a toggletip.\n- Visible — state change is triggered by ui-trigger click or keyboard enter.",
+      "source_content_hash": "20b725bd0edd8d48e196792596ee1d68b5d4f3e396ced495642e3d32d588320e",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- 非表示 — Toggletipのデフォルト状態。\n- 表示 — UIトリガーのクリックまたはキーボードのENTERによって状態が変化します。"
+      }
+    },
+    {
+      "segment_id": "b936dd6a",
+      "source_content": "## Related",
+      "source_content_hash": "630a5d69a70931054a3387840411306fb495280bfa0b3554006321cccbae0d00",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 関連コンポーネント"
+      }
+    },
+    {
+      "segment_id": "536b7b6b",
+      "source_content": "- [Tooltip](/components/tooltip)",
+      "source_content_hash": "67bed241b2194bfd5bb8e6aa52d2ad12bc67302651437d909405010a14421478",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- [Tooltip](/components/tooltip)"
+      }
+    },
+    {
+      "segment_id": "0a103a02",
+      "source_content": "### Production Examples",
+      "source_content_hash": "1e1b642c5f5a6dee82967fdd7d3d2de70e2c2c674127241769e3eb7494577d1e",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 実装例"
+      }
+    },
+    {
+      "segment_id": "e032fbc6",
+      "source_content": "- [SLO guidance](https://www.figma.com/file/oaki8dAryJXWyZlw1g2wh0/SLO-creation?node-id=829%3A26026)",
+      "source_content_hash": "049212dc856d0b44c6c5216297c950fd8b6e4dc8a6e00ec6922d082a1db34b80",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- [SLOガイダンス](https://www.figma.com/file/oaki8dAryJXWyZlw1g2wh0/SLO-creation?node-id=829%3A26026)"
+      }
+    },
+    {
+      "segment_id": "3a8d2b95",
+      "source_content": "### Further Reading & Sources",
+      "source_content_hash": "37196dc650fdb5bc8fd42c8dfeb22541acbf11893379b55c534799ab87551971",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 参考資料"
+      }
+    },
+    {
+      "segment_id": "5803caac",
+      "source_content": "**Accessibility Resources:**",
+      "source_content_hash": "2e5b771f4740fa5b78ed241ab89b492676fbde8e1e741f4b680d4eec03884633",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**アクセシビリティ関連リソース:**"
+      }
+    },
+    {
+      "segment_id": "d0b8a6db",
+      "source_content": "- [Inclusive Components: Tooltips & Toggletips](https://inclusive-components.design/tooltips-toggletips/)\n- [Providing Accessible Names and Descriptions](https://www.w3.org/WAI/ARIA/apg/practices/names-and-descriptions/)",
+      "source_content_hash": "f173c5c54aeac61f6de284d905fd8adc5177a5e6c7e8416f5c712454a8cce9fd",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- [Inclusive Components: ツールチップとトグルチップ](https://inclusive-components.design/tooltips-toggletips/)\n- [アクセシブルな名前と説明の提供](https://www.w3.org/WAI/ARIA/apg/practices/names-and-descriptions/)"
+      }
+    },
+    {
+      "segment_id": "5baf88e2",
+      "source_content": "## Playground",
+      "source_content_hash": "54192e25d4cfb303fa3f3761b5d777cd0a2b671840c2cd9c87abb3ab38f58e62",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## プレイグラウンド"
+      }
+    },
+    {
+      "segment_id": "f9d6f2bf",
+      "source_content": "<ComponentEmbed path=\"path=/story/overlays-toggletip--basic\" />",
+      "source_content_hash": "7f8640ea922462afcea83982c5c1fe30550cfeea80ad41c8c8dbb06b86540711",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_f9d6f2bf"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-docs/current/05-components/toggletip.mdx",
+  "last_updated_timestamp": "2025-06-06T08:53:12.749379+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "6aa375f9c8cc11fd97e2007173b4ecdb62b15ed099742b7fe49f684eeb9e080e"
+  }
+}

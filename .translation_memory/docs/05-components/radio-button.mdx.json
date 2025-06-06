@@ -1,0 +1,172 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "docs/05-components/radio-button.mdx",
+  "source_file_content_hash": "5f7d68831b6f85a97474e452cecd940d56ead623aa6b23631475b2ea5c499d17",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\ntitle: RadioButtonList\ndescription: Grafana Labs Radio Button List component\nhide_title: true\ndraft: true\n---",
+      "source_content_hash": "75a8ac16b9108cb90e8a4b8bea482213b18b972c86bee81fa71285d5bcfae5d2",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "cc3c868d",
+      "source_content": "# RadioButtonList <Badge text='ready' color='green'></Badge> <a href='https://developers.grafana.com/ui/latest/index.html?path=/story/forms-radiobuttonlist--controlled-component' target='_blank' className='header-links'>Storybook <Icon name=\"external-link-alt\"/> </a>",
+      "source_content_hash": "4740e0d685016aecb78c2eeae67729d921771a560382f34a171e3b7c45efce0a",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "# RadioButtonList <Badge text='ready' color='green'></Badge> <a href='https://developers.grafana.com/ui/latest/index.html?path=/story/forms-radiobuttonlist--controlled-component' target='_blank' className='header-links'>Storybook <Icon name=\"external-link-alt\"/> </a>"
+      }
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "`RadioButtonList` is used to select a single value from multiple mutually exclusive options usually in a vertical manner.",
+      "source_content_hash": "88ef487a763d80e4000b5fb6d692e9c152a54f2a407c681df0f127ee9833c863",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "`RadioButtonList`は、複数の排他的なオプションから単一の値を選択するために使用され、通常は垂直方向にレイアウトされます。"
+      }
+    },
+    {
+      "segment_id": "321c5251",
+      "source_content": "<iframe\n  src=\"https://developers.grafana.com/ui/latest/index.html?path=/story/forms-radiobuttonlist--controlled-component&full=1&shortcuts=false&singleStory=true\"\n  width=\"100%\"\n  height=\"500px\"\n></iframe>",
+      "source_content_hash": "e7464c177e19a7b0dcb9ec841c97b98b08bff5dc02f95e63d8cb2fcf219f2b5c",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_321c5251"
+      }
+    },
+    {
+      "segment_id": "d350c018",
+      "source_content": "## When to use",
+      "source_content_hash": "d57fe8233a0bcc964af649dd3059fbd5aa2ba0bba9b4b44f225cdd2f0dd1c432",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 使用するタイミング"
+      }
+    },
+    {
+      "segment_id": "1acb9a05",
+      "source_content": "Use `RadioButtonList` for mutually exclusive selections.\nContrary to the [RadioButtonGroup](?path=/docs/forms-radiobuttongroup--radio-buttons) component, `RadioButtonList` can contain more than four options because by default it lays out the items vertically.",
+      "source_content_hash": "c6bacc8d98bb6de2ab7c07d30cfa82ea332100692157c77b71141b5a23c7ca55",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "排他的な選択を行う場合に`RadioButtonList`を使用します。\n[RadioButtonGroup](?path=/docs/forms-radiobuttongroup--radio-buttons)コンポーネントとは異なり、`RadioButtonList`はデフォルトで垂直にアイテムを配置するため、4つ以上のオプションを含めることができます。"
+      }
+    },
+    {
+      "segment_id": "2fdadb08",
+      "source_content": "This component should be used instead of [Select](?path=/docs/forms-select--basic) when there is a need for the user to see all of the options available without clicking and scrolling the dropdown.",
+      "source_content_hash": "f50f2c21979fcdf5b59382a153db3b968a400ecc1faf0aaf4f3ee6621248323d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "ユーザーがドロップダウンをクリックしてスクロールすることなく、利用可能なすべてのオプションを確認する必要がある場合は、[Select](?path=/docs/forms-select--basic)の代わりにこのコンポーネントを使用してください。"
+      }
+    },
+    {
+      "segment_id": "ed7dde9c",
+      "source_content": "## Usage",
+      "source_content_hash": "63bfd61a0561b255a2caa0a2e3add091ca7e327f2fa06a407cbb2ff341b858d8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 使用方法"
+      }
+    },
+    {
+      "segment_id": "fa430ad4",
+      "source_content": "### Basic radio group",
+      "source_content_hash": "4842e1377d439b7896dffe276de4612d9aec9ad109566461873ddb7fd4aff20f",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 基本的なラジオグループ"
+      }
+    },
+    {
+      "segment_id": "0c911872",
+      "source_content": "```jsx\nimport { RadioButtonList } from '@grafana/ui';\n\n<RadioButtonGroup options={...} value={...} onChange={...} />\n```",
+      "source_content_hash": "2b6913267a2f8b34176c2d470fef2927c24f79d08a1a555a9ab68126214bf798",
+      "node_type": "code",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_0c911872"
+      }
+    },
+    {
+      "segment_id": "f422383e",
+      "source_content": "### Disabled options",
+      "source_content_hash": "a098f569c553eaeb012e6f429621e01062151db47b06c66008a4b7c9efceeb90",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 無効なオプション"
+      }
+    },
+    {
+      "segment_id": "97ae4a01",
+      "source_content": "You can disable some options by passing them to the `disabledOptions` prop.\nKeep in mind the `disabledOptions` are compared with options' values by the `===` operator.",
+      "source_content_hash": "6752a87976773ea9cbc1987484eb8155521a6a2a0189546a192768e68bf996b8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "`disabledOptions`プロパティに渡すことで、一部のオプションを無効にすることができます。\n`disabledOptions`はオプションの値と`===`演算子で比較されることに注意してください。"
+      }
+    },
+    {
+      "segment_id": "a11df754",
+      "source_content": "```jsx\nimport { RadioButtonList } from '@grafana/ui';\n\nconst options = [\n  { label: 'Prometheus', value: 'prometheus' },\n  { label: 'Graphite', value: 'graphite' },\n  { label: 'Elastic', value: 'elastic' },\n  { label: 'InfluxDB', value: 'influx' },\n];\n\nconst disabledOptions = ['prometheus', 'elastic'];\n\n\n<RadioButtonGroup\n  options={options}\n  disabledOptions={disabledOptions}\n  value={...}\n  onChange={...}\n/>\n```",
+      "source_content_hash": "e280927cf2d053ad40bb1d054316ebb3b36de20c86a9f065f1de0f243a4686fd",
+      "node_type": "code",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_a11df754"
+      }
+    },
+    {
+      "segment_id": "e912d935",
+      "source_content": "### Changing layout",
+      "source_content_hash": "efa421d183c9500c746c0c0950a1bd243574faedfa1ff71692d1b625104c9065",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### レイアウトの変更"
+      }
+    },
+    {
+      "segment_id": "8b2a52b1",
+      "source_content": "The `RadioButtonList` layout uses CSS Grid, so it is effortless to split the list into multiple columns",
+      "source_content_hash": "b68dcd340b39e708cee77da82328941b6061bebc94a6c7edbcd5287d77375bc6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "`RadioButtonList`のレイアウトはCSS Gridを使用しているため、リストを複数の列に分割するのは簡単です。"
+      }
+    },
+    {
+      "segment_id": "7a577a50",
+      "source_content": "```jsx\nimport { RadioButtonList } from '@grafana/ui';\n\n<RadioButtonGroup\n  options={...}\n  value={...}\n  onChange={...}\n  className={css`\n    grid-template-columns: 1fr 1fr 1fr;\n  `}\n/>\n\n```",
+      "source_content_hash": "c0169eee22ff0acad14f586e7c14687873f6491d535e74e0cad2b11ef9df83da",
+      "node_type": "code",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_7a577a50"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-docs/current/05-components/radio-button.mdx",
+  "last_updated_timestamp": "2025-06-06T08:53:12.755089+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "5f7d68831b6f85a97474e452cecd940d56ead623aa6b23631475b2ea5c499d17"
+  }
+}

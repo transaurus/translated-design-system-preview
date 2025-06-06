@@ -1,0 +1,242 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "docs/05-components/interactive-table.mdx",
+  "source_file_content_hash": "d8138bcd9ad41dad4d74ef527582cd650b833fae95e502787445fe73bbafe6db",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\ntitle: InteractiveTable\ndescription: The table is used to display and select data efficiently. The table component allows for the display and modification of detailed information. With additional functionality it allows for batch editing, as needed by your feature’s users.\nhide_title: true\n---",
+      "source_content_hash": "fcb27df52fa50b71cb28fa553554a830becb6d376d8101c24af4fe2dcab5726c",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "a703643c",
+      "source_content": "# InteractiveTable <Badge text='ready' color='green'></Badge> <StorybookLink path='/story/experimental-interactivetable--docs' />",
+      "source_content_hash": "1abda4fb76fdd1df4068ee04d0dd985cf3f7bdfcb3027feee9c4d527fb986cc7",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "# InteractiveTable <Badge text='ready' color='green'></Badge> <StorybookLink path='/story/experimental-interactivetable--docs' />"
+      }
+    },
+    {
+      "segment_id": "53eaf0e1",
+      "source_content": "The table is used to display and select data efficiently. The table component allows for the display and modification of detailed information. With additional functionality it allows for batch editing, as needed by your feature’s users.",
+      "source_content_hash": "56cd9c0a171bb6e1ed5aa781a3bebf833056815644f6f3227f3b1aae5533eea0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "テーブルはデータを効率的に表示・選択するために使用されます。このテーブルコンポーネントでは、詳細な情報の表示と変更が可能です。追加機能により、ユーザーのニーズに応じて一括編集も行えます。"
+      }
+    },
+    {
+      "segment_id": "8a5f6a7b",
+      "source_content": "## Usage",
+      "source_content_hash": "63bfd61a0561b255a2caa0a2e3add091ca7e327f2fa06a407cbb2ff341b858d8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 使用法"
+      }
+    },
+    {
+      "segment_id": "b9c7a144",
+      "source_content": "```tsx live noInline\nconst data = [\n  { size: 'Small', width: '24px', fontSize: '12px' },\n  { size: 'Medium', width: '32px', fontSize: '14px' },\n  { size: 'Large', width: '48px', fontSize: '18px' },\n];\nconst columns = [\n  { id: 'size', header: 'Size' },\n  { id: 'width', header: 'Width' },\n  { id: 'fontSize', header: 'Font Size' },\n];\nrender(<InteractiveTable columns={columns} data={data} />);\n```",
+      "source_content_hash": "d139b812cf41ac09cc0f4eb7dd3fb72089189838d35bc4f83862045f1f77c0e2",
+      "node_type": "code",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_b9c7a144"
+      }
+    },
+    {
+      "segment_id": "fa430ad4",
+      "source_content": "### Do’s",
+      "source_content_hash": "96969fa9c3edac6b2a52fa582cc432e51609894e1c5870efe82c9f4fe7f06ad6",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 推奨事項"
+      }
+    },
+    {
+      "segment_id": "77bf3ec9",
+      "source_content": "- Use the table for admin user persona-centric workflows.\n- Use the table for batch selection and manipulation/editing of multiple rows of data.\n- Pagination works best when users are searching for specific pieces of content. Infinite scroll is more suitable for content exploration.\n- Use infinite scroll when the primary workflow involves exploration.\n- Conduct a use case analysis to determine what information should be in the primary table and what can be moved to the expanded section to declutter the overall UI.",
+      "source_content_hash": "28ec79a6a152fde8c75f7338944cfea7ed92bd57d5354518a55e80d5f0e4d267",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- 管理者ユーザー向けのワークフローでテーブルを使用する\n- 複数行のデータを一括選択・操作/編集する場合に使用する\n- 特定のコンテンツを検索する場合、ページネーションが最適。コンテンツ探索には無限スクロールが適している\n- 主なワークフローが探索である場合、無限スクロールを使用する\n- ユースケース分析を行い、主テーブルに表示すべき情報と展開セクションに移動可能な情報を決定し、UI全体の煩雑さを軽減する"
+      }
+    },
+    {
+      "segment_id": "f422383e",
+      "source_content": "### Don’ts",
+      "source_content_hash": "10a29e689467403a41094904f95701105e5679d03a4d001390e97ed74a34be5c",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 非推奨事項"
+      }
+    },
+    {
+      "segment_id": "5d66c9dc",
+      "source_content": "- Do not use the InteractiveTable in dashboards or panels.\n- Avoid using the table where mobile or responsiveness is a requirement. Consider an alternative pattern where the user is presented with a summary list and can click/tap to access an individual page for each row in that list.\n- Don't duplicate batch editing controls in the expanded row section.",
+      "source_content_hash": "3652d939e3b0f708d15abeece3d033578c2d4fab39cee4f76cd013139a8e89f9",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- ダッシュボードやパネルでInteractiveTableを使用しない\n- モバイルやレスポンシブ対応が必要な場面では使用を避け、代わりに要約リストと個別ページへのアクセスを提供するパターンを検討する\n- 展開行セクションに一括編集コントロールを重複させない"
+      }
+    },
+    {
+      "segment_id": "9f9e64f5",
+      "source_content": "## Considerations",
+      "source_content_hash": "c1167edaded28b1a9ce749b93678a4ea2071a41e5adb085ffa711c5f4556f0fd",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 考慮事項"
+      }
+    },
+    {
+      "segment_id": "1042b50d",
+      "source_content": "The InteractiveTable component supports workflows where the user needs to manipulate potentially large datasets. In its simplest form it allows for batch selection of existing data for further processing within a larger workflow. Its capabilities can be expanded to enable dataset creation as well as batch editing.",
+      "source_content_hash": "d4af3f311d7c65f36b7971c8e6772d2eaa287c6b2546b7543f38b919fbc949fb",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "InteractiveTableコンポーネントは、大規模なデータセットを操作する必要があるワークフローをサポートします。最もシンプルな形では、既存データの一括選択とさらなる処理が可能です。機能を拡張することで、データセットの作成や一括編集も可能になります。"
+      }
+    },
+    {
+      "segment_id": "aa1e7006",
+      "source_content": "The table will typically be complemented by a section above to support either read-only & editing workflows. Read-only tables will usually have a summary of specific properties or calculated attributes of the dataset. Depending on the feature under design there may be import/export options. For editing workflows users will add new rows to the table below. There will also be batch edit options for existing rows in the header section.",
+      "source_content_hash": "2b3e8e3218b95e364b7cdfd3ab70bb8b4dd6669773d04867342d45a42d8cbdd9",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "テーブルは通常、読み取り専用または編集ワークフローをサポートする上部セクションで補完されます。読み取り専用テーブルには通常、データセットの特定のプロパティや計算属性の要約が表示されます。設計中の機能によっては、インポート/エクスポートオプションが含まれる場合があります。編集ワークフローでは、ユーザーがテーブル下部に行を追加します。既存行に対する一括編集オプションもヘッダーセクションに配置されます。"
+      }
+    },
+    {
+      "segment_id": "13d9cd70",
+      "source_content": "Individual rows can be expanded to display additional details or reconfigure properties previously defined when the row was created. In the case of editing a row, the UI presented should be a duplicate of the header section above the table used to create the row. In the case where a property can no longer be edited it should still be displayed but disabled/greyed out. The expanded row area should be used to declutter the primary presentation of data. Carefully consider what the user needs to know at first glance and what can be hidden behind the Row Expander button. In general, data-types that are consistent across all dataset are in the primary table, variances are pushed to the expanded section for each individual row.",
+      "source_content_hash": "0bc8d3007fce8b002f78e1944ce71ac416dd0582141df9b38f383ad8409ec112",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "個々の行を展開して追加の詳細を表示したり、行作成時に定義されたプロパティを再設定できます。行を編集する場合、表示されるUIは行作成時に使用されたヘッダーセクションの複製であるべきです。編集不可のプロパティは表示されたまま無効化/グレーアウトする必要があります。展開行エリアは、データの主要表示を整理するために使用します。一目で確認すべき情報と行展開ボタンの背後に隠す情報を慎重に検討してください。一般的に、データセット全体で一貫したデータ型は主テーブルに、バリエーションは各行の展開セクションに配置します。"
+      }
+    },
+    {
+      "segment_id": "29528c8d",
+      "source_content": "It is important to understand and define these as requirements for the feature under design as the InteractiveTable **is not responsive and will not provide good UX on small or touch screens.**",
+      "source_content_hash": "20b1a58e13d17e9bfe4f2c95f950e9a481fc7d6ebd4fc2e0956bdf6679601504",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "設計中の機能に対する要件としてこれらを理解・定義することが重要です。InteractiveTableは**レスポンシブではなく、小型画面やタッチスクリーンでは良好なUXを提供しません**。"
+      }
+    },
+    {
+      "segment_id": "11c76fcc",
+      "source_content": "## Content",
+      "source_content_hash": "8a7454c28fea26099276cbed1827658cd2a47942d6ef32e76e645c81358bf357",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## コンテンツ"
+      }
+    },
+    {
+      "segment_id": "36b6db6e",
+      "source_content": "| Element                         | Details                                                                                                                                                                                                                                                                                                                |\n| ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n| **Tri-state batch selector**    | The tri-state checkbox **can be checked, not checked, or partially checked.** The condition of being partially checked is based on the selection of child elements. If all child elements are selected, the parent checkbox is checked. If some child elements are selected, the parent checkbox is partially checked. |\n| **Row selector**                | Select, deselect row                                                                                                                                                                                                                                                                                                   |\n| **Row expand/collapse**         | The expander control is used to show and hide additional details and potentially controls/modifiers. and therefore declutter your app                                                                                                                                                                                  |\n| **Row details**                 | This section is utilised to either show additional details or to provide the user with row specific controls or modifiers. Typically batch editing controls found outside the table should not be duplicated here.                                                                                                     |\n| **Column Label**                | Descriptive identifier or header assigned to a column                                                                                                                                                                                                                                                                  |\n| **Column Sort**                 | Sort alphabetically, numerically etc.                                                                                                                                                                                                                                                                                  |\n| **Row level Read-Only actions** | Duplicate                                                                                                                                                                                                                                                                                                              |\n| **Row level Editing action**    | Duplicate, Delete                                                                                                                                                                                                                                                                                                      |",
+      "source_content_hash": "3b0a783f984222cd48dc05caf6dcc7f1c3f61b115083e880c37ea8a835f0aef5",
+      "node_type": "table",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_36b6db6e"
+      }
+    },
+    {
+      "segment_id": "c315c636",
+      "source_content": "## Typical Workflows",
+      "source_content_hash": "cdb5f84d2744d0ed4d00d1af820719d264b9c161634f146251e949d9e14ecd7c",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 典型的なワークフロー"
+      }
+    },
+    {
+      "segment_id": "8c6d7ee7",
+      "source_content": "### Mixed Read-only & Editing",
+      "source_content_hash": "27ab4647cdc73a8fec751dfb0c73c1ae08c5df2e9c11131340e4434801818894",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 読み取り専用と編集の混合"
+      }
+    },
+    {
+      "segment_id": "06e24cc0",
+      "source_content": "Where a table has a mix of read-only and editable elements, when the user selects read-only elements the editing batch operations above the table become disabled. Consider adding a column to indicate which rows are editable and which are read-only.",
+      "source_content_hash": "60c10819b3a87e15276a9b655a36ea767cef1d58c16e308390148afff9664e03",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "テーブルに読み取り専用要素と編集可能要素が混在している場合、ユーザーが読み取り専用要素を選択すると、テーブル上部の編集一括操作が無効になります。どの行が編集可能でどの行が読み取り専用かを示す列を追加することを検討してください。"
+      }
+    },
+    {
+      "segment_id": "ee8401db",
+      "source_content": "## Related",
+      "source_content_hash": "630a5d69a70931054a3387840411306fb495280bfa0b3554006321cccbae0d00",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 関連情報"
+      }
+    },
+    {
+      "segment_id": "76dbcc76",
+      "source_content": "- [Visualizations Table Storybook](https://developers.grafana.com/ui/canary/index.html?path=/story/visualizations-table--bar-gauge-cell)\n- [Catalog of other table implementation at Grafana](https://docs.google.com/document/d/11dpltzvNmBzL00CU4yp4S9ofmpJC4bl0MREFRlsCOcw/edit) (internal only)",
+      "source_content_hash": "0bf1d55d073b5108e930b07572239ea532a8f492d59df1af027302f847d24155",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- [Visualizations Table Storybook](https://developers.grafana.com/ui/canary/index.html?path=/story/visualizations-table--bar-gauge-cell)\n- [Grafanaにおける他のテーブル実装のカタログ](https://docs.google.com/document/d/11dpltzvNmBzL00CU4yp4S9ofmpJC4bl0MREFRlsCOcw/edit) (社内限定)"
+      }
+    },
+    {
+      "segment_id": "b1cbdb65",
+      "source_content": "## Playground",
+      "source_content_hash": "54192e25d4cfb303fa3f3761b5d777cd0a2b671840c2cd9c87abb3ab38f58e62",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## プレイグラウンド"
+      }
+    },
+    {
+      "segment_id": "568a7359",
+      "source_content": "<ComponentEmbed path=\"/story/experimental-interactivetable--docs\" />",
+      "source_content_hash": "1d805889a2b1059f88f340da5bcf23172e7f7ed29c6d15ede1ae08f3bc560102",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_568a7359"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-docs/current/05-components/interactive-table.mdx",
+  "last_updated_timestamp": "2025-06-06T08:53:12.759325+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "d8138bcd9ad41dad4d74ef527582cd650b833fae95e502787445fe73bbafe6db"
+  }
+}

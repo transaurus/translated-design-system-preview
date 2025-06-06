@@ -1,0 +1,252 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "docs/05-components/select.mdx",
+  "source_file_content_hash": "5ac86ddca08f8aa00c4473b62dcd558f991026f07c51089269ee1e75e5f88821",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\ntitle: Select\ndescription: The Select component is a customizable select input component that allows users to select one or more options from a dropdown list.\n---",
+      "source_content_hash": "545dfef2fdb7823e0116a1c4ea4009d70bae2afa6a522d500f9ef5c085a61d58",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "b3de8742",
+      "source_content": "# Select <Badge text='ready' color='green'></Badge> <StorybookLink path='/story/forms-select--basic' />",
+      "source_content_hash": "bb3a12209a86113dc375ac8fa3839cd2074123000ff668ca14b855f4d6db4f7a",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "# Select <Badge text='ready' color='green'></Badge> <StorybookLink path='/story/forms-select--basic' />"
+      }
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "The Select component is a customizable select input component that allows users to select one or more options from a dropdown list. It is built on top of the [react-select](https://react-select.com/) library.",
+      "source_content_hash": "f193540265e5d0ce2b9efe1c8f3e967c2b836e8cb1b1fd4c803a148996f5adf8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Selectコンポーネントは、ユーザーがドロップダウンリストから1つまたは複数のオプションを選択できるカスタマイズ可能なセレクト入力コンポーネントです。[react-select](https://react-select.com/)ライブラリを基盤として構築されています。"
+      }
+    },
+    {
+      "segment_id": "1cc03ec8",
+      "source_content": "## When to use",
+      "source_content_hash": "d57fe8233a0bcc964af649dd3059fbd5aa2ba0bba9b4b44f225cdd2f0dd1c432",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 使用する場面"
+      }
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "This component is particularly useful when you have a large number of options to choose from. Additionally, consider using Select in favor of radio button components when you have more than 4 options to choose from.",
+      "source_content_hash": "0508add4aa5d3dae6764d6c82dea9edbe8fd8f84d29d2b63505d4ec639df6da8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "このコンポーネントは、選択肢の数が多い場合に特に有用です。また、選択肢が4つ以上ある場合には、ラジオボタンコンポーネントの代わりにSelectを使用することを検討してください。"
+      }
+    },
+    {
+      "segment_id": "70153c6e",
+      "source_content": "## Types and Behaviors",
+      "source_content_hash": "b90359698fa5684efb4be758e1e814d8607d08ed24f820399d51edc79ab2526b",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## タイプと動作"
+      }
+    },
+    {
+      "segment_id": "cbe57f9d",
+      "source_content": "### Basic Select",
+      "source_content_hash": "5d5a5a0073a70824ad0545418d3b396e0545d90cb56b46e133061edbe657387c",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 基本のSelect"
+      }
+    },
+    {
+      "segment_id": "39b3772c",
+      "source_content": "The Select component can be used to create a basic select input that allows users to select one option from a dropdown list. The `isClearable` prop can be used to allow the selected value(s) to be cleared. The `isLoading` prop can be used to indicate that the select input is in a loading state.",
+      "source_content_hash": "cb33554f4b359f2f04ed622a0f4e1fd89b51b8a194ec84c3e8b4ba076db35215",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Selectコンポーネントは、ユーザーがドロップダウンリストから1つのオプションを選択できる基本的なセレクト入力を作成するために使用できます。`isClearable`プロップを使用すると、選択された値をクリアできるようになります。`isLoading`プロップは、セレクト入力がロード中であることを示すために使用できます。"
+      }
+    },
+    {
+      "segment_id": "166426c2",
+      "source_content": "```tsx live noInline\nconst Basic = () => {\n  const [value, setValue] = React.useState<SelectableValue<string>>();\n  const options = [\n    { label: 'Option 1', value: '1' },\n    { label: 'Option 2', value: '2' },\n    { label: 'Option 3', value: '3' },\n  ];\n\n  return (\n    <Container>\n      <Select\n        options={options}\n        value={value}\n        onChange={(v) => {\n          setValue(v);\n        }}\n      />\n    </Container>\n  );\n};\n\nrender(<Basic />);\n```",
+      "source_content_hash": "cdedf2354e380ffebbb9498358e3a1e591faa7cd09876054dcd6bc142ec9dae8",
+      "node_type": "code",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_166426c2"
+      }
+    },
+    {
+      "segment_id": "35a77014",
+      "source_content": "### Multi Select",
+      "source_content_hash": "2dd08cc1ad938af05e6168ded868cabfcc4ea35d43e0b379311d4dd6d13b211d",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 複数選択（Multi Select）"
+      }
+    },
+    {
+      "segment_id": "13d9cd70",
+      "source_content": "The Select component can be configured to allow users to select multiple options from a dropdown list. The `isMulti` prop must be set to true to enable this behavior. The `maxVisibleValues` prop can be used to limit the number of selected values to display. The `showAllSelectedWhenOpen` prop can be used to display all selected values when the dropdown list is open.",
+      "source_content_hash": "1a16944e70f95e032df9c0ef4361045cd48ba9b4e807f28012d91456c72c8e04",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Selectコンポーネントは、ユーザーがドロップダウンリストから複数のオプションを選択できるように設定できます。この動作を有効にするには、`isMulti`プロップをtrueに設定する必要があります。`maxVisibleValues`プロップを使用すると、表示する選択値の数を制限できます。`showAllSelectedWhenOpen`プロップを使用すると、ドロップダウンリストが開いているときにすべての選択値を表示できます。"
+      }
+    },
+    {
+      "segment_id": "6f930b2f",
+      "source_content": "### Async Select",
+      "source_content_hash": "ef84b5b295aa7d2799f245ceea917e2b5d9eb0bc753a4c9599b37b3093ad930f",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 非同期選択（Async Select）"
+      }
+    },
+    {
+      "segment_id": "c504c207",
+      "source_content": "The Select component can be configured to allow users to select one or more options from a dropdown list that is populated asynchronously. The `loadOptions` prop must be set to a function that returns a promise that resolves to an array of options. The `defaultOptions` prop can be used to provide options that are displayed before the user starts typing. In this case the options will be loaded on component mount. The `cacheOptions` prop can be used to cache the options that are loaded asynchronously.",
+      "source_content_hash": "73b1af1ef6dd914d36cd9ff7134dba1086c2f7f5d09741433ed74bc454e2e437",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Selectコンポーネントは、非同期に読み込まれるドロップダウンリストからユーザーが1つまたは複数のオプションを選択できるように設定できます。`loadOptions`プロップは、オプションの配列に解決されるPromiseを返す関数に設定する必要があります。`defaultOptions`プロップを使用すると、ユーザーが入力を開始する前に表示されるオプションを提供できます。この場合、オプションはコンポーネントのマウント時に読み込まれます。`cacheOptions`プロップを使用すると、非同期に読み込まれたオプションをキャッシュできます。"
+      }
+    },
+    {
+      "segment_id": "ac961110",
+      "source_content": "```tsx live noInline\nconst loadAsyncOptions = (inputValue: string) => {\n  return new Promise<Array<SelectableValue<string>>>((resolve) => {\n    setTimeout(() => {\n      resolve([\n        { label: 'Option 1', value: '1' },\n        { label: 'Option 2', value: '2' },\n        { label: 'Option 3', value: '3' },\n      ]);\n    }, 1000);\n  });\n};\n\nconst BasicSelectAsync = () => {\n  const [value, setValue] = React.useState<SelectableValue<string>>();\n\n  return (\n    <Container>\n      <AsyncSelect loadOptions={loadAsyncOptions} defaultOptions value={value} onChange={setValue} />\n    </Container>\n  );\n};\n\nrender(<BasicSelectAsync />);\n```",
+      "source_content_hash": "5f5552e63ae982f2c23b940e9ce03747ac8d73c2c238f0a96479f8c669c147a3",
+      "node_type": "code",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_ac961110"
+      }
+    },
+    {
+      "segment_id": "58ed925f",
+      "source_content": "### Creating custom values",
+      "source_content_hash": "978712ac57907fd1d11a37143776c277b5ec39536437cd2241f266c2be24b83d",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### カスタム値の作成"
+      }
+    },
+    {
+      "segment_id": "463ed165",
+      "source_content": "The Select component can be configured to allow users to create new options. The `allowCustomValue` prop must be set to true to enable this behavior. Additionally, the `onCreateOption` prop must be set to a function that is called when the user creates a new option.",
+      "source_content_hash": "c680bfbe7733f44dbcb0059ad3665d63b15c9c2f2030dda9cf675ba9aad9a7fd",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Selectコンポーネントは、ユーザーが新しいオプションを作成できるように設定できます。この動作を有効にするには、`allowCustomValue`プロップをtrueに設定する必要があります。さらに、`onCreateOption`プロップは、ユーザーが新しいオプションを作成したときに呼び出される関数に設定する必要があります。"
+      }
+    },
+    {
+      "segment_id": "092b29bb",
+      "source_content": "```tsx live noInline\nconst CustomValueCreation = () => {\n  const [value, setValue] = React.useState<SelectableValue<string>>();\n  const [customOptions, setCustomOptions] = React.useState<Array<SelectableValue<string>>>([]);\n  const options = [\n    { label: 'Option 1', value: '1' },\n    { label: 'Option 2', value: '2' },\n    { label: 'Option 3', value: '3' },\n  ];\n  return (\n    <Container>\n      <Select\n        options={[...options, ...customOptions]}\n        value={value}\n        onChange={(v) => {\n          setValue(v);\n        }}\n        allowCustomValue\n        onCreateOption={(v) => {\n          const customValue: SelectableValue<string> = { value: v, label: v };\n          setCustomOptions([...customOptions, customValue]);\n          setValue(customValue);\n        }}\n      />\n    </Container>\n  );\n};\n\nrender(<CustomValueCreation />);\n```",
+      "source_content_hash": "4e0804cc72d93bf198dfa45f1e9bfd5e547222faa8c656e9730b3b5cbf1c90ce",
+      "node_type": "code",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_092b29bb"
+      }
+    },
+    {
+      "segment_id": "ab39e8a7",
+      "source_content": "### Virtualized option list",
+      "source_content_hash": "9246de6c64737e99c78f991fad759f14263a5e42ad4ba48994cfc1a5d62b48ef",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 仮想化されたオプションリスト"
+      }
+    },
+    {
+      "segment_id": "d21af28f",
+      "source_content": "The Select component can be configured to use virtualized option list. The `virtualized` prop must be set to true to enable this behavior. The `maxVisibleValues` prop can be used to limit the number of selected values to display. The `showAllSelectedWhenOpen` prop can be used to display all selected values when the dropdown list is open. The `isClearable` prop can be used to allow the selected value(s) to be cleared. The `isLoading` prop can be used to indicate that the select input is in a loading state.",
+      "source_content_hash": "1cb739c0d7957bd84dcd377e461d9dbb84da634e6ade03ed91fc3faedf35d552",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Selectコンポーネントは、仮想化されたオプションリストを使用するように設定できます。この動作を有効にするには、`virtualized`プロップをtrueに設定する必要があります。`maxVisibleValues`プロップを使用すると、表示する選択値の数を制限できます。`showAllSelectedWhenOpen`プロップを使用すると、ドロップダウンリストが開いているときにすべての選択値を表示できます。`isClearable`プロップを使用すると、選択された値をクリアできるようになります。`isLoading`プロップは、セレクト入力がロード中であることを示すために使用できます。"
+      }
+    },
+    {
+      "segment_id": "f8614e13",
+      "source_content": "### Adding icons to Select",
+      "source_content_hash": "8f17868dd5c1374af86c60e5bf6e4431ed79747c51db60748ecf74010e19ab1e",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### Selectにアイコンを追加"
+      }
+    },
+    {
+      "segment_id": "396efb28",
+      "source_content": "A custom icon can be added to Select, which will be displayed before the selected value, by using a `prefix` prop.",
+      "source_content_hash": "d031a162b71cc5da66f0dd1424fd0de2d4c857cc327a8ffd3ff6e4a94a4623dc",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "`prefix`プロップを使用することで、選択された値の前に表示されるカスタムアイコンをSelectに追加できます。"
+      }
+    },
+    {
+      "segment_id": "b27056c4",
+      "source_content": "```tsx live noInline\nconst SelectWithIcon = () => {\n  const [value, setValue] = React.useState<SelectableValue<string>>();\n  return (\n    <Container>\n      <Select\n        options={[\n          { label: 'Option 1', value: '1' },\n          { label: 'Option 2', value: '2' },\n          { label: 'Option 3', value: '3' },\n        ]}\n        value={value}\n        onChange={setValue}\n        prefix={<Icon name={'arrow-down'} />}\n      />\n    </Container>\n  );\n};\n\nrender(<SelectWithIcon />);\n```",
+      "source_content_hash": "b160e3bab0040c606e8cd7186d6ddda7228cc9cc0933c09925ed17b57b6ed14c",
+      "node_type": "code",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_b27056c4"
+      }
+    },
+    {
+      "segment_id": "0d5321b7",
+      "source_content": "## Playground",
+      "source_content_hash": "54192e25d4cfb303fa3f3761b5d777cd0a2b671840c2cd9c87abb3ab38f58e62",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## プレイグラウンド"
+      }
+    },
+    {
+      "segment_id": "dc7a93fa",
+      "source_content": "<ComponentEmbed path=\"/story/forms-select--basic\" />",
+      "source_content_hash": "c3db166992d4a7042b83c6c27107d00d76ee8e6f3221112ae2f40ddd37828c78",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_dc7a93fa"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-docs/current/05-components/select.mdx",
+  "last_updated_timestamp": "2025-06-06T08:53:12.758072+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "5ac86ddca08f8aa00c4473b62dcd558f991026f07c51089269ee1e75e5f88821"
+  }
+}

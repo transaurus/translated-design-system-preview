@@ -1,0 +1,172 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "docs/03-foundations/design-principles.mdx",
+  "source_file_content_hash": "23db3f71cb645ae084a9e5bb5bd69ab67d2f3ca11685bd5f366823f350629924",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\ntitle: Design Principles\ndescription: Design principles empower designers and developers across the organization to make design decisions in the same manner regardless of the decision makers.\nhide_title: true\n---",
+      "source_content_hash": "68e4614d2211cadc504247288f61b19efa42c4eb6149a00fa3202bacf9538171",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "10c4cb47",
+      "source_content": "import { Badge } from '@grafana/ui';",
+      "source_content_hash": "af7b58551bb42fea6572a2bde03c95c99d8529feeec9e1a0d48c3da4f931ca67",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_10c4cb47"
+      }
+    },
+    {
+      "segment_id": "d912d376",
+      "source_content": "# Design Principles <Badge text='draft' color='orange'></Badge>",
+      "source_content_hash": "7eb640f2759b332dca63053ea47e787abcf04eed1d08e59548d56d378a72d75e",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "# デザイン原則 <Badge text='draft' color='orange'></Badge>"
+      }
+    },
+    {
+      "segment_id": "8ac585fb",
+      "source_content": "Design principles empower designers and developers across the organization to make design decisions in the same manner regardless of the decision makers. Rooting product and design decisions in these consistent manners will help with consistency by having the same perspective to various problems.",
+      "source_content_hash": "9f88793440c0685ce96da1dd755b4cd957dda2511f4222fb8c7fc7d76c4eec32",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "デザイン原則は、組織内のデザイナーや開発者が、意思決定者に関わらず同じ方法でデザイン決定を行えるようにするものです。製品やデザインの決定をこれらの一貫した方法に根ざすことで、さまざまな問題に対して同じ視点を持つことで一貫性を保つのに役立ちます。"
+      }
+    },
+    {
+      "segment_id": "ba4f48ff",
+      "source_content": "## Task-at-Hand",
+      "source_content_hash": "df371e5fdf790d3ac5aebffc7a816d883125b2361cf28bf10b8ddc317e6d7fe1",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## タスク優先"
+      }
+    },
+    {
+      "segment_id": "cf898102",
+      "source_content": "Anchor design decisions on the user’s primary task or focus, to make sure the user can complete those tasks easily, not overwhelmed by unrelated UI clutter or user flows.",
+      "source_content_hash": "e5091c9486fb72a0b48e3788b2256ae107270eae88e689e5608eb7688812ca01",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "ユーザーの主要なタスクや焦点にデザイン決定を基づかせ、ユーザーがそれらのタスクを簡単に完了できるようにします。無関係なUIの雑多さやユーザーフローによって圧倒されないようにします。"
+      }
+    },
+    {
+      "segment_id": "42ad8e83",
+      "source_content": "**Our UI should help users complete their tasks, not hinder them.**",
+      "source_content_hash": "3ae2b8b45e779e7f3089e36cfb6da68e92fa88e6eba338e0ffbb78c01e0a91b9",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**私たちのUIは、ユーザーがタスクを完了するのを助けるべきであり、妨げるべきではありません。**"
+      }
+    },
+    {
+      "segment_id": "aee0e40d",
+      "source_content": "## Tasteful Friction",
+      "source_content_hash": "483389b95d7ed759752281a388068a1bef4cf65446005577df0bc800841c9d78",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 適切な摩擦"
+      }
+    },
+    {
+      "segment_id": "f5f6d2ce",
+      "source_content": "Friction should be higher for actions with higher risk and possible damage severity. Consider saving a change. If the user is just saving the name of a team: low risk, no real side-effects, easily corrected. But a \"save\" that completely overwrites a dashboard or panel used by many people, with ripple effects on other dashboards, reports, alerts — the possible damage from a mistake is far higher. One case requires very little friction, but in the other case the user needs to be very explicit on what they are doing and fully aware of the consequences of the action.",
+      "source_content_hash": "eb6d9435163a4d5c50484b8d2638d2db175d17f42bb5f5691a6a3b439c2ccc04",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "摩擦は、リスクや損害の可能性が高いアクションに対して高くするべきです。変更の保存を考えてみましょう。チームの名前を保存するだけの場合：リスクは低く、実際の副作用もなく、簡単に修正できます。しかし、多くの人が使用するダッシュボードやパネルを完全に上書きする「保存」の場合、他のダッシュボード、レポート、アラートに波及効果があるため、ミスによる損害の可能性ははるかに高くなります。一方のケースでは非常に少ない摩擦で済みますが、もう一方のケースでは、ユーザーは自分が何をしているのかを非常に明確にし、そのアクションの結果を完全に認識している必要があります。"
+      }
+    },
+    {
+      "segment_id": "2fdadb08",
+      "source_content": "**UI friction should match the severity and risk of the user’s action.**",
+      "source_content_hash": "5085fdb9ff302e82b80957620f8fe57f60118d155ed864f2d8181c78237e3340",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**UIの摩擦は、ユーザーのアクションの重大性とリスクに合わせるべきです。**"
+      }
+    },
+    {
+      "segment_id": "ed7dde9c",
+      "source_content": "## Simple Solutions for Users",
+      "source_content_hash": "f2d83847ce04cd349a1077b8951d48350727b4f62470e85614c53a0896347cad",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## ユーザーのためのシンプルな解決策"
+      }
+    },
+    {
+      "segment_id": "a76548f8",
+      "source_content": "A simple solution does not mean it is absent of its own complexities. Typically, UI negotiates and compromises who gets the heavier load of complexities between the user and the system. A simple solution for a user might mean more work for us as UXers/Designers/Developers but it will result in a more simplistic experience and UI for the user.",
+      "source_content_hash": "3302db08352e77f3b747cbb034612191928caea08caff8d955aad2c292437828",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "シンプルな解決策とは、それ自体が複雑さを欠いていることを意味するわけではありません。通常、UIは、ユーザーとシステムの間で、誰がより重い複雑さの負担を負うかを交渉し、妥協します。ユーザーにとってのシンプルな解決策は、UXデザイナーや開発者にとってはより多くの作業を意味するかもしれませんが、ユーザーにとってはよりシンプルな体験とUIをもたらします。"
+      }
+    },
+    {
+      "segment_id": "4b1d2d7d",
+      "source_content": "**A simple solution does not mean an easy solution — the system takes on the complexity of the action**",
+      "source_content_hash": "ceafaa0f1a880da1b89bd42e6ff92196e413926bbe2e6858223d375c2acd6979",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**シンプルな解決策とは、簡単な解決策を意味するわけではありません。アクションの複雑さはシステムが引き受けます。**"
+      }
+    },
+    {
+      "segment_id": "48847fd4",
+      "source_content": "## Default to Reusability",
+      "source_content_hash": "6ba65cfa89b283116b327544bbba34cfe91c55a055d87c2c7b12cb81d711dc34",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 再利用をデフォルトにする"
+      }
+    },
+    {
+      "segment_id": "4daf5cdd",
+      "source_content": "Similar patterns across the product match to provide an expected experience for the user while navigating across the product suite. Reusing components and patterns as much as possible helps to reduce our UI divergence, creating consistent interactions and experiences, lowering the chances of creating frustrating or surprising situations for users.",
+      "source_content_hash": "7fe7961fc4b6cd9d1958027a2652bf241998b3bdc84421ff9b5ef25cfc170864",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "製品全体で類似したパターンを一致させることで、ユーザーが製品スイートをナビゲートする際に期待される体験を提供します。可能な限りコンポーネントやパターンを再利用することで、UIの分岐を減らし、一貫したインタラクションと体験を作り出し、ユーザーにとってイライラしたり驚かせたりする状況を作る可能性を低くします。"
+      }
+    },
+    {
+      "segment_id": "bdc231b1",
+      "source_content": "**Consistent UI and patterns create expected interactions and behaviours resulting in better experiences**",
+      "source_content_hash": "38721e3fc0b9c8e76f4fecb502e12d2feeefadec2f295672f4f174d6ae40803d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**一貫したUIとパターンは、期待されるインタラクションと動作を作り出し、より良い体験をもたらします。**"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-docs/current/03-foundations/design-principles.mdx",
+  "last_updated_timestamp": "2025-06-06T08:53:12.757256+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "23db3f71cb645ae084a9e5bb5bd69ab67d2f3ca11685bd5f366823f350629924"
+  }
+}

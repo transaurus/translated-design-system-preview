@@ -1,0 +1,146 @@
+---
+title: Select
+description: The Select component is a customizable select input component that allows users to select one or more options from a dropdown list.
+---
+
+# Select <Badge text='ready' color='green'></Badge> <StorybookLink path='/story/forms-select--basic' />
+
+Selectコンポーネントは、ユーザーがドロップダウンリストから1つまたは複数のオプションを選択できるカスタマイズ可能なセレクト入力コンポーネントです。[react-select](https://react-select.com/)ライブラリを基盤として構築されています。
+
+## 使用する場面
+
+このコンポーネントは、選択肢の数が多い場合に特に有用です。また、選択肢が4つ以上ある場合には、ラジオボタンコンポーネントの代わりにSelectを使用することを検討してください。
+
+## タイプと動作
+
+### 基本のSelect
+
+Selectコンポーネントは、ユーザーがドロップダウンリストから1つのオプションを選択できる基本的なセレクト入力を作成するために使用できます。`isClearable`プロップを使用すると、選択された値をクリアできるようになります。`isLoading`プロップは、セレクト入力がロード中であることを示すために使用できます。
+
+```tsx live noInline
+const Basic = () => {
+  const [value, setValue] = React.useState<SelectableValue<string>>();
+  const options = [
+    { label: 'Option 1', value: '1' },
+    { label: 'Option 2', value: '2' },
+    { label: 'Option 3', value: '3' },
+  ];
+
+  return (
+    <Container>
+      <Select
+        options={options}
+        value={value}
+        onChange={(v) => {
+          setValue(v);
+        }}
+      />
+    </Container>
+  );
+};
+
+render(<Basic />);
+```
+
+### 複数選択（Multi Select）
+
+Selectコンポーネントは、ユーザーがドロップダウンリストから複数のオプションを選択できるように設定できます。この動作を有効にするには、`isMulti`プロップをtrueに設定する必要があります。`maxVisibleValues`プロップを使用すると、表示する選択値の数を制限できます。`showAllSelectedWhenOpen`プロップを使用すると、ドロップダウンリストが開いているときにすべての選択値を表示できます。
+
+### 非同期選択（Async Select）
+
+Selectコンポーネントは、非同期に読み込まれるドロップダウンリストからユーザーが1つまたは複数のオプションを選択できるように設定できます。`loadOptions`プロップは、オプションの配列に解決されるPromiseを返す関数に設定する必要があります。`defaultOptions`プロップを使用すると、ユーザーが入力を開始する前に表示されるオプションを提供できます。この場合、オプションはコンポーネントのマウント時に読み込まれます。`cacheOptions`プロップを使用すると、非同期に読み込まれたオプションをキャッシュできます。
+
+```tsx live noInline
+const loadAsyncOptions = (inputValue: string) => {
+  return new Promise<Array<SelectableValue<string>>>((resolve) => {
+    setTimeout(() => {
+      resolve([
+        { label: 'Option 1', value: '1' },
+        { label: 'Option 2', value: '2' },
+        { label: 'Option 3', value: '3' },
+      ]);
+    }, 1000);
+  });
+};
+
+const BasicSelectAsync = () => {
+  const [value, setValue] = React.useState<SelectableValue<string>>();
+
+  return (
+    <Container>
+      <AsyncSelect loadOptions={loadAsyncOptions} defaultOptions value={value} onChange={setValue} />
+    </Container>
+  );
+};
+
+render(<BasicSelectAsync />);
+```
+
+### カスタム値の作成
+
+Selectコンポーネントは、ユーザーが新しいオプションを作成できるように設定できます。この動作を有効にするには、`allowCustomValue`プロップをtrueに設定する必要があります。さらに、`onCreateOption`プロップは、ユーザーが新しいオプションを作成したときに呼び出される関数に設定する必要があります。
+
+```tsx live noInline
+const CustomValueCreation = () => {
+  const [value, setValue] = React.useState<SelectableValue<string>>();
+  const [customOptions, setCustomOptions] = React.useState<Array<SelectableValue<string>>>([]);
+  const options = [
+    { label: 'Option 1', value: '1' },
+    { label: 'Option 2', value: '2' },
+    { label: 'Option 3', value: '3' },
+  ];
+  return (
+    <Container>
+      <Select
+        options={[...options, ...customOptions]}
+        value={value}
+        onChange={(v) => {
+          setValue(v);
+        }}
+        allowCustomValue
+        onCreateOption={(v) => {
+          const customValue: SelectableValue<string> = { value: v, label: v };
+          setCustomOptions([...customOptions, customValue]);
+          setValue(customValue);
+        }}
+      />
+    </Container>
+  );
+};
+
+render(<CustomValueCreation />);
+```
+
+### 仮想化されたオプションリスト
+
+Selectコンポーネントは、仮想化されたオプションリストを使用するように設定できます。この動作を有効にするには、`virtualized`プロップをtrueに設定する必要があります。`maxVisibleValues`プロップを使用すると、表示する選択値の数を制限できます。`showAllSelectedWhenOpen`プロップを使用すると、ドロップダウンリストが開いているときにすべての選択値を表示できます。`isClearable`プロップを使用すると、選択された値をクリアできるようになります。`isLoading`プロップは、セレクト入力がロード中であることを示すために使用できます。
+
+### Selectにアイコンを追加
+
+`prefix`プロップを使用することで、選択された値の前に表示されるカスタムアイコンをSelectに追加できます。
+
+```tsx live noInline
+const SelectWithIcon = () => {
+  const [value, setValue] = React.useState<SelectableValue<string>>();
+  return (
+    <Container>
+      <Select
+        options={[
+          { label: 'Option 1', value: '1' },
+          { label: 'Option 2', value: '2' },
+          { label: 'Option 3', value: '3' },
+        ]}
+        value={value}
+        onChange={setValue}
+        prefix={<Icon name={'arrow-down'} />}
+      />
+    </Container>
+  );
+};
+
+render(<SelectWithIcon />);
+```
+
+## プレイグラウンド
+
+<ComponentEmbed path="/story/forms-select--basic" />

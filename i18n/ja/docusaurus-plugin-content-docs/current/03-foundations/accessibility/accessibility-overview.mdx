@@ -1,0 +1,68 @@
+---
+title: Accessibility overview
+description: Grafana Labs is dedicated to improving our graphical user interfaces and overall experience so that our product becomes usable and accessible for people with disabilities as well as anyone else.
+hide_title: true
+---
+
+import { Badge } from '@grafana/ui';
+
+# アクセシビリティ概要 <Badge text='ready' color='green'></Badge>
+
+## コミットメント
+
+Grafana Labsは、障害を持つ人々を含むすべてのユーザーにとって使いやすくアクセシブルな製品を提供するため、グラフィカルユーザーインターフェースと全体的なエクスペリエンスの改善に取り組んでいます。
+
+## 適合状況
+
+[Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/standards-guidelines/wcag/) は、障害を持つ人々のアクセシビリティを向上させるための要件を定義しています。適合レベルには、レベルA、レベルAA、レベルAAAの3段階があります。
+
+Grafanaは現在WCAG 2.1レベルAAに部分的に適合しており、将来的に完全な適合を目指しています。部分的に適合しているとは、コンテンツの一部がアクセシビリティ標準に完全には適合していないことを意味します。
+
+## アクセシビリティをサポートするための取り組み
+
+Grafana Labsは、Grafanaのアクセシビリティを確保するために以下の対策を講じています：
+
+- 開発者がアクセシビリティに関する知識とスキルを習得できるよう、アクセシビリティアンバサダーグループが主導
+- アクセシブルなコンポーネントを作成するためのベストプラクティスと推奨事項の提供
+- 内部のアクセシビリティワーキンググループによる継続的な改善の推進と責任の明確化
+- スタッフ向けのアクセシビリティトレーニングの提供
+- 開発中の機能に対して自動化ツールを使用したアクセシビリティテストの実施
+- 障害を持つ参加者を対象としたユーザビリティテスト
+
+## 技術仕様
+
+Grafanaのアクセシビリティは、以下の技術が特定のウェブブラウザとコンピュータにインストールされた支援技術やプラグインと連携することで実現されています：
+
+- HTML
+- WAI-ARIA
+- CSS
+- JavaScript
+
+これらの技術は、使用されているアクセシビリティ標準への適合に不可欠です。
+
+## 制限事項と代替手段
+
+Grafana LabsはGrafana全体のアクセシビリティ改善に取り組んでいますが、現在いくつかの制限があることを認識しています。以下のリストにない問題を報告したい場合は、[GitHubでイシューをオープン](https://github.com/grafana/grafana/issues?q=is%3Aopen+is%3Aissue+label%3Atype%2Faccessibility)してください。新しいイシューには「type:accessibility」ラベルを追加してください。
+
+執筆時点での主な制限事項は以下の領域です：
+
+- チャート: 色覚障害者に優しいパレットとパターンの提供、およびチャート背後にあるデータテーブルへの簡単な切り替え方法を計画中
+- 色のコントラスト: 最新のGrafanaインターフェースには一般的にコントラストの問題はありませんが、古いコードでは推奨コントラストレベルを下回る場合があります。コードの更新に伴い、この問題は自然に解消されます。
+- キーボードサポート: Grafanaの一部はキーボードで完全にアクセスできません。コンテンツへのスキップ機能、キーボードトラップの回避、フォーカスインジケーターの常時表示など、キーボードサポートの改善を計画中です。
+
+個別のチケットを確認するには、[GitHubの「type/accessibility」ラベル付きイシュー](https://github.com/grafana/grafana/issues?q=is%3Aissue+is%3Aopen+label%3Atype%2Faccessibility)をご覧ください。
+
+## 評価とテスト環境
+
+Grafana Labsは、以下のアプローチでGrafanaのアクセシビリティを評価しています：
+
+- 自己評価: コンテンツは自組織または開発者によって評価されています。主要なブラウザとオペレーティングシステム、および以下のスクリーンリーダーで定期的に手動テストを実施：
+  - MacOS上のVoiceOver（Safari、Chrome、Edge）
+  - Windows上のNVDA（Chrome、Firefox）
+  - Linux上のOrca
+    -自動評価: [pa11y](https://pa11y.org/)を使用して主要なワークフローとユースケースをテスト
+- アクセシビリティリンター: 開発の初期段階でアクセシビリティが考慮されるよう、a11yリンターの導入を進めています。この取り組みの進捗は[GitHub](https://github.com/grafana/grafana/issues/37782)で追跡可能です。
+
+## フィードバック
+
+Grafanaのアクセシビリティに関するフィードバックを歓迎します。Grafanaでアクセシビリティの障壁に遭遇した場合は、[GitHubでイシューをオープン](https://github.com/grafana/grafana/issues/new?assignees=&labels=type%3A+accessibility&template=2-accessibility.md)するか、[info@grafana.com](mailto:info@grafana.com)までメールでお知らせください。

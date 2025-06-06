@@ -1,0 +1,312 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "docs/03-foundations/accessibility/accessibility-styleguide.mdx",
+  "source_file_content_hash": "284b4e3c527b20c4f5642855933b7a5bc44583ee3fd20e378e5be10ad2afa328",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\ntitle: Accessibility styleguide\ndescription: At Grafana we pay special attention to accessibility and that's why it's important that all components are written with it in mind.\nhide_title: true\n---",
+      "source_content_hash": "db80e5810de94921dfeca8120290c8421cb7ef712d49bffdc51e573dac91e170",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "10c4cb47",
+      "source_content": "import { Badge } from '@grafana/ui';",
+      "source_content_hash": "af7b58551bb42fea6572a2bde03c95c99d8529feeec9e1a0d48c3da4f931ca67",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_10c4cb47"
+      }
+    },
+    {
+      "segment_id": "d912d376",
+      "source_content": "# Accessibility styleguide <Badge text='ready' color='green'></Badge>",
+      "source_content_hash": "0684e61ccd6f9a75df581764a6db6f19c4c5c1066b9b13efe936cba37bc0200b",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "# アクセシビリティスタイルガイド <Badge text='ready' color='green'></Badge>"
+      }
+    },
+    {
+      "segment_id": "8ac585fb",
+      "source_content": "At Grafana we pay special attention to accessibility and that's why it's important that all components are written with it in\nmind.",
+      "source_content_hash": "e2971a727396cb166bce67a934c24a1f8b458bc8d3549b3334c73a77d2fbdb38",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Grafanaではアクセシビリティに特に注意を払っており、すべてのコンポーネントがアクセシビリティを考慮して作成されることが重要です。"
+      }
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "The goal of this document is to list best practices and recommendations when it comes to writing accessible components.",
+      "source_content_hash": "2b1ae94a889cda099537534e980671ef1877478af38b9edc4bac56fc589f367e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "このドキュメントの目的は、アクセシブルなコンポーネントを作成する際のベストプラクティスと推奨事項をリストアップすることです。"
+      }
+    },
+    {
+      "segment_id": "cbe57f9d",
+      "source_content": "### Grafana/UI components",
+      "source_content_hash": "64ecd76dbe8e15c05ebf4a0767c74b15c63a36cdd79d61eed0f8f82d95618b2b",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### Grafana/UIコンポーネント"
+      }
+    },
+    {
+      "segment_id": "39b3772c",
+      "source_content": "Some grafana/ui components have specific mechanisms built-in that make it easier to write accessible components.",
+      "source_content_hash": "acd573bba1c78c1d6efe4e195daf05cf4c7670b1796ca705cafe320a54547507",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "grafana/uiの一部のコンポーネントには、アクセシブルなコンポーネントを簡単に作成できるようにするための特定のメカニズムが組み込まれています。"
+      }
+    },
+    {
+      "segment_id": "bc633244",
+      "source_content": "#### Form elements",
+      "source_content_hash": "56ed535cc8c26264e14c9a78a1ffe0ed27e9f048bd0bb723a8b72082574e9528",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "#### フォーム要素"
+      }
+    },
+    {
+      "segment_id": "2df4f75f",
+      "source_content": "One of the important accessibility considerations when working with form elements is to make sure form controls are\nproperly labelled. For that a `label` element has to be associated with the respective form control. One way to\ndo that is to provide `for` attribute to the label that matches the `id` attribute of the form control.",
+      "source_content_hash": "3fb579089e922a9cd0691caf68ad6d1defe6825c62145f3b8944e3e46b5b4603",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "フォーム要素を扱う際の重要なアクセシビリティ考慮事項の1つは、フォームコントロールに適切なラベルを付けることです。そのためには、`label`要素を対応するフォームコントロールに関連付ける必要があります。1つの方法は、ラベルに`for`属性を指定し、フォームコントロールの`id`属性と一致させることです。"
+      }
+    },
+    {
+      "segment_id": "ccc88b4c",
+      "source_content": "The form components from grafana/ui provide an easier way to achieve that. The form elements, used inside `Field`\ncomponents, will get the `label` properly associated with them given that the element has `id` (in case of `Select` the prop is `inputId`) specified.",
+      "source_content_hash": "319e0327ffa94cf500996cf9078bf02408622336c83891285e46e7b5897cefa2",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "grafana/uiのフォームコンポーネントは、これを簡単に実現する方法を提供します。`Field`コンポーネント内で使用されるフォーム要素は、要素に`id`（`Select`の場合は`inputId`プロップ）が指定されている場合、適切に`label`が関連付けられます。"
+      }
+    },
+    {
+      "segment_id": "4b1d2d7d",
+      "source_content": "As an example, this code",
+      "source_content_hash": "20b2e208f624e57a9f17e4d42765cd6188878b424def80faf71c57cbdcdb5b5e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "例として、このコード"
+      }
+    },
+    {
+      "segment_id": "cb57d798",
+      "source_content": "```tsx\n<Field label=\"Name\">\n  <Input id=\"name\" placeholder=\"Enter a name\" />\n</Field>\n```",
+      "source_content_hash": "e9962cc384c0e8d24948be4374054454c53a3896867797c385201addfe77f351",
+      "node_type": "code",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_cb57d798"
+      }
+    },
+    {
+      "segment_id": "97ae4a01",
+      "source_content": "will be rendered as (simplified)",
+      "source_content_hash": "21f3919eda24258aceaae304d5be4b97d7bcc1778ab9f7d97f9f8effda36f4ec",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "は（簡略化して）次のようにレンダリングされます"
+      }
+    },
+    {
+      "segment_id": "de8f60af",
+      "source_content": "```html\n<div>\n  <label for=\"name\"> Name </label>\n  <input name=\"name\" type=\"text\" id=\"name\" placeholder=\"Enter a name\" value=\"\" />\n</div>\n```",
+      "source_content_hash": "e7d40a863af782a3d597b627f614736a1be6fc994c4a2dbaed8edc3dce36f369",
+      "node_type": "code",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_de8f60af"
+      }
+    },
+    {
+      "segment_id": "8af76f3d",
+      "source_content": "As long as the form element has a unique `id` attribute specified, it will be automatically accessible when rendered.",
+      "source_content_hash": "67d2aba7d755071e70416f87c07a968e752efa0c84ed195525edc8707c900b38",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "フォーム要素に一意の`id`属性が指定されている限り、レンダリング時に自動的にアクセシブルになります。"
+      }
+    },
+    {
+      "segment_id": "c674e260",
+      "source_content": "#### `aria-live` guidelines",
+      "source_content_hash": "a0d2f0bc4604901e32b66eb1513288bc287848248b8b667043fb07669ae1afc6",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "#### `aria-live`ガイドライン"
+      }
+    },
+    {
+      "segment_id": "a44047a5",
+      "source_content": "`aria-live` should be used sparingly, as it may result in an overflow of announcements for screen reader users. The main responsibility for handling `aria-live` should be with the consumers, where the correct tools should be provided by grafana/ui.",
+      "source_content_hash": "12fac9539ba7c57fed85324cfcf3a887c34d799590dd89bb03b1fbf521312620",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "`aria-live`は控えめに使用する必要があります。スクリーンリーダーユーザーに対して過剰なアナウンスが発生する可能性があるためです。`aria-live`の処理の主な責任は消費者側にあり、grafana/uiは適切なツールを提供する必要があります。"
+      }
+    },
+    {
+      "segment_id": "b4ef1e56",
+      "source_content": "- Grafana/ui components should not contain `aria-live=\"assertive\"` or `role=\"alert\"`\n- `aria-live` and `role` props may be exposed where appropriate in grafana/ui components \n- Only use `aria-live=\"assertive\"` or `role=\"alert\"` to provide critical feedback to a direct user action (e.g. user typing in search and there are no further results from the query)\n- Use `aria-live=\"polite\"` for areas that are updated by a user action not directly related to the element",
+      "source_content_hash": "fd1319744d5019337ffee58ba1e104d2ea804f7e0ad4666a886c49bcccc66e1e",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- Grafana/uiコンポーネントには`aria-live=\"assertive\"`や`role=\"alert\"`を含めるべきではありません\n- `aria-live`と`role`プロップは、grafana/uiコンポーネントで適切な場合に公開される場合があります\n- `aria-live=\"assertive\"`や`role=\"alert\"`は、ユーザーの直接的なアクションに対する重要なフィードバックを提供する場合にのみ使用してください（例：ユーザーが検索に入力し、クエリからこれ以上の結果がない場合）\n- 要素に直接関連しないユーザーアクションによって更新される領域には`aria-live=\"polite\"`を使用してください"
+      }
+    },
+    {
+      "segment_id": "e50bebbf",
+      "source_content": "### Writing tests with accessibility in mind",
+      "source_content_hash": "0dab8a8d7616739bdbd32632befdec14077676fbc222d57b652b94ae96d6e920",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### アクセシビリティを考慮したテストの作成"
+      }
+    },
+    {
+      "segment_id": "23dfb152",
+      "source_content": "We use [React Testing Library](https://testing-library.com/docs/react-testing-library/intro) (RTL) for writing unit tests.\nThe library is built with accessibility in mind and makes it easier to ensure the written code is accessible to all users.\nWhen querying DOM elements with RTL prefer using `*ByRole` queries as they resemble closely how the users interact\nwith the page - both using mouse/visual display and assistive technologies.\nAs a rule of thumb, if code is written with the accessibility concerns in\nmind, `*ByRole` queries will be sufficient in most of the cases. There are certainly exceptions here, as not all the elements have defined [ARIA role](https://www.w3.org/TR/html-aria/#docconformance).",
+      "source_content_hash": "d766f039aee7489a4da2b149228fa5848a612456163a7b55340adb2a8d1e4222",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "ユニットテストの作成には[React Testing Library](https://testing-library.com/docs/react-testing-library/intro)（RTL）を使用しています。このライブラリはアクセシビリティを考慮して構築されており、作成されたコードがすべてのユーザーにとってアクセシブルであることを確認しやすくします。RTLでDOM要素をクエリする際は、`*ByRole`クエリを使用することを推奨します。これらは、ユーザーがページと対話する方法（マウス/視覚表示と支援技術の両方）に近いからです。経験則として、アクセシビリティの懸念を考慮してコードが書かれている場合、`*ByRole`クエリはほとんどの場合十分です。すべての要素が[ARIAロール](https://www.w3.org/TR/html-aria/#docconformance)を定義しているわけではないため、例外は確かに存在します。"
+      }
+    },
+    {
+      "segment_id": "531437ca",
+      "source_content": "As an example, for this code",
+      "source_content_hash": "89e60c669e4bb5d42d51e01fce4b9dc13dcb64d2b2ebe819b413c73a106fb907",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "例として、このコード"
+      }
+    },
+    {
+      "segment_id": "67b24fc5",
+      "source_content": "```tsx\n<Field label=\"Username\">\n  <Input id=\"username\" placeholder=\"Enter a name\" value={'Test'} />\n</Field>\n```",
+      "source_content_hash": "95991bcde67639fc7e2e429f2001307bac6f43047760441c8ad30564e5efcbb6",
+      "node_type": "code",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_67b24fc5"
+      }
+    },
+    {
+      "segment_id": "883231d4",
+      "source_content": "the test case could be as follows",
+      "source_content_hash": "eac474fdad4f13a5e41bb0689085abc82be3cbc26ce323fd8d62c6ba291bf20d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "に対するテストケースは次のようになります"
+      }
+    },
+    {
+      "segment_id": "468b36ba",
+      "source_content": "```tsx\nit('has username set', () => {\n  expect(screen.getByRole('textbox', { name: 'Username' })).toHaveValue('Test');\n});\n```",
+      "source_content_hash": "07d1f63e39db082cc0e17e28c2b1a7bd621e2d11067272d8cffe3aa28e371ce1",
+      "node_type": "code",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_468b36ba"
+      }
+    },
+    {
+      "segment_id": "6270d577",
+      "source_content": "Input with type `text` (default type value) has a role of `textbox` and the `name` option is not the name attribute\ngiven to the input elements but their [accessible name](https://www.tpgi.com/what-is-an-accessible-name/), which in this case is the text content of the associated with input label.",
+      "source_content_hash": "24008a8ae108bd90c535fcdabf0121e4792a30759ea636bc3c6206bc5b6f8656",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "`text`型（デフォルトの型値）のInputは`textbox`ロールを持ち、`name`オプションはInput要素に与えられるname属性ではなく、その[アクセシブルな名前](https://www.tpgi.com/what-is-an-accessible-name/)です。この場合、Inputに関連付けられたラベルのテキストコンテンツがそれに当たります。"
+      }
+    },
+    {
+      "segment_id": "0a103a02",
+      "source_content": "### Pull requests that introduce accessibility(a11y) errors:",
+      "source_content_hash": "76f54a87ea567024a6047535584c3335e5f550eea80a0e58f0216fdf4c667de2",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### アクセシビリティ(a11y)エラーを導入するプルリクエスト:"
+      }
+    },
+    {
+      "segment_id": "8126f763",
+      "source_content": "We use [pa11y-ci](https://github.com/pa11y/pa11y-ci) to collect accessibility errors on [some URLs in the project](https://github.com/grafana/grafana/issues/36555), threshold errors are specified per URL.",
+      "source_content_hash": "9e6ec49350b40ab6ce2c69f5ad17326c58fbf710ecddb8b9a9b9885a3e716909",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[pa11y-ci](https://github.com/pa11y/pa11y-ci)を使用して、[プロジェクト内のいくつかのURL](https://github.com/grafana/grafana/issues/36555)でアクセシビリティエラーを収集しています。エラーの閾値はURLごとに指定されています。"
+      }
+    },
+    {
+      "segment_id": "74dd7937",
+      "source_content": "If the contribution introduces new a11y errors, our continuous integration will fail, preventing you to merge to the main branch. In those cases there are two alternatives for moving forward:",
+      "source_content_hash": "6143621e96f11a22aa237ab4eeef985287fb2c0a66e97a972fac450fcca7c952",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "もし貢献内容が新しいアクセシビリティ(a11y)エラーを引き起こす場合、継続的インテグレーションが失敗し、mainブランチへのマージが阻止されます。そのような場合、次の2つの選択肢があります："
+      }
+    },
+    {
+      "segment_id": "49f9f337",
+      "source_content": "- Check the error log on the pipeline step `test-a11y-frontend-pr`, identify what was the error, and fix it.\n- Locally run the command `yarn test:accessibility-report` that generates an HTML accessibility report, then go to the URL that contains your change, identify the error, and fix it. Keep in mind, a local e2e Grafana instance is going to be running on `http://localhost:3001`.",
+      "source_content_hash": "f9c8dc4de9bbcdbd5894f1a22715e9f438735a8326e260c332b337716c3d1a99",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- パイプラインのステップ`test-a11y-frontend-pr`でエラーログを確認し、どのエラーが発生したかを特定して修正する。\n- ローカルで`yarn test:accessibility-report`コマンドを実行してHTMLアクセシビリティレポートを生成し、変更を含むURLに移動してエラーを特定・修正する。なお、ローカルのe2e Grafanaインスタンスは`http://localhost:3001`で実行されます。"
+      }
+    },
+    {
+      "segment_id": "6b77b644",
+      "source_content": "You can also prevent introducing a11y errors by installing an a11y plugin in your browser, for example, axe DevTools, Accessibility Insights for Web among others.",
+      "source_content_hash": "1fb5a25ea739ef532c32e23065cd03ec3a1ea5315c6f576bc195bf51543cd0f7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "また、ブラウザにa11yプラグイン（例えばaxe DevToolsやAccessibility Insights for Webなど）をインストールすることで、a11yエラーの発生を事前に防ぐこともできます。"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-docs/current/03-foundations/accessibility/accessibility-styleguide.mdx",
+  "last_updated_timestamp": "2025-06-06T08:53:12.749747+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "284b4e3c527b20c4f5642855933b7a5bc44583ee3fd20e378e5be10ad2afa328"
+  }
+}

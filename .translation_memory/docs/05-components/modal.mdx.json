@@ -1,0 +1,232 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "docs/05-components/modal.mdx",
+  "source_file_content_hash": "bffb0ccf9730f8298bec1b79f7b8fe56ea94d95d4a1a31befb4b0f07f3e4c9a0",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\ntitle: Modal\ndescription: Grafana Labs Modal component\ndraft: false\n---",
+      "source_content_hash": "b3c03e39238e6928cff0210dcb673193d0db9844136f5843f21e108f17c662b0",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "a703643c",
+      "source_content": "# Modal <Badge text='draft' color='orange'></Badge> <StorybookLink path='/docs/overlays-modal--basic'/>",
+      "source_content_hash": "d1e244959766da2c64f628786ad5c4ec75bc9c247715758de11277865f8c35ae",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "# モーダル <Badge text='draft' color='orange'></Badge> <StorybookLink path='/docs/overlays-modal--basic'/>"
+      }
+    },
+    {
+      "segment_id": "d912d376",
+      "source_content": "## Overview",
+      "source_content_hash": "7337f3d0aa29e9a82b8f1650b743a98eef90794631fa763a319686e69c546821",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 概要"
+      }
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "`Modals` are used to display content to users that needs immediate attention or is critical to their current user flow. When a modal is open, users are unable to interact with the on-page content behind the modal and cannot return to the previous workflow until the user completes the requirement or dismisses the modal.",
+      "source_content_hash": "377ac9009e1cc109f534e27b4ed8997f9d6643167a8471c59e43a28c476d360d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "`モーダル`は、ユーザーに対して即時の対応が必要なコンテンツや、現在のユーザーフローにおいて重要な情報を表示するために使用されます。モーダルが開いている間、ユーザーはモーダルの背後にあるページコンテンツとやり取りできず、要件を完了するかモーダルを閉じるまで前のワークフローに戻ることができません。"
+      }
+    },
+    {
+      "segment_id": "ba4f48ff",
+      "source_content": "### When to Use",
+      "source_content_hash": "b34f6ac5c84a442cdd7bf9f6f9d8063102d6433c307a4006dbea6f79945be305",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 使用する場合"
+      }
+    },
+    {
+      "segment_id": "9e760345",
+      "source_content": "- There is a need for an immediate response from the user. \n- Notify the user of urgent information concerning their current work.\n- Confirm a user decision.",
+      "source_content_hash": "6d73c5be0a332f936d5db7d868f5fef822f3a0956f6fdae269bad93de9c05ae0",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- ユーザーからの即時の応答が必要な場合\n- ユーザーの現在の作業に関する緊急の情報を通知する場合\n- ユーザーの決定を確認する場合"
+      }
+    },
+    {
+      "segment_id": "d350c018",
+      "source_content": "### When not to use",
+      "source_content_hash": "0ed2e5d477ec3714e4863b0b18d58081eef8a83b32b6e2f7c835eb6024ace413",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 使用しない場合"
+      }
+    },
+    {
+      "segment_id": "034de896",
+      "source_content": "- Avoid using a modal when the task should be repeatedly done by the user.\n- Do not use modals for non-essential information that’s not related to the current workflow.",
+      "source_content_hash": "85beda976d2902bb9f39ff3c397f0cc8756f44cb4d0803e04a9dcd59194f1513",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- ユーザーが繰り返し行う必要があるタスクにはモーダルを使用しないでください\n- 現在のワークフローに関係のない非必須情報にはモーダルを使用しないでください"
+      }
+    },
+    {
+      "segment_id": "40f9552a",
+      "source_content": "## Usage",
+      "source_content_hash": "63bfd61a0561b255a2caa0a2e3add091ca7e327f2fa06a407cbb2ff341b858d8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 使用方法"
+      }
+    },
+    {
+      "segment_id": "98cfbd53",
+      "source_content": "The main component has these props:",
+      "source_content_hash": "36e164a0da4cb5234ed76df193ae3b079758640ad66a22e6316de9782fd262b2",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "メインコンポーネントには以下のpropsがあります:"
+      }
+    },
+    {
+      "segment_id": "44d89370",
+      "source_content": "- `title` - title for the modal or custom header element\n- `className` \n- `contentClassName` - specific class for the content of the modal\n- `closeOnEscape`\n- `closeOnBackdropClick`\n- `trapFocus` - whether to restore focus back to the element that was focused when the focus scope mounted, after the focus scope unmounts.\n- `isOpen`\n- `onDismiss`\n- `onClickBackdrop` - if not set will call `onDismiss` if that is set",
+      "source_content_hash": "1e41ca24a4f8b147308006ed5951725bd20b335b095c67d08c7ceee8049cc23f",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- `title` - モーダルのタイトルまたはカスタムヘッダー要素\n- `className`\n- `contentClassName` - モーダルのコンテンツに適用する特定のクラス\n- `closeOnEscape`\n- `closeOnBackdropClick`\n- `trapFocus` - フォーカススコープがアンマウントされた後、フォーカススコープがマウントされたときにフォーカスされていた要素にフォーカスを戻すかどうか\n- `isOpen`\n- `onDismiss`\n- `onClickBackdrop` - 設定されていない場合、`onDismiss`が設定されていればそれを呼び出します"
+      }
+    },
+    {
+      "segment_id": "bdc231b1",
+      "source_content": "ModalTabsHeader - custom header element with tabs that has the following props:",
+      "source_content_hash": "6283e78f74e181f81832563fb5855f81ccb26b2e9502dead12a64d8ea40baa00",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "ModalTabsHeader - タブ付きのカスタムヘッダー要素で、以下のpropsがあります:"
+      }
+    },
+    {
+      "segment_id": "7a2e981c",
+      "source_content": "- `icon`\n- `title`\n- `tabs`\n- `activeTab`\n- `onChangeTab`",
+      "source_content_hash": "cb61da05525c4ea609024342d69503c434dbf305354dc83da922b916ba74c994",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- `icon`\n- `title`\n- `tabs`\n- `activeTab`\n- `onChangeTab`"
+      }
+    },
+    {
+      "segment_id": "06c0f776",
+      "source_content": "## Types and Behaviors",
+      "source_content_hash": "b90359698fa5684efb4be758e1e814d8607d08ed24f820399d51edc79ab2526b",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## タイプと動作"
+      }
+    },
+    {
+      "segment_id": "aa83231c",
+      "source_content": "1. [Basic Modal](https://developers.grafana.com/ui/latest/index.html?path=/story/overlays-modal--basic): the basic modal with the default header, main content, close buttons and/or action buttons.\n\n2. [Modal using the contentClassName prop](https://developers.grafana.com/ui/latest/index.html?path=/story/overlays-modal--using-content-class-name): in this case the modal content has applied a specific class.\n\n3. [Modal with tabs](https://developers.grafana.com/ui/latest/index.html?path=/story/overlays-modal--with-tabs): in this ocassion, the modal has tabs, each of one with its main content and buttons.",
+      "source_content_hash": "73b4282a94acc8f539380962b05105845ee034a94f25000dc3fd8daca6072d4f",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "1. [基本モーダル](https://developers.grafana.com/ui/latest/index.html?path=/story/overlays-modal--basic): デフォルトのヘッダー、メインコンテンツ、閉じるボタン、および/またはアクションボタンを持つ基本的なモーダル。\n\n2. [contentClassNameプロパティを使用したモーダル](https://developers.grafana.com/ui/latest/index.html?path=/story/overlays-modal--using-content-class-name): この場合、モーダルコンテンツに特定のクラスが適用されています。\n\n3. [タブ付きモーダル](https://developers.grafana.com/ui/latest/index.html?path=/story/overlays-modal--with-tabs): この場合、モーダルにはタブがあり、それぞれにメインコンテンツとボタンがあります。"
+      }
+    },
+    {
+      "segment_id": "6d28a77c",
+      "source_content": "## Accessibility",
+      "source_content_hash": "5905e6d1f8fe9000c019119d1b35481573e90f36f72c18c510ba2efec231093d",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## アクセシビリティ"
+      }
+    },
+    {
+      "segment_id": "c504c207",
+      "source_content": "[Dialog (Modal) Pattern](https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/)\nPlease check the keyboard's behaviour when building a modal. We have noticed that when the content is overflowing, the user cannot scroll it unless:",
+      "source_content_hash": "ed7f825ae6072646ae1021e4351e6425b3577180abd945013ec51bb44ae7b10f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[ダイアログ（モーダル）パターン](https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/)\nモーダルを構築する際は、キーボードの動作を確認してください。コンテンツがオーバーフローしている場合、以下の場合を除いてユーザーはスクロールできないことに注意してください:"
+      }
+    },
+    {
+      "segment_id": "310e47b7",
+      "source_content": "- The modal contains interactive elements, such as buttons, on the bottom.\n- The content has `tabIndex = 0`, and therefore, it can be keyboard-focusable.",
+      "source_content_hash": "28a33c370f4897f77aa004d5f4449ee64e8de4476fbf0d96b6d2f938f34233f9",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- モーダルにボタンなどのインタラクティブ要素が下部にある場合\n- コンテンツに`tabIndex = 0`があり、キーボードでフォーカス可能な場合"
+      }
+    },
+    {
+      "segment_id": "e50bebbf",
+      "source_content": "## Links & Resources",
+      "source_content_hash": "b0897d600dcc3e2a227ebe5a196535296c95251a680560849895590fd2f99b9c",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## リンクとリソース"
+      }
+    },
+    {
+      "segment_id": "1a316f80",
+      "source_content": "### [Storybook Library](https://developers.grafana.com/ui/latest/index.html?path=/docs/overlays-modal--basic)",
+      "source_content_hash": "ac5e85d5510f31aff339ee53a9b73360c227f5d7f346cb32bc36975222f49779",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### [Storybookライブラリ](https://developers.grafana.com/ui/latest/index.html?path=/docs/overlays-modal--basic)"
+      }
+    },
+    {
+      "segment_id": "ab5fc5b5",
+      "source_content": "## Playground",
+      "source_content_hash": "54192e25d4cfb303fa3f3761b5d777cd0a2b671840c2cd9c87abb3ab38f58e62",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## プレイグラウンド"
+      }
+    },
+    {
+      "segment_id": "d37a3b88",
+      "source_content": "<ComponentEmbed path='/story/overlays-modal--basic&full=1&shortcuts=false&singleStory=true' />",
+      "source_content_hash": "c6f3d295bdb2ecb8b8a8672795cdac3fb72f4e3942d34a2ca9ac99e9c5e1ce24",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_d37a3b88"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-docs/current/05-components/modal.mdx",
+  "last_updated_timestamp": "2025-06-06T08:53:12.758825+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "bffb0ccf9730f8298bec1b79f7b8fe56ea94d95d4a1a31befb4b0f07f3e4c9a0"
+  }
+}

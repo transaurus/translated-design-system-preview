@@ -1,0 +1,129 @@
+---
+title: RadioButtonGroup
+description: RadioButtonGroup is used to select a single value from multiple mutually exclusive options using a horizontal tab-like layout.
+hide_title: true
+---
+
+# RadioButtonGroup <Badge text='ready' color='green'></Badge> <a href='https://developers.grafana.com/ui/latest/index.html?path=/story/forms-radiobuttongroup--radio-buttons' target='_blank' className='header-links'>Storybook <Icon name="external-link-alt"/> </a>
+
+RadioButtonGroupは、水平タブのようなレイアウトで複数の排他的なオプションから単一の値を選択するために使用されます。
+
+<iframe
+  src="https://developers.grafana.com/ui/latest/index.html?path=/story/forms-radiobuttongroup--radio-buttons&full=1&shortcuts=false&singleStory=true"
+  width="100%"
+  height="500px"
+></iframe>
+
+## 使用タイミング
+
+利用可能なオプションが4つまでの排他的な選択に`RadioButtonGroup`を使用してください。これは`RadioButtonGroup`が複数行を持つことができず、小さな解像度にも対応する必要があるためです。4つ以上の排他的な選択には、`Select`コンポーネントまたは`RadioButtonList`コンポーネントを使用してください。
+
+ラジオボタンはこのタイプのグループでのみ存在できます。単一のオプションを提供したい場合は、`Switch`を使用する方が適しています。同じグループまたはコンテキスト内で相互排他的ではない複数の選択肢を提供する場合は、代わりに`Checkbox`を使用してください。
+
+## 使用方法
+
+### 基本的なラジオグループ
+
+```tsx live
+function Basic() {
+  const [value, setValue] = useState<string>();
+  return (
+    <RadioButtonGroup
+      options={[
+        { label: 'Prometheus', value: 'prometheus' },
+        { label: 'Graphite', value: 'graphite', icon: 'cloud' },
+        { label: 'Elastic', value: 'elastic' },
+      ]}
+      value={value}
+      onChange={setValue}
+    />
+  );
+}
+```
+
+### 無効化されたオプション
+
+`disabledOptions`プロパティにオプションを渡すことで、特定のオプションを無効化できます。
+`disabledOptions`はオプションの値と`===`演算子で比較されることに注意してください。
+
+```tsx live
+function WithDisabledOptions() {
+  const [value, setValue] = useState('graphite');
+  return (
+    <RadioButtonGroup
+      options={[
+        { label: 'Prometheus', value: 'prometheus' },
+        { label: 'Graphite', value: 'graphite', icon: 'cloud' },
+        { label: 'Elastic', value: 'elastic' },
+      ]}
+      value={value}
+      disabledOptions={['prometheus', 'elastic']}
+      onChange={setValue}
+    />
+  );
+}
+```
+
+コントロール全体は`disabled`プロパティで無効化できます。
+
+```tsx live
+function Disabled() {
+  const [value, setValue] = useState('prometheus');
+  return (
+    <RadioButtonGroup
+      disabled
+      options={[
+        { label: 'Prometheus', value: 'prometheus' },
+        { label: 'Graphite', value: 'graphite', icon: 'cloud' },
+        { label: 'Elastic', value: 'elastic' },
+      ]}
+      value={value}
+      onChange={setValue}
+    />
+  );
+}
+```
+
+### サイズ
+
+よりコンパクトな小さなコントロールには`sm`サイズを指定します。小さいバリアントは、ヘッダーなどの他の要素内でインラインで使用されることが一般的です。フォーム内での`sm`の使用は避けてください。
+
+```tsx live
+function WithSize() {
+  const [value, setValue] = useState('prometheus');
+  return (
+    <RadioButtonGroup
+      size="sm"
+      options={[
+        { label: 'Prometheus', value: 'prometheus' },
+        { label: 'Graphite', value: 'graphite', icon: 'cloud' },
+        { label: 'Elastic', value: 'elastic' },
+      ]}
+      value={value}
+      onChange={setValue}
+    />
+  );
+}
+```
+
+### 幅
+
+デフォルトでは`RadioButtonGroup`は内容に合わせて幅を調整します。`fullWidth`プロパティを指定すると、コンテナの全幅にわたってコントロールが広がります。
+
+```tsx live
+function FullWidth() {
+  const [value, setValue] = useState('prometheus');
+  return (
+    <RadioButtonGroup
+      fullWidth
+      options={[
+        { label: 'Prometheus', value: 'prometheus' },
+        { label: 'Graphite', value: 'graphite', icon: 'cloud' },
+        { label: 'Elastic', value: 'elastic' },
+      ]}
+      value={value}
+      onChange={setValue}
+    />
+  );
+}
+```

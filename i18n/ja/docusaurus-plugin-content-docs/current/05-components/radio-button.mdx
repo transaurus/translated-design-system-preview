@@ -1,0 +1,77 @@
+---
+title: RadioButtonList
+description: Grafana Labs Radio Button List component
+hide_title: true
+draft: true
+---
+
+# RadioButtonList <Badge text='ready' color='green'></Badge> <a href='https://developers.grafana.com/ui/latest/index.html?path=/story/forms-radiobuttonlist--controlled-component' target='_blank' className='header-links'>Storybook <Icon name="external-link-alt"/> </a>
+
+`RadioButtonList`は、複数の排他的なオプションから単一の値を選択するために使用され、通常は垂直方向にレイアウトされます。
+
+<iframe
+  src="https://developers.grafana.com/ui/latest/index.html?path=/story/forms-radiobuttonlist--controlled-component&full=1&shortcuts=false&singleStory=true"
+  width="100%"
+  height="500px"
+></iframe>
+
+## 使用するタイミング
+
+排他的な選択を行う場合に`RadioButtonList`を使用します。
+[RadioButtonGroup](?path=/docs/forms-radiobuttongroup--radio-buttons)コンポーネントとは異なり、`RadioButtonList`はデフォルトで垂直にアイテムを配置するため、4つ以上のオプションを含めることができます。
+
+ユーザーがドロップダウンをクリックしてスクロールすることなく、利用可能なすべてのオプションを確認する必要がある場合は、[Select](?path=/docs/forms-select--basic)の代わりにこのコンポーネントを使用してください。
+
+## 使用方法
+
+### 基本的なラジオグループ
+
+```jsx
+import { RadioButtonList } from '@grafana/ui';
+
+<RadioButtonGroup options={...} value={...} onChange={...} />
+```
+
+### 無効なオプション
+
+`disabledOptions`プロパティに渡すことで、一部のオプションを無効にすることができます。
+`disabledOptions`はオプションの値と`===`演算子で比較されることに注意してください。
+
+```jsx
+import { RadioButtonList } from '@grafana/ui';
+
+const options = [
+  { label: 'Prometheus', value: 'prometheus' },
+  { label: 'Graphite', value: 'graphite' },
+  { label: 'Elastic', value: 'elastic' },
+  { label: 'InfluxDB', value: 'influx' },
+];
+
+const disabledOptions = ['prometheus', 'elastic'];
+
+
+<RadioButtonGroup
+  options={options}
+  disabledOptions={disabledOptions}
+  value={...}
+  onChange={...}
+/>
+```
+
+### レイアウトの変更
+
+`RadioButtonList`のレイアウトはCSS Gridを使用しているため、リストを複数の列に分割するのは簡単です。
+
+```jsx
+import { RadioButtonList } from '@grafana/ui';
+
+<RadioButtonGroup
+  options={...}
+  value={...}
+  onChange={...}
+  className={css`
+    grid-template-columns: 1fr 1fr 1fr;
+  `}
+/>
+
+```

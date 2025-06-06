@@ -1,0 +1,124 @@
+---
+title: TextLink
+description: The TextLink component renders an anchor tag <a> that takes users to another page, external or internal to Grafana.
+hide_title: true
+---
+
+# テキストリンク <Badge text='ready' color='green'></Badge> <StorybookLink path='/docs/general-textlink--docs' />
+
+TextLinkコンポーネントは、Grafana内外の別ページへユーザーを誘導するアンカータグ`<a>`をレンダリングします。
+
+```tsx live
+<TextLink href="https://google.com" external>
+  Go to Google
+</TextLink>
+```
+
+## 使用方法
+
+### 使用する場合
+
+- ユーザーを外部または内部の別ページへリダイレクトする場合
+- 段落内の単語やフレーズにリンクを設置してリダイレクトする場合
+- 段落外で他のテキストブロックに囲まれた単語やフレーズにリンクを設置する場合
+
+### 使用しない場合
+
+- アクションをトリガーする目的の場合は、ButtonまたはIconButtonコンポーネントを使用
+- リダイレクト機能を持つがボタンと同じ見た目が必要な場合は、LinkButtonコンポーネントを使用
+- アイコンのみで構成されるリンクの場合は、IconButtonコンポーネントを使用
+
+### 推奨事項
+
+- アクセシビリティと一貫性を考慮したデフォルトスタイルを第一選択として使用
+- 外部ページへのリンクには一般的に認知されている外部リンクアイコン（デフォルト）を使用
+- デフォルトアイコンが適さない場合は、[アイコンライブラリ](https://developers.grafana.com/ui/latest/index.html?path=/story/docs-overview-icon--icons-overview)から適切なアイコンを選択
+
+### 禁止事項
+
+- 特別なケース（ダッシュボードリストやメニュー項目など）を除き、スタンドアロンリンクに'primary'カラーを使用しない
+- スタイルを上書きせず、必要に応じて[デザインシステムチーム](/contributing/)に改善を要請
+- 新しいアイコンを追加せず、まずデザインシステムにアイコンを追加する貢献プロセスに従う
+
+## コンテンツ
+
+- _TextLink_コンポーネントは主にテキストと（オプションで）アイコンで構成
+- リンクテキストは遷移先ページの内容が明確に分かるように記述
+- 「ここをクリック」「詳細」「続きを読む」などのフレーズはカードコンポーネント内以外では使用せず、特にスタンドアロンリンクではスクリーンリーダーが文脈外で読み上げると混乱を招くため避ける
+- 1段落あたり最大2リンクまでを推奨
+- リンクテキストは簡潔に保つ
+- 冠詞（a/an/the）で始めない
+- 全文をリンクにせず、最大4～5単語程度に収める
+
+## タイプ
+
+Grafanaでは_テキストリンク_に2種類のタイプが存在：インライン型とスタンドアロン型。これらはテキストに埋め込まれるか、独立した要素として機能します。
+
+| Types          | Purpose                                                                                                                                                             |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Inline**     | It is part of a broader text. It will be surrounded by text, before, after or in both directions. Although it can show an icon at its end, we advise not to do that |
+| **Standalone** | It is a block not surrounded immediately by more text                                                                                                               |
+
+### サブタイプ
+
+インライン/スタンドアロン型の_テキストリンク_は、その機能に応じて内部リンクと外部リンクに分類されます。
+
+| Subtypes     | Purpose                                                                                                                                                                                                                                                                                                                                                                 |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Internal** | Redirect the user to a page inside Grafana                                                                                                                                                                                                                                                                                                                              |
+| **External** | Redirect the user to a page outside Grafana. The page will open a new window as we use `target="_blank"` and `rel="noreferrer"` to ensure that it is a safe [cross-origin destination](https://developer.chrome.com/docs/lighthouse/best-practices/external-anchors-use-rel-noopener/) link. By default, an external _text link_ will show the `external-link-alt` icon |
+
+## 書式設定
+
+### 構成要素
+
+- テキスト：リンク先をユーザーに伝える文言
+- アイコン：遷移先のコンテキストを提供（例：外部リンクにはデフォルトで'external-link-alt'アイコン、同一ページ内リンクには'anchor'アイコンを使用）
+
+## 配置
+
+- インライン型（デフォルト）：周囲のテキストの配置に従う
+- スタンドアロン型：適切なdisplay値を設定する親要素/コンテナが必要
+
+## 動作
+
+以下に記載するデフォルトの動作は、リンクタイプに応じて適用されます。
+
+1. インライン:
+
+   デフォルト: 青色で下線付き。ユーザーはcolorプロパティを通じてこの値を変更できますが、それ以外は同じままです。
+
+   ホバー時: 青色で下線なし。
+
+2. スタンドアロン:
+
+   デフォルト: 青色で下線なし。
+
+   ホバー時: 青色で下線付き。
+
+## スペーシング
+
+- テキストとアイコンの間: 0.5emのgapが設定されており、フォントサイズの変化に応じて自動調整されます
+- テキスト自体: marginやpaddingは適用されません
+- ブロックテキストとテキストリンクの間のスペースは変更されず、段落内の単語間と同じになります
+
+## アクセシビリティ
+
+- リンクを含むテキストは情報量が豊富であるべきです
+- aria-describedby属性を使用して、リンクテキストに加えてスクリーンリーダー用の追加テキストを提供できます
+- 支援技術はARIAラベルをリンクテキストの代わりに使用する場合があるため、より多くのコンテキストが必要な場合はaria-describedbyを使用してください
+
+## 関連コンポーネント
+
+- [Button](https://developers.grafana.com/ui/latest/index.html?path=/story/buttons-button--basic)
+- [LinkButton](https://developers.grafana.com/ui/latest/index.html?path=/docs/buttons-button--basic)
+- [IconButton](https://developers.grafana.com/ui/latest/index.html?path=/story/buttons-iconbutton--basic)
+
+## 参考資料
+
+- [Writers Toolkit: 有用なリンクテキストの書き方](https://grafana.com/docs/writers-toolkit/write/links/useful-link-text/)
+- [アクセシビリティ: WCAG | コンテキスト内でのリンクの目的](https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-in-context.html)
+
+## プレイグラウンド
+
+<ComponentEmbed path="/story/general-textlink--basic" />

@@ -1,0 +1,140 @@
+---
+title: Button
+description: Clickable elements that are used to trigger actions. Buttons communicate what action will occur when users interact with it.
+hide_title: true
+---
+
+# ボタン <Badge text='ready' color='green'></Badge> <StorybookLink path='/story/buttons-button--basic'/>
+
+クリック可能な要素で、アクションをトリガーするために使用されます。ボタンは、ユーザーが操作したときに発生するアクションを伝えます。
+
+```tsx live
+<Button>Save</Button>
+```
+
+### 推奨事項
+
+- ボタングループ内では、すべてのボタンに同じコンテナ幅を適用します。
+- ボタングループ内では、プライマリボタンを1つだけ使用し、同じ低い強調度のボタンを2つまで使用します。
+- ボタングループ内では、ラベルテキストとアイコンの使用スタイルを統一します。
+
+### 非推奨事項
+
+- ボタングループ内でプライマリボタンを2つ使用しないでください。
+- ボタングループ内でアイコン付きボタンとアイコンなしボタンを混在させないでください。
+- 複数のプライマリアクションを設定しないでください。
+- ソリッドなプライマリボタンと破壊的ボタンをペアにしないでください。一方が他方よりも優先される必要があります。
+- アイコンのみのボタンを使用しないでください（やむを得ない場合は、ツールチップ用のテキストとariaラベルを必ず追加してください。アクセシビリティ要件を満たすために必要です）。
+
+## 強調度
+
+- **高:** 画面で最も重要で一般的なアクションに使用されます。プライマリボタンと破壊的ボタンが該当します。
+- **標準:** 同じページに複数存在できるセカンダリアクションに使用されます。Grafana内で最も一般的なボタン使用法です。
+- **低:** ページ上の補助的なアクションやオプションのリンクに使用されます。
+
+![button emphasis](/img/button.emphasis.png 'ボタンの強調度の視覚的表現')
+
+## バリアント
+
+| Type          | Component                                                                                                                        | Emphasis | Purpose                                                                                                                                                                                                                                                                                                                                                               |
+| ------------- | -------------------------------------------------------------------------------------------------------------------------------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Primary**   | <p>Filled with Label</p> <p>Filled with Icon + Label </p> <p>Filled with Label + Icon</p> <p>Filled with Icon + Label + Icon</p> | High     | Used for "call to action", i.e. triggering the main action. There should never be more than one on a page. If you need multiple buttons for different actions, decide which action is the most important and make that the primary Button. All other Button components should be secondary. If there is no primary action, all Button components should be secondary. |
+| **Secondary** | <p>Filled</p> <p>Outline</p> <p>Ghost</p>                                                                                        | Default  | The secondary Button is the default button style and can trigger various actions. How it is used depends on its surroundings: 1. When next to the primary Button, the Secondary style can for example be used for "Cancel" or "Abort" actions. 2. When there is no main important action on a given page, all Button components should use the secondary style.       |
+
+## フォーマット
+
+### 構造
+
+<div className='two-images-comparison'>
+
+<div>
+
+![Do](/img/button.anatomy.a.png)
+
+#### Icon + Label Button
+
+1. Solid container
+2. Icon
+3. Text label
+
+</div>
+
+<div>
+
+![Dont](/img/button.anatomy.b.png)
+
+#### Icon Button
+
+**Note:** Before using buttons without text always consider using IconButton instead.
+
+1. Solid container (optional)
+2. Icon
+
+</div>
+
+</div>
+
+### ボタンサイズとラベルタイポグラフィ
+
+| Size       | Width-Height (px - rem) | Font-Size | Font-Weight |
+| ---------- | ----------------------- | --------- | ----------- |
+| **Small**  | Auto - 24px             | 12px      | 500         |
+| **Medium** | Auto - 32px             | 14px      | 500         |
+| **Large**  | Auto - 48px             | 18px      | 500         |
+
+![button sizes](/img/button.sizes.png 'ボタンサイズの視覚的表現')
+
+### 階層とボタンペアリング
+
+- **プライマリ/破壊的ボタン — 高強調度:**
+
+  1つのページには、メインアクションとして最も重要なボタンを1つだけ表示する必要があります。他のボタンは強調度を下げ、UI内で視覚的に区別する必要があります。このプライマリボタンはユーザーの注意を引く必要があります。
+
+- **セカンダリ/アイコンボタン — 標準強調度:**
+
+  1つの画面に複数のボタンを表示できます。他のボタンはプライマリボタンと同じページに配置できますが、アクションの重要性が低く、メインコンテンツページからユーザーの注意をそらさないようにする必要があります。関連するコールトゥアクションのみをグループ化してください。高強調度のボタンは、複数の低強調度ボタンとペアにできます。
+
+- **アウトライン/テキストボタン — 低強調度:**
+
+  これらのボタンは影響力が小さく、ユーザーの注意をあまり引きません。同じ画面に複数使用できます。新しいページに移動するためのアクションを提供し、そのセクションに関する詳細情報を提供するのが主な目的です。
+
+### マージンとパディング
+
+| Type       | Margin           | Padding  |
+| ---------- | ---------------- | -------- |
+| **Small**  | 0px 8px 0px 0px  | 0px 8px  |
+| **Medium** | 0px 0px 0px 16px | 0px 16px |
+| **Large**  | 0px 0px 0px 16px | 0px 16px |
+
+### 配置
+
+- プライマリ
+
+  - ページの右上
+  - コンテンツページ内の中央
+
+- 標準
+
+  - カード内の右下
+  - コンテンツページ内の左下
+
+- テキストリンク
+
+  - カード内の右上
+  - カード内の中央下部
+
+## アクセシビリティ
+
+- ボタンを使用する際は、アクセシビリティを確保するためにARIAタグを使用してください。
+  - 例: アイコンで表現されるボタンの場合、アクセシブルな名前はaria-labelまたはaria-labelledby属性から提供できます。
+  - セマンティックな&lt;button&gt;や&lt;input type="button"&gt;の代わりにrole="button"を使用します（iOSの「クリック可能要素」に対するrole="button"の修正）
+
+### 参考資料と情報源
+
+- [ボタンUXのベストプラクティス](https://uxplanet.org/5-best-practices-for-designing-effective-buttons-71a4a33e6d26)
+- [ボタンデザインの7つの基本ルール](https://uxplanet.org/7-basic-rules-for-button-design-63dcdf5676b4)
+- [UXボタンデザインの包括的ガイド](https://www.invisionapp.com/inside-design/comprehensive-guide-designing-ux-buttons/)
+
+## プレイグラウンド
+
+<ComponentEmbed path="/story/buttons-button--basic" />

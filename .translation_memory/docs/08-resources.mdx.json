@@ -1,0 +1,182 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "docs/08-resources.mdx",
+  "source_file_content_hash": "6cc9a7df34e8ac4d9a19a10d53a104b65704ea634fe738a0a73b2690f0286c71",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\ntitle: Resources\ndescription: Tools available to help designers and developers build better solutions with our Saga Design System.\n---",
+      "source_content_hash": "5638435d50c67a6decce53931234213574d6c03f38262b9bf6b95bef7dca6dd4",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "4d1292be",
+      "source_content": "import { Badge } from '@grafana/ui';",
+      "source_content_hash": "af7b58551bb42fea6572a2bde03c95c99d8529feeec9e1a0d48c3da4f931ca67",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_4d1292be"
+      }
+    },
+    {
+      "segment_id": "cc3c868d",
+      "source_content": "# Resources <Badge text='ready' color='green'></Badge>",
+      "source_content_hash": "b166189cf220b2bfc38cc5c2675bc5ff9f058e3e828ae2737b2163217c4983e6",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "# リソース <Badge text='ready' color='green'></Badge>"
+      }
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "We have several tools available to help designers and developers build better solutions with our Saga Design System.",
+      "source_content_hash": "7d67d76e02c0a03410fe146acfe3b8c554c156d384362237d4081b3ce96eb426",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Sagaデザインシステムを使用してより良いソリューションを構築するために、デザイナーや開発者向けにいくつかのツールを用意しています。"
+      }
+    },
+    {
+      "segment_id": "9fcbdce9",
+      "source_content": "## Internal Designer Resources",
+      "source_content_hash": "47041d7390c37511b9cecf048ee457b25fcb7cab18ccdda5beac383a00c1a424",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 内部デザイナー向けリソース"
+      }
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "Use these Figma libraries to design and mockup Grafana experiences.",
+      "source_content_hash": "89e65d99c854f3e254dacb5a9bf06eac4495e7a81d06c800ffab2419c7c5879a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "これらのFigmaライブラリを使用して、Grafanaのエクスペリエンスをデザインおよびモックアップできます。"
+      }
+    },
+    {
+      "segment_id": "86b54d44",
+      "source_content": "_These are **internal only** resources for now._",
+      "source_content_hash": "2d151ddc2e57cd8c2e904905f77199e2b9e97e2b7491d8ec05f4f43bcf222bdb",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "_現時点ではこれらは**内部限定**のリソースです。_"
+      }
+    },
+    {
+      "segment_id": "21c93b79",
+      "source_content": "<div className='two-column-div' style={{ display: \"flex\" }}>\n\n[![figma dark theme](/img/Saga_DarkTheme.png)](https://www.figma.com/file/htVIFrTq8e7sx8Olo7L6kZ/Saga-Components--Dark-theme?type=design&node-id=8444%3A13434&mode=design&t=L7FJ9KCANoOxHixF-1)\n\n[![figma light theme](/img/Saga_LightTheme.png)](https://www.figma.com/file/goGYaykIBs1NuJZyYcHVLO/Saga-Components--Light-theme?type=design&node-id=8444%3A13434&mode=design&t=oTpwyjwfTtnqmD6o-1)\n\n</div>",
+      "source_content_hash": "61bfc4037325a8fda630c8350e48d718e7e489a41fe9c1ebdb22543abe124eef",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_21c93b79"
+      }
+    },
+    {
+      "segment_id": "79b2d0b9",
+      "source_content": "## Community Designer Resources",
+      "source_content_hash": "51c139728a49f7126a8264a1dc5d54f1e8eeb287270366d1f2605125a559e2db",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## コミュニティデザイナー向けリソース"
+      }
+    },
+    {
+      "segment_id": "d9172fa4",
+      "source_content": "The Saga team is happy to provide Figma community assets of both our dark and light theme component libraries. We hope these resources are helpful in your design needs.",
+      "source_content_hash": "d98878bf6b9fc7c20456dae8aaafb81d4d60317a72e719564cac3ae1d8b1225c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Sagaチームは、ダークテーマとライトテーマのコンポーネントライブラリのFigmaコミュニティアセットを提供しています。これらのリソースがデザイン作業の助けになることを願っています。"
+      }
+    },
+    {
+      "segment_id": "599822a5",
+      "source_content": "<div className='two-column-div' style={{ display: \"flex\" }}>\n\n[![figma community dark theme](/img/SagaComm_DarkTheme.png)](https://www.figma.com/community/file/1335281252189110233/saga-ui-kit-dark-theme)\n\n[![figma community light theme](/img/SagaComm_LightTheme.png)](https://www.figma.com/community/file/1335283438027025375/saga-ui-kit-light-theme)\n\n</div>",
+      "source_content_hash": "df55233e3dec881ce80d5068b8cb51adf560344b9d45d3744a3fb3f0a809df6e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_599822a5"
+      }
+    },
+    {
+      "segment_id": "80d9e13c",
+      "source_content": "## Developer Resources",
+      "source_content_hash": "0ecf6db51515a8e2c6aec0567199f321a054705c52092e7a9db4b0b4eb84024c",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 開発者向けリソース"
+      }
+    },
+    {
+      "segment_id": "33331f27",
+      "source_content": "These are the developer resources what you need to get up and running.",
+      "source_content_hash": "dc55f29bef95c8a65d42436b4546fc1a16de41a9242a04eec2064f6188ce55ca",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "開発を開始するために必要な開発者向けリソースです。"
+      }
+    },
+    {
+      "segment_id": "ff6ab177",
+      "source_content": "<div className='two-column-div' style={{ display: \"flex\" }}>\n\n[![storybook library](/img/storybook_library.png)](https://developers.grafana.com/ui/latest/index.html?path=/story/docs-overview-intro--page)\n\n[![grafana-ui repo](/img/github_repo.png)](https://github.com/grafana/grafana/tree/main/packages/grafana-ui)\n\n</div>",
+      "source_content_hash": "ba2bd1566b744e8d39b42ecfabb2e96f44de7ad1a30c408ebf2be1eedd302ae0",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_ff6ab177"
+      }
+    },
+    {
+      "segment_id": "6d28a77c",
+      "source_content": "## Further Reading",
+      "source_content_hash": "dfd43c88c1cb9723f2a690b08119f3b312da0ad2e460f768fe2e7b2cad613f05",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## さらに詳しく"
+      }
+    },
+    {
+      "segment_id": "f7ef78f9",
+      "source_content": "Learn more about how a Design System works, how we built ours, and how you can use it:",
+      "source_content_hash": "32e759c109a964b073bcfd7fc7e4df94919603a2a358542396db36b2f29f2084",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "デザインシステムの仕組み、構築方法、活用方法について詳しく学びましょう："
+      }
+    },
+    {
+      "segment_id": "157c9741",
+      "source_content": "- [Design Systems 101](https://www.nngroup.com/articles/design-systems-101/)\n- [What are Design Systems?](https://www.interaction-design.org/literature/topics/design-systems)\n- [And You Thought Buttons Were Easy?](https://medium.com/eightshapes-llc/and-you-thought-buttons-were-easy-26eb5b5c1871)",
+      "source_content_hash": "36c78ebfeea8e5dfd7b308bb611badf9ed3c7a06e725b50a2dbe889de4d9b500",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- [デザインシステム101](https://www.nngroup.com/articles/design-systems-101/)\n- [デザインシステムとは？](https://www.interaction-design.org/literature/topics/design-systems)\n- [ボタンは簡単だと思っていましたか？](https://medium.com/eightshapes-llc/and-you-thought-buttons-were-easy-26eb5b5c1871)"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-docs/current/08-resources.mdx",
+  "last_updated_timestamp": "2025-06-06T08:53:12.753622+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "6cc9a7df34e8ac4d9a19a10d53a104b65704ea634fe738a0a73b2690f0286c71"
+  }
+}

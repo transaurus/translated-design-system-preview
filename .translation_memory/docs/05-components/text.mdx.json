@@ -1,0 +1,302 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "docs/05-components/text.mdx",
+  "source_file_content_hash": "d46e979052b534b91e16fefa16882bf0d5ae7a48231db068669ceb7d05d3f302",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\ntitle: Text\ndescription: The Text component can be used to apply typography styles in a simple way, without the need for extra CSS.\nhide_title: true\n---",
+      "source_content_hash": "e28c82befc7a3a148e2cb1018a88dd300444d41c239bc65cdabb9af56d9770ec",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "a703643c",
+      "source_content": "# Text <Badge text='ready' color='green'></Badge> <StorybookLink path='/story/general-text--basic'/>",
+      "source_content_hash": "d1dcf7f7331a2a016a3126416cd32beeece0fd66bc3af13933b09a34150a36e7",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "# テキスト <Badge text='ready' color='green'></Badge> <StorybookLink path='/story/general-text--basic'/>"
+      }
+    },
+    {
+      "segment_id": "53eaf0e1",
+      "source_content": "The Text component can be used to apply typography styles in a simple way, without the need for extra CSS.",
+      "source_content_hash": "e4f547ec930351fa2195502165e2a5c951bde9d24b028c7af72eba9ab530fb6b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Textコンポーネントは、追加のCSSなしで簡単にタイポグラフィスタイルを適用するために使用できます。"
+      }
+    },
+    {
+      "segment_id": "8a5f6a7b",
+      "source_content": "## Usage",
+      "source_content_hash": "63bfd61a0561b255a2caa0a2e3add091ca7e327f2fa06a407cbb2ff341b858d8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 使用方法"
+      }
+    },
+    {
+      "segment_id": "ba4f48ff",
+      "source_content": "### When to use",
+      "source_content_hash": "b21c0dd54908a2e06fa9af94ecd22a039429ad358933386b8754657f6a207e14",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 使用する場合"
+      }
+    },
+    {
+      "segment_id": "4269e691",
+      "source_content": "- To display text with styles applied consistently across the product, and to provide structure to each page.",
+      "source_content_hash": "c9d64157127c724f39bcbd19fac740fe6be548ca64d0fae426c7ab253da56898",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- 製品全体で一貫したスタイルを適用したテキストを表示し、各ページに構造を提供する場合"
+      }
+    },
+    {
+      "segment_id": "3daf1b88",
+      "source_content": "### When not to use",
+      "source_content_hash": "0ed2e5d477ec3714e4863b0b18d58081eef8a83b32b6e2f7c835eb6024ace413",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 使用しない場合"
+      }
+    },
+    {
+      "segment_id": "034de896",
+      "source_content": "- If there is any direct interaction between the text and the user, a more suitable component should be used such as Button, TextLink, Menu, etc.",
+      "source_content_hash": "6a0314d58c96cd48bd15724923d0298168c7fb105cc64c16bee64d8914d3d450",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- テキストとユーザー間の直接的なインタラクションがある場合、Button、TextLink、Menuなどより適切なコンポーネントを使用する必要があります。"
+      }
+    },
+    {
+      "segment_id": "418617bd",
+      "source_content": "### Do's",
+      "source_content_hash": "008161705968c1d0413c660ae0e4ffc700a2dc52b83eb054133f9d4218531097",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 推奨事項"
+      }
+    },
+    {
+      "segment_id": "1b8c1887",
+      "source_content": "- Headings should be organized hierarchically.\n- When a heading needs to have the appearance of another heading rank but it will affect the page heading hierarchy, use the `variant` prop to modify its style instead.\n- Use weight or italics for emphasis.",
+      "source_content_hash": "1490df83c2cc66cee0406065299359044cf06be5c6991765d07de99a8062a228",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- 見出しは階層的に整理する\n- 見出しのランクを変更するとページの見出し階層に影響する場合、`variant`プロパティを使用してスタイルを変更する\n- 強調には太字や斜体を使用する"
+      }
+    },
+    {
+      "segment_id": "fa430ad4",
+      "source_content": "### Don’ts",
+      "source_content_hash": "10a29e689467403a41094904f95701105e5679d03a4d001390e97ed74a34be5c",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 非推奨事項"
+      }
+    },
+    {
+      "segment_id": "77bf3ec9",
+      "source_content": "- Do not use the `element` prop simply for its appearance, use it to organize the structure of the page.\n- Do not use color for emphasis as colors are linked to states such as `error`, `success`, `disabled`, etc.\n- Do not use the `code` variant for anything other than code snippets.\n- Avoid using `p` as the `element` prop if the Text has nested components as it may break the DOM nesting rules.",
+      "source_content_hash": "9a52f7ae97a5c40c2cd8864533cb70b8ae1a834abb1712ffd6a30a4aaa89c099",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- `element`プロパティを見た目だけの理由で使用しない（ページ構造を整理する目的で使用する）\n- 強調に色を使用しない（色は`error`、`success`、`disabled`などの状態に関連付けられています）\n- コードスニペット以外で`code`バリアントを使用しない\n- ネストされたコンポーネントを含むTextで`element`プロパティに`p`を使用しない（DOMのネスト規則に違反する可能性があります）"
+      }
+    },
+    {
+      "segment_id": "a1b3d8cb",
+      "source_content": "## Content",
+      "source_content_hash": "8a7454c28fea26099276cbed1827658cd2a47942d6ef32e76e645c81358bf357",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## コンテンツ"
+      }
+    },
+    {
+      "segment_id": "517051a7",
+      "source_content": "The content of the text should be written according to the [Grafana writing style guide](https://grafana.com/docs/writers-toolkit/write/style-guide/).",
+      "source_content_hash": "adce39e6cc2faa5cee10f2d0915d17be0080aeff0360dcb21c9a03b0277027d7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "テキストの内容は[Grafana執筆スタイルガイド](https://grafana.com/docs/writers-toolkit/write/style-guide/)に従って記述する必要があります。"
+      }
+    },
+    {
+      "segment_id": "80d9e13c",
+      "source_content": "## Formatting",
+      "source_content_hash": "cb82e74c9e00ff9a5e2865caca13ab1d7cb66c586dfd902974890130b34e22b8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## フォーマット"
+      }
+    },
+    {
+      "segment_id": "33331f27",
+      "source_content": "The following is the default behavior and as such, it will be applied according to its type.",
+      "source_content_hash": "ce81aef85e1dbb71ab97d0570c21cb8695cdfc158ea898de0ffdda7ee2bee837",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "以下はデフォルトの動作であり、タイプに応じて適用されます。"
+      }
+    },
+    {
+      "segment_id": "8d04259b",
+      "source_content": "### Anatomy",
+      "source_content_hash": "ed10eaa0642d1e95db06d74e961546b7fe21b7d98225e7b3355c72eb9c1afdc2",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 構成要素"
+      }
+    },
+    {
+      "segment_id": "95e9ba12",
+      "source_content": "The Text component mainly comprises itself. On occasion, the Text component can have another Text or TextLink component as a child.",
+      "source_content_hash": "58479b7b8418f8adf8c42facbcabc92eb5c7c00bda7adad556a6d47227e38445",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Textコンポーネントは主にそれ自体で構成されます。場合によっては、Textコンポーネントが別のTextまたはTextLinkコンポーネントを子として持つことがあります。"
+      }
+    },
+    {
+      "segment_id": "4ec2920d",
+      "source_content": "```jsx live\n<Text color=\"primary\">\n  If you need more help of how to write in Grafana you can go to our{' '}\n  <TextLink href=\"https://grafana.com/docs/writers-toolkit/\" external>\n    Writer’s Toolkit\n  </TextLink>\n  .\n</Text>\n```",
+      "source_content_hash": "94c5f9a9904ce0f1f1b3999023c7eddad23789d593521324d8b2b12bfe556519",
+      "node_type": "code",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_4ec2920d"
+      }
+    },
+    {
+      "segment_id": "2c1b51df",
+      "source_content": "### Behaviour",
+      "source_content_hash": "60f2b7872495fb8cf2a9d3bb45c71133ac06766106bfbd46680af3b5cc74a826",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 動作"
+      }
+    },
+    {
+      "segment_id": "e536ea0d",
+      "source_content": "The Text component can be truncated. However, the default rendered element for the Text component (when no value is set in the element prop) is `<span>`. This is an inline container that must have a parent, which may or may not be another Text component. Therefore, truncation must be applied to the parent element.",
+      "source_content_hash": "0957c4f052c380a72704228ad13d58939bcb65735fea44009870a8f3093074e9",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Textコンポーネントは切り詰めることができます。ただし、Textコンポーネントのデフォルトのレンダリング要素（elementプロパティに値が設定されていない場合）は`<span>`です。これはインラインコンテナであり、親要素が必要です（親が別のTextコンポーネントである場合とそうでない場合があります）。したがって、切り詰めは親要素に適用する必要があります。"
+      }
+    },
+    {
+      "segment_id": "a0e887c2",
+      "source_content": "1. If the parent element is a Text component: the user simply needs to set the element prop to a different value and set the truncate prop to true. As a result, the Text will be truncated, but the full text will be visible in a tooltip when a user hovers over it.",
+      "source_content_hash": "0387cd5abb790e3533c09656f71749bc071bb1518906e719a81c07973d6e15aa",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "1. 親要素がTextコンポーネントの場合：ユーザーはelementプロパティを別の値に設定し、truncateプロパティをtrueに設定するだけで済みます。結果として、テキストは切り詰められますが、ユーザーがテキストにホバーするとツールチップで全文が表示されます。"
+      }
+    },
+    {
+      "segment_id": "3adc0ceb",
+      "source_content": "```jsx live\n<Text color=\"primary\" element=\"p\" truncate>\n  And Forrest Gump said: <Text italic>Life is like a box of chocolates. You never know what you're gonna get.</Text>\n</Text>\n```",
+      "source_content_hash": "a7a9c9c674567e407fc4a6ac3d465d66fb8950999e27c27101a2e56434b3b83c",
+      "node_type": "code",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_3adc0ceb"
+      }
+    },
+    {
+      "segment_id": "645e08e3",
+      "source_content": "2. If the parent element is not a Text component: the user needs to add `overflow: hidden`, `text-overflow: ellipsis`, and `whiteSpace: 'nowrap'` to it. In this scenario, the user should wrap this container with a Tooltip so that when the text is truncated, its content can still be viewed by hovering over the text.",
+      "source_content_hash": "52c7fc044ef85de03a37c32412c4f0e77f758aa195422288189ce704b97b5277",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "2. 親要素がTextコンポーネントでない場合：ユーザーは親要素に`overflow: hidden`、`text-overflow: ellipsis`、`whiteSpace: 'nowrap'`を追加する必要があります。このシナリオでは、ユーザーはこのコンテナをTooltipでラップする必要があり、テキストが切り詰められた場合でも、テキストにホバーすることで内容を確認できます。"
+      }
+    },
+    {
+      "segment_id": "7d13cf22",
+      "source_content": "```jsx live\n<Tooltip content=\"This is an example of a span element truncated by its parent container\">\n  <div style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>\n    <Text color=\"primary\" variant=\"body\">\n      {'This is an example of a span element truncated by its parent container.'}\n    </Text>\n  </div>\n</Tooltip>\n```",
+      "source_content_hash": "4cfe9c445ef8bfe474bdaf661c814fff20f02608ad563dce6726db965ed93401",
+      "node_type": "code",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_7d13cf22"
+      }
+    },
+    {
+      "segment_id": "2fd0be2a",
+      "source_content": "## Accessibility",
+      "source_content_hash": "5905e6d1f8fe9000c019119d1b35481573e90f36f72c18c510ba2efec231093d",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## アクセシビリティ"
+      }
+    },
+    {
+      "segment_id": "c0ea80dd",
+      "source_content": "- There should be only one `h1` heading per page.\n- Headings should be organized according to their significance: `h1` has the _rank 1_ while `h6` heading has the _rank 6_. For instance, `h1` can be used for the page heading, `h2` for the titles of sections, and `h3` for subsections.\n- The ranking of headings should be continuous. An `h2` should not be immediately followed by an `h5`, but an `h2` can follow an `h5` if this is closing the previous section. Skipping heading ranks should be avoided as much as possible because it can be confusing.",
+      "source_content_hash": "37e59da71d52042788cc180e57bb0289b5108800f125e3cf8f165e8bb04e9942",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- 1ページに`h1`見出しは1つだけにする\n- 見出しは重要度に従って整理する：`h1`がランク1、`h6`がランク6。例えば、`h1`をページ見出し、`h2`をセクションタイトル、`h3`をサブセクションに使用する\n- 見出しのランクは連続している必要がある。`h2`の直後に`h5`を配置しない（ただし、`h2`が前のセクションを閉じる場合は`h5`の後に`h2`を配置可能）。見出しランクのスキップは可能な限り避ける（混乱を招く可能性があるため）"
+      }
+    },
+    {
+      "segment_id": "1c598ecd",
+      "source_content": "## Playground",
+      "source_content_hash": "54192e25d4cfb303fa3f3761b5d777cd0a2b671840c2cd9c87abb3ab38f58e62",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## プレイグラウンド"
+      }
+    },
+    {
+      "segment_id": "46cf9aca",
+      "source_content": "<ComponentEmbed path=\"/story/general-text--basic\" />",
+      "source_content_hash": "2894a7417b4b76d4c528a128f5cc433e920618706049a1a1ea6f84b8de68d20f",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_46cf9aca"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-docs/current/05-components/text.mdx",
+  "last_updated_timestamp": "2025-06-06T08:53:12.760044+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "d46e979052b534b91e16fefa16882bf0d5ae7a48231db068669ceb7d05d3f302"
+  }
+}

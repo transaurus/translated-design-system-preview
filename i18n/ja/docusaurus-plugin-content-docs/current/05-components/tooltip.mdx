@@ -1,0 +1,116 @@
+---
+title: Tooltip
+description: Tooltips display additional information upon hover or focus. The information included should be contextual, helpful, and non-critical to the user’s task-at-hand.
+hide_title: true
+---
+
+# ツールチップ <Badge text='ready' color='green'></Badge> <StorybookLink path='/story/overlays-tooltip--basic' />
+
+ツールチップは、ホバーまたはフォーカス時に追加情報を表示します。含まれる情報は文脈に沿ったもので、ユーザーのタスクにとって補助的で非必須な内容であるべきです。情報は簡潔にまとめ、ユーザーに明確な理解を提供するようにします。
+
+```tsx live
+<Tooltip content="This is a tooltip">
+  <Button>Hover me for Tooltip</Button>
+</Tooltip>
+```
+
+## 使用方法
+
+### 推奨事項
+
+- アイコンに対する補助的な説明テキストを提供する（例：虫眼鏡アイコンに「検索」というラベルを付ける）。
+- 要素の使用目的について簡潔な情報を提供する。
+- キーボードナビゲーションでツールチップをトリガーできるようにする。
+- ツールチップがどの要素に関連しているかを示すために矢印を使用する。
+- ツールチップを一貫して使用する（例：すべてのアイコンボタンにツールチップを付ける、すべてのツールチップを同じスタイルにする）。
+- アクセシビリティを確保するため、ツールチップ作成時にARIAタグを使用する。
+
+### 非推奨事項
+
+- ユーザーのタスク完了に必須の情報をツールチップに含めない。
+- コールトゥアクションのラベルなど、情報を重複させない（情報汚染を防ぐため）。
+- ツールチップ内にインタラクティブなコンポーネントを使用しない。
+- ユーザーにツールチップを強制的に閉じさせない。
+
+## バリエーション
+
+| Variants               | Purpose                                                |
+| ---------------------- | ------------------------------------------------------ |
+| **Info (aka default)** | Provides contextual supportive information to the user |
+| **info-alt**           | Not sure on what this is                               |
+| **Error**              | Acts as inline validation                              |
+
+## アクセシビリティ
+
+- ツールチップのアクセシビリティを確保するため、ARIAタグを使用する：
+  - ツールチップが主要なラベルとして機能する場合（例：IconButtonのアクション名を付ける場合）は、`aria-labelledby`を使用する。
+  - ツールチップが補助的なラベルとして機能する場合（例：入力欄に対する追加情報を提供する場合）は、`aria-describedby`を使用する。
+  - ツールチップは、トリガーがタブで選択されたりキーボードナビゲーションでフォーカスされたときに表示されなければならない。
+
+## フォーマット
+
+### 構成要素
+
+![ツールチップの各部分を示す画像](/img/tooltip.anatomy.png 'ツールチップの各部分を示す画像')
+
+1. **トリガー** - ユーザーが操作してツールチップを表示するUIコントロール。
+2. **チップ** - トリガー要素を指し示す三角形の部分。
+3. **ボディ** - ツールチップのコンテンツを格納するコンテナ。
+
+### 配置
+
+- 自動: 利用可能なスペースが最も多い側にツールチップを表示する。
+  - 自動-開始: トリガーの上部に揃える。
+  - 自動: トリガーの中央に揃える。
+  - 自動-終了: トリガーの下部に揃える。
+- 上部:
+  - 上部-左
+  - 上部-中央
+  - 上部-右
+- 下部:
+  - 下部-左
+  - 下部-中央
+  - 下部-右
+- 左:
+  - 左-上部
+  - 左-中央
+  - 左-下部
+- 右:
+  - 右-上部
+  - 右-中央
+  - 右-下部
+
+## コンテンツ
+
+### 主要要素
+
+**トリガー** - ユーザーが操作してツールチップを表示するUIコントロール - 標準的な**情報アイコン（info-circle）**
+
+**チップ** - トリガー要素を指し示す三角形の部分。
+
+**ボディ** - ツールチップのコンテンツを格納するコンテナ。
+
+## 動作
+
+### トリガー
+
+- アイコン（一般的に情報アイコン）
+- ボタン
+- リンク
+
+### ユーザー操作
+
+ツールチップは、UIトリガーにマウスをホバーまたはフォーカスしたときに表示されます。ツールチップは、マウスがアクティブなコンテナまたはUIトリガー上にある間、またはアクティブなコンテナ/UIトリガーにフォーカスがある間表示され続けます。ツールチップは、ホバーを外すか、別の要素にフォーカスを移すことで非表示になります。
+
+## 関連コンポーネント
+
+インタラクティブな要素が必要な場合は、**[トグルチップ（ToggleTip）](/components/toggletip)**の使用を検討してください。
+
+### 参考資料
+
+- [Inclusive Components; ツールチップとトグルチップ](https://inclusive-components.design/tooltips-toggletips/)
+- [NNG; ツールチップのガイドライン](https://www.nngroup.com/articles/tooltip-guidelines/)
+- [aria-describedbyプロパティを使用してユーザーインターフェースコントロールに説明的なラベルを提供する](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA1)
+- [アクセシブルな名前と説明の提供](https://www.w3.org/WAI/ARIA/apg/practices/names-and-descriptions/)
+
+<ComponentEmbed path="/story/overlays-tooltip--basic" />

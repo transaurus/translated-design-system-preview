@@ -1,0 +1,72 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "docs/03-foundations/voice-and-tone.mdx",
+  "source_file_content_hash": "e3c2158a389c2e59584370446a4039b848394ecf124d9eb2b548904a00eac504",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\ntitle: Voice and Tone\ndescription: At Grafana, we like our company to sound like a real person.\nhide_title: true\n---",
+      "source_content_hash": "604808c5ced4c639f323f4bf67b8bc32404d4256c35ee4177161259cb7c4c609",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "10c4cb47",
+      "source_content": "import { Badge } from '@grafana/ui';",
+      "source_content_hash": "af7b58551bb42fea6572a2bde03c95c99d8529feeec9e1a0d48c3da4f931ca67",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_10c4cb47"
+      }
+    },
+    {
+      "segment_id": "d912d376",
+      "source_content": "# Voice and Tone <Badge text='ready' color='green'></Badge>",
+      "source_content_hash": "2869cf6aefb538ce868944bb5aed1d92cfc5e799657c62c68d3a32b992608d01",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "# ボイスとトーン <Badge text='ready' color='green'></Badge>"
+      }
+    },
+    {
+      "segment_id": "8ac585fb",
+      "source_content": "At Grafana, we like our company to sound like a real person.",
+      "source_content_hash": "a204a03ea146922de58ea444596431552837d29cb43db7b138b7881381f2f946",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Grafanaでは、会社のコミュニケーションをあたかも実際の人物が話しているように表現することを好みます。"
+      }
+    },
+    {
+      "segment_id": "180bddb1",
+      "source_content": "Voice and tone reflect your attitude and how you convey information. Word choice, bolding, italicizing, punctuation, and grammar all affect your voice. The tone you choose reflects the urgency of your message and can therefore change depending on the situation.",
+      "source_content_hash": "362a878963f24d78d3c95f1f05870a7b68f69c466c49f0edeb7fb54743beadb5",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "ボイスとトーンは、あなたの態度と情報の伝え方を反映します。単語の選択、太字や斜体の使用、句読点、文法はすべてボイスに影響を与えます。選択するトーンはメッセージの緊急性を反映し、状況に応じて変化する可能性があります。"
+      }
+    },
+    {
+      "segment_id": "cf898102",
+      "source_content": "Consult the [voice and tone guidelines](https://grafana.com/docs/writers-toolkit/write/style-guide/voice-tone-guidelines/) when you write technical documentation.",
+      "source_content_hash": "f24a11196305d2513f392981f33afe1c5e2746ecddca397f366455a5abceb829",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "技術文書を作成する際は、[ボイスとトーンのガイドライン](https://grafana.com/docs/writers-toolkit/write/style-guide/voice-tone-guidelines/)を参照してください。"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-docs/current/03-foundations/voice-and-tone.mdx",
+  "last_updated_timestamp": "2025-06-06T08:53:12.749120+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "e3c2158a389c2e59584370446a4039b848394ecf124d9eb2b548904a00eac504"
+  }
+}

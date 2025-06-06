@@ -1,0 +1,27 @@
+---
+title: Inline Field
+description: Grafana Labs Inline Field component
+draft: true
+---
+
+# InlineField <Badge text='draft' color='orange'></Badge> <a href='https://developers.grafana.com/ui/latest/index.html?path=/story/forms-inlinefield--basic' target='_blank' className='header-links'>Storybook <Icon name="external-link-alt"/> </a>
+
+`Input`、`Select`、`Checkbox`などのフォーム要素を`InlineLabel`と一緒にインラインでレンダリングするための基本コンポーネント。子要素に`id`が指定されている場合、そのidを指す`htmlFor`属性がラベルに追加されます。
+
+<iframe
+  src="https://developers.grafana.com/ui/latest/index.html?path=/story/forms-inlinefield--basic&full=1&shortcuts=false&singleStory=true"
+  width="100%"
+  height="500px"
+></iframe>
+
+`InlineLabel`の幅は`labelWidth`プロパティで変更可能で、8pxの倍数で指定します。例えば`labelWidth={20}`の`InlineField`は160px幅のラベルを持ちます。
+
+`tooltip`プロパティが指定されている場合、ラベル内にツールチップ内容付きの情報アイコンが表示されます。
+
+## 使用方法
+
+```jsx
+<InlineField label="Inline field">
+  <Input placeholder="Inline input" />
+</InlineField>
+```

@@ -1,0 +1,67 @@
+---
+title: Stack
+description: Grafana Labs Stack component
+draft: false
+---
+
+import { Stack } from '@grafana/ui';
+
+# Stack <Badge text='ready' color='green'></Badge> <StorybookLink path='/story/general-layout-stack--basic'/>
+
+_v10.2.3 から利用可能_
+
+## 概要
+
+Stackコンポーネントは、フレックスボックスレイアウトモデルを簡単にラップしたもので、レスポンシブで柔軟なレイアウトを簡単に作成できます。コンテナ内のアイテムを水平または垂直に整列・配置するためのシンプルで直感的な方法を提供します。
+
+### 使用する場合
+
+- 異なる画面サイズや向きに適応できるレスポンシブで柔軟なレイアウトを作成する場合
+- コンテナ内のアイテムを水平または垂直に整列・配置するためのシンプルで直感的な方法が必要な場合
+- HTML構造を変更せずに要素の順序や配置を簡単に変更したい場合
+- 等しい高さの列を作成したい場合
+- 利用可能なスペースに基づいてアイテムの自動折り返しとサイズ調整を行うグリッドのような構造を作成したい場合
+
+### 使用しない場合
+
+- CSSフレームワークやグリッドシステムが適した複雑な多次元レイアウトが必要な場合
+- 要素の間隔や位置を精密に制御する必要がある場合
+
+## プロパティ
+
+### 表示
+
+コンテンツの表示方法に関連する5つの異なるプロパティがあります:
+
+- `direction`: 可能な値 `row`, `row-reverse`, `column`, `column-reverse`
+- `wrap`: 可能な値 `nowrap`, `wrap`, `wrap-reverse`
+- `alignItems`: 可能な値 `stretch`, `flex-start`, `flex-end`, `center`, `baseline`, `start`, `end`, `self-start`, `self-end`
+- `justifyContent`: 可能な値 `flex-start`, `flex-end`, `center`, `space-between`, `space-around`, `space-evenly`, `start`, `end`, `left`, `right`
+- `gap`: 可能な値 ThemeSpacingTokens (0 | 0.25 | 0.5 | 1 | 1.5 | 2 | 2.5 | 3 | 4 | 5 | 6 | 8 | 10)
+
+ボックスにスタイリングを加えずにFlexレイアウトのみを作成する必要がある場合は、代わりに**[Stack](/components/primitives/stack)**コンポーネントを使用してください。
+
+```tsx live
+<Stack direction='row' wrap='wrap' alignItems='center' justifyContent='center' gap={5}>
+  <span>One</span>
+  <span>Two</span>
+  <span>Three</span>
+</Stack>
+```
+
+### レスポンシブ対応
+
+上記のすべてのプロパティはレスポンシブに定義でき、ウィンドウサイズに応じて異なる値が設定されます。
+
+レスポンシブに定義するには、単にレスポンシブブレークポイントをキーとしたオブジェクトを渡します。例えば、`direction='row'`のように定義する代わりに、`direction={{ xs: 'column', md: 'row' }}`のように定義します。
+これは、`xs`ブレークポイント以上では方向が`column`に設定され、`md`ブレークポイント以上では`row`に設定されることを意味します。
+
+テーマで可能なブレークポイントは[こちら](https://github.com/grafana/grafana/blob/main/packages/grafana-data/src/themes/breakpoints.ts#L28)で確認できます。
+
+### 参考資料
+
+- [Storybookドキュメントとプロパティテーブル](https://developers.grafana.com/ui/canary/index.html?path=/docs/general-layout-stack--docs)
+
+## プレイグラウンド
+
+<ComponentEmbed path="/story/general-layout-stack--basic" />

@@ -1,0 +1,282 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "docs/06-patterns/empty-state.mdx",
+  "source_file_content_hash": "a44c9e6d468e6d15cfa1043b2c3b69e40097bc861a57c9c1ea39c2bb374ba78b",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\ntitle: Empty State\ndescription: Use an empty state to communicate to the user that there is no data to display, or that a search query returned no results.\n---",
+      "source_content_hash": "089a0b0930f8ca2334de3bde067bf5776bda3d7536b795b3b30a9ba97c55addb",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "b3de8742",
+      "source_content": "# Empty State <Badge text='ready' color='green'></Badge> <StorybookLink path='/story/general-emptystate--basic'/>",
+      "source_content_hash": "9b1af4ab6dfc9a27bcefaba25f67a2c71474e66801fa3c4f30e8d0b4975228b7",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "# 空状態 <Badge text='ready' color='green'></Badge> <StorybookLink path='/story/general-emptystate--basic'/>"
+      }
+    },
+    {
+      "segment_id": "6ef78e84",
+      "source_content": "_Available from v11.0.0_",
+      "source_content_hash": "71acb24aa3fdf70bfbc046d4d6617c2e8da44db050b3510bfa1de7b731498ff6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "_バージョン11.0.0以降で利用可能_"
+      }
+    },
+    {
+      "segment_id": "53eaf0e1",
+      "source_content": "An empty state consists of a message and optionally an image, button, and additional information.",
+      "source_content_hash": "d2afa4c9c3c0572b52fccba0292f4bfe1413539407daffde2ef9ebafb82dbfcc",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "空状態はメッセージと、オプションで画像、ボタン、追加情報で構成されます。"
+      }
+    },
+    {
+      "segment_id": "8a5f6a7b",
+      "source_content": "## When to use",
+      "source_content_hash": "d57fe8233a0bcc964af649dd3059fbd5aa2ba0bba9b4b44f225cdd2f0dd1c432",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 使用タイミング"
+      }
+    },
+    {
+      "segment_id": "180bddb1",
+      "source_content": "Use an empty state to communicate to the user that there is no data to display and provide instructions for what to do next.\nExample use cases:",
+      "source_content_hash": "cb387d191bf679a9eae65be3c18cf200d9c31e17d1760382d600406c67a4ca37",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "空状態は、表示するデータがなく、次に取るべき行動をユーザーに伝えるために使用します。\n使用例:"
+      }
+    },
+    {
+      "segment_id": "4269e691",
+      "source_content": "- When a user has not created a particular resource yet\n- When a filter or search query returns no results\n- When a user completes all actions, such as clearing their inbox or notifications",
+      "source_content_hash": "b404bd818bbe3bfb4bbff98aebaad925defac83f7bf1d9b23a9efb2945c50c07",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- ユーザーが特定のリソースをまだ作成していない場合\n- フィルターや検索クエリで結果が返されない場合\n- 受信箱や通知をすべてクリアするなど、すべてのアクションを完了した場合"
+      }
+    },
+    {
+      "segment_id": "f6168993",
+      "source_content": "There is an `EmptyState` component with different variants to handle the most common empty state use cases. These variants provide a sensible default image.",
+      "source_content_hash": "b5750cfd90e7f59a6eeb327edd591819907cd0c417424b256af08fa8a6fbf0e0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "一般的な空状態のユースケースに対応するため、`EmptyState`コンポーネントにはさまざまなバリアントが用意されており、適切なデフォルト画像が提供されます。"
+      }
+    },
+    {
+      "segment_id": "418617bd",
+      "source_content": "## Usage",
+      "source_content_hash": "63bfd61a0561b255a2caa0a2e3add091ca7e327f2fa06a407cbb2ff341b858d8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 使用方法"
+      }
+    },
+    {
+      "segment_id": "40f9552a",
+      "source_content": "### `variant=\"call-to-action\"`",
+      "source_content_hash": "800d1e0bea832fff318bf23438f98e98884a07ff8873937c1d5bfb2f17dc7648",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### `variant=\"call-to-action\"`"
+      }
+    },
+    {
+      "segment_id": "f2c2bdd0",
+      "source_content": "Use when there is no data to display and you want to encourage the user to take an action. Usually either to complete some initial configuration, or to create an item.",
+      "source_content_hash": "bfe648795caa037c7a29f920693179624f393a43d3c72209d05de51b9db3cb28",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "表示するデータがなく、ユーザーにアクションを促したい場合に使用します。通常、初期設定を完了させるか、アイテムを作成するよう促す場合です。"
+      }
+    },
+    {
+      "segment_id": "08021a08",
+      "source_content": "```tsx\nimport { EmptyState, LinkButton, TextLink } from '@grafana/ui';\n\n<EmptyState\n  variant=\"call-to-action\"\n  message=\"You haven't created any playlists yet\"\n  button={\n    <LinkButton icon=\"plus\" href=\"playlists/new\" size=\"lg\">\n      Create playlist\n    </LinkButton>\n  }\n>\n  You can use playlists to cycle dashboards on TVs without user control.{' '}\n  <TextLink external href=\"<externalDocsLink>\">\n    Learn more.\n  </TextLink>\n</EmptyState>;\n```",
+      "source_content_hash": "1bb219e57d0ed518d8381cb881153eb6c9efead5943998199e6faa9561baba49",
+      "node_type": "code",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_08021a08"
+      }
+    },
+    {
+      "segment_id": "8af76f3d",
+      "source_content": "For scenarios where there is no single button that can be clicked to create the item, you can omit the `button` prop. Instead, provide additional information to help the user understand how to create the specific resource.",
+      "source_content_hash": "ea9e58e2b9e2459d8f89f5ea93dd2fb20057c0052f1ff27c480051ef4a32198d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "アイテム作成のためにクリックできる単一のボタンがないシナリオでは、`button`プロップを省略できます。代わりに、特定のリソースを作成する方法をユーザーが理解できるよう追加情報を提供してください。"
+      }
+    },
+    {
+      "segment_id": "48ec8149",
+      "source_content": "```tsx\nimport { EmptyState, TextLink } from '@grafana/ui';\n\n<EmptyState variant=\"call-to-action\" message=\"You haven't created any library panels yet\">\n  Create a library panel from any existing dashboard panel through the panel context menu.{' '}\n  <TextLink external href=\"<externalDocsLink>\">\n    Learn more.\n  </TextLink>\n</EmptyState>;\n```",
+      "source_content_hash": "529343583fcb9425fa2d31878474fe636034b6c2e675f5736a5e4f8d6ed11cc1",
+      "node_type": "code",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_48ec8149"
+      }
+    },
+    {
+      "segment_id": "7283cdac",
+      "source_content": "### `variant=\"not-found\"`",
+      "source_content_hash": "ebf58400ec5f9c2b9f4b7a70f586c813d3bcee4ca4afc95e0ec5b70050a7cad5",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### `variant=\"not-found\"`"
+      }
+    },
+    {
+      "segment_id": "1131ef75",
+      "source_content": "Use in place of content when a search query or filter returns no results.",
+      "source_content_hash": "aa93cc97f88ba637a35f4a2b0ca18ee1c7ca8808eecf66036a80f13781203e33",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "検索クエリやフィルターで結果が返されない場合に、コンテンツの代わりとして使用します。"
+      }
+    },
+    {
+      "segment_id": "8b2a52b1",
+      "source_content": "There are sensible defaults for the image, so in most cases all you need to provide is a message.",
+      "source_content_hash": "6f579811bf5c9428d31182e24af6f7932aeb2ebee9b9bac62c977d80b2b59440",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "適切なデフォルト画像が用意されているため、ほとんどの場合、メッセージを提供するだけで十分です。"
+      }
+    },
+    {
+      "segment_id": "7a577a50",
+      "source_content": "```tsx\nimport { EmptyState } from '@grafana/ui';\n\n<EmptyState variant=\"not-found\" message=\"No playlists found\" />\n```",
+      "source_content_hash": "9b60dc8c47a885d9ea47c084871eea9f306be2e9fc594b8083f5721d6e5105af",
+      "node_type": "code",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_7a577a50"
+      }
+    },
+    {
+      "segment_id": "52388877",
+      "source_content": "### `variant=\"completed\"`",
+      "source_content_hash": "fa7d5efacf4458adb021ff1b75d2d60ef573e7e300c00ee7bc36f297ad2842ba",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### `variant=\"completed\"`"
+      }
+    },
+    {
+      "segment_id": "eab056be",
+      "source_content": "For when a user has completed all tasks on a page, such as reading all their notifications.",
+      "source_content_hash": "19cf83a4d590136470eade269f1e3b047b97d3b1fe85901da84be3e4c0cc71d4",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "通知をすべて読むなど、ページ上のすべてのタスクをユーザーが完了した場合に使用します。"
+      }
+    },
+    {
+      "segment_id": "9f3b4022",
+      "source_content": "```tsx\nimport { EmptyState } from '@grafana/ui';\n\n<EmptyState variant=\"completed\" message=\"You're all caught up\" />;\n```",
+      "source_content_hash": "d63163fb2171864f6dd348be31e36324b1976fd306b9cc56c048a91fc87d224c",
+      "node_type": "code",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_9f3b4022"
+      }
+    },
+    {
+      "segment_id": "b936dd6a",
+      "source_content": "### Customization",
+      "source_content_hash": "9702c5ceb163ed54f92b5133c618d197e13fca50dabd84c26114798c1fb8affb",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### カスタマイズ"
+      }
+    },
+    {
+      "segment_id": "a5c5772a",
+      "source_content": "For all variants you can:",
+      "source_content_hash": "63178f9712866e3e0c2cf380bf643bf1227541804b2e3db0a1099a51a89a71f0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "すべてのバリアントで以下のことが可能です:"
+      }
+    },
+    {
+      "segment_id": "5dbc17cf",
+      "source_content": "- provide a custom image or hide the image entirely\n- provide a button (e.g. to provide a call to action or clear the search query)\n- provide additional information via React children",
+      "source_content_hash": "52f74399a49c684ffad180c1bbbc2dfbc15e5ed318de1eb7d2913c0e14326f60",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- カスタム画像を提供するか、画像を完全に非表示にする\n- ボタンを提供する（例：アクションを促す、または検索クエリをクリアする）\n- Reactのchildrenを通じて追加情報を提供する"
+      }
+    },
+    {
+      "segment_id": "f6563256",
+      "source_content": "```tsx\nimport { Button, EmptyState, TextLink } from '@grafana/ui';\n\n<EmptyState\n  button={<Button variant=\"secondary\" onClick={clearSearchQuery} />}\n  image={<AnyReactNode />}\n  message=\"No playlists found\"\n  variant=\"not-found\"\n>\n  Optionally provide some additional information here. Maybe even a link to{' '}\n  <TextLink href=\"<externalDocsLink>\" external>\n    documentation.\n  </TextLink>\n</EmptyState>\n```",
+      "source_content_hash": "78b64d14f94d6ca4dd5f336c14f3a58e1f22c9c18e3716e40ed0a8462fb807ea",
+      "node_type": "code",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_f6563256"
+      }
+    },
+    {
+      "segment_id": "54bafb10",
+      "source_content": "## Playground",
+      "source_content_hash": "54192e25d4cfb303fa3f3761b5d777cd0a2b671840c2cd9c87abb3ab38f58e62",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## プレイグラウンド"
+      }
+    },
+    {
+      "segment_id": "488abec8",
+      "source_content": "<ComponentEmbed height={500} path=\"/story/general-emptystate--basic\" />",
+      "source_content_hash": "f46aa187b8692a743d87b6688a27bdd1cc56e34875d0e3117c45c91ff5559220",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_488abec8"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-docs/current/06-patterns/empty-state.mdx",
+  "last_updated_timestamp": "2025-06-06T08:53:12.756997+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "a44c9e6d468e6d15cfa1043b2c3b69e40097bc861a57c9c1ea39c2bb374ba78b"
+  }
+}

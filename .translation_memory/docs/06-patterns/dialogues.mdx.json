@@ -1,0 +1,32 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "docs/06-patterns/dialogues.mdx",
+  "source_file_content_hash": "ad5f76a276a07be58449bf5f2ac4d40578bb24fc2c0f47bc8e6b32604ded9abf",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\ntitle: Dialogues\ndescription: Description for search engines and results\ndraft: true\n---",
+      "source_content_hash": "96fc5ebb6bce12adcfc4d80bea21bc2b034d4d9f31a8a7e2893860597a841f49",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "6ef78e84",
+      "source_content": "This document is a WIP.",
+      "source_content_hash": "e43e4ae2a07be9af10a6de7f0b3402b588a5a1483e1516639ead91813e407f5a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "このドキュメントは作業中です。"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-docs/current/06-patterns/dialogues.mdx",
+  "last_updated_timestamp": "2025-06-06T08:53:12.744015+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "ad5f76a276a07be58449bf5f2ac4d40578bb24fc2c0f47bc8e6b32604ded9abf"
+  }
+}

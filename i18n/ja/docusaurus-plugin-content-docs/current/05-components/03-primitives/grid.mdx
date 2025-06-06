@@ -1,0 +1,91 @@
+---
+title: Grid
+description: Grafana Labs Grid component
+draft: false
+---
+
+import { Grid } from '@grafana/ui';
+
+# グリッド <Badge text='ready' color='green'></Badge> <StorybookLink path='/story/general-layout-grid--columns-number'/>
+
+_v10.2.3 以降で利用可能_
+
+## 概要
+
+Gridコンポーネントは、コンテンツや要素を整理するための列と行のグリッドを作成できるレイアウトコンポーネントです。[CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)仕様をラップしたものです。
+
+### 使用すべき場合
+
+明確さと一貫性のために、コンテンツや要素を行と列に整列させる必要がある構造化されたレイアウトを作成したい場合にGridコンポーネントを使用します。
+
+### 使用すべきでない場合
+
+以下のユースケースでは、代わりに**[Stack](/components/primitives/stack)**コンポーネントを使用してください:
+
+- **配置:** アイテムの配置に関するより多くのオプションが必要な場合
+- **Flexアイテム:** カスタムのflex basisや、アイテムの伸縮・折り返しを設定する必要がある場合
+
+## プロパティ
+
+`Grid`を定義する方法には、列数による方法と最小列幅による方法の2通りがあります。
+
+_注: `columns`と`minColumnWidth`プロパティを同時に使用することはサポートされていません。正しい動作は、どちらか一方のみを使用することです。_
+
+### 列数
+
+`columns`プロパティは、グリッドが持つ列の数を定義します。列は均等なサイズになります。
+使用可能なプロパティ:
+
+- `columns`: 取り得る値: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12
+- `gap`: 取り得る値: ThemeSpacingTokens (0 | 0.25 | 0.5 | 1 | 1.5 | 2 | 2.5 | 3 | 4 | 5 | 6 | 8 | 10)
+
+```tsx live
+<Grid columns={4} gap={2}>
+  <span>1</span>
+  <span>2</span>
+  <span>3</span>
+  <span>4</span>
+  <span>5</span>
+  <span>6</span>
+  <span>7</span>
+  <span>8</span>
+</Grid>
+```
+
+### 最小列幅
+
+`minColumnWidth`プロパティは、各列が持つことができる最小幅を定義します。列数は利用可能なスペースによって決定されます。
+使用可能なプロパティ:
+
+- `minColumnWidth`: 取り得る値: 1 | 2 | 3 | 5 | 8 | 13 | 21 | 34 | 44 | 55 | 72 | 89 | 144（数値はグリッドサイズに乗算されます）
+- `gap`: 取り得る値: ThemeSpacingTokens (0 | 0.25 | 0.5 | 1 | 1.5 | 2 | 2.5 | 3 | 4 | 5 | 6 | 8 | 10)
+
+```tsx live
+<Grid minColumnWidth={13} gap={2}>
+  <span>1</span>
+  <span>2</span>
+  <span>3</span>
+  <span>4</span>
+  <span>5</span>
+  <span>6</span>
+  <span>7</span>
+  <span>8</span>
+</Grid>
+```
+
+### レスポンシブ対応
+
+上記のプロパティはすべてレスポンシブに定義可能で、ウィンドウサイズに応じて異なる値が設定されます。
+
+レスポンシブに定義するには、単にレスポンシブブレークポイントをキーとしたオブジェクトを渡します。例えば、`columns={4}`のように定義する代わりに、`columns={{ xs: 1, md: 4 }}`のように定義します。
+これは、`xs`ブレークポイント以上では列数が1、`md`ブレークポイント以上では4になることを意味します。
+
+テーマで使用可能なブレークポイントは[こちら](https://github.com/grafana/grafana/blob/main/packages/grafana-data/src/themes/breakpoints.ts#L28)で確認できます。
+
+### 参考資料
+
+- [Storybookドキュメントとプロパティ一覧](https://developers.grafana.com/ui/canary/index.html?path=/docs/general-layout-grid--docs)
+
+## プレイグラウンド
+
+<ComponentEmbed path="/story/general-layout-grid--columns-number" />

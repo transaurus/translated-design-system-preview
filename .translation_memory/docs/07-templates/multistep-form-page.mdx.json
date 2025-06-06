@@ -1,0 +1,282 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "docs/07-templates/multistep-form-page.mdx",
+  "source_file_content_hash": "ee840577da51784c5c30e2571d472eb31376a27d57267298ac37d038e46ae15c",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\ntitle: Multistep Form Page\ndescription: Template for Multistep Form Page\nkeywords: ['MultistepFormPage', 'template']\nhide_table_of_contents: true\ndraft: false\n---",
+      "source_content_hash": "29b9504d61453a9dcb362224fd83013d7007006bee9af84bbc46cb9c37a36978",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "623f74e7",
+      "source_content": "import { Page } from '@site/src/components/templates/Page/Page';\nimport { CodeCollapse } from '@site/src/components/templates/CodeCollapse';\nimport MultistepFormPage from '@site/src/components/templates/MultistepFormPage/MultistepFormPage';\nimport { DataProvider } from '@site/src/components/templates/MultistepFormPage/DataProvider';",
+      "source_content_hash": "4a30097c72ad95ce93d06c0ffcf9d2a53a618c14e5d4fb5e4f3ca1a16c6946ed",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_623f74e7"
+      }
+    },
+    {
+      "segment_id": "17011a71",
+      "source_content": "import MultistepFormPageRaw from '!!raw-loader!@site/src/components/templates/MultistepFormPage/MultistepFormPage';\nimport types from '!!raw-loader!@site/src/components/templates/MultistepFormPage/types';\nimport StepperRaw from '!!raw-loader!@site/src/components/templates/MultistepFormPage/Stepper';\nimport StepRaw from '!!raw-loader!@site/src/components/templates/MultistepFormPage/Steps/Step';\nimport StepFormRaw from '!!raw-loader!@site/src/components/templates/MultistepFormPage/Steps/StepForm';\nimport GeneralInfoRaw from '!!raw-loader!@site/src/components/templates/MultistepFormPage/Steps/GeneralInfo';\nimport AdditionalInfoRaw from '!!raw-loader!@site/src/components/templates/MultistepFormPage/Steps/AdditionalInfo';\nimport PreviewRaw from '!!raw-loader!@site/src/components/templates/MultistepFormPage/Steps/Preview';\nimport fieldsRaw from '!!raw-loader!@site/src/components/templates/MultistepFormPage/Steps/fields';\nimport validationRaw from '!!raw-loader!@site/src/components/templates/MultistepFormPage/utils/validation';\nimport stepsRaw from '!!raw-loader!@site/src/components/templates/MultistepFormPage/utils/steps';",
+      "source_content_hash": "0e89266011d8896e0fce17103d26234c574439c1db34058cf858606ae76e6682",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_17011a71"
+      }
+    },
+    {
+      "segment_id": "79b2d0b9",
+      "source_content": "## Overview",
+      "source_content_hash": "7337f3d0aa29e9a82b8f1650b743a98eef90794631fa763a319686e69c546821",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 概要"
+      }
+    },
+    {
+      "segment_id": "d9172fa4",
+      "source_content": "The multistep form (wizard) pattern helps people to successfully finish complex flows, usually related to configuration or setup, by splitting them into steps. They limit cognitive load thanks to functional or semantic grouping of information and steps, allow faster error recovery and allow for session interruptions by enabling people to save their progress and return easily to where they left off.",
+      "source_content_hash": "0c6ce255bdbc4f923e6689770d015dfba6d933a1a628bcb645aaf9db32c5cf57",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "マルチステップフォーム（ウィザード）パターンは、複雑な設定やセットアップ関連のフローをステップに分割することで、ユーザーが確実に完了できるように支援します。情報やステップを機能別または意味的にグループ化することで認知負荷を軽減し、エラーからの迅速な回復を可能にするとともに、進捗を保存して中断した場所に簡単に戻れるようにすることでセッションの中断を許容します。"
+      }
+    },
+    {
+      "segment_id": "26524352",
+      "source_content": "**Note:** To avoid large setup and extra libraries, this template is using `window.location.hash` for step navigation . In Grafana, we use `locationService` from `@grafana/runtime` to handle the routing navigation.",
+      "source_content_hash": "4ce6de1bf8c2ded6ef0c4d34b8d16b195ead6b9b7472bed87dcd05c04ac2c51a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**注記:** 大規模なセットアップや追加ライブラリを避けるため、このテンプレートではステップナビゲーションに `window.location.hash` を使用しています。Grafanaでは、ルーティングナビゲーションを処理するために `@grafana/runtime` の `locationService` を使用しています。"
+      }
+    },
+    {
+      "segment_id": "99d14dfd",
+      "source_content": "<Page title=\"Feature name\" subTitle=\"Further description of the feature and links to docs.\" height={700}>\n  <DataProvider>\n    <MultistepFormPage />\n  </DataProvider>\n</Page>",
+      "source_content_hash": "8b1d9063cd15c583b41347e3a1389a58b4985d3fb5f25d958b7eaa2601519177",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_99d14dfd"
+      }
+    },
+    {
+      "segment_id": "80d9e13c",
+      "source_content": "## Source code",
+      "source_content_hash": "8b39531b3401a1ba9bedef02f05e4d01ad5b8686bff547368174d3e783183dbf",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## ソースコード"
+      }
+    },
+    {
+      "segment_id": "1641af73",
+      "source_content": "<CodeCollapse label=\"MultistepFormPage.tsx\" isOpen>\n  {MultistepFormPageRaw}\n</CodeCollapse>",
+      "source_content_hash": "720632af8dfa87804637ff83134ac868468be07805b61583ccd8984935b61d3e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_1641af73"
+      }
+    },
+    {
+      "segment_id": "f4a3226e",
+      "source_content": "<CodeCollapse label=\"types.ts\">{types}</CodeCollapse>",
+      "source_content_hash": "5ebbe562fa403efa3bca860a78b4dc8a71668d479e25d57ed5acaae6f19e2c5f",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_f4a3226e"
+      }
+    },
+    {
+      "segment_id": "e2ae1ac7",
+      "source_content": "<CodeCollapse label=\"Stepper.tsx\">{StepperRaw}</CodeCollapse>",
+      "source_content_hash": "48435601c797db7c9142e96fb47e5cd65a67718cad18e75196d43c4611bf28c1",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_e2ae1ac7"
+      }
+    },
+    {
+      "segment_id": "68123cc1",
+      "source_content": "<CodeCollapse label=\"Step.tsx\">{StepRaw}</CodeCollapse>",
+      "source_content_hash": "2dd7080ef85871f7cd5757719c55cd14a49575620c3addaf476ec4abfc82f252",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_68123cc1"
+      }
+    },
+    {
+      "segment_id": "f5276727",
+      "source_content": "<CodeCollapse label=\"StepForm.tsx\">{StepFormRaw}</CodeCollapse>",
+      "source_content_hash": "39a5cfe7b1ceceecefacee44a25c38808c26800e9700b1a9218f58060c1904f9",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_f5276727"
+      }
+    },
+    {
+      "segment_id": "92b13a72",
+      "source_content": "<CodeCollapse label=\"GeneralInfo.tsx\">{GeneralInfoRaw}</CodeCollapse>",
+      "source_content_hash": "4a8302267f11e97c56ba1a18b7612803016885aaceedaf15cafdb4648273380f",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_92b13a72"
+      }
+    },
+    {
+      "segment_id": "2f83a0f4",
+      "source_content": "<CodeCollapse label=\"AdditionalInfo.tsx\">{AdditionalInfoRaw}</CodeCollapse>",
+      "source_content_hash": "40722c9cda385dca50d7252df24bd44e019b7313e1cdc19825efd7f2b949b526",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_2f83a0f4"
+      }
+    },
+    {
+      "segment_id": "6127963f",
+      "source_content": "<CodeCollapse label=\"Preview.tsx\">{PreviewRaw}</CodeCollapse>",
+      "source_content_hash": "098db65bccf415f49d6166af4d73d82be27e51c2b0b307bcbb890e93dd519df9",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_6127963f"
+      }
+    },
+    {
+      "segment_id": "ece60464",
+      "source_content": "<CodeCollapse label=\"fields.ts\">{fieldsRaw}</CodeCollapse>",
+      "source_content_hash": "5303c225e5c418d91c21a9cbf1a88048113b6773dcae3dd4ded1831778280386",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_ece60464"
+      }
+    },
+    {
+      "segment_id": "8e90ad3a",
+      "source_content": "<CodeCollapse label=\"validation.ts\">{validationRaw}</CodeCollapse>",
+      "source_content_hash": "6718360f69aaf8ad5bbf779690187caddf121a31544d4b59071ebdde213e8651",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_8e90ad3a"
+      }
+    },
+    {
+      "segment_id": "b72935b5",
+      "source_content": "<CodeCollapse label=\"steps.ts\">{stepsRaw}</CodeCollapse>",
+      "source_content_hash": "80fa2f6738adb585444665d3e9e0be330498678c5632035e3a12c67775df9615",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_b72935b5"
+      }
+    },
+    {
+      "segment_id": "60410af6",
+      "source_content": "## Usage",
+      "source_content_hash": "63bfd61a0561b255a2caa0a2e3add091ca7e327f2fa06a407cbb2ff341b858d8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 使用方法"
+      }
+    },
+    {
+      "segment_id": "2c1b51df",
+      "source_content": "### When to use",
+      "source_content_hash": "b21c0dd54908a2e06fa9af94ecd22a039429ad358933386b8754657f6a207e14",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 使用すべき場合"
+      }
+    },
+    {
+      "segment_id": "e536ea0d",
+      "source_content": "A wizard pattern should be used for interactions that:",
+      "source_content_hash": "2193206de0bbd67bbe1a95f758113f1c1f64f29f7e63ec6b2a0462464033a14c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "ウィザードパターンは、以下のようなインタラクションに使用すべきです："
+      }
+    },
+    {
+      "segment_id": "a0e887c2",
+      "source_content": "- Are complex or long.\n- Can be divided into logical steps.\n- Need to be performed in a specific sequence.\n- Have a clear beginning and end (start with `Add`, end with `Save`).\n- Are related to completing a specific action, such as creating an object, configuring settings, etc.",
+      "source_content_hash": "92dd96f474743338775dabcb77f7a20c4d371c9188416bd485d0ff0f85cd2883",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- 複雑または長い処理\n- 論理的なステップに分割可能な場合\n- 特定の順序で実行する必要がある場合\n- 明確な開始と終了がある場合（`追加`で開始、`保存`で終了）\n- オブジェクトの作成や設定の変更など、特定のアクションを完了するための処理"
+      }
+    },
+    {
+      "segment_id": "8c6d7ee7",
+      "source_content": "### When not to use",
+      "source_content_hash": "0ed2e5d477ec3714e4863b0b18d58081eef8a83b32b6e2f7c835eb6024ace413",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 使用すべきでない場合"
+      }
+    },
+    {
+      "segment_id": "645e08e3",
+      "source_content": "- For short forms.\n- For forms that cannot be logically divided into steps.\n- For product tours.",
+      "source_content_hash": "f6a35bc09084b2cdb037783a2e6cb697ffbfe72b3be879ae8bde8a71a3ad6814",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- 短いフォーム\n- ステップに論理的に分割できないフォーム\n- プロダクトツアー"
+      }
+    },
+    {
+      "segment_id": "047c2395",
+      "source_content": "## Figma designs (internal use only)",
+      "source_content_hash": "a4df1583a37ddb93ffbf89bd5f798088c9fe59473c4a610f682e588bbf1056d6",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## Figmaデザイン（内部利用のみ）"
+      }
+    },
+    {
+      "segment_id": "7dfac50a",
+      "source_content": "[//]: # 'Links to the applicable designs in Figma'",
+      "source_content_hash": "f3fb033d88a4929b1b342586a3275e616759d75d189a82e2a1a7acc42413bf2b",
+      "node_type": "definition",
+      "translatable": true,
+      "translations": {
+        "ja": "[//]: # 'Figma内の該当デザインへのリンク'"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-docs/current/07-templates/multistep-form-page.mdx",
+  "last_updated_timestamp": "2025-06-06T08:53:12.756208+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "ee840577da51784c5c30e2571d472eb31376a27d57267298ac37d038e46ae15c"
+  }
+}

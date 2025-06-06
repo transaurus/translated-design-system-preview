@@ -1,0 +1,87 @@
+---
+title: Box
+description: Grafana Labs Box component
+draft: false
+---
+
+import { Box } from '@grafana/ui';
+
+# Box <Badge text='ready' color='green'></Badge> <StorybookLink path='/story/general-layout-box--basic'/>
+
+_v10.2.3 以降で利用可能_
+
+## 概要
+
+Boxコンポーネントは最も基本的なレイアウトコンポーネントです。デザイントークンを使用したプロパティで、より複雑なコンポーネントやレイアウトを構築するために使用できます。
+
+### 使用場面
+
+クラススタイルの代わりにBoxを使用することで、デザイントークンの利点を活かせます。
+コンポーネント周囲の余白追加からセクションへの境界線設定まで、様々な用途に使用できます。
+
+## プロパティ
+
+### スペーシング
+
+marginとpaddingプロパティは、それぞれBoxの周囲または内部にスペースを追加するために使用されます。
+marginには7種類のプロパティがあります: `margin`, `marginX`, `marginY`, `marginTop`, `marginRight`, `marginBottom`, `marginLeft`。
+同様にpaddingにも7種類のプロパティがあります: `padding`, `paddingX`, `paddingY`, `paddingTop`, `paddingRight`, `paddingBottom`, `paddingLeft`。
+指定可能な値: `ThemeSpacingTokens (0 | 0.25 | 0.5 | 1 | 1.5 | 2 | 2.5 | 3 | 4 | 5 | 6 | 8 | 10)`
+
+```tsx live
+<Box margin={1} marginY={2} marginTop={3} padding={1} paddingY={2} paddingTop={3} borderStyle='solid' borderColor='strong'>
+  Content
+</Box>
+```
+
+### 視覚的表現
+
+Boxのスタイルは5つのプロパティで定義できます:
+
+- `borderColor`: 指定可能な値 `weak`, `medium`, `strong`, `error`, `success`, `warning`, `info`
+- `borderStyle`: 指定可能な値 `solid`, `dashed`
+- `borderRadius`: 指定可能な値 `default`, `pill`, `circle`
+- `backgroundColor`: 指定可能な値 `canvas`, `primary`, `secondary`, `error`, `success`, `warning`, `info`
+- `boxShadow`: 指定可能な値 `z1`, `z2`, `z3`
+
+```tsx live
+<Box borderRadius='pill' borderStyle='dashed' borderColor='strong' backgroundColor='warning' boxShadow='z1'>
+  Content
+</Box>
+```
+
+### 表示
+
+コンテンツの表示方法に関連する4つのプロパティ:
+
+- `display`: 指定可能な値 `flex`, `block`, `inline`, `none`
+- `alignItems`: 指定可能な値 `stretch`, `flex-start`, `flex-end`, `center`, `baseline`, `start`, `end`, `self-start`, `self-end`
+- `justifyContent`: 指定可能な値 `flex-start`, `flex-end`, `center`, `space-between`, `space-around`, `space-evenly`, `start`, `end`, `left`, `right`
+- `gap`: 指定可能な値 ThemeSpacingTokens (0 | 0.25 | 0.5 | 1 | 1.5 | 2 | 2.5 | 3 | 4 | 5 | 6 | 8 | 10)
+
+Flexレイアウトのみが必要でBoxに他のスタイリングが不要な場合は、代わりに**[Stack](/components/primitives/stack)**コンポーネントを使用してください。
+
+```tsx live
+<Box display='flex' alignItems='center' justifyContent='center' gap={5}>
+  <span>One</span>
+  <span>Two</span>
+</Box>
+```
+
+### レスポンシブ対応
+
+上記のすべてのプロパティはレスポンシブに定義可能で、ウィンドウサイズに応じて異なる値を設定できます。
+
+レスポンシブに定義するには、単にブレークポイントをキーとしたオブジェクトを渡します。例えば、`margin={5}`のように定義する代わりに、
+`margin={{ xs: 3, md: 5 }}`のように定義します。
+これは、`xs`ブレークポイント以上ではmarginが`3`に設定され、`md`ブレークポイント以上では`5`に設定されることを意味します。
+
+テーマで使用可能なブレークポイントは[こちら](https://github.com/grafana/grafana/blob/main/packages/grafana-data/src/themes/breakpoints.ts#L28)で確認できます。
+
+### 参考資料 & 情報源
+
+- [Storybookドキュメントとpropsテーブル](https://developers.grafana.com/ui/canary/index.html?path=/docs/general-layout-box--docs)
+
+## プレイグラウンド
+
+<ComponentEmbed path="/story/general-layout-box--basic" />

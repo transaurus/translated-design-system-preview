@@ -1,0 +1,162 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "docs/05-components/textarea.mdx",
+  "source_file_content_hash": "6ca628ccf48cbc1efb38f3d6459a4f7719f53e9457d9076887db225793394ab8",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\ntitle: TextArea\ndescription: TextArea is a fundamental component used for capturing larger inputs from users, such as descriptions or detailed information.\n---",
+      "source_content_hash": "468ad5e4c1f3fdbc69a31bc7fd698d91fa3eb2dc0c8c704ef3f6254ce800b14a",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "b3de8742",
+      "source_content": "# TextArea <Badge text='ready' color='green'></Badge> <StorybookLink path='/story/forms-textarea--basic' />",
+      "source_content_hash": "31116aa89111101bdd05f95f644435e2f3823a9dd31b2cc38c3ee3a638f570b5",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "# TextArea <Badge text='ready' color='green'></Badge> <StorybookLink path='/story/forms-textarea--basic' />"
+      }
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "TextArea is a fundamental component used for capturing larger inputs from users, such as descriptions or detailed information.",
+      "source_content_hash": "4a777f769c288a4b2274926ccb2d053afc393918d5f7eb30f71dbd08b036ee65",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "TextAreaは、説明や詳細情報など、ユーザーからの長めの入力を取得するために使用される基本的なコンポーネントです。"
+      }
+    },
+    {
+      "segment_id": "1cc03ec8",
+      "source_content": "## Usage",
+      "source_content_hash": "63bfd61a0561b255a2caa0a2e3add091ca7e327f2fa06a407cbb2ff341b858d8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 使用方法"
+      }
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "TextArea should be used with the Field component to get labels and descriptions. The default HTML validation can be enabled by using the `required` prop.",
+      "source_content_hash": "5ed5fdab47673164d44f5dd3f959bc05c5c1195f6952edb943e3124f6bb660ae",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "TextAreaは、ラベルや説明を取得するためにFieldコンポーネントと共に使用する必要があります。デフォルトのHTMLバリデーションは、`required`プロパティを使用することで有効にできます。"
+      }
+    },
+    {
+      "segment_id": "5564d81d",
+      "source_content": "```tsx live\n<Field label=\"Message\" description=\"Write your message here\">\n  <TextArea name=\"importantTextarea\" required />\n</Field>\n```",
+      "source_content_hash": "9eedf6cde078722314f16c23db8de07f03d182b90a761132e3e3595ec017e3e7",
+      "node_type": "code",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_5564d81d"
+      }
+    },
+    {
+      "segment_id": "bc633244",
+      "source_content": "### When to use",
+      "source_content_hash": "b21c0dd54908a2e06fa9af94ecd22a039429ad358933386b8754657f6a207e14",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 使用する場面"
+      }
+    },
+    {
+      "segment_id": "2df4f75f",
+      "source_content": "Use a TextArea when you need users to input longer, free-form text. This could be for capturing descriptions, feedback, or any other information that can't be reasonably contained in a single line input field.",
+      "source_content_hash": "0612d9da553f31309916e6104821ea0b056c6747c9f674abcbfe101eb784629e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "ユーザーに長めの自由形式のテキストを入力してもらう必要がある場合にTextAreaを使用します。これは、説明、フィードバック、または1行の入力フィールドに収まらないその他の情報を取得するためなどに使用できます。"
+      }
+    },
+    {
+      "segment_id": "95b38f97",
+      "source_content": "### Placeholder text usage",
+      "source_content_hash": "86c04eea165752902704fa903537fa0ef388b22605f7f1492cf88b6653483f8f",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### プレースホルダーテキストの使用"
+      }
+    },
+    {
+      "segment_id": "ccc88b4c",
+      "source_content": "The TextArea component supports the `placeholder` prop, which can be used to provide a hint to the user about what kind of input is expected. This should be used sparingly, as it can be confusing to users if the placeholder text disappears when they start typing. If you do use placeholder text, make sure it is very clear what kind of input is expected. For example, \"Enter your feedback here\" is better than \"Enter your message here\".",
+      "source_content_hash": "141bd37ce3e976e56e13ead181d8da9f7a6aacb204cfb8b4df4dd0608d3b0397",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "TextAreaコンポーネントは、ユーザーに入力が期待される内容についてのヒントを提供するために使用できる`placeholder`プロパティをサポートしています。これは控えめに使用する必要があります。プレースホルダーテキストはユーザーが入力を開始すると消えてしまうため、混乱を招く可能性があります。プレースホルダーテキストを使用する場合は、期待される入力の種類が非常に明確であることを確認してください。たとえば、「ここにフィードバックを入力してください」は「ここにメッセージを入力してください」よりも適切です。"
+      }
+    },
+    {
+      "segment_id": "3c36424c",
+      "source_content": "## Implementation / Options",
+      "source_content_hash": "3a0afb06ad162cceca636b7c4095a0eb370acea7ea3534d4976e5a2cb174c458",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 実装 / オプション"
+      }
+    },
+    {
+      "segment_id": "26524352",
+      "source_content": "The TextArea component includes an optional `invalid` prop which can be set to `true` to highlight the TextArea as having an error. This can be used to visually indicate problems, like validation errors or incorrect input.",
+      "source_content_hash": "32dd1de7ef015efdfb1fca4216d8b9b237927364ef7ef6753b328c9b02964be8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "TextAreaコンポーネントには、TextAreaをエラーがあるものとして強調表示するために`true`に設定できるオプションの`invalid`プロパティが含まれています。これは、検証エラーや不正な入力などの問題を視覚的に示すために使用できます。"
+      }
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "In addition to the `invalid` prop, the TextArea component by default accepts all the [standard attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea#attributes) of the `HTMLTextAreaElement` as props. This makes sure that TextArea can be used as a drop-in replacement for the standard HTML `textarea` element.",
+      "source_content_hash": "6278bf8f0b42f314131ed21b5e8861e097be08efeb560b9546bd609d029c97b5",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "`invalid`プロパティに加えて、TextAreaコンポーネントはデフォルトで`HTMLTextAreaElement`の[標準属性](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea#attributes)をすべてプロパティとして受け入れます。これにより、TextAreaを標準のHTML`textarea`要素の代替として使用できるようになります。"
+      }
+    },
+    {
+      "segment_id": "a1b3d8cb",
+      "source_content": "## Playground",
+      "source_content_hash": "54192e25d4cfb303fa3f3761b5d777cd0a2b671840c2cd9c87abb3ab38f58e62",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## プレイグラウンド"
+      }
+    },
+    {
+      "segment_id": "e7c54101",
+      "source_content": "<ComponentEmbed path=\"/story/forms-textarea--basic\" />",
+      "source_content_hash": "21d0b826c96e5d11280b84b1b42cfff171ea168e436ac14f961a4fda5016f647",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_e7c54101"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-docs/current/05-components/textarea.mdx",
+  "last_updated_timestamp": "2025-06-06T08:53:12.756469+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "6ca628ccf48cbc1efb38f3d6459a4f7719f53e9457d9076887db225793394ab8"
+  }
+}

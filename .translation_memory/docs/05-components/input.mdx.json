@@ -1,0 +1,352 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "docs/05-components/input.mdx",
+  "source_file_content_hash": "83a5341326aa97d786f7fe72b0ce9c16092df3a09e62699178182a19c30dc510",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\ntitle: Input\ndescription: A basic component that allows a user to write or edit text.\n---",
+      "source_content_hash": "0f513c21b0e0c0b262dc362aeee32fb7c28a9c851b7975133276ed34e0e3542c",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "b3de8742",
+      "source_content": "# Input <Badge text='ready' color='green'></Badge> <StorybookLink path='/story/forms-input--simple' />",
+      "source_content_hash": "855a69df2bb57051177123d41e69b7da4dc396a4c3da6b448fa35a21c9d39c86",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "# Input <Badge text='ready' color='green'></Badge> <StorybookLink path='/story/forms-input--simple' />"
+      }
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "A basic component that allows a user to write or edit text.",
+      "source_content_hash": "2ce8cf522555610ffe6e2475ab1ec5baef7948f3eb092e9f3bbd007eb8755c6c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "ユーザーがテキストを記入または編集できる基本的なコンポーネントです。"
+      }
+    },
+    {
+      "segment_id": "1cc03ec8",
+      "source_content": "## When to use",
+      "source_content_hash": "d57fe8233a0bcc964af649dd3059fbd5aa2ba0bba9b4b44f225cdd2f0dd1c432",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 使用する場面"
+      }
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "Use inputs in forms to help people enter, select, and search for text. Inputs are normally found within a form but can also be part of a modal, search, or card.",
+      "source_content_hash": "0c66711629347c033ce8fa34261e5e476a624561795e9511641ef0a9f4bd1329",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "フォーム内で入力欄を使用し、ユーザーがテキストを入力、選択、検索できるようにします。入力欄は通常フォーム内に配置されますが、モーダル、検索、カードの一部としても使用できます。"
+      }
+    },
+    {
+      "segment_id": "70153c6e",
+      "source_content": "### Form usage",
+      "source_content_hash": "c3f2041baca1f9789bd85ff8b73fe380448d6c7b9424b1bc0acce390d24fa529",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### フォームでの使用"
+      }
+    },
+    {
+      "segment_id": "86b54d44",
+      "source_content": "Inputs should be used with the **Field** component to provide labels and descriptions for the input.",
+      "source_content_hash": "dc1e666fb751a9b6ba66e2438e6150bca1a41f2a222b0b74ee313ee683a281b5",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "入力欄は**Field**コンポーネントと併用し、ラベルや説明を提供する必要があります。"
+      }
+    },
+    {
+      "segment_id": "6e5ba8fb",
+      "source_content": "```tsx live\n<Field label=\"Username\">\n  <Input placeholder=\"Enter username\" />\n</Field>\n```",
+      "source_content_hash": "9b4858b23b8058062746705f698abc89e2502b48bde96dd098c43607990513d2",
+      "node_type": "code",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_6e5ba8fb"
+      }
+    },
+    {
+      "segment_id": "95b38f97",
+      "source_content": "## Implementation / Options",
+      "source_content_hash": "3a0afb06ad162cceca636b7c4095a0eb370acea7ea3534d4976e5a2cb174c458",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 実装/オプション"
+      }
+    },
+    {
+      "segment_id": "79b2d0b9",
+      "source_content": "### Placeholder text",
+      "source_content_hash": "347d1e5839f6b84a5434c725d8915507553b803a2474208070b8fe55c02783ee",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### プレースホルダーテキスト"
+      }
+    },
+    {
+      "segment_id": "d9172fa4",
+      "source_content": "Input has the ability to have placeholder text. Use placeholder text sparingly, as placeholder text is often confused for actual text. Confusing placeholder text for text often results in higher error rates with users missing inputs that need filled out. When the input is used with field, placeholder text should not be used in favor of using the label and description.",
+      "source_content_hash": "b94b940ce934a33c948cfe72f0e9e8904afbf3fc4ed48dbb22354d2b9c7bac12",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "入力欄にはプレースホルダーテキストを設定できます。ただし、プレースホルダーテキストは実際のテキストと混同されやすいため、控えめに使用してください。混同されると、ユーザーが入力必須項目を見逃し、エラー率が高くなる可能性があります。Fieldコンポーネントと併用する場合は、プレースホルダーテキストではなくラベルと説明を使用してください。"
+      }
+    },
+    {
+      "segment_id": "d06306f7",
+      "source_content": "### Prefix or suffix inside Input",
+      "source_content_hash": "914b18697ea44a7fc42a534b7165d0597dbe53be9787bfd40e957d0fce896669",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 入力欄内の接頭辞または接尾辞"
+      }
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "Input is able to have an element, such as an icon, placed inside the input at the beginning or end. This allows for the creation of inputs like search fields with a magnifying glass icon.",
+      "source_content_hash": "47cb70c7571f51aee6295e043bf5d76be2013ca342831308e73fb80ad26f5b2c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "入力欄の先頭または末尾にアイコンなどの要素を配置できます。これにより、虫眼鏡アイコン付きの検索フィールドなどの入力欄を作成できます。"
+      }
+    },
+    {
+      "segment_id": "6543a19e",
+      "source_content": "```tsx live\n<Input prefix={<Icon name=\"search\" />} placeholder=\"Search dashboards\" />\n```",
+      "source_content_hash": "2c6d0136acd5e264c34a20c89a5ca4decdcff726535f85b07e1e11fb7dcde405",
+      "node_type": "code",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_6543a19e"
+      }
+    },
+    {
+      "segment_id": "4dd51304",
+      "source_content": "```tsx live\n<Input suffix={<Icon name=\"plus-circle\" />} />\n```",
+      "source_content_hash": "a1864f62477e64ca48e42930b17669c26cdc1f5bec812bae63712bec134b714a",
+      "node_type": "code",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_4dd51304"
+      }
+    },
+    {
+      "segment_id": "8d04259b",
+      "source_content": "### Addon before or after Input",
+      "source_content_hash": "097b2d1c0d6d276a5db616871b348eeed08757584d978b56933085d27ddb23b8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 入力欄の前後のアドオン"
+      }
+    },
+    {
+      "segment_id": "95e9ba12",
+      "source_content": "An accessory, commonly a button, that can occur before or after the input.",
+      "source_content_hash": "7c13703cf6555b64098bced23f83baa5fa6b8db021a6e4e7a488ba926878cd86",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "一般的にボタンなどのアクセサリを入力欄の前後に配置できます。"
+      }
+    },
+    {
+      "segment_id": "4ec2920d",
+      "source_content": "```tsx live\n<Input addonAfter={<Button variant=\"secondary\">Load</Button>} />\n```",
+      "source_content_hash": "93ebf418d8e4adb3d13bedc711122eab1080b112768b7e3baf0ff555cdeaf56f",
+      "node_type": "code",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_4ec2920d"
+      }
+    },
+    {
+      "segment_id": "6d28a77c",
+      "source_content": "## Types and Behaviors",
+      "source_content_hash": "b90359698fa5684efb4be758e1e814d8607d08ed24f820399d51edc79ab2526b",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## タイプと動作"
+      }
+    },
+    {
+      "segment_id": "cb5b269c",
+      "source_content": "### Text",
+      "source_content_hash": "051559350a381563a3bdbff41ef4f03630f53c323038716bc7b50406584eecbb",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### テキスト"
+      }
+    },
+    {
+      "segment_id": "b36c6338",
+      "source_content": "A text input allows users to enter text, numbers, and special characters into the input.",
+      "source_content_hash": "e136f8d57ee5eca0388482e211bbe034caff1c8b792afee2a14ab1ccd4b3029a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "テキスト入力欄では、ユーザーはテキスト、数字、特殊文字を入力できます。"
+      }
+    },
+    {
+      "segment_id": "2c1b51df",
+      "source_content": "### Number",
+      "source_content_hash": "2e0ec422d20150bf8a01d3d3555308f7b5b7e850b26edefcbc7fc45e47c3d51a",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 数値"
+      }
+    },
+    {
+      "segment_id": "e536ea0d",
+      "source_content": "A number input limits users to only entering numerical characters into the input.",
+      "source_content_hash": "65aad5e9a95065da1ea15850b38d87e886bc933c253cbc706681d7be874ff7e5",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "数値入力欄では、ユーザーは数字のみを入力できます。"
+      }
+    },
+    {
+      "segment_id": "ab5fc5b5",
+      "source_content": "### Password",
+      "source_content_hash": "e9fffca38c12d981369341968e563c06afa5b30e0b0c3357c9fb106e58fa0b1f",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### パスワード"
+      }
+    },
+    {
+      "segment_id": "6ea4c715",
+      "source_content": "A password input masks the characters entered by the user.",
+      "source_content_hash": "87c50d289f59b61cf0a21860346944ac966261540fe48a0b5c6084c0949787ca",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "パスワード入力欄では、ユーザーが入力した文字がマスク表示されます。"
+      }
+    },
+    {
+      "segment_id": "c315c636",
+      "source_content": "### States",
+      "source_content_hash": "3537e9d887c6d473abebe638d9379e6cfd16bd30955fa8380ac0f9637719f0e3",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 状態"
+      }
+    },
+    {
+      "segment_id": "8c6d7ee7",
+      "source_content": "#### Invalid",
+      "source_content_hash": "c643ba226ab51bf793c5e233a67612b3c1d690b7448d761e42d549e1fa30a6d6",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "#### 無効"
+      }
+    },
+    {
+      "segment_id": "06e24cc0",
+      "source_content": "The invalid state for the input signifies that the provided content needs correction or additional content needs to be added before the user is able to proceed.",
+      "source_content_hash": "d0f9f6de1e0e7ebd67efc8d6c2901b470f46cffa058f541844e4c419735fa803",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "入力欄の無効状態は、提供された内容に修正が必要であるか、ユーザーが進む前に追加の内容が必要であることを示します。"
+      }
+    },
+    {
+      "segment_id": "ee8401db",
+      "source_content": "#### Loading",
+      "source_content_hash": "ae0743ffc06855544ec5c3f8838df6c7887866e4aea75842c853c1484af9095a",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "#### 読み込み中"
+      }
+    },
+    {
+      "segment_id": "147e8550",
+      "source_content": "For some situations, the input is able to indicate that it is loading.",
+      "source_content_hash": "472510f582db0ca1bf2fcc6b512c80c31ca1b8f6989cd01988330f0fa5484bc6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "状況によっては、入力欄が読み込み中であることを示すことができます。"
+      }
+    },
+    {
+      "segment_id": "daed5acb",
+      "source_content": "#### Disabled",
+      "source_content_hash": "cf59619985aa027a1729079e5b36b499a853c7812256d6ff9a10018de9adcd48",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "#### 無効化"
+      }
+    },
+    {
+      "segment_id": "6cc549f2",
+      "source_content": "Depending on user permissions or if an input is synced with a datasource, an input can have a disabled state.",
+      "source_content_hash": "13485708f7fb009002c01889e95a280410b346653ed28e47e81dd022ae043ba1",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "ユーザーの権限や入力欄がデータソースと同期されている場合など、入力欄を無効化状態にできます。"
+      }
+    },
+    {
+      "segment_id": "98355e36",
+      "source_content": "## Playground",
+      "source_content_hash": "54192e25d4cfb303fa3f3761b5d777cd0a2b671840c2cd9c87abb3ab38f58e62",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## プレイグラウンド"
+      }
+    },
+    {
+      "segment_id": "4edbd92a",
+      "source_content": "<ComponentEmbed path=\"/story/forms-input--simple\" />",
+      "source_content_hash": "8f411a681be3ad537ecd5f62d94abbc107dd4ebe49598beb38ed620fde2a1bc3",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_4edbd92a"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-docs/current/05-components/input.mdx",
+  "last_updated_timestamp": "2025-06-06T08:53:12.757807+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "83a5341326aa97d786f7fe72b0ce9c16092df3a09e62699178182a19c30dc510"
+  }
+}

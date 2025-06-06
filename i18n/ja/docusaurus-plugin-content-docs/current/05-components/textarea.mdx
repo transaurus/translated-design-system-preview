@@ -1,0 +1,36 @@
+---
+title: TextArea
+description: TextArea is a fundamental component used for capturing larger inputs from users, such as descriptions or detailed information.
+---
+
+# TextArea <Badge text='ready' color='green'></Badge> <StorybookLink path='/story/forms-textarea--basic' />
+
+TextAreaは、説明や詳細情報など、ユーザーからの長めの入力を取得するために使用される基本的なコンポーネントです。
+
+## 使用方法
+
+TextAreaは、ラベルや説明を取得するためにFieldコンポーネントと共に使用する必要があります。デフォルトのHTMLバリデーションは、`required`プロパティを使用することで有効にできます。
+
+```tsx live
+<Field label="Message" description="Write your message here">
+  <TextArea name="importantTextarea" required />
+</Field>
+```
+
+### 使用する場面
+
+ユーザーに長めの自由形式のテキストを入力してもらう必要がある場合にTextAreaを使用します。これは、説明、フィードバック、または1行の入力フィールドに収まらないその他の情報を取得するためなどに使用できます。
+
+### プレースホルダーテキストの使用
+
+TextAreaコンポーネントは、ユーザーに入力が期待される内容についてのヒントを提供するために使用できる`placeholder`プロパティをサポートしています。これは控えめに使用する必要があります。プレースホルダーテキストはユーザーが入力を開始すると消えてしまうため、混乱を招く可能性があります。プレースホルダーテキストを使用する場合は、期待される入力の種類が非常に明確であることを確認してください。たとえば、「ここにフィードバックを入力してください」は「ここにメッセージを入力してください」よりも適切です。
+
+## 実装 / オプション
+
+TextAreaコンポーネントには、TextAreaをエラーがあるものとして強調表示するために`true`に設定できるオプションの`invalid`プロパティが含まれています。これは、検証エラーや不正な入力などの問題を視覚的に示すために使用できます。
+
+`invalid`プロパティに加えて、TextAreaコンポーネントはデフォルトで`HTMLTextAreaElement`の[標準属性](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea#attributes)をすべてプロパティとして受け入れます。これにより、TextAreaを標準のHTML`textarea`要素の代替として使用できるようになります。
+
+## プレイグラウンド
+
+<ComponentEmbed path="/story/forms-textarea--basic" />

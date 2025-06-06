@@ -1,0 +1,37 @@
+---
+title: Checkbox
+description: Grafana Labs Checkbox component
+draft: true
+---
+
+# チェックボックス <Badge text='draft' color='orange'></Badge> <a href='https://developers.grafana.com/ui/latest/index.html?path=/story/forms-checkbox--basic' target='_blank' className='header-links'>Storybook <Icon name="external-link-alt"/> </a>
+
+## 使用場面
+
+チェック状態は「真」、未チェック状態は「偽」を表します。そのため、バイナリオプションの選択や複数選択可能なセット内での選択に使用できます。`Checkbox`はグループで使用可能で、個々のチェックボックス間に依存関係はありません。つまり、1つを選択しても他の`Checkbox`に影響を与えません。`Checkbox`に説明を追加する際は、肯定的な表現を使用し、「チェック済み」が「はい」を意味するようにしてください。これにより混乱を防げます。
+
+<iframe
+  src="https://developers.grafana.com/ui/latest/index.html?path=/story/forms-checkbox--basic&full=1&shortcuts=false&singleStory=true"
+  width="100%"
+  height="500px"
+></iframe>
+
+### 推奨事例
+
+- [ ]オプションを非表示
+- シリーズを表示 [ ] Aシリーズ [ ] Bシリーズ [ ] Cシリーズ
+
+### 非推奨事例
+
+- [ ]オプションを表示しない
+- 以下のみ表示 [ ] Aシリーズ [ ] Bシリーズ [ ] Cシリーズ
+
+チェックボックスは通常、フォーム送信後に変更を反映します。即時に変更をトリガーする必要がある場合は、トグルスイッチの使用が適しています。また、チェックボックスは相互排他的ではありません。つまり、1つを選択しても他の選択肢が無効になったり影響を受けたりすることはありません。相互排他的な選択を提供する場合は、`RadioButtonGroup`または`Select`ドロップダウンを使用してください。
+
+## 使用方法
+
+```jsx
+import { Forms } from '@grafana/ui';
+
+<Checkbox value={true|false} label={...} description={...} onChange={...} />
+```

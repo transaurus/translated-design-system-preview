@@ -1,0 +1,23 @@
+---
+title: Plugin Signature
+description: Grafana Labs Plugin Signature component
+draft: true
+---
+
+# プラグイン署名バッジ <Badge text='draft' color='orange'></Badge> <a href='https://developers.grafana.com/ui/latest/index.html?path=/story/data-display-pluginsignaturebadge--basic' target='_blank' className='header-links'>Storybook <Icon name="external-link-alt"/> </a>
+
+プラグイン署名バッジは、設定プラグインパネル（Grafanaメニュー > 設定 > プラグイン）の各情報プラグインカードに表示されます。これはプラグインが改ざんされていないことを確認するためのセキュリティ対策です。読み込み時に、Grafanaはプラグインの署名状態をチェックします。
+
+<iframe
+  src="https://developers.grafana.com/ui/latest/index.html?path=/story/data-display-pluginsignaturebadge--basic&full=1&shortcuts=false&singleStory=true"
+  width="100%"
+  height="500px"
+></iframe>
+
+## バッジの種類
+
+1. コア: このバッジは、プラグインがGrafanaに組み込まれていることを示します。
+2. 署名済み: プラグインの署名が正常に検証されました。
+3. 無効な署名: このプラグインは無効な署名を持っています。
+4. 変更された署名: このプラグインは署名後に変更されています。悪意のある改ざんの可能性があります。
+5. 未署名: プラグインは署名されていません。この場合、Grafanaはプラグインの署名をチェックする際に、プラグインを読み込んだり起動したりしません。さらに、サーバーログにエラーメッセージを記録します。

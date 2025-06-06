@@ -1,0 +1,772 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "docs/06-patterns/forms.mdx",
+  "source_file_content_hash": "0c353bfd9a12c081df8bee45419a97fa66ee8da9d8e32c0a7947b1fce5518ca3",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\ntitle: Forms\ndescription: Description for search engines and results\ndraft: false\n---",
+      "source_content_hash": "873ec177542944523717d305d1cc71efb69be39b66059f340cedd92fe9221422",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "a703643c",
+      "source_content": "# Forms <Badge text='ready' color='green'></Badge>",
+      "source_content_hash": "ec3286b2f79ef40c1832fce6787b724bcb5d3ee1fc107ba0ed3c2f0d94d28085",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "# フォーム <Badge text='ready' color='green'></Badge>"
+      }
+    },
+    {
+      "segment_id": "53eaf0e1",
+      "source_content": "A form is a set of related input fields or control elements that allow users to input data, submit information, and configure options.",
+      "source_content_hash": "5660d6a7cb41b10cbb26c87cecc6a7be2de05ae2cde6ddc7aefad483e6b69bf0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "フォームは、ユーザーがデータを入力し、情報を送信し、オプションを設定できるようにする一連の関連する入力フィールドまたはコントロール要素です。"
+      }
+    },
+    {
+      "segment_id": "8ac585fb",
+      "source_content": "The form pattern can be configured to suit various contexts. Forms are not limited to specific locations within an interface but can be seamlessly integrated into various UI components based on the design and functional requirements, such as pages, dialogs, sidebars, and others.\nIt is up to designers and developers to adapt the form pattern to their particular needs.",
+      "source_content_hash": "de80963cdd619b4ac3cf7b0c0da16c509d2517f1fc08fbb9490dfa29b1bd853f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "フォームパターンはさまざまなコンテキストに合わせて設定できます。フォームはインターフェース内の特定の場所に限定されず、ページ、ダイアログ、サイドバーなどのさまざまなUIコンポーネントにシームレスに統合できます。デザイナーや開発者は、フォームパターンを特定のニーズに合わせて適応させる必要があります。"
+      }
+    },
+    {
+      "segment_id": "70153c6e",
+      "source_content": "## Anatomy of a form",
+      "source_content_hash": "4621d5f677e1d29c6c5175217d22f3000f0f85b252b83d32c614db75ea034eb2",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## フォームの構成要素"
+      }
+    },
+    {
+      "segment_id": "cc3676fa",
+      "source_content": "<Image src={'/img/forms/forms_layout.png'} alt=\"Redline callouts for form anatomy\" />",
+      "source_content_hash": "617ea6dad98cd664a9e9adefe38d72b3c946523252434b8a532a594534ac1047",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_cc3676fa"
+      }
+    },
+    {
+      "segment_id": "d350c018",
+      "source_content": "### Header",
+      "source_content_hash": "826d77c0ff2fbc7930b0caf2797456a7ffde64a7f4b440573ed0c39f89c15153",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### ヘッダー"
+      }
+    },
+    {
+      "segment_id": "1acb9a05",
+      "source_content": "Typically includes the title and description of the form. This section provides users with context about the purpose of the form and sets the stage for the information they are about to provide.",
+      "source_content_hash": "87ddaed796d904df44d35515624de8bc634f2365177db8d0ec27f5fa1a3ab6f8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "通常、フォームのタイトルと説明が含まれます。このセクションは、フォームの目的に関するコンテキストをユーザーに提供し、入力する情報についての準備を整えます。"
+      }
+    },
+    {
+      "segment_id": "63622bf0",
+      "source_content": "### Body",
+      "source_content_hash": "5129ec462d4805ac45fb890999023ef06273ec6dca3fca4ec47a878b17f93a88",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### ボディ"
+      }
+    },
+    {
+      "segment_id": "98cfbd53",
+      "source_content": "Main section of the form where users input and provide information. This is where you place the form elements such as input fields, checkboxes, radio buttons, or any other elements required to collect the necessary data. The Body is the core of the form, and its layout and design should be organized for clarity and ease of use.",
+      "source_content_hash": "6d42d058de88a451e3227fc5e6ee9a5247c7f3a9c8e0e34fdf429750a70ae4f9",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "ユーザーが情報を入力するフォームの主要なセクションです。入力フィールド、チェックボックス、ラジオボタン、または必要なデータを収集するためのその他の要素を配置します。ボディはフォームの核心であり、そのレイアウトとデザインは明確さと使いやすさのために整理されている必要があります。"
+      }
+    },
+    {
+      "segment_id": "79b2d0b9",
+      "source_content": "### Action bar",
+      "source_content_hash": "67437aac305fc79c9f7359609291abffc2f96f1597106ec6d5749e88d08503ce",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### アクションバー"
+      }
+    },
+    {
+      "segment_id": "d9172fa4",
+      "source_content": "Typically appears at the bottom of the form or near the primary interaction area. It contains buttons or actions that users can take to complete or manipulate the form. Common actions include \"Submit,\" \"Save,\" \"Cancel,\" or any other actions relevant to the form's purpose. The Action Bar is a critical element for user navigation and interaction with the form.",
+      "source_content_hash": "02ba6232cfbd39ecc5727bae88753808c1e6867b3e656dbaa67e1324fb5c4b05",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "通常、フォームの下部または主要な操作領域の近くに表示されます。フォームを完了または操作するためにユーザーが実行できるボタンやアクションが含まれます。一般的なアクションには「送信」、「保存」、「キャンセル」、またはフォームの目的に関連するその他のアクションがあります。アクションバーは、ユーザーのナビゲーションとフォームとのインタラクションにとって重要な要素です。"
+      }
+    },
+    {
+      "segment_id": "d06306f7",
+      "source_content": "### Common form elements include:",
+      "source_content_hash": "afcfa3d41ba25d0ab4bc628cbb191a954ca5180f7cc7162820096a73d049f8f8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 一般的なフォーム要素には以下が含まれます："
+      }
+    },
+    {
+      "segment_id": "86b525ab",
+      "source_content": "- **Text Fields:** For entering short text, such as names, email addresses, or passwords.\n- **Textarea:** For longer blocks of text, like comments or messages.\n- **Checkboxes:** For selecting one or more options from a list.\n- **Radio Buttons:** For selecting a single option from a list.\n- **Dropdown Menus/Select Boxes:** For choosing one option from a list of predefined options.\n- **Buttons:** Such as submit buttons to send the form data or reset buttons to clear the entered information.",
+      "source_content_hash": "fba1e4ffade2b997241c1777af77e26405b991a8b7cc02529831105c8b95035c",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- **テキストフィールド:** 名前、メールアドレス、パスワードなどの短いテキストを入力するためのもの。\n- **テキストエリア:** コメントやメッセージなどの長いテキストブロックを入力するためのもの。\n- **チェックボックス:** リストから1つ以上のオプションを選択するためのもの。\n- **ラジオボタン:** リストから単一のオプションを選択するためのもの。\n- **ドロップダウンメニュー/セレクトボックス:** 事前に定義されたオプションのリストから1つを選択するためのもの。\n- **ボタン:** フォームデータを送信する送信ボタンや、入力された情報をクリアするリセットボタンなど。"
+      }
+    },
+    {
+      "segment_id": "c3a738de",
+      "source_content": "Forms can also contain other elements such as switches, sliders, etc.",
+      "source_content_hash": "4d809cd70a1f43d4d937a576855dfc97613662ccf35ab2cd4de1ffdc8ff9a3b4",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "フォームには、スイッチ、スライダーなどの他の要素も含まれることがあります。"
+      }
+    },
+    {
+      "segment_id": "9f9e64f5",
+      "source_content": "## Styling",
+      "source_content_hash": "433aac54876bf8816fb9679c0fb352e6c57258dc5fceb9800348033609c4743e",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## スタイリング"
+      }
+    },
+    {
+      "segment_id": "bdfae007",
+      "source_content": "- Form elements are left aligned. This promotes readability and follows the natural reading flow in many cultures.\n- Components are vertically stacked, and there is 16px of padding around each component. This spacing enhances the visual separation between components and provides a consistent and aesthetically pleasing layout.\n- The padding between the form title and the body, between the action bar and the body, and between two different sections of the form is set to 40px. This additional spacing helps create a clear visual hierarchy and prevents elements from feeling cramped.",
+      "source_content_hash": "f2c98447762227148586a32a7d7509f5ebbf10f423106a9cb453bdcb1fdfce7a",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- フォーム要素は左揃えにします。これは可読性を促進し、多くの文化における自然な読みの流れに従います。\n- コンポーネントは垂直に配置され、各コンポーネントの周囲に16pxのパディングがあります。この間隔は、コンポーネント間の視覚的な分離を強化し、一貫性があり美しいレイアウトを提供します。\n- フォームタイトルとボディの間、アクションバーとボディの間、およびフォームの異なるセクション間のパディングは40pxに設定されています。この追加の間隔は、明確な視覚的階層を作成し、要素が窮屈に感じるのを防ぎます。"
+      }
+    },
+    {
+      "segment_id": "92b13a72",
+      "source_content": "<Image src={'/img/forms/forms_spacing.png'} alt=\"Redline callouts for form spacing\" />",
+      "source_content_hash": "03f7ae57089df9bf9daf4e0c3567c35e5d82ffe4f9811966a9e1024bfe49911a",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_92b13a72"
+      }
+    },
+    {
+      "segment_id": "6f930b2f",
+      "source_content": "## Buttons",
+      "source_content_hash": "32fb066e1bd020811540373d1ad76082dbccc01bf4154d8852d7bb497e7a1742",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## ボタン"
+      }
+    },
+    {
+      "segment_id": "11c76fcc",
+      "source_content": "### Use one primary button per form",
+      "source_content_hash": "c84d6a65c9588ac625734e41a021f5dd368f833964567325864e61908e863e92",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### フォームごとに1つのプライマリボタンを使用する"
+      }
+    },
+    {
+      "segment_id": "98d26038",
+      "source_content": "Using one primary button per form helps users clearly understand the main action they need to take to complete a form while minimizing the risk of unintended consequences from secondary actions.",
+      "source_content_hash": "0d631fbd992e21070d4e160c587de028ef167a59537b1d497bc0a10b72a11fec",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "フォームごとに1つのプライマリボタンを使用することで、ユーザーはフォームを完了するために取るべき主要なアクションを明確に理解でき、セカンダリアクションからの意図しない結果のリスクを最小限に抑えることができます。"
+      }
+    },
+    {
+      "segment_id": "d3649a1e",
+      "source_content": "A single primary button clearly communicates the main action users are expected to take. Whether it's saving, submitting, or progressing to the next step, users know exactly what will happen when they click the primary button.",
+      "source_content_hash": "97762dda06e79e885e88c314f38217d5727384c281ff5c8aa7d3e2dba28b7dd7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "単一のプライマリボタンは、ユーザーが取るべき主要なアクションを明確に伝えます。保存、送信、次のステップに進むなど、ユーザーはプライマリボタンをクリックしたときに何が起こるかを正確に知ることができます。"
+      }
+    },
+    {
+      "segment_id": "e50bebbf",
+      "source_content": "### Left align primary buttons with the form container",
+      "source_content_hash": "a24a62a2168b4be79f6cb036501afb6f6d6a0455ee9bcd398a37184aa7d26710",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### プライマリボタンをフォームコンテナと左揃えにする"
+      }
+    },
+    {
+      "segment_id": "23dfb152",
+      "source_content": "Western languages are read from left to right. Placing the primary action button on the left aligns it with the natural reading flow, making it easier for users to locate and understand the main action associated with the form. Left-aligned primary buttons contribute to better accessibility by providing a consistent and expected layout. Users with visual impairments or those using screen readers benefit from a standardized design pattern.",
+      "source_content_hash": "882776bb89d9d81bc119b7dcaf93294c146090252fa682e3816e80bac9cb830b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "西洋言語は左から右に読みます。主要なアクションボタンを左側に配置すると、自然な読みの流れと一致し、ユーザーがフォームに関連する主要なアクションを見つけて理解しやすくなります。左揃えのプライマリボタンは、一貫性と期待されるレイアウトを提供することで、アクセシビリティを向上させます。視覚障害のあるユーザーやスクリーンリーダーを使用するユーザーは、標準化されたデザインパターンから恩恵を受けます。"
+      }
+    },
+    {
+      "segment_id": "1131ef75",
+      "source_content": "Place destructive actions such as Cancel or Discard in the top right corner and trigger a modal window to confirm the action. Placing destructive actions away from the main content and in a location where users don't typically interact for positive actions reduces the likelihood of accidental clicks. This helps prevent users from triggering irreversible actions unintentionally. Triggering a modal window for confirmation adds an extra layer of safety.",
+      "source_content_hash": "c1b290ddb28a3c32e0c5154e07e71d53a03e92054d9c23dc7f63a5e2e6473afe",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "キャンセルや破棄などの破壊的なアクションは右上の隅に配置し、アクションを確認するためにモーダルウィンドウをトリガーします。破壊的なアクションをメインコンテンツから離れた場所に配置し、ユーザーが通常ポジティブなアクションのためにインタラクションしない場所に配置することで、誤ってクリックする可能性を減らします。これにより、ユーザーが意図せずに取り返しのつかないアクションをトリガーするのを防ぐのに役立ちます。確認のためにモーダルウィンドウをトリガーすると、安全性がさらに高まります。"
+      }
+    },
+    {
+      "segment_id": "8b2a52b1",
+      "source_content": "It's important to note that these principles may not apply universally, and context matters. In some cases, right-aligning buttons or centering them might be appropriate, depending on the design goals and user expectations within a specific cultural or application context. Ultimately, usability testing and user feedback can help determine the most effective button placement for a particular design.",
+      "source_content_hash": "d3601a6d5b96b74b544a1f649ac6a7ccf36cdc692080bc40119f3609c72be0ea",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "これらの原則が普遍的に適用されるわけではなく、文脈によって異なることに注意が必要です。場合によっては、デザインの目的や特定の文化的・アプリケーションコンテキスト内でのユーザー期待に応じて、ボタンを右揃えまたは中央揃えにすることが適切な場合もあります。最終的には、ユーザビリティテストとユーザーフィードバックによって、特定のデザインに最適なボタン配置を判断することが重要です。"
+      }
+    },
+    {
+      "segment_id": "126950d7",
+      "source_content": "## Layout",
+      "source_content_hash": "1ab8b509e0fe148b8c428e292d04d5f8b3fb7acac3fce228fca89495886509d9",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## レイアウト"
+      }
+    },
+    {
+      "segment_id": "a5a4323e",
+      "source_content": "### One column",
+      "source_content_hash": "f8b8f50519228b59e14ef9e5aa00200ca10602c5e99f4c7f6de8c5f1ead69904",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 1カラムレイアウト"
+      }
+    },
+    {
+      "segment_id": "657c2b20",
+      "source_content": "Organize the main form body using a one-column layout. Place related controls and input fields in a logical order, considering the natural flow of information.",
+      "source_content_hash": "e5b4e19a01b53dec3388c4a480f61901ae12d590c7b0d1ff71408ee1f9ed76b4",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "フォームのメイン部分は1カラムレイアウトで構成します。関連するコントロールや入力フィールドを、情報の自然な流れを考慮して論理的な順序で配置します。"
+      }
+    },
+    {
+      "segment_id": "52388877",
+      "source_content": "### Group related controls",
+      "source_content_hash": "f3b6de6880c4c5df10bede8b063896885bb8a584049daf5ace4fe1f65a4eddcd",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 関連するコントロールをグループ化"
+      }
+    },
+    {
+      "segment_id": "eab056be",
+      "source_content": "Arrange form elements in a logical order to aid scanning and completion. Group related controls together to visually indicate their association. Use whitespace or visual dividers to create clear distinctions between different groups of controls. Add a heading if necessary to provide context for each group.",
+      "source_content_hash": "3228a50873f2094ff2b15ce329c062b1f3eb17f7847368e777d5f2bdfa473316",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "フォーム要素を論理的な順序で配置し、スキャンと入力補助を容易にします。関連するコントロールをグループ化して視覚的に関連性を示します。異なるコントロールグループ間を明確に区別するために、余白や視覚的な区切りを使用します。必要に応じて各グループに見出しを追加してコンテキストを提供します。"
+      }
+    },
+    {
+      "segment_id": "b1cbdb65",
+      "source_content": "## What to include",
+      "source_content_hash": "ef3aef6a35cdc8f88ab934ac461fece79a7d4e1923018458796047e62d0f4db1",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 含めるべき要素"
+      }
+    },
+    {
+      "segment_id": "caffd879",
+      "source_content": "- Only ask for essential information to reduce effort and make the form-filling process more straightforward.\n- Use progressive disclosure to reveal information gradually as needed. Show advanced options on demand.\n- Only mark fields as required if absolutely necessary. This helps reduce friction in the form completion process. Use an asterisk (\\*) to highlight mandatory fields, ensuring users can quickly identify and fill in the essential information.\n- Use smart defaults whenever possible. Suggested options should align with and serve the interests of the majority of users.",
+      "source_content_hash": "e78a39db9beb358e6815f5da073b0999d777907b8cec6cc5aea09168c9d1b5a1",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- 労力を削減しフォーム入力を簡素化するため、必要な情報のみを尋ねます\n- プログレッシブディスクロージャーを使用して、必要に応じて段階的に情報を表示します。詳細オプションは要求時に表示します\n- 絶対に必要な場合のみフィールドを必須としてマークします。これによりフォーム入力の摩擦を軽減します。必須フィールドにはアスタリスク（*）を使用し、ユーザーが迅速に必須情報を識別・入力できるようにします\n- 可能な限りスマートデフォルトを使用します。推奨オプションは大多数のユーザーの利益に沿うものであるべきです"
+      }
+    },
+    {
+      "segment_id": "8a9b6c26",
+      "source_content": "## Handling and preventing errors",
+      "source_content_hash": "2f67382fc886f9cd23c880bef2bd5e8f37c63343148f4e5c7047a3130885daf7",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## エラーの処理と防止"
+      }
+    },
+    {
+      "segment_id": "c142abbb",
+      "source_content": "- Provide clear and concise instructions for each form field. Use labels that are easy to understand and ensure they align with user expectations. Well-crafted labels contribute to a user-friendly experience.\n- Use inline validation to provide real-time feedback on user input\n- Use color coding, icons, or descriptive messages to convey validation results\n- Use default values for fields where appropriate to save users time. Pre-fill fields or default to common choices when possible.\n- Highlight the specific fields that need attention and provide clear instructions on how to correct errors. Implement user-friendly error messages and validation that guides users on how to correct mistakes.\n- Allow users to save their progress and continue later. This is especially important for longer or more complex forms.\n- Clearly communicate any errors or issues with form submissions.",
+      "source_content_hash": "83070c5af8811423e02f75ef85da64e77bf3c605044d05cf062b3d400d24b2b2",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- 各フォームフィールドに明確で簡潔な説明を提供します。理解しやすいラベルを使用し、ユーザーの期待と一致するようにします。適切に作成されたラベルはユーザーフレンドリーな体験に貢献します\n- インライン検証を使用してユーザー入力に対するリアルタイムフィードバックを提供します\n- 色分け、アイコン、または説明的なメッセージを使用して検証結果を伝えます\n- 適切なフィールドにはデフォルト値を設定してユーザーの時間を節約します。可能な場合はフィールドを事前入力するか、一般的な選択肢をデフォルトにします\n- 注意が必要な特定のフィールドを強調表示し、エラーを修正する方法について明確な指示を提供します。ユーザーフレンドリーなエラーメッセージと検証を実装し、間違いを修正する方法をユーザーに案内します\n- ユーザーが進捗を保存して後で続きを行えるようにします。これは特に長いまたは複雑なフォームで重要です\n- フォーム送信時のエラーや問題を明確に伝えます"
+      }
+    },
+    {
+      "segment_id": "bd30d33e",
+      "source_content": "## Don’ts",
+      "source_content_hash": "fcc0679531d5b486da44eee1a1538cf5954f792e529d7ed971f9c693fff2f0a4",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 避けるべきこと"
+      }
+    },
+    {
+      "segment_id": "023197ab",
+      "source_content": "- Never disable submission buttons.\n- Avoid overly long forms whenever possible. Breaking the form into smaller, manageable sections using multistep forms or accordions helps maintain user engagement.\n- Use modal windows sparingly. Modal windows should be used judiciously to avoid disrupting the user's flow. While they can be effective for certain interactions, overusing them can lead to a disjointed user experience. Reserve modal windows for critical tasks or information that requires immediate attention.",
+      "source_content_hash": "595efc18553225226f7efae2492e3ef8631514e976ec16fa2903cd7ab1973e4f",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- 送信ボタンを無効化しないでください\n- 可能な限り過度に長いフォームは避けてください。マルチステップフォームやアコーディオンを使用してフォームを小さく管理可能なセクションに分割することで、ユーザーの関与を維持します\n- モーダルウィンドウは控えめに使用します。モーダルウィンドウはユーザーの流れを妨げないよう慎重に使用する必要があります。特定のインタラクションには効果的ですが、過度に使用するとユーザー体験が断片的になる可能性があります。モーダルウィンドウは、重要なタスクや即時の注意を必要とする情報のために予約します"
+      }
+    },
+    {
+      "segment_id": "f8edb6d2",
+      "source_content": "## Variants",
+      "source_content_hash": "f4ace3b7f4ca4d7185db7e0f3b58b6f2dd737dafa3bcdb3562310455d4b6527e",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## バリエーション"
+      }
+    },
+    {
+      "segment_id": "c19de48a",
+      "source_content": "### Full-page forms",
+      "source_content_hash": "d751f1b2409fe7f88120c8cdf1764c725c25b7f2bad13b0ce96b4d46d128eca4",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### フルページフォーム"
+      }
+    },
+    {
+      "segment_id": "6ca4479f",
+      "source_content": "Best suited for complex, standalone workflows or critical configurations.",
+      "source_content_hash": "3685613576283fb9ef2626aaf573fb7d3b57d6f434d7940cada1a3c1d0653c4c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "複雑なスタンドアロンワークフローや重要な設定に最適です"
+      }
+    },
+    {
+      "segment_id": "71169a2d",
+      "source_content": "#### Characteristics",
+      "source_content_hash": "ca9d29dbf647138869ea44295a0f39f5fd52954b4233ee0934360589150dec5e",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "#### 特徴"
+      }
+    },
+    {
+      "segment_id": "cd1d0fe2",
+      "source_content": "- Typically for situations where the user is engaging in a comprehensive or critical task that requires a dedicated and immersive experience.\n- Suitable for forms with a larger number of fields, complex input requirements, or workflows that demand the user's full attention.\n- Offers ample space for instructions, contextual information, and visual elements.",
+      "source_content_hash": "c375a2cde340d3b1c0be7d7f498ef37d34cf3ee8a87283a2a49915537dd4b775",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- 通常、包括的または重要なタスクに従事するユーザー向けで、専用の没入型体験が必要な場合に適しています\n- 多数のフィールド、複雑な入力要件、またはユーザーの完全な注意を必要とするワークフローに適しています\n- 説明、文脈情報、視覚的要素のための十分なスペースを提供します"
+      }
+    },
+    {
+      "segment_id": "56bc971f",
+      "source_content": "### Dialogs",
+      "source_content_hash": "981a09d7cf5b6f8a8296c622559533c893578c89bcd04fc2bd23301a996543b8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### ダイアログ"
+      }
+    },
+    {
+      "segment_id": "0801d969",
+      "source_content": "Best suited for forms no longer than 5 fields that are part of a larger workflow or user journey, or a longer form.",
+      "source_content_hash": "28892cca9f9ac07ea145dcbb71c2f82201f2d45cc0a06fa93b75796c723ea164",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "5フィールド以下のフォームで、より大きなワークフローやユーザージャーニーの一部である場合、またはより長いフォームに最適です"
+      }
+    },
+    {
+      "segment_id": "ab39e8a7",
+      "source_content": "#### Characteristics:",
+      "source_content_hash": "4b8a007724e3facd24d7d8b24d73378a001f50740a4427073fd3dfd38e301aa1",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "#### 特徴:"
+      }
+    },
+    {
+      "segment_id": "8d56fc0d",
+      "source_content": "- Ideal for brief interactions where users can quickly complete a form without leaving the current context.\n- Typically appears as a pop-up or overlay within the current screen, maintaining a connection to the larger workflow or journey.\n- Useful when collecting a small amount of information without requiring a full-page transition.",
+      "source_content_hash": "607db41771d62aa0023f719be862d1f7962ae5a65372d6d525d53152a97e4e94",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- 現在のコンテキストを離れることなくユーザーが迅速にフォームを完了できる簡潔なインタラクションに理想的です\n- 通常、現在の画面内にポップアップまたはオーバーレイとして表示され、より大きなワークフローやジャーニーとのつながりを維持します\n- 完全なページ遷移を必要とせずに少量の情報を収集する場合に有用です"
+      }
+    },
+    {
+      "segment_id": "638efb88",
+      "source_content": "### Drawers",
+      "source_content_hash": "887d38c74d21009c5449a0f3c7c73248545ecb3d48e4b7bdefa653fd412cb599",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### ドロワー"
+      }
+    },
+    {
+      "segment_id": "558df877",
+      "source_content": "Best suited for forms longer than 5 fields that are part of a larger workflow or user journey, or a longer form.",
+      "source_content_hash": "06e1f78f6cc845883a23ce1fb2b379fd9b49c053c8cda15924b0c46d61ac6f0c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "5フィールドを超える長いフォームで、より大きなワークフローやユーザージャーニーの一部である場合に最適です"
+      }
+    },
+    {
+      "segment_id": "64d57278",
+      "source_content": "#### Characteristics:",
+      "source_content_hash": "4b8a007724e3facd24d7d8b24d73378a001f50740a4427073fd3dfd38e301aa1",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "#### 特徴:"
+      }
+    },
+    {
+      "segment_id": "0aa939cf",
+      "source_content": "- Similar to dialogs, but often provides more space for longer forms or more extensive workflows.\n- Appears as a side panel or drawer, expanding horizontally or vertically from the edge of the screen.\n- Suitable for collecting more information without fully taking the user away from their current context.",
+      "source_content_hash": "d8565c533a383c378ffff38c118035b1d8b3d015e3749263901591cbedbccf9e",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- ダイアログと似ていますが、より長いフォームや広範なワークフローのためにより多くのスペースを提供します\n- 画面の端から水平または垂直に展開するサイドパネルまたはドロワーとして表示されます\n- 現在のコンテキストから完全にユーザーを離すことなく、より多くの情報を収集する場合に適しています"
+      }
+    },
+    {
+      "segment_id": "4dd6a631",
+      "source_content": "## Designing long forms",
+      "source_content_hash": "a3a0a3deba9dec48a32000df53c06704f819fae3dd755bf67fc30a94634273e4",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 長いフォームの設計"
+      }
+    },
+    {
+      "segment_id": "f45239ba",
+      "source_content": "Designing long forms can be challenging, but there are several strategies we can employ to make them easier to complete and reduce user errors.",
+      "source_content_hash": "15ed88c157eb7089e82ee0e79c86a930277e650c5703b90a2afed1c6b0abb580",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "長いフォームの設計は難しい場合がありますが、ユーザーが完了しやすく、エラーを減らすためのいくつかの戦略があります。"
+      }
+    },
+    {
+      "segment_id": "8f1c1cd6",
+      "source_content": "### Break the form into sections",
+      "source_content_hash": "f01b9a94825f60801c0ef6fd19e562e19a4d1acb793b4e3b3dc55139adc56b33",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### フォームをセクションに分割する"
+      }
+    },
+    {
+      "segment_id": "383fbdd2",
+      "source_content": "Divide the long form into logical sections or steps. Each section should focus on a specific set of related information. This approach makes the form more manageable and helps users mentally organize the required information.",
+      "source_content_hash": "ca2dd5060c603d1eac639a9ac56cbd3f5bb0c0c8c5500c3d4d60a5ea26a7de4c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "長いフォームを論理的なセクションまたはステップに分割します。各セクションは関連する特定の情報に焦点を当てるようにします。このアプローチにより、フォームが管理しやすくなり、ユーザーが必要な情報を整理しやすくなります。"
+      }
+    },
+    {
+      "segment_id": "13292277",
+      "source_content": "### Accordion pattern",
+      "source_content_hash": "3b64deaf19c1db976f4d8704f9f81cb48b3e937550b458441334e4337a37adc8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### アコーディオンパターン"
+      }
+    },
+    {
+      "segment_id": "e478ec2c",
+      "source_content": "Implement the accordion pattern to reveal information gradually. Group related sections, and let users expand or collapse each section as needed. This helps maintain a clean and focused interface while allowing users to explore additional details selectively.",
+      "source_content_hash": "1dba0c3deac24c6da772d3f8773445980136035fde709249aec081e3c5e98bc5",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "情報を段階的に表示するためにアコーディオンパターンを実装します。関連するセクションをグループ化し、ユーザーが必要に応じて各セクションを展開または折りたためることができるようにします。これにより、インターフェースが整理されつつ、ユーザーが選択的に詳細を確認できるようになります。"
+      }
+    },
+    {
+      "segment_id": "9c2ab4c8",
+      "source_content": "### Inline additions",
+      "source_content_hash": "75900459aff6100e98cb81f50971396953687121cb66233e668b0826fbd81f42",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### インライン追加"
+      }
+    },
+    {
+      "segment_id": "a9c2a503",
+      "source_content": "Hide additional fields from people who don’t need them (e.g. in the Reporting form, the \"Add another dashboard\" button reveals an additional set of input fields on demand).",
+      "source_content_hash": "00522651028e9e9244629b5e246de9cfbb6b2953362af7a07a508aa778050205",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "必要のないユーザーに対して追加フィールドを非表示にします（例: レポートフォームの「別のダッシュボードを追加」ボタンは、要求に応じて追加の入力フィールドを表示します）。"
+      }
+    },
+    {
+      "segment_id": "17ca27eb",
+      "source_content": "- Add a \"Add More\" or similar button next to a section or set of fields.\n- When users click the button, dynamically generate additional fields for their input.\n- This approach keeps the form concise initially but allows users to expand it as necessary.",
+      "source_content_hash": "50b797e34ee81c94a3ca69b6eda70f0ba746025076f785a3342f33aff1a98805",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- セクションまたはフィールドセットの横に「追加」などのボタンを配置します。\n- ユーザーがボタンをクリックすると、動的に追加の入力フィールドを生成します。\n- このアプローチにより、フォームは最初は簡潔に保たれつつ、必要に応じて拡張できるようになります。"
+      }
+    },
+    {
+      "segment_id": "35353302",
+      "source_content": "### Dynamic forms (Progressive disclosure)",
+      "source_content_hash": "f939f7bcf66d5e0876dbcab271226b211ae220d25e265a4ec3c4fddf1cc1c1a3",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 動的フォーム（プログレッシブディスクロージャー）"
+      }
+    },
+    {
+      "segment_id": "719d3997",
+      "source_content": "Employ conditional logic to show or hide specific fields based on user input or selections. This helps personalize the form, displaying only the relevant information to the user (e.g. the Schedule page of the Reporting form).",
+      "source_content_hash": "f45b1e3990592e87e9efd8301bf426f0199db09ec149edb7ad3c790f8b20e021",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "ユーザーの入力や選択に基づいて特定のフィールドを表示または非表示にする条件付きロジックを採用します。これにより、フォームがパーソナライズされ、ユーザーに関連する情報のみが表示されます（例: レポートフォームのスケジュールページ）。"
+      }
+    },
+    {
+      "segment_id": "b77e7669",
+      "source_content": "#### Implementation:",
+      "source_content_hash": "472e83f607d9a7268fac160007b3c04e667a07815332fb595a7658c98d3d1be0",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "#### 実装方法:"
+      }
+    },
+    {
+      "segment_id": "415dc9ef",
+      "source_content": "- Identify fields that may not be applicable to all users.\n- Use conditional logic to hide these fields until certain criteria are met (e.g., user selects a specific option).\n- Provide clear indications or tooltips for users to understand when and why certain fields are hidden.",
+      "source_content_hash": "718751bf945009f32b5eab391bf6c136b1f58e7c395e69f3dcc4f03931494630",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- すべてのユーザーに適用されない可能性のあるフィールドを特定します。\n- 特定の条件が満たされるまでこれらのフィールドを非表示にする条件付きロジックを使用します（例: ユーザーが特定のオプションを選択）。\n- フィールドが非表示になるタイミングや理由をユーザーが理解できるように、明確な表示やツールチップを提供します。"
+      }
+    },
+    {
+      "segment_id": "531ec0bb",
+      "source_content": "### Modal windows",
+      "source_content_hash": "caf94af2a59ddf1b82aca7a4bbac2489748e438f7bce965409893033532c044c",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### モーダルウィンドウ"
+      }
+    },
+    {
+      "segment_id": "d2a3d4c7",
+      "source_content": "**Use cases:**",
+      "source_content_hash": "ab01e138a9aed7594f6737c68cff581fd94643534080722bceb65410ab7b7459",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**使用例:**"
+      }
+    },
+    {
+      "segment_id": "93fcd90c",
+      "source_content": "- For focused tasks or workflows that temporarily overlay the main content.\n- Collecting input for a specific task or decision point.\n- When you need to present a set of related options, configurations, or settings that are closely tied to a specific task or action.\n- For scenarios where the additional options may affect the entire user interface or application state.",
+      "source_content_hash": "f0cf4e9463b8fc8cb90050ead7dbffd6648a032e1619671a9cccef577498c4bd",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- メインコンテンツを一時的にオーバーレイする集中型タスクやワークフロー。\n- 特定のタスクや決定ポイントの入力収集。\n- 特定のタスクやアクションに密接に関連する一連のオプション、設定、または構成を提示する場合。\n- 追加オプションがユーザーインターフェース全体やアプリケーションの状態に影響を与える可能性のあるシナリオ。"
+      }
+    },
+    {
+      "segment_id": "39f476dc",
+      "source_content": "**Considerations:**",
+      "source_content_hash": "cd9d9ca3b876a9c370c0ae30d452d4d8271fb27eb07556cb9590907009f81aa3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**考慮事項:**"
+      }
+    },
+    {
+      "segment_id": "093c95e5",
+      "source_content": "- Ensure that the modal content is well-organized, with clear navigation or categorization of options.\n- Consider providing a summary or preview of the changes before applying them.\n- Modal windows may interrupt the user's flow, so use them judiciously, especially for less critical actions.",
+      "source_content_hash": "d69c32e1b72bd43598f7fbdaa3860ad25ddd7ad0dd514b4bd5f11af9b4c73fd5",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- モーダルコンテンツが整理されており、オプションのナビゲーションや分類が明確であることを確認します。\n- 変更を適用する前に要約やプレビューを提供することを検討します。\n- モーダルウィンドウはユーザーのフローを中断する可能性があるため、特に重要度の低いアクションでは控えめに使用します。"
+      }
+    },
+    {
+      "segment_id": "a49ac2ed",
+      "source_content": "### Drawers (Side panels)",
+      "source_content_hash": "a461d45a270652482b5a25e9ef0c4c6df5f41b2b0c2951e31549f75b1d6e6967",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### ドロワー（サイドパネル）"
+      }
+    },
+    {
+      "segment_id": "808b0414",
+      "source_content": "**Use cases:**",
+      "source_content_hash": "ab01e138a9aed7594f6737c68cff581fd94643534080722bceb65410ab7b7459",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**使用例:**"
+      }
+    },
+    {
+      "segment_id": "5b1ccdc9",
+      "source_content": "- Displaying additional options or settings without fully obscuring the main content.\n- Providing a persistent space for additional controls or navigation elements.\n- Enhancing the overall user experience by allowing users to access supplementary information while staying within the main context.",
+      "source_content_hash": "b39d6b495a16221ca315c225b593e5ba6c4b8e0802c51631ce2f2feb754463b4",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- メインコンテンツを完全に隠さずに追加オプションや設定を表示。\n- 追加のコントロールやナビゲーション要素のための永続的なスペースを提供。\n- ユーザーがメインコンテキスト内にとどまりながら補足情報にアクセスできるようにすることで、全体的なユーザーエクスペリエンスを向上。"
+      }
+    },
+    {
+      "segment_id": "e29bd639",
+      "source_content": "**Considerations:**",
+      "source_content_hash": "cd9d9ca3b876a9c370c0ae30d452d4d8271fb27eb07556cb9590907009f81aa3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**考慮事項:**"
+      }
+    },
+    {
+      "segment_id": "e5821418",
+      "source_content": "Drawers are often used for less intrusive interactions that don't require the full attention of the user.\nThey can be beneficial for displaying additional options, settings, or information without disrupting the primary workflow.\nDrawers are particularly useful in responsive designs, adapting to different screen sizes.",
+      "source_content_hash": "b1cd52f87751ed7c7797e8aaf9820359e15f470ff1dd88901048cd9ccf671549",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "ドロワーは、ユーザーの完全な注意を必要としない、より控えめなインタラクションに使用されることが多いです。\n追加のオプション、設定、または情報を表示する際に、主要なワークフローを中断することなく利用できます。\nドロワーは特にレスポンシブデザインにおいて有用で、さまざまな画面サイズに適応します。"
+      }
+    },
+    {
+      "segment_id": "cce332f2",
+      "source_content": "### Advanced options expander",
+      "source_content_hash": "0237d959f47b91c762e2d8306b8a95d3dc347098bb0a6c5e8a62e90f2dd9c2fe",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 詳細オプション展開機能"
+      }
+    },
+    {
+      "segment_id": "9ebd9d9b",
+      "source_content": "If a form has many advanced options that not all users need, consider placing them in an advanced option expander section.",
+      "source_content_hash": "d6f0842aba115f4b455df121b2d795b0e01353b262492547939586cd1e6e8fab",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "フォームに多くの詳細オプションがあり、すべてのユーザーが必要としない場合は、詳細オプション展開セクションに配置することを検討します。"
+      }
+    },
+    {
+      "segment_id": "295367fa",
+      "source_content": "Include a \"Show advanced options\" link or button. This feature allows users to access optional controls or features that may not be immediately relevant to everyone. This is particularly beneficial for power users or those who seek more customization.",
+      "source_content_hash": "318bc179ea15578bc9d19cd1a306ae5d17229e9c3f8b5927f1775e3f586610ab",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "「詳細オプションを表示」リンクまたはボタンを含めます。この機能により、ユーザーは必ずしもすべての人にすぐに関連するわけではないオプションのコントロールや機能にアクセスできます。これは特にパワーユーザーやより多くのカスタマイズを求めるユーザーにとって有益です。"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-docs/current/06-patterns/forms.mdx",
+  "last_updated_timestamp": "2025-06-06T08:53:12.760256+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "0c353bfd9a12c081df8bee45419a97fa66ee8da9d8e32c0a7947b1fce5518ca3"
+  }
+}

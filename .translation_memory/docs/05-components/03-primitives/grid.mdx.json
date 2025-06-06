@@ -1,0 +1,312 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "docs/05-components/03-primitives/grid.mdx",
+  "source_file_content_hash": "46c8c95f197c1edcc415f8a8973ebcd96ad2b3c82deb498f87d33fd6983b1b50",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\ntitle: Grid\ndescription: Grafana Labs Grid component\ndraft: false\n---",
+      "source_content_hash": "11ec0855eecdc96a7f8ba1dc8f1d6f0f1d554fbab0436b147583abc870c03e6e",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "10c4cb47",
+      "source_content": "import { Grid } from '@grafana/ui';",
+      "source_content_hash": "0e65fa67793d2cbc8e02869630617fcdc08f0099b8bb722cb16f406f67380965",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_10c4cb47"
+      }
+    },
+    {
+      "segment_id": "d912d376",
+      "source_content": "# Grid <Badge text='ready' color='green'></Badge> <StorybookLink path='/story/general-layout-grid--columns-number'/>",
+      "source_content_hash": "3fc1a7846d60a6979098e2e424e2917ac95bb1fe8250b6ec21a927f1e2879092",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "# グリッド <Badge text='ready' color='green'></Badge> <StorybookLink path='/story/general-layout-grid--columns-number'/>"
+      }
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "_Available from v10.2.3_",
+      "source_content_hash": "5ca15552645c908d7ecdf38149751c4b3aab2186cbb8809017e02dcb1dc80003",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "_v10.2.3 以降で利用可能_"
+      }
+    },
+    {
+      "segment_id": "9fcbdce9",
+      "source_content": "## Overview",
+      "source_content_hash": "7337f3d0aa29e9a82b8f1650b743a98eef90794631fa763a319686e69c546821",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 概要"
+      }
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "The Grid component is a layout component that allows you to create a grid of columns and rows to organize content and elements. It is a wrapper around the [CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) specification.",
+      "source_content_hash": "677fe9df47324fba314738c6da27731cd7477a0d9ec9037b1d1397274a428afc",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Gridコンポーネントは、コンテンツや要素を整理するための列と行のグリッドを作成できるレイアウトコンポーネントです。[CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)仕様をラップしたものです。"
+      }
+    },
+    {
+      "segment_id": "cbe57f9d",
+      "source_content": "### When to Use",
+      "source_content_hash": "b34f6ac5c84a442cdd7bf9f6f9d8063102d6433c307a4006dbea6f79945be305",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 使用すべき場合"
+      }
+    },
+    {
+      "segment_id": "39b3772c",
+      "source_content": "Use the Grid component when you want to create structured and organized layouts where content or elements need to be aligned in rows and columns for clarity and consistency.",
+      "source_content_hash": "098e40fe55a51f30f4b9bbcd0688b15819e3a8bb7c7d07cc80379cd4d94df346",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "明確さと一貫性のために、コンテンツや要素を行と列に整列させる必要がある構造化されたレイアウトを作成したい場合にGridコンポーネントを使用します。"
+      }
+    },
+    {
+      "segment_id": "bc633244",
+      "source_content": "### When not to Use",
+      "source_content_hash": "379566e9e1cb4d7b8249e4c9057893e8e8cb3761028da4583e13b354f06bee45",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 使用すべきでない場合"
+      }
+    },
+    {
+      "segment_id": "2df4f75f",
+      "source_content": "Use the **[Stack](/components/primitives/stack)** component instead for these use cases:",
+      "source_content_hash": "1aeaad3b86150b434942c314b7f892e83a08182bbbfd2986cdc40595217cf72c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "以下のユースケースでは、代わりに**[Stack](/components/primitives/stack)**コンポーネントを使用してください:"
+      }
+    },
+    {
+      "segment_id": "8cf6d045",
+      "source_content": "- **Alignment:** More options for item alignment.\n- **Flex items:** Custom flex basis or configure how items stretch and wrap\n.",
+      "source_content_hash": "c38105459c3e6b419290a2f6768d71bd57343216d67f102ea8afba3a11e8d053",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- **配置:** アイテムの配置に関するより多くのオプションが必要な場合\n- **Flexアイテム:** カスタムのflex basisや、アイテムの伸縮・折り返しを設定する必要がある場合"
+      }
+    },
+    {
+      "segment_id": "fa430ad4",
+      "source_content": "## Props",
+      "source_content_hash": "5b94a6cc928a22f2ff71078f7462cd97dbe259a0c4d1877ab3afc2a92dded915",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## プロパティ"
+      }
+    },
+    {
+      "segment_id": "4b1d2d7d",
+      "source_content": "There are two ways to define the `Grid`, either by the number of columns or by the minimum column width.",
+      "source_content_hash": "f8ee7bf966a4a94d20d0b9c8fff846a43619ebd7c492f6d9e68325ea24c57719",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "`Grid`を定義する方法には、列数による方法と最小列幅による方法の2通りがあります。"
+      }
+    },
+    {
+      "segment_id": "dfe931a2",
+      "source_content": "_Note: There is no support for using `columns` and `minColumnWidth` props at the same time. The correct behaviour is working just with one of them, not both._",
+      "source_content_hash": "95925f29ff21a24ba275b2bcce9cf544cbc8672ff11f1176281bdcce3406a21c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "_注: `columns`と`minColumnWidth`プロパティを同時に使用することはサポートされていません。正しい動作は、どちらか一方のみを使用することです。_"
+      }
+    },
+    {
+      "segment_id": "0037ff70",
+      "source_content": "### Columns",
+      "source_content_hash": "c8e7698268c2b17205dc00b3f38ba7628134f70097347f5ac4b20be02de35b3b",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 列数"
+      }
+    },
+    {
+      "segment_id": "bdc231b1",
+      "source_content": "The `columns` prop defines the number of columns that the grid will have. The columns will be equally sized.\nThe props that you can use are:",
+      "source_content_hash": "886a69eb1ffb7f5a2a992efbb66911bdf6df98d3f776e248b5a0ef5701f04bc0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "`columns`プロパティは、グリッドが持つ列の数を定義します。列は均等なサイズになります。\n使用可能なプロパティ:"
+      }
+    },
+    {
+      "segment_id": "157151e9",
+      "source_content": "- `columns`, with possible values: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12\n- `gap`, with possible values: ThemeSpacingTokens (0 | 0.25 | 0.5 | 1 | 1.5 | 2 | 2.5 | 3 | 4 | 5 | 6 | 8 | 10)",
+      "source_content_hash": "d6c99ac8e2c96d1022dc2601715c1e939e41544f7e8fd981dbf4fd2a64039893",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- `columns`: 取り得る値: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12\n- `gap`: 取り得る値: ThemeSpacingTokens (0 | 0.25 | 0.5 | 1 | 1.5 | 2 | 2.5 | 3 | 4 | 5 | 6 | 8 | 10)"
+      }
+    },
+    {
+      "segment_id": "bca33820",
+      "source_content": "```tsx live\n<Grid columns={4} gap={2}>\n  <span>1</span>\n  <span>2</span>\n  <span>3</span>\n  <span>4</span>\n  <span>5</span>\n  <span>6</span>\n  <span>7</span>\n  <span>8</span>\n</Grid>\n```",
+      "source_content_hash": "798ae59bfb0dcdc236cad4ba16c2ce5ec7bdf3709f6d3c1ac22826bbfb0d6789",
+      "node_type": "code",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_bca33820"
+      }
+    },
+    {
+      "segment_id": "60410af6",
+      "source_content": "### Minimum column width",
+      "source_content_hash": "374b9bf97a7db2ec57c63af15965ddd8ca9f926a8f7975c6b1045eff29e574e1",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 最小列幅"
+      }
+    },
+    {
+      "segment_id": "b9aaa519",
+      "source_content": "The `minColumnWidth` prop defines a minimum width that each column can have, the number of columns will be determined by the available space.\nThe props that you can use are:",
+      "source_content_hash": "1fc19f12968c9c0f459e4a61f7f1c50fd56870fc7cb707ab3e410e93f838c514",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "`minColumnWidth`プロパティは、各列が持つことができる最小幅を定義します。列数は利用可能なスペースによって決定されます。\n使用可能なプロパティ:"
+      }
+    },
+    {
+      "segment_id": "30193704",
+      "source_content": "- `minColumnWidth`, with possible values: 1 | 2 | 3 | 5 | 8 | 13 | 21 | 34 | 44 | 55 | 72 | 89 | 144, where the number will then be multiplied by the grid size.\n- `gap`, with possible values: ThemeSpacingTokens (0 | 0.25 | 0.5 | 1 | 1.5 | 2 | 2.5 | 3 | 4 | 5 | 6 | 8 | 10)",
+      "source_content_hash": "aeae49a2d6a9b71100ad99792f7b266a58a2eb1b5b63997bb6c4159a86483075",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- `minColumnWidth`: 取り得る値: 1 | 2 | 3 | 5 | 8 | 13 | 21 | 34 | 44 | 55 | 72 | 89 | 144（数値はグリッドサイズに乗算されます）\n- `gap`: 取り得る値: ThemeSpacingTokens (0 | 0.25 | 0.5 | 1 | 1.5 | 2 | 2.5 | 3 | 4 | 5 | 6 | 8 | 10)"
+      }
+    },
+    {
+      "segment_id": "3adc0ceb",
+      "source_content": "```tsx live\n<Grid minColumnWidth={13} gap={2}>\n  <span>1</span>\n  <span>2</span>\n  <span>3</span>\n  <span>4</span>\n  <span>5</span>\n  <span>6</span>\n  <span>7</span>\n  <span>8</span>\n</Grid>\n```",
+      "source_content_hash": "dad7d6cf937b1fd626c4387ada7ce10e2f3bc286f3f980138e22328341f209dc",
+      "node_type": "code",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_3adc0ceb"
+      }
+    },
+    {
+      "segment_id": "daed5acb",
+      "source_content": "### Responsiveness",
+      "source_content_hash": "137a273ed6dfcb8d2012b2f5893ec4a29256b5c005d4288b838a1d1af541e1df",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### レスポンシブ対応"
+      }
+    },
+    {
+      "segment_id": "6cc549f2",
+      "source_content": "All of the above props can be defined in a responsive way, meaning that different values will be set depending on the window size.",
+      "source_content_hash": "2bd05e2d9bca6796cae4a9ed03beeccf9a6adc9c23afa66e0a32b6762369fc8a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "上記のプロパティはすべてレスポンシブに定義可能で、ウィンドウサイズに応じて異なる値が設定されます。"
+      }
+    },
+    {
+      "segment_id": "d0dd855b",
+      "source_content": "To define any of them responsively, simply pass in an object with responsive breakpoints as keys. For instance, instead of defining the `columns` prop in this way `columns={4}`\ndefine it like  `columns={{ xs: 1, md: 4 }}`.\nThis means that from the `xs` breakpoint up, the column number is 1, while from the `md` breakpoint up, it is 4.",
+      "source_content_hash": "c9625178a7780844d218157a4ecba404ae0e536827725d6a0b638f06419ab85b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "レスポンシブに定義するには、単にレスポンシブブレークポイントをキーとしたオブジェクトを渡します。例えば、`columns={4}`のように定義する代わりに、`columns={{ xs: 1, md: 4 }}`のように定義します。\nこれは、`xs`ブレークポイント以上では列数が1、`md`ブレークポイント以上では4になることを意味します。"
+      }
+    },
+    {
+      "segment_id": "6270d577",
+      "source_content": "The possible breakpoints in the theme can be found [here](https://github.com/grafana/grafana/blob/main/packages/grafana-data/src/themes/breakpoints.ts#L28).",
+      "source_content_hash": "d0d298119311fa9b32e3d69290a7a12ab95d8dbb2500a9a3f2f7864f6dc0880d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "テーマで使用可能なブレークポイントは[こちら](https://github.com/grafana/grafana/blob/main/packages/grafana-data/src/themes/breakpoints.ts#L28)で確認できます。"
+      }
+    },
+    {
+      "segment_id": "a4bf4268",
+      "source_content": "### Further Reading & Sources",
+      "source_content_hash": "37196dc650fdb5bc8fd42c8dfeb22541acbf11893379b55c534799ab87551971",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 参考資料"
+      }
+    },
+    {
+      "segment_id": "cc9271fb",
+      "source_content": "- [Storybook docs and props table](https://developers.grafana.com/ui/canary/index.html?path=/docs/general-layout-grid--docs)",
+      "source_content_hash": "9cc2add0d8057c6fa5aba619a3774917e71d9c53c38eb12886ae7527bb1f7a3b",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- [Storybookドキュメントとプロパティ一覧](https://developers.grafana.com/ui/canary/index.html?path=/docs/general-layout-grid--docs)"
+      }
+    },
+    {
+      "segment_id": "2e771fd0",
+      "source_content": "## Playground",
+      "source_content_hash": "54192e25d4cfb303fa3f3761b5d777cd0a2b671840c2cd9c87abb3ab38f58e62",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## プレイグラウンド"
+      }
+    },
+    {
+      "segment_id": "c625a102",
+      "source_content": "<ComponentEmbed path=\"/story/general-layout-grid--columns-number\" />",
+      "source_content_hash": "3d5df2dc6c6dca4fe680ff48f7e409192280cc03053b5b33e4a49f7a3c157cc0",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_c625a102"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-docs/current/05-components/03-primitives/grid.mdx",
+  "last_updated_timestamp": "2025-06-06T08:53:12.759069+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "46c8c95f197c1edcc415f8a8973ebcd96ad2b3c82deb498f87d33fd6983b1b50"
+  }
+}

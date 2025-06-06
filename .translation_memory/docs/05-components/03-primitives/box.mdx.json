@@ -1,0 +1,302 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "docs/05-components/03-primitives/box.mdx",
+  "source_file_content_hash": "b6cfefdea614ec50eb4337e1d8a880d125e5c083a6e05cc5c8ed8857165a0c1c",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\ntitle: Box\ndescription: Grafana Labs Box component\ndraft: false\n---",
+      "source_content_hash": "ec417021caeff3d96c42caaf34de9c8bbb388af88abbba7bb2e8dbee9273f620",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "10c4cb47",
+      "source_content": "import { Box } from '@grafana/ui';",
+      "source_content_hash": "9a074a83dfe8eda9fd33a86cbb0360a68b8ff8bee1e6ea974fa494560e516d2d",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_10c4cb47"
+      }
+    },
+    {
+      "segment_id": "d912d376",
+      "source_content": "# Box <Badge text='ready' color='green'></Badge> <StorybookLink path='/story/general-layout-box--basic'/>",
+      "source_content_hash": "1387e5fc5761417fe7d7af41ff1663cd268eb6728d4c941bbc01ceb0e6b982b0",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "# Box <Badge text='ready' color='green'></Badge> <StorybookLink path='/story/general-layout-box--basic'/>"
+      }
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "_Available from v10.2.3_",
+      "source_content_hash": "5ca15552645c908d7ecdf38149751c4b3aab2186cbb8809017e02dcb1dc80003",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "_v10.2.3 以降で利用可能_"
+      }
+    },
+    {
+      "segment_id": "9fcbdce9",
+      "source_content": "## Overview",
+      "source_content_hash": "7337f3d0aa29e9a82b8f1650b743a98eef90794631fa763a319686e69c546821",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 概要"
+      }
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "The Box Component is the most basic layout component. It can be used to build more complex components and layouts with properties that use our design tokens.",
+      "source_content_hash": "5d44d32ac20d23cde90b0076dac3cc124c9092ee1ccae9399455de4b91c82e02",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Boxコンポーネントは最も基本的なレイアウトコンポーネントです。デザイントークンを使用したプロパティで、より複雑なコンポーネントやレイアウトを構築するために使用できます。"
+      }
+    },
+    {
+      "segment_id": "cbe57f9d",
+      "source_content": "### When to Use",
+      "source_content_hash": "b34f6ac5c84a442cdd7bf9f6f9d8063102d6433c307a4006dbea6f79945be305",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 使用場面"
+      }
+    },
+    {
+      "segment_id": "39b3772c",
+      "source_content": "Box should be used instead of class styles, so that we can take advantage of our design tokens.\nUse it for anything from adding a margin around a component to giving a border to a section.",
+      "source_content_hash": "c3fabc63e05061dc08403c7233cfb13daa97d5956dab718216eeaa2c28cd33bf",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "クラススタイルの代わりにBoxを使用することで、デザイントークンの利点を活かせます。\nコンポーネント周囲の余白追加からセクションへの境界線設定まで、様々な用途に使用できます。"
+      }
+    },
+    {
+      "segment_id": "418617bd",
+      "source_content": "## Props",
+      "source_content_hash": "5b94a6cc928a22f2ff71078f7462cd97dbe259a0c4d1877ab3afc2a92dded915",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## プロパティ"
+      }
+    },
+    {
+      "segment_id": "40f9552a",
+      "source_content": "### Spacing",
+      "source_content_hash": "c800b5bc033572ff6837e0eb66387c8b62d9f4e8590ff73fd25ddf9e1b189a21",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### スペーシング"
+      }
+    },
+    {
+      "segment_id": "f2c2bdd0",
+      "source_content": "Margin and padding props are used to add space around or inside the box, respectively.\nThere are 7 different props for margin: `margin`, `marginX`, `marginY`, `marginTop`, `marginRight`, `marginBottom`, and `marginLeft`.\nSimilarly, there are 7 different props for padding: `padding`, `paddingX`, `paddingY`, `paddingTop`, `paddingRight`, `paddingBottom`, and `paddingLeft`.\nPossible values: `ThemeSpacingTokens (0 | 0.25 | 0.5 | 1 | 1.5 | 2 | 2.5 | 3 | 4 | 5 | 6 | 8 | 10)`",
+      "source_content_hash": "2ac8a7d569295184e53223e2c29a7658ef5a91eecb00bf9b4421453f1cd17459",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "marginとpaddingプロパティは、それぞれBoxの周囲または内部にスペースを追加するために使用されます。\nmarginには7種類のプロパティがあります: `margin`, `marginX`, `marginY`, `marginTop`, `marginRight`, `marginBottom`, `marginLeft`。\n同様にpaddingにも7種類のプロパティがあります: `padding`, `paddingX`, `paddingY`, `paddingTop`, `paddingRight`, `paddingBottom`, `paddingLeft`。\n指定可能な値: `ThemeSpacingTokens (0 | 0.25 | 0.5 | 1 | 1.5 | 2 | 2.5 | 3 | 4 | 5 | 6 | 8 | 10)`"
+      }
+    },
+    {
+      "segment_id": "b7c3dbd1",
+      "source_content": "```tsx live\n<Box margin={1} marginY={2} marginTop={3} padding={1} paddingY={2} paddingTop={3} borderStyle='solid' borderColor='strong'>\n  Content\n</Box>\n```",
+      "source_content_hash": "0fb8a5430b146369a1f97a71c09a026d012ae650c5740f75b45a53ba3bb34871",
+      "node_type": "code",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_b7c3dbd1"
+      }
+    },
+    {
+      "segment_id": "109ace10",
+      "source_content": "### Visual look",
+      "source_content_hash": "d15e11b588a08feaef7274d68b062f88e291fdbb8841ada9da60ea649883d3fc",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 視覚的表現"
+      }
+    },
+    {
+      "segment_id": "135468ee",
+      "source_content": "The style of the Box can be defined using 5 props:",
+      "source_content_hash": "d02c8eba7b5c2a6c30d678468b67f719ed5d49e7c7b0a1107b620aa98ebc1ea0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Boxのスタイルは5つのプロパティで定義できます:"
+      }
+    },
+    {
+      "segment_id": "e7bc8c38",
+      "source_content": "- `borderColor`, with possible values: `weak`, `medium`, `strong`, `error`, `success`, `warning`, `info`\n- `borderStyle`, with possible values: `solid`, `dashed`\n- `borderRadius`, with possible values: `default`, `pill`, `circle`\n- `backgroundColor`, with possible values: `canvas`, `primary`, `secondary`, `error`, `success`, `warning`, `info`\n- `boxShadow`, with possible values: `z1`, `z2`, `z3`",
+      "source_content_hash": "701a99b57ce2ca97a1911f95de32522eaee5996514845e948725893fa1176c73",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- `borderColor`: 指定可能な値 `weak`, `medium`, `strong`, `error`, `success`, `warning`, `info`\n- `borderStyle`: 指定可能な値 `solid`, `dashed`\n- `borderRadius`: 指定可能な値 `default`, `pill`, `circle`\n- `backgroundColor`: 指定可能な値 `canvas`, `primary`, `secondary`, `error`, `success`, `warning`, `info`\n- `boxShadow`: 指定可能な値 `z1`, `z2`, `z3`"
+      }
+    },
+    {
+      "segment_id": "4ec2920d",
+      "source_content": "```tsx live\n<Box borderRadius='pill' borderStyle='dashed' borderColor='strong' backgroundColor='warning' boxShadow='z1'>\n  Content\n</Box>\n```",
+      "source_content_hash": "5df4e878abb6c4b93fcaeb5d87a8491c4a9e021790772c9cff48d3bd35885ec1",
+      "node_type": "code",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_4ec2920d"
+      }
+    },
+    {
+      "segment_id": "cb5b269c",
+      "source_content": "### Display",
+      "source_content_hash": "ed750ee1b1199e27442055f1eb4995366efd41bdc20650d6958b86512a1be9f5",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 表示"
+      }
+    },
+    {
+      "segment_id": "b36c6338",
+      "source_content": "There are 4 different props related to how the content is displayed:",
+      "source_content_hash": "5f58173667f42f928eaf81d15dbfd8d70cae617ab743ac28b5b2cdc2125c69ac",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "コンテンツの表示方法に関連する4つのプロパティ:"
+      }
+    },
+    {
+      "segment_id": "9b797309",
+      "source_content": "- `display`, with possible values: `flex`, `block`, `inline`, `none`\n- `alignItems`, with possible values: `stretch`, `flex-start`, `flex-end`, `center`, `baseline`, `start`, `end`, `self-start`, `self-end`\n- `justifyContent`, with possible values: `flex-start`, `flex-end`, `center`, `space-between`, `space-around`, `space-evenly`, `start`, `end`, `left`, `right`\n- `gap`, with possible values: ThemeSpacingTokens (0 | 0.25 | 0.5 | 1 | 1.5 | 2 | 2.5 | 3 | 4 | 5 | 6 | 8 | 10)",
+      "source_content_hash": "00431b340a08cc6fe9aff5085644b079a127e42ccc3a52c436ed3daa0c28e0ab",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- `display`: 指定可能な値 `flex`, `block`, `inline`, `none`\n- `alignItems`: 指定可能な値 `stretch`, `flex-start`, `flex-end`, `center`, `baseline`, `start`, `end`, `self-start`, `self-end`\n- `justifyContent`: 指定可能な値 `flex-start`, `flex-end`, `center`, `space-between`, `space-around`, `space-evenly`, `start`, `end`, `left`, `right`\n- `gap`: 指定可能な値 ThemeSpacingTokens (0 | 0.25 | 0.5 | 1 | 1.5 | 2 | 2.5 | 3 | 4 | 5 | 6 | 8 | 10)"
+      }
+    },
+    {
+      "segment_id": "1131ef75",
+      "source_content": "If you just need to create a Flex layout without any other styling to the box, please use the **[Stack](/components/primitives/stack)** component instead.",
+      "source_content_hash": "af49a5884f5df8f7b89721877e9c4c1979163ad278a5b1935cd832f3752a528d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Flexレイアウトのみが必要でBoxに他のスタイリングが不要な場合は、代わりに**[Stack](/components/primitives/stack)**コンポーネントを使用してください。"
+      }
+    },
+    {
+      "segment_id": "750e2f7e",
+      "source_content": "```tsx live\n<Box display='flex' alignItems='center' justifyContent='center' gap={5}>\n  <span>One</span>\n  <span>Two</span>\n</Box>\n```",
+      "source_content_hash": "242f5e542fad6749c1067fda9dfebf772fb78d4ae036d818072be0e08e7d4d6f",
+      "node_type": "code",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_750e2f7e"
+      }
+    },
+    {
+      "segment_id": "ee8401db",
+      "source_content": "### Responsiveness",
+      "source_content_hash": "137a273ed6dfcb8d2012b2f5893ec4a29256b5c005d4288b838a1d1af541e1df",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### レスポンシブ対応"
+      }
+    },
+    {
+      "segment_id": "147e8550",
+      "source_content": "All of the above props can be defined in a responsive way, meaning that different values will be set depending on the window size.",
+      "source_content_hash": "2bd05e2d9bca6796cae4a9ed03beeccf9a6adc9c23afa66e0a32b6762369fc8a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "上記のすべてのプロパティはレスポンシブに定義可能で、ウィンドウサイズに応じて異なる値を設定できます。"
+      }
+    },
+    {
+      "segment_id": "883231d4",
+      "source_content": "To define any of them responsively, simply pass in an object with responsive breakpoints as keys. For instance, instead of defining margin in this way `margin={5}`\ndefine it like  `margin={{ xs: 3, md: 5 }}`.\nThis means that from the `xs` breakpoint up, margin is set to `3`, while from the `md` breakpoint up, it is set to `5`.",
+      "source_content_hash": "6bf09cee35afa101fe7c5efc43fb153de0f27941e1ed7202eab92a99f8a63ae9",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "レスポンシブに定義するには、単にブレークポイントをキーとしたオブジェクトを渡します。例えば、`margin={5}`のように定義する代わりに、\n`margin={{ xs: 3, md: 5 }}`のように定義します。\nこれは、`xs`ブレークポイント以上ではmarginが`3`に設定され、`md`ブレークポイント以上では`5`に設定されることを意味します。"
+      }
+    },
+    {
+      "segment_id": "d0dd855b",
+      "source_content": "The possible breakpoints in the theme can be found [here](https://github.com/grafana/grafana/blob/main/packages/grafana-data/src/themes/breakpoints.ts#L28).",
+      "source_content_hash": "d0d298119311fa9b32e3d69290a7a12ab95d8dbb2500a9a3f2f7864f6dc0880d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "テーマで使用可能なブレークポイントは[こちら](https://github.com/grafana/grafana/blob/main/packages/grafana-data/src/themes/breakpoints.ts#L28)で確認できます。"
+      }
+    },
+    {
+      "segment_id": "2fd0be2a",
+      "source_content": "### Further Reading & Sources",
+      "source_content_hash": "37196dc650fdb5bc8fd42c8dfeb22541acbf11893379b55c534799ab87551971",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 参考資料 & 情報源"
+      }
+    },
+    {
+      "segment_id": "c0ea80dd",
+      "source_content": "- [Storybook docs and props table](https://developers.grafana.com/ui/canary/index.html?path=/docs/general-layout-box--docs)",
+      "source_content_hash": "a8fdad96a854748944cce22e2a5aea53b16cf9d1363c0c001e7a216341a8bc3b",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- [Storybookドキュメントとpropsテーブル](https://developers.grafana.com/ui/canary/index.html?path=/docs/general-layout-box--docs)"
+      }
+    },
+    {
+      "segment_id": "a4bf4268",
+      "source_content": "## Playground",
+      "source_content_hash": "54192e25d4cfb303fa3f3761b5d777cd0a2b671840c2cd9c87abb3ab38f58e62",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## プレイグラウンド"
+      }
+    },
+    {
+      "segment_id": "da14a545",
+      "source_content": "<ComponentEmbed path=\"/story/general-layout-box--basic\" />",
+      "source_content_hash": "5ee83e64b3a123412265dbab1eabbbce30959220b8822c702a4ba88dc4516775",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_da14a545"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-docs/current/05-components/03-primitives/box.mdx",
+  "last_updated_timestamp": "2025-06-06T08:53:12.745815+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "b6cfefdea614ec50eb4337e1d8a880d125e5c083a6e05cc5c8ed8857165a0c1c"
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "docs/06-patterns/delete.mdx",
+  "source_file_content_hash": "c71ddac7a0109de5d8e7ffe3f089ff4d047b0dc66f8ecadb48bbd2c34c706a01",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\ntitle: Delete\ndescription: Description for search engines and results\nhide_title: true\ndraft: true\n---",
+      "source_content_hash": "b3628d71e679112d8f7a835f25031771aa732c5f69f308ec892e2fcb09631492",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "50387553",
+      "source_content": "import { Badge, InfoBox } from '@grafana/ui';",
+      "source_content_hash": "ac659334444e59b0ee3d021fcd661bbcba231bb5d08d6a0ad9967a854b59db14",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_50387553"
+      }
+    },
+    {
+      "segment_id": "1cc03ec8",
+      "source_content": "# Delete <Badge text='draft' color='orange'></Badge>",
+      "source_content_hash": "d2f5a23df1fb3d7968997de2e9b94e9814cb992bb4baf16aba5d3779dcfe29d5",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "# 削除 <Badge text='draft' color='orange'></Badge>"
+      }
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "Deleting within Grafana is a multi-tiered pattern that varies based on the required amount of friction (see: [Design Principle: Tasteful Friction](/foundations/design-principles#tasteful-friction)) and importance of the item being deleted.",
+      "source_content_hash": "cf38d56f13df822337a31a6ee2c6dcce9a6d2a3f82be38ca5775d5fb7e5b93b3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Grafana内での削除は、必要な摩擦の量（参照：[デザイン原則：適度な摩擦](/foundations/design-principles#tasteful-friction)）と削除対象の重要性に基づいて異なる多層的なパターンです。"
+      }
+    },
+    {
+      "segment_id": "70153c6e",
+      "source_content": "# Tiers",
+      "source_content_hash": "3a325479551f7c628e7f819d8e6d11ec4acdc6898ed26b77ef61eb5603c6015b",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "# 階層"
+      }
+    },
+    {
+      "segment_id": "86b54d44",
+      "source_content": "Check definitions and use cases to choose the right pattern.",
+      "source_content_hash": "42d315f3d428132be8740ae10a257e1f14016d226af36f47addc33cfb47d1757",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "適切なパターンを選択するために定義とユースケースを確認してください。"
+      }
+    },
+    {
+      "segment_id": "d350c018",
+      "source_content": "### **Inline delete**",
+      "source_content_hash": "b63e18ba5fd0819fb04e32b02218e1812990594b19dc89d7026006ec1b1b895f",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### **インライン削除**"
+      }
+    },
+    {
+      "segment_id": "1acb9a05",
+      "source_content": "The quick and easy way to delete non-risky content that's easy for the user to re-add. Typically used with IconButton with the **trash-alt, times-circle, **or **times **icon, with no confirmation step. Used for removing things such as rows or line items.",
+      "source_content_hash": "385fa9743bafd063c9a7b69b7166c2dbb3cc9cdf6161f645646044440dd4cc25",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "リスクの低いコンテンツを簡単に削除する方法で、ユーザーが再追加しやすい場合に使用されます。通常、**trash-alt**、**times-circle**、または**times**アイコン付きのIconButtonで使用され、確認ステップはありません。行やリスト項目の削除などに使用されます。"
+      }
+    },
+    {
+      "segment_id": "63622bf0",
+      "source_content": "### **Type to delete (delete dialogue)**",
+      "source_content_hash": "5066e43bc2000cc56a792c5cdb40a79f187224f260a2261b80937263b6bb652f",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### **入力して削除（削除ダイアログ）**"
+      }
+    },
+    {
+      "segment_id": "98cfbd53",
+      "source_content": "The most friction: when accidental deletion might be disastrous. This pattern demands the entire focus of the user to make sure they're fully aware they are destroying something (and what), and confirm it explicitly with more than just a button click. Useful when changes will have ripple effects.\\*\\* \\*\\*",
+      "source_content_hash": "fbb661d5012df1bfdbd5cbd265c035826142da17cd320fb849da25221fb5832b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "最も摩擦が大きいパターン：誤った削除が壊滅的な結果をもたらす可能性がある場合に使用します。このパターンでは、ユーザーが何を破壊しようとしているのか（そしてそれが何なのか）を完全に認識し、ボタンクリック以上の明示的な確認を要求します。変更が波及効果を持つ場合に有用です。"
+      }
+    },
+    {
+      "segment_id": "79b2d0b9",
+      "source_content": "# Implementation",
+      "source_content_hash": "afc72d25aaa409a30c2583c12e4762bc6c624bd17649ca3b245f7450a8cb0027",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "# 実装"
+      }
+    },
+    {
+      "segment_id": "d9172fa4",
+      "source_content": "Depending on the tier of delete pattern, there are varying ways they get implemented. Below outlines how each tier should be implemented for user success and product consistency",
+      "source_content_hash": "675fd154e96a2046e4faca6236aabab0159d44fb5523021ca1cf6c17842e0c22",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "削除パターンの階層に応じて、実装方法が異なります。以下に、各階層の実装方法とユーザーの成功および製品の一貫性を確保するための方法を概説します。"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-docs/current/06-patterns/delete.mdx",
+  "last_updated_timestamp": "2025-06-06T08:53:12.752725+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "c71ddac7a0109de5d8e7ffe3f089ff4d047b0dc66f8ecadb48bbd2c34c706a01"
+  }
+}

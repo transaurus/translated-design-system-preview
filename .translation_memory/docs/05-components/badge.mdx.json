@@ -1,0 +1,152 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "docs/05-components/badge.mdx",
+  "source_file_content_hash": "f8d24d9b2b00ba3a55012f341c4dbe9458f5cc1d0a245869ad19ccf3cfcffa29",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\ntitle: Badge\ndescription: Grafana Labs Badge component\ndraft: true\n---",
+      "source_content_hash": "6f80a286b554d6f74deac6f2d289066ba2c19d713d7ee8b85848fad59869b4f6",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "a703643c",
+      "source_content": "# Badge <Badge text='draft' color='orange'></Badge> <a href='https://developers.grafana.com/ui/latest/index.html?path=/story/data-display-badge--basic' target='_blank' className='header-links'>Storybook <Icon name=\"external-link-alt\"/> </a>",
+      "source_content_hash": "e1cecdd8c2b9b39d6e6a1dfc34a519b3f02b79aa5334755b8975ee2c05e4043b",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "# バッジ <Badge text='draft' color='orange'></Badge> <a href='https://developers.grafana.com/ui/latest/index.html?path=/story/data-display-badge--basic' target='_blank' className='header-links'>Storybook <Icon name=\"external-link-alt\"/> </a>"
+      }
+    },
+    {
+      "segment_id": "53eaf0e1",
+      "source_content": "The badge component adds meta information to other content, for example about release status or new elements. You can add any `Icon` component or use the badge without an icon.",
+      "source_content_hash": "b3873a8369e5c1de79239f84beead03a8ca0b13ca3786427390d6162755b4e63",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "バッジコンポーネントは、リリースステータスや新規要素など、他のコンテンツに関するメタ情報を追加します。任意の `Icon` コンポーネントを追加したり、アイコンなしでバッジを使用することも可能です。"
+      }
+    },
+    {
+      "segment_id": "8a5f6a7b",
+      "source_content": "## Options",
+      "source_content_hash": "d3ad6f781ec8b0fe8c2d7d95680b32ce762b74b231ddabfcf25927951c0caf0c",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## オプション"
+      }
+    },
+    {
+      "segment_id": "ba4f48ff",
+      "source_content": "### Color",
+      "source_content_hash": "fa7c62a21997d3f9ef868e9d7cd1ce6489549bce1659128c49970ae17442b149",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### カラー"
+      }
+    },
+    {
+      "segment_id": "cf898102",
+      "source_content": "Badge accepts the named visualisation colors to change the appearance. Note that these colors are not the same as the design system tokens such as success or error.",
+      "source_content_hash": "48461b38e5f5774493da92130909b922e363270c691c5aff0203a84ffea87cb8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "バッジは、外観を変更するために名前付きのビジュアライゼーションカラーを受け入れます。これらのカラーは、successやerrorなどのデザインシステムトークンとは異なることに注意してください。"
+      }
+    },
+    {
+      "segment_id": "93be3c14",
+      "source_content": "```jsx live\n<Stack direction=\"horizontal\">\n  <Badge color=\"blue\" text=\"Blue\" />\n  <Badge color=\"red\" text=\"Red\" />\n  <Badge color=\"green\" text=\"Green\" />\n  <Badge color=\"orange\" text=\"Orange\" />\n  <Badge color=\"purple\" text=\"Purple\" />\n</Stack>\n```",
+      "source_content_hash": "c416f4fdbbf5b84647b572bc135526bc24fa00cb1c55c263afaf80f06db39a8d",
+      "node_type": "code",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_93be3c14"
+      }
+    },
+    {
+      "segment_id": "fa430ad4",
+      "source_content": "### Icon",
+      "source_content_hash": "0efcebe38687429432eb233644b5a8b65c4455699916b2ede2183427b3353396",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### アイコン"
+      }
+    },
+    {
+      "segment_id": "4b1d2d7d",
+      "source_content": "You can specify an icon name to show at the beginning of the badge.",
+      "source_content_hash": "db638402fe4c54efc9f8aa6f4713762d225820c608fb3c8c9877065437039892",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "バッジの先頭に表示するアイコン名を指定できます。"
+      }
+    },
+    {
+      "segment_id": "cb57d798",
+      "source_content": "```jsx live\n<Badge icon=\"rocket\" color=\"blue\" text=\"New!\" />\n```",
+      "source_content_hash": "71380a4f0a957fc74adf22dc61d330d30ca7634c80307b0dd378968058cbaf3a",
+      "node_type": "code",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_cb57d798"
+      }
+    },
+    {
+      "segment_id": "f422383e",
+      "source_content": "### Tooltip",
+      "source_content_hash": "26fadcab78871c68eedde5726043df3eb079d3592ede4c4a40e657f085b0d7fe",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### ツールチップ"
+      }
+    },
+    {
+      "segment_id": "97ae4a01",
+      "source_content": "Specify a tooltip to show additional information on hover. Avoid putting lengthy content in the tooltip.",
+      "source_content_hash": "76d3d66460dcbb7d33361284312d8b7fddbfb1ce5d387b8e4acec73ac09b4514",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "ホバー時に追加情報を表示するツールチップを指定します。ツールチップに長いコンテンツを配置しないようにしてください。"
+      }
+    },
+    {
+      "segment_id": "de8f60af",
+      "source_content": "```jsx live\n<Badge icon=\"rocket\" color=\"blue\" text=\"New!\" tooltip=\"Check out this new feature!\" />\n```",
+      "source_content_hash": "2bb2e380a8da47a90c8f8a7e4d4373e4a563db586400a5988d798f90ff45c51f",
+      "node_type": "code",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_de8f60af"
+      }
+    },
+    {
+      "segment_id": "f4a3226e",
+      "source_content": "<iframe\n  src=\"https://developers.grafana.com/ui/latest/index.html?path=/story/data-display-badge--basic&full=1&shortcuts=false&singleStory=true\"\n  width=\"100%\"\n  height=\"500px\"\n></iframe>",
+      "source_content_hash": "90d57afc2c7f091da9e70aa58be770d8118ec18236fdd04474b2422a0a0dcfce",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_f4a3226e"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-docs/current/05-components/badge.mdx",
+  "last_updated_timestamp": "2025-06-06T08:53:12.752427+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "f8d24d9b2b00ba3a55012f341c4dbe9458f5cc1d0a245869ad19ccf3cfcffa29"
+  }
+}

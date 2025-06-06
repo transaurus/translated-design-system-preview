@@ -1,0 +1,92 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "docs/07-templates/01-overview.mdx",
+  "source_file_content_hash": "8cb4d7d450862af4cb3d1434e459ee99f117afc7379e5e3284787a818491b8f9",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\ntitle: Overview\ndescription: Description for search engines and results\nsidebar_position: 1\nhide_title: true\nhide_table_of_contents: true\ndraft: false\n---",
+      "source_content_hash": "c9dba590030fe78170dd773f210467284b5c6d1d995eb55d3dd30ed0a17ae798",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "1cc03ec8",
+      "source_content": "# Saga Design System Templates",
+      "source_content_hash": "719f7e68816d155c376fb22a445d84f755165e3edc5a5f6b2d4cb66e55962097",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "# Saga デザインシステム テンプレート"
+      }
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "Saga design system templates are a set of pre-constructed patterns and code frameworks intended to provide developers and designers with a robust starting point for building user interfaces within the Grafana ecosystem. These templates are higher-level abstractions than the individual components in the design system, offering a more streamlined and efficient approach to UI development.",
+      "source_content_hash": "6a229c94dcf601e8f1e2282ad4e77cb4a79dc2f641f40abe42ed8505d9f7fe14",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Sagaデザインシステムのテンプレートは、Grafanaエコシステム内でユーザーインターフェースを構築するための堅牢な出発点を開発者やデザイナーに提供することを目的とした、事前に構築されたパターンとコードフレームワークのセットです。これらのテンプレートは、デザインシステム内の個々のコンポーネントよりも高レベルの抽象化を提供し、UI開発をより効率的に進めるためのアプローチを可能にします。"
+      }
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "Saga design system templates aim to address the following issues:",
+      "source_content_hash": "54e45aad7d41687fb6c3a3b98b34ec06d04b73af637dac89a34faf551f7abf6f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Sagaデザインシステムのテンプレートは、以下の課題に対処することを目的としています："
+      }
+    },
+    {
+      "segment_id": "4ddf6ae7",
+      "source_content": "- The lack of a reliable framework and standardized patterns results in inconsistent UIs for similar page types such as pages with lists or tabular data, and different looks for similar functionalities across various pages. This not only creates a fragmented user experience but also leads to difficulties for users due to the increased cognitive load.\n- Designers and developers have to spend significant effort when implementing new UI features, including for common layouts that have been implemented before. This extra duplication of effort complicates the UI development process more than necessary.",
+      "source_content_hash": "ea76655cc1544cff86440b2368dbe7555d088c1d0de17d9c7a1aab6a5020034d",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- 信頼性のあるフレームワークと標準化されたパターンの欠如により、リストや表形式データを含むページなど類似したページタイプ間でUIの一貫性が失われ、さまざまなページで同様の機能が異なる見た目で実装される。これにより、断片化されたユーザー体験が生まれるだけでなく、ユーザーの認知的負荷が増大するという問題が発生する。\n- デザイナーや開発者は、以前に実装されたことのある一般的なレイアウトを含む新しいUI機能を実装する際に、多大な労力を費やす必要がある。このような余分な重複作業は、UI開発プロセスを必要以上に複雑にしてしまう。"
+      }
+    },
+    {
+      "segment_id": "aee0e40d",
+      "source_content": "## When to use templates",
+      "source_content_hash": "c91ba3378168bc7f1f67be9d04cb3e91bc6d40eca8c26e739febdca994946c80",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## テンプレートを使用するタイミング"
+      }
+    },
+    {
+      "segment_id": "f5f6d2ce",
+      "source_content": "Use templates when you want to:",
+      "source_content_hash": "4e8f1ff6dccb240a534b035ee80b5efd73af2ce797f63066a4103f018adc9535",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "以下の場合にテンプレートを使用してください："
+      }
+    },
+    {
+      "segment_id": "1b8c1887",
+      "source_content": "- Create a new page or feature that is similar to an existing one.\n- Implement a common layout or pattern that has been implemented before.",
+      "source_content_hash": "c74ace98b14aed679352d93257c4becb87ad37bca1978efda5dc0de633444b6e",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- 既存のページや機能と類似した新しいページや機能を作成する場合\n- 以前に実装されたことのある一般的なレイアウトやパターンを実装する場合"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-docs/current/07-templates/01-overview.mdx",
+  "last_updated_timestamp": "2025-06-06T08:53:12.753935+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "8cb4d7d450862af4cb3d1434e459ee99f117afc7379e5e3284787a818491b8f9"
+  }
+}

@@ -1,0 +1,222 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "docs/05-components/radio-button-group.mdx",
+  "source_file_content_hash": "3c2e55c816e0d7edb9c866c46e255a7fd259e49e90ab4f34c159e441b73ef70e",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\ntitle: RadioButtonGroup\ndescription: RadioButtonGroup is used to select a single value from multiple mutually exclusive options using a horizontal tab-like layout.\nhide_title: true\n---",
+      "source_content_hash": "7fbab1db690f60f050d892a826dfd2acace49173d569f683b462b7ead5bb3b61",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "a703643c",
+      "source_content": "# RadioButtonGroup <Badge text='ready' color='green'></Badge> <a href='https://developers.grafana.com/ui/latest/index.html?path=/story/forms-radiobuttongroup--radio-buttons' target='_blank' className='header-links'>Storybook <Icon name=\"external-link-alt\"/> </a>",
+      "source_content_hash": "405082d443be7d77473b707b7c1db2c78923035fcddb4b9d732cd3bc5e75c05b",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "# RadioButtonGroup <Badge text='ready' color='green'></Badge> <a href='https://developers.grafana.com/ui/latest/index.html?path=/story/forms-radiobuttongroup--radio-buttons' target='_blank' className='header-links'>Storybook <Icon name=\"external-link-alt\"/> </a>"
+      }
+    },
+    {
+      "segment_id": "53eaf0e1",
+      "source_content": "RadioButtonGroup is used to select a single value from multiple mutually exclusive options using a horizontal tab-like layout.",
+      "source_content_hash": "3830afdea137c9d43e053f412f09332d0640cf3743ff565845ff53204c97c919",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "RadioButtonGroupは、水平タブのようなレイアウトで複数の排他的なオプションから単一の値を選択するために使用されます。"
+      }
+    },
+    {
+      "segment_id": "88aa2da8",
+      "source_content": "<iframe\n  src=\"https://developers.grafana.com/ui/latest/index.html?path=/story/forms-radiobuttongroup--radio-buttons&full=1&shortcuts=false&singleStory=true\"\n  width=\"100%\"\n  height=\"500px\"\n></iframe>",
+      "source_content_hash": "05294f2306e0ef553cf92edb61470b8c76d77fe1a2c77a5ef29a6a1f321f6844",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_88aa2da8"
+      }
+    },
+    {
+      "segment_id": "3daf1b88",
+      "source_content": "## When to use",
+      "source_content_hash": "d57fe8233a0bcc964af649dd3059fbd5aa2ba0bba9b4b44f225cdd2f0dd1c432",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 使用タイミング"
+      }
+    },
+    {
+      "segment_id": "f6168993",
+      "source_content": "Use `RadioButtonGroup` for mutually exclusive selections if there are up to four options available. This is because the `RadioButtonGroup` cannot have more than one row and should still accommodate small resolutions. For a mutually exclusive selection of more than four options, use `Select` component or the `RadioButtonList` component.",
+      "source_content_hash": "bd1151046938bf6b908718b9886de59f4d9b0075607f0d16f0213c293ab2cd0c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "利用可能なオプションが4つまでの排他的な選択に`RadioButtonGroup`を使用してください。これは`RadioButtonGroup`が複数行を持つことができず、小さな解像度にも対応する必要があるためです。4つ以上の排他的な選択には、`Select`コンポーネントまたは`RadioButtonList`コンポーネントを使用してください。"
+      }
+    },
+    {
+      "segment_id": "f5f6d2ce",
+      "source_content": "Radio buttons can only exist in this type of group. If you want one single option, it's better to use `Switch` instead. To offer multiple choices within the same group or context which are not mutually exclusive, use `Checkbox` instead.",
+      "source_content_hash": "87d5d6dca71225a0bb6169d6a7facc04ff67122188bb41771d85a6a18e5063ca",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "ラジオボタンはこのタイプのグループでのみ存在できます。単一のオプションを提供したい場合は、`Switch`を使用する方が適しています。同じグループまたはコンテキスト内で相互排他的ではない複数の選択肢を提供する場合は、代わりに`Checkbox`を使用してください。"
+      }
+    },
+    {
+      "segment_id": "40f9552a",
+      "source_content": "## Usage",
+      "source_content_hash": "63bfd61a0561b255a2caa0a2e3add091ca7e327f2fa06a407cbb2ff341b858d8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 使用方法"
+      }
+    },
+    {
+      "segment_id": "ed7dde9c",
+      "source_content": "### Basic radio group",
+      "source_content_hash": "4842e1377d439b7896dffe276de4612d9aec9ad109566461873ddb7fd4aff20f",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 基本的なラジオグループ"
+      }
+    },
+    {
+      "segment_id": "08021a08",
+      "source_content": "```tsx live\nfunction Basic() {\n  const [value, setValue] = useState<string>();\n  return (\n    <RadioButtonGroup\n      options={[\n        { label: 'Prometheus', value: 'prometheus' },\n        { label: 'Graphite', value: 'graphite', icon: 'cloud' },\n        { label: 'Elastic', value: 'elastic' },\n      ]}\n      value={value}\n      onChange={setValue}\n    />\n  );\n}\n```",
+      "source_content_hash": "fde40335e5efb158900755032669c97347ef0e409772036e83e9dca30135e4e6",
+      "node_type": "code",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_08021a08"
+      }
+    },
+    {
+      "segment_id": "54268405",
+      "source_content": "### Disabled options",
+      "source_content_hash": "a098f569c553eaeb012e6f429621e01062151db47b06c66008a4b7c9efceeb90",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 無効化されたオプション"
+      }
+    },
+    {
+      "segment_id": "8af76f3d",
+      "source_content": "You can disable some options by passing them to the `disabledOptions` prop.\nKeep in mind the `disabledOptions` are compared with options' values by the `===` operator.",
+      "source_content_hash": "6752a87976773ea9cbc1987484eb8155521a6a2a0189546a192768e68bf996b8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "`disabledOptions`プロパティにオプションを渡すことで、特定のオプションを無効化できます。\n`disabledOptions`はオプションの値と`===`演算子で比較されることに注意してください。"
+      }
+    },
+    {
+      "segment_id": "229d6705",
+      "source_content": "```tsx live\nfunction WithDisabledOptions() {\n  const [value, setValue] = useState('graphite');\n  return (\n    <RadioButtonGroup\n      options={[\n        { label: 'Prometheus', value: 'prometheus' },\n        { label: 'Graphite', value: 'graphite', icon: 'cloud' },\n        { label: 'Elastic', value: 'elastic' },\n      ]}\n      value={value}\n      disabledOptions={['prometheus', 'elastic']}\n      onChange={setValue}\n    />\n  );\n}\n```",
+      "source_content_hash": "da7a2b4e19c7ad783fb2d57ab537146653d96159d08fdd9e2017e31d9d03ccc0",
+      "node_type": "code",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_229d6705"
+      }
+    },
+    {
+      "segment_id": "0bb95128",
+      "source_content": "The whole control can be disabled with the `disabled` prop.",
+      "source_content_hash": "b2f2a46a28effcc148a6d776b12fc212d4c9ddb0761b089c0354a6bcb24d7375",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "コントロール全体は`disabled`プロパティで無効化できます。"
+      }
+    },
+    {
+      "segment_id": "29ad5b0e",
+      "source_content": "```tsx live\nfunction Disabled() {\n  const [value, setValue] = useState('prometheus');\n  return (\n    <RadioButtonGroup\n      disabled\n      options={[\n        { label: 'Prometheus', value: 'prometheus' },\n        { label: 'Graphite', value: 'graphite', icon: 'cloud' },\n        { label: 'Elastic', value: 'elastic' },\n      ]}\n      value={value}\n      onChange={setValue}\n    />\n  );\n}\n```",
+      "source_content_hash": "3cd1a5396b54c8ef6af3a008b4995c4dc1cc139cfc7670bfac3f994db379aeb7",
+      "node_type": "code",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_29ad5b0e"
+      }
+    },
+    {
+      "segment_id": "759d12dd",
+      "source_content": "### Size",
+      "source_content_hash": "d10f1f1069afd3812baba4b9406a0f35f89975c3ad98553be1d21d56aa403531",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### サイズ"
+      }
+    },
+    {
+      "segment_id": "74dd7937",
+      "source_content": "Specify the size `sm` for a smaller, more compact control. The small variant is commonly used inline in other elements, such as headers. Avoid using `sm` in forms.",
+      "source_content_hash": "255fd3d5c898ef07ee0036b6e3673e59192148af25775a4f89dc0851cd5b65b6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "よりコンパクトな小さなコントロールには`sm`サイズを指定します。小さいバリアントは、ヘッダーなどの他の要素内でインラインで使用されることが一般的です。フォーム内での`sm`の使用は避けてください。"
+      }
+    },
+    {
+      "segment_id": "5dd0e3a7",
+      "source_content": "```tsx live\nfunction WithSize() {\n  const [value, setValue] = useState('prometheus');\n  return (\n    <RadioButtonGroup\n      size=\"sm\"\n      options={[\n        { label: 'Prometheus', value: 'prometheus' },\n        { label: 'Graphite', value: 'graphite', icon: 'cloud' },\n        { label: 'Elastic', value: 'elastic' },\n      ]}\n      value={value}\n      onChange={setValue}\n    />\n  );\n}\n```",
+      "source_content_hash": "c368226e823d624ff6acfdd483b467804d30d0b22718b635481015da8589cf24",
+      "node_type": "code",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_5dd0e3a7"
+      }
+    },
+    {
+      "segment_id": "f947c8e4",
+      "source_content": "### Width",
+      "source_content_hash": "f1fb7ffab98264b400ad98e05c1a67a65f224d39e0b1c4721aa512a45f5e2d74",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 幅"
+      }
+    },
+    {
+      "segment_id": "7bc8bb24",
+      "source_content": "By default `RadioButtonGroup` will fit its width to its contents. Specify the `fullWidth` prop to make the control span the entire width of the container.",
+      "source_content_hash": "d4412a54d982f75daf14e10845058a25128fe11a7616b609d07e8702b0c4c4d4",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "デフォルトでは`RadioButtonGroup`は内容に合わせて幅を調整します。`fullWidth`プロパティを指定すると、コンテナの全幅にわたってコントロールが広がります。"
+      }
+    },
+    {
+      "segment_id": "f39e109c",
+      "source_content": "```tsx live\nfunction FullWidth() {\n  const [value, setValue] = useState('prometheus');\n  return (\n    <RadioButtonGroup\n      fullWidth\n      options={[\n        { label: 'Prometheus', value: 'prometheus' },\n        { label: 'Graphite', value: 'graphite', icon: 'cloud' },\n        { label: 'Elastic', value: 'elastic' },\n      ]}\n      value={value}\n      onChange={setValue}\n    />\n  );\n}\n```",
+      "source_content_hash": "219bf126bb111bc9e849e4b958b484c7521b20a0698f26d83630f043e7072473",
+      "node_type": "code",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_f39e109c"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-docs/current/05-components/radio-button-group.mdx",
+  "last_updated_timestamp": "2025-06-06T08:53:12.756742+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "3c2e55c816e0d7edb9c866c46e255a7fd259e49e90ab4f34c159e441b73ef70e"
+  }
+}

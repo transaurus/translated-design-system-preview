@@ -1,0 +1,62 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "docs/03-foundations/iconography.mdx",
+  "source_file_content_hash": "0cc6a7e21dfcdb37ec582c2ff548e049959003e676102338bd7f421d02bf21da",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\ntitle: Iconography\ndescription: Description for search engines and results\ndraft: true\n---",
+      "source_content_hash": "2cfc4c2a0c1916711dbf15d0e8597f27ab6a967a22040be8bfa7987daeaec7a0",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "a703643c",
+      "source_content": "# Iconography <Badge text='draft' color='orange'></Badge>",
+      "source_content_hash": "81d42467f14a46391a184e82064450158825cf8d85680ceb519d823ad2bc0dea",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "# アイコン体系 <Badge text='draft' color='orange'></Badge>"
+      }
+    },
+    {
+      "segment_id": "53eaf0e1",
+      "source_content": "This document is a WIP.",
+      "source_content_hash": "e43e4ae2a07be9af10a6de7f0b3402b588a5a1483e1516639ead91813e407f5a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "このドキュメントは作業中です。"
+      }
+    },
+    {
+      "segment_id": "8a5f6a7b",
+      "source_content": "## Contributing new icons",
+      "source_content_hash": "4effad0c551aaaea014d574da8fae6513400baca35db340ee68ad2a5661063c9",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 新しいアイコンの貢献方法"
+      }
+    },
+    {
+      "segment_id": "180bddb1",
+      "source_content": "See the [icon README](https://github.com/grafana/grafana/blob/main/public/img/icons/README.md) for instructions on how to contribute new icons.",
+      "source_content_hash": "bb899391c9dc59e9ff20a0519075fc2fbe927b0e9d6e8fd9792ba8eeb91e07e2",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "新しいアイコンの貢献方法については、[アイコンREADME](https://github.com/grafana/grafana/blob/main/public/img/icons/README.md)を参照してください。"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-docs/current/03-foundations/iconography.mdx",
+  "last_updated_timestamp": "2025-06-06T08:53:12.746797+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "0cc6a7e21dfcdb37ec582c2ff548e049959003e676102338bd7f421d02bf21da"
+  }
+}

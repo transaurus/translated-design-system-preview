@@ -1,0 +1,72 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "docs/05-components/plugin-signature.mdx",
+  "source_file_content_hash": "533439c280915a586215588ae206b7aec409e5fb39eee03ead67468bd88e71a8",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\ntitle: Plugin Signature\ndescription: Grafana Labs Plugin Signature component\ndraft: true\n---",
+      "source_content_hash": "c14b3e828bd46f0d1e42e0128b8bdaf404df3772a0e8436571a503c16fe49418",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "a703643c",
+      "source_content": "# Plugin Signature Badge <Badge text='draft' color='orange'></Badge> <a href='https://developers.grafana.com/ui/latest/index.html?path=/story/data-display-pluginsignaturebadge--basic' target='_blank' className='header-links'>Storybook <Icon name=\"external-link-alt\"/> </a>",
+      "source_content_hash": "0dbd99d13c102f63951e4b7cb18484c7fc7dd1375367da298dbbf0db387e7ced",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "# プラグイン署名バッジ <Badge text='draft' color='orange'></Badge> <a href='https://developers.grafana.com/ui/latest/index.html?path=/story/data-display-pluginsignaturebadge--basic' target='_blank' className='header-links'>Storybook <Icon name=\"external-link-alt\"/> </a>"
+      }
+    },
+    {
+      "segment_id": "53eaf0e1",
+      "source_content": "The Plugin Signature Badge can be found in each information plugin card of the configuration plugins panel (Grafana menu > Configuration > Plugins). This is a security measure to make sure plugins haven't been tampered with. Upon loading, Grafana checks to see the plugin signature status.",
+      "source_content_hash": "1f1761b0fa062fa849b1c379d5febe48045b7f8c7ab3f78c3d691758a92f3604",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "プラグイン署名バッジは、設定プラグインパネル（Grafanaメニュー > 設定 > プラグイン）の各情報プラグインカードに表示されます。これはプラグインが改ざんされていないことを確認するためのセキュリティ対策です。読み込み時に、Grafanaはプラグインの署名状態をチェックします。"
+      }
+    },
+    {
+      "segment_id": "88aa2da8",
+      "source_content": "<iframe\n  src=\"https://developers.grafana.com/ui/latest/index.html?path=/story/data-display-pluginsignaturebadge--basic&full=1&shortcuts=false&singleStory=true\"\n  width=\"100%\"\n  height=\"500px\"\n></iframe>",
+      "source_content_hash": "16bb594d427940825b4d616748b4832611e8886e951661acd3e07eecd6455065",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_88aa2da8"
+      }
+    },
+    {
+      "segment_id": "3daf1b88",
+      "source_content": "## Badges",
+      "source_content_hash": "59aff668f91878a7b8d2a08ac2eb27fdabc8ddb4c9f509c4259a301951539ea4",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## バッジの種類"
+      }
+    },
+    {
+      "segment_id": "034de896",
+      "source_content": "1. Core: this badge indicates that the plugin has been built into Grafana.\n2. Signed: the plugin's signature was successfully verified.\n3. Invalid signature: this plugin has a invalid signature.\n4. Modified signature: this plugin has changed since it was signed. This may indicate malicious intent.\n5. Unsigned: the plugin is not signed. In this case, as upon loading Grafana checks the plugins signature, Grafana will not load or start it. Furthermore, it will write an error message to the server log.",
+      "source_content_hash": "a0fa3ed45d2414180fbf3b69836b30893db838b51bbfc58d74cc58ba79ad6554",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "1. コア: このバッジは、プラグインがGrafanaに組み込まれていることを示します。\n2. 署名済み: プラグインの署名が正常に検証されました。\n3. 無効な署名: このプラグインは無効な署名を持っています。\n4. 変更された署名: このプラグインは署名後に変更されています。悪意のある改ざんの可能性があります。\n5. 未署名: プラグインは署名されていません。この場合、Grafanaはプラグインの署名をチェックする際に、プラグインを読み込んだり起動したりしません。さらに、サーバーログにエラーメッセージを記録します。"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-docs/current/05-components/plugin-signature.mdx",
+  "last_updated_timestamp": "2025-06-06T08:53:12.752139+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "533439c280915a586215588ae206b7aec409e5fb39eee03ead67468bd88e71a8"
+  }
+}

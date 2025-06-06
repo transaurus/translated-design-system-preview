@@ -1,0 +1,262 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "docs/03-foundations/accessibility/accessibility-overview.mdx",
+  "source_file_content_hash": "ef6c83b267a58ce6375b522eddf0cf421b45087a672cbc59a10bc239c60ebb7d",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\ntitle: Accessibility overview\ndescription: Grafana Labs is dedicated to improving our graphical user interfaces and overall experience so that our product becomes usable and accessible for people with disabilities as well as anyone else.\nhide_title: true\n---",
+      "source_content_hash": "bea165504e3050b8a92de8d0e5626edfedd4188df4c4afa8dee2ef52bef94e75",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "10c4cb47",
+      "source_content": "import { Badge } from '@grafana/ui';",
+      "source_content_hash": "af7b58551bb42fea6572a2bde03c95c99d8529feeec9e1a0d48c3da4f931ca67",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_10c4cb47"
+      }
+    },
+    {
+      "segment_id": "d912d376",
+      "source_content": "# Accessibility overview <Badge text='ready' color='green'></Badge>",
+      "source_content_hash": "5331ac4c335aa96ea402220e28e1a1539fff90ddf244fb09a78e2291b0e58f22",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "# アクセシビリティ概要 <Badge text='ready' color='green'></Badge>"
+      }
+    },
+    {
+      "segment_id": "8a5f6a7b",
+      "source_content": "## Commitment",
+      "source_content_hash": "855f60956161e681aa5c4f96342fd381a12c45a9da92a0c411e2eed5175240aa",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## コミットメント"
+      }
+    },
+    {
+      "segment_id": "180bddb1",
+      "source_content": "Grafana Labs is dedicated to improving our graphical user interfaces and overall experience so that our product becomes usable and accessible for people with disabilities as well as anyone else.",
+      "source_content_hash": "efc1de7d86a11497d2b972b79aa889be32784305a9134bc19f83e9e9bdb9bbcc",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Grafana Labsは、障害を持つ人々を含むすべてのユーザーにとって使いやすくアクセシブルな製品を提供するため、グラフィカルユーザーインターフェースと全体的なエクスペリエンスの改善に取り組んでいます。"
+      }
+    },
+    {
+      "segment_id": "e14c9928",
+      "source_content": "## Conformance status",
+      "source_content_hash": "139dc14f8c4ed36b12680f55529d18acf5d24365b4bf1fde72e815e91a8840ad",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 適合状況"
+      }
+    },
+    {
+      "segment_id": "42ad8e83",
+      "source_content": "The [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/standards-guidelines/wcag/) defines requirements for designers and developers to improve accessibility for people with disabilities. It defines three levels of conformance: Level A, Level AA, and Level AAA.",
+      "source_content_hash": "d57dfbeab82896e9366c4b465304632678866af550be70b0af673bf37c793eb4",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/standards-guidelines/wcag/) は、障害を持つ人々のアクセシビリティを向上させるための要件を定義しています。適合レベルには、レベルA、レベルAA、レベルAAAの3段階があります。"
+      }
+    },
+    {
+      "segment_id": "f6168993",
+      "source_content": "Grafana is partially conformant with WCAG 2.1 level AA and aims to meet this status in the future. Partially conformant means that some parts of the content do not fully conform to the accessibility standard.",
+      "source_content_hash": "4b7cccda40af39bd8041674b7aa93b5ff2214fdc7668c121c209e0b0e19a071b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Grafanaは現在WCAG 2.1レベルAAに部分的に適合しており、将来的に完全な適合を目指しています。部分的に適合しているとは、コンテンツの一部がアクセシビリティ標準に完全には適合していないことを意味します。"
+      }
+    },
+    {
+      "segment_id": "418617bd",
+      "source_content": "## Steps taken to support accessibility",
+      "source_content_hash": "73d6d02c375986318775a496b6e5cd76fac12838ad2ae89726f8219f2e9491c1",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## アクセシビリティをサポートするための取り組み"
+      }
+    },
+    {
+      "segment_id": "2fdadb08",
+      "source_content": "Grafana Labs takes the following measures to ensure the accessibility of Grafana:",
+      "source_content_hash": "549aedc3da063efd462db190865baa7ebb094567a503d8b221bd329faeb5583c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Grafana Labsは、Grafanaのアクセシビリティを確保するために以下の対策を講じています："
+      }
+    },
+    {
+      "segment_id": "44d89370",
+      "source_content": "- Ensure developers have accessibility knowledge and skills, as championed by a group of Accessibility Ambassadors\n- Provide best practices and recommendations when it comes to writing accessible components\n- Drive continued improvements and ensure accountability via an internal Accessibility Working Group\n- Provide accessibility training for our staff\n- Use automated tools to perform accessibility tests on the features being developed\n- Usability test with participants with disabilities",
+      "source_content_hash": "538622ca4f83aa55232d56ea1a7e356e5f3dc551ed4a91f3e7bf21a30a05c3fa",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- 開発者がアクセシビリティに関する知識とスキルを習得できるよう、アクセシビリティアンバサダーグループが主導\n- アクセシブルなコンポーネントを作成するためのベストプラクティスと推奨事項の提供\n- 内部のアクセシビリティワーキンググループによる継続的な改善の推進と責任の明確化\n- スタッフ向けのアクセシビリティトレーニングの提供\n- 開発中の機能に対して自動化ツールを使用したアクセシビリティテストの実施\n- 障害を持つ参加者を対象としたユーザビリティテスト"
+      }
+    },
+    {
+      "segment_id": "b25f21be",
+      "source_content": "## Technical specifications",
+      "source_content_hash": "ad55f7e0364a1d8fda16c75620a21007ee7f27b806f1fba707c1bb1d5dfb129d",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 技術仕様"
+      }
+    },
+    {
+      "segment_id": "7499a4e7",
+      "source_content": "Accessibility of Grafana relies on the following technologies to work with the particular combination of web browsers and any assistive technologies or plugins installed on your computer:",
+      "source_content_hash": "b93ee418097bc19b328cc8a0fb7076cfd73353e3e8c27aa50225fc57d7bba5f5",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Grafanaのアクセシビリティは、以下の技術が特定のウェブブラウザとコンピュータにインストールされた支援技術やプラグインと連携することで実現されています："
+      }
+    },
+    {
+      "segment_id": "7a2e981c",
+      "source_content": "- HTML\n- WAI-ARIA\n- CSS\n- JavaScript",
+      "source_content_hash": "821d3d7518c65bada85533b1878defe3c0b223dc293d656b61fecdb087eecaa7",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- HTML\n- WAI-ARIA\n- CSS\n- JavaScript"
+      }
+    },
+    {
+      "segment_id": "3cfe6286",
+      "source_content": "These technologies are relied upon for conformance with the accessibility standards used.",
+      "source_content_hash": "97ef9891ab6ada363044483d998cc2aa0ec3f03832b1415e2103df9789d35ae5",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "これらの技術は、使用されているアクセシビリティ標準への適合に不可欠です。"
+      }
+    },
+    {
+      "segment_id": "06c0f776",
+      "source_content": "## Limitations and alternatives",
+      "source_content_hash": "1796eb8075b766d63b61acc5669511485f9cc889be7de8fb117a63a764e00265",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 制限事項と代替手段"
+      }
+    },
+    {
+      "segment_id": "aa1e7006",
+      "source_content": "While Grafana Labs works to improve accessibility across Grafana, we know we have some current limitations. Please [open an issue on GitHub](https://github.com/grafana/grafana/issues?q=is%3Aopen+is%3Aissue+label%3Atype%2Faccessibility) if you want to raise an issue that is not in the list below. Please add a 'type:accessibility' label to new issues.",
+      "source_content_hash": "65d4ca021f1788d24626411f93514560104f1600ea6d50bb3276e243c75e11c8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Grafana LabsはGrafana全体のアクセシビリティ改善に取り組んでいますが、現在いくつかの制限があることを認識しています。以下のリストにない問題を報告したい場合は、[GitHubでイシューをオープン](https://github.com/grafana/grafana/issues?q=is%3Aopen+is%3Aissue+label%3Atype%2Faccessibility)してください。新しいイシューには「type:accessibility」ラベルを追加してください。"
+      }
+    },
+    {
+      "segment_id": "13d9cd70",
+      "source_content": "As of this writing, the main limitations are in the following areas:",
+      "source_content_hash": "327de0982f9e56ad98400b390e0fdff57b284989b2b294a8ae62ebe8a3d16a9f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "執筆時点での主な制限事項は以下の領域です："
+      }
+    },
+    {
+      "segment_id": "6773b78b",
+      "source_content": "- Charts: We plan to offer alternative color-blind friendly palettes and patterns to the charts that we create and an easy way to switch to the data table behind charts\n- Color contrast: Modern Grafana interfaces generally do not have color contrast issues. However, older code might fall below the recommended contrast levels. As we continue to update our code, this issue will phase out naturally.\n- Keyboard support: Some parts of Grafana are not fully accessible via keyboard. We plan to improve keyboard support, offering the possibility of skipping to content, avoiding keyboard traps, and always showing the focus indicator.",
+      "source_content_hash": "efffbe8aaf8113dde7de8841fdc584d286fbd851e68ad6fdc223d09d59e7ece7",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- チャート: 色覚障害者に優しいパレットとパターンの提供、およびチャート背後にあるデータテーブルへの簡単な切り替え方法を計画中\n- 色のコントラスト: 最新のGrafanaインターフェースには一般的にコントラストの問題はありませんが、古いコードでは推奨コントラストレベルを下回る場合があります。コードの更新に伴い、この問題は自然に解消されます。\n- キーボードサポート: Grafanaの一部はキーボードで完全にアクセスできません。コンテンツへのスキップ機能、キーボードトラップの回避、フォーカスインジケーターの常時表示など、キーボードサポートの改善を計画中です。"
+      }
+    },
+    {
+      "segment_id": "98d26038",
+      "source_content": "To see individual tickets, view our [GitHub issues with the label \"type/accessibility\".](https://github.com/grafana/grafana/issues?q=is%3Aissue+is%3Aopen+label%3Atype%2Faccessibility)",
+      "source_content_hash": "604312ef94404de94eb3cbdd30d0b063f34316a59e7f11b4ec077b3be60699bb",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "個別のチケットを確認するには、[GitHubの「type/accessibility」ラベル付きイシュー](https://github.com/grafana/grafana/issues?q=is%3Aissue+is%3Aopen+label%3Atype%2Faccessibility)をご覧ください。"
+      }
+    },
+    {
+      "segment_id": "af52d59d",
+      "source_content": "## Assessment and testing environment",
+      "source_content_hash": "5c3a297326576520ab8271113832224e98009c066c832f2e11de3b87bd34de36",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 評価とテスト環境"
+      }
+    },
+    {
+      "segment_id": "4d52a261",
+      "source_content": "Grafana Labs assessed the accessibility of Grafana via the following approaches:",
+      "source_content_hash": "52d3308c34e88f19fcb911ef22a4cfd189beee77f996a437a89840964f2cbf2a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Grafana Labsは、以下のアプローチでGrafanaのアクセシビリティを評価しています："
+      }
+    },
+    {
+      "segment_id": "30193704",
+      "source_content": "- Self-evaluation: the content was evaluated by our own organization or the developer of the content. Manual testing is being performed regularly for all major browsers and operating systems, plus the following screen readers:\n  - VoiceOver on MacOS with Safari, Chrome, and Edge\n  - NVDA on Windows with Chrome and Firefox\n  - Orca on Linux\n    -Automated evaluation: We are using [pa11y](https://pa11y.org/) to test our main workflows and use cases.\n- Accessibility linting: We are working on incorporating a11y linting during development to ensure accessibility is considered at the earliest stages. We have an ongoing issue tracking the progress of this initiative on [GitHub](https://github.com/grafana/grafana/issues/37782).",
+      "source_content_hash": "4b5b9177c6921dd1fe429cd91249ba36e42b2f9ac2eed239a6dfbda9e7e76d25",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- 自己評価: コンテンツは自組織または開発者によって評価されています。主要なブラウザとオペレーティングシステム、および以下のスクリーンリーダーで定期的に手動テストを実施：\n  - MacOS上のVoiceOver（Safari、Chrome、Edge）\n  - Windows上のNVDA（Chrome、Firefox）\n  - Linux上のOrca\n    -自動評価: [pa11y](https://pa11y.org/)を使用して主要なワークフローとユースケースをテスト\n- アクセシビリティリンター: 開発の初期段階でアクセシビリティが考慮されるよう、a11yリンターの導入を進めています。この取り組みの進捗は[GitHub](https://github.com/grafana/grafana/issues/37782)で追跡可能です。"
+      }
+    },
+    {
+      "segment_id": "8c6d7ee7",
+      "source_content": "## Feedback",
+      "source_content_hash": "f41c558fab87698ff12a3a060acc389a1e92a656e03d5b899da4713bd92bdb09",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## フィードバック"
+      }
+    },
+    {
+      "segment_id": "06e24cc0",
+      "source_content": "We welcome your feedback on the accessibility of Grafana. Please let us know if you encounter accessibility barriers on Grafana by opening [an issue on GitHub](https://github.com/grafana/grafana/issues/new?assignees=&labels=type%3A+accessibility&template=2-accessibility.md) or emailing us at [info@grafana.com](mailto:info@grafana.com).",
+      "source_content_hash": "4f981b3a544823a79b93f2498030bf9bf37d9541a5398595bada8e732e9818da",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Grafanaのアクセシビリティに関するフィードバックを歓迎します。Grafanaでアクセシビリティの障壁に遭遇した場合は、[GitHubでイシューをオープン](https://github.com/grafana/grafana/issues/new?assignees=&labels=type%3A+accessibility&template=2-accessibility.md)するか、[info@grafana.com](mailto:info@grafana.com)までメールでお知らせください。"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-docs/current/03-foundations/accessibility/accessibility-overview.mdx",
+  "last_updated_timestamp": "2025-06-06T08:53:12.746433+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "ef6c83b267a58ce6375b522eddf0cf421b45087a672cbc59a10bc239c60ebb7d"
+  }
+}

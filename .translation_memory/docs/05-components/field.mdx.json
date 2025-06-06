@@ -1,0 +1,202 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "docs/05-components/field.mdx",
+  "source_file_content_hash": "f5fb8ffc5916b021b360510b59b23785c4422a3a7113bcbe60a59f4ef9be6787",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\ntitle: Field\ndescription: The Field component is a wrapper for handling form input elements, such as text inputs, switches, or other custom input components, within a form. It provides features like labelling, descriptions, validation states, and layout options.\n---",
+      "source_content_hash": "0fd5149276f6ff84a49ffd1422f49c63c96b1f5f604d0bc5167fefe35ed7efee",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "b3de8742",
+      "source_content": "# Field <Badge text='ready' color='green'></Badge> <StorybookLink path='/story/forms-field--horizontal-layout' />",
+      "source_content_hash": "c346e6a3d9cea8b328501a64f5ff978308baf62f1940a5c89327cb638b615f2b",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "# Field <Badge text='ready' color='green'></Badge> <StorybookLink path='/story/forms-field--horizontal-layout' />"
+      }
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "The Field component is a wrapper for handling form input elements, such as text inputs, switches, or other custom input components, within a form. It provides features like labelling, descriptions, validation states, and layout options.",
+      "source_content_hash": "faea75279ac168d0babd22a8d3cd097c280751cceb3773b153c985b4d44827b0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Fieldコンポーネントは、テキスト入力、スイッチ、その他のカスタム入力コンポーネントなど、フォーム内の入力要素を扱うためのラッパーです。ラベル付け、説明文、検証状態、レイアウトオプションなどの機能を提供します。"
+      }
+    },
+    {
+      "segment_id": "1cc03ec8",
+      "source_content": "## When to use",
+      "source_content_hash": "d57fe8233a0bcc964af649dd3059fbd5aa2ba0bba9b4b44f225cdd2f0dd1c432",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 使用する場面"
+      }
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "The Field component is suitable for various scenarios where you need to incorporate form inputs into your React application. Some common use cases include:",
+      "source_content_hash": "198149f4766231da51316bc27f7cab095d7600e2c7df99dd742c42368090dac8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Fieldコンポーネントは、Reactアプリケーションにフォーム入力を組み込む必要があるさまざまなシナリオに適しています。主な使用例は以下の通りです："
+      }
+    },
+    {
+      "segment_id": "9e760345",
+      "source_content": "- Creating forms with labeled input elements.\n- Adding descriptions to help users understand the purpose of the input.\n- Applying validation and error messages to form fields.\n- Indicating loading or disabled states for input fields.",
+      "source_content_hash": "7bd4030e503f3ede959a7cdcfd07c256069b6405937f8d47caea91114b996ee8",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- ラベル付き入力要素を含むフォームの作成\n- 入力の目的をユーザーが理解できるように説明文を追加\n- フォームフィールドへの検証とエラーメッセージの適用\n- 入力フィールドの読み込み中または無効状態の表示"
+      }
+    },
+    {
+      "segment_id": "aee0e40d",
+      "source_content": "## Implementation / Options",
+      "source_content_hash": "3a0afb06ad162cceca636b7c4095a0eb370acea7ea3534d4976e5a2cb174c458",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 実装/オプション"
+      }
+    },
+    {
+      "segment_id": "f5f6d2ce",
+      "source_content": "Note that the Field component will pass the `invalid`, `disabled` and `loading` props, unless they are `undefined`, to the child component, which will override those props if they are set on the child component.",
+      "source_content_hash": "438675d6b3f60b1d71907e1419c85a30c9f6e15e671f12ffec3764494a15324b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Fieldコンポーネントは、`undefined`でない限り、`invalid`、`disabled`、`loading`の各プロパティを子コンポーネントに渡します。これにより、子コンポーネントに設定されているこれらのプロパティが上書きされます。"
+      }
+    },
+    {
+      "segment_id": "41a8ae85",
+      "source_content": "```tsx live\n<Field label=\"API key\" description=\"Your instance API key\">\n  <Input id=\"api-key\" />\n</Field>\n```",
+      "source_content_hash": "7c1b3751b56c2662104a0c59668cc0bf172e1e275a0c4b988d71bd45dc21b7ac",
+      "node_type": "code",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_41a8ae85"
+      }
+    },
+    {
+      "segment_id": "f2f30ae8",
+      "source_content": "### Do's",
+      "source_content_hash": "008161705968c1d0413c660ae0e4ffc700a2dc52b83eb054133f9d4218531097",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 推奨事項"
+      }
+    },
+    {
+      "segment_id": "c6dea11f",
+      "source_content": "- Provide a meaningful label for the field to enhance accessibility.\n- Provide a description for the field to help users understand the purpose of the input.",
+      "source_content_hash": "dba7142ba307c8760e63b7fefd1b4cdecdd882ee1d6311ff43b2b73e4c6c7c63",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- アクセシビリティを向上させるため、フィールドに意味のあるラベルを付ける\n- ユーザーが入力の目的を理解できるように、フィールドに説明文を提供する"
+      }
+    },
+    {
+      "segment_id": "a1b3d8cb",
+      "source_content": "### Don'ts",
+      "source_content_hash": "37ab6eb691c9d1c36bd5dbb1295c8878324b276d3841524f9fa68146a3f08116",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 非推奨事項"
+      }
+    },
+    {
+      "segment_id": "7a2e981c",
+      "source_content": "- Use the `description` prop without also providing a label.\n- Use the `invalid` prop without also providing an error message.",
+      "source_content_hash": "6d0e063ef0fff0eece5e5528a04e1562116a20ffd7286ad0f06647259d1e516c",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- ラベルを提供せずに`description`プロパティを使用しない\n- エラーメッセージを提供せずに`invalid`プロパティを使用しない"
+      }
+    },
+    {
+      "segment_id": "62a6890b",
+      "source_content": "### Validation",
+      "source_content_hash": "3fe1f365922a16a47f37caa5de6a044dd60efca2503429d1a98eebc043e5a93c",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 検証"
+      }
+    },
+    {
+      "segment_id": "3cfe6286",
+      "source_content": "Use the `invalid` prop to indicate that the input is invalid. This will add a red border to the input and display the error message provided in the `error` prop. For this to work, both the `invalid` and `error` props must be set.",
+      "source_content_hash": "c2ebff49bd2881ca9cdff791c252e12a36682dff302f8443bf3b7dba58a42f79",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "入力が無効であることを示すには`invalid`プロパティを使用します。これにより、入力に赤い枠線が追加され、`error`プロパティで指定されたエラーメッセージが表示されます。この機能を動作させるには、`invalid`と`error`の両方のプロパティを設定する必要があります。"
+      }
+    },
+    {
+      "segment_id": "06c0f776",
+      "source_content": "### Loading",
+      "source_content_hash": "f3bd8ac7372c26109eae0d8240468ca204e9d69add34b93b4344a3dcf7417135",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 読み込み中"
+      }
+    },
+    {
+      "segment_id": "aa1e7006",
+      "source_content": "Use the `loading` prop to indicate that the input is loading. This will add a spinner to the input.",
+      "source_content_hash": "fb4bb26ee372509839a5101e86ca15ace60e8b1025c44d64a5a0363db180c6f6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "入力が読み込み中であることを示すには`loading`プロパティを使用します。これにより、入力にスピナーが表示されます。"
+      }
+    },
+    {
+      "segment_id": "f44c1398",
+      "source_content": "## Playground",
+      "source_content_hash": "54192e25d4cfb303fa3f3761b5d777cd0a2b671840c2cd9c87abb3ab38f58e62",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## プレイグラウンド"
+      }
+    },
+    {
+      "segment_id": "6127963f",
+      "source_content": "<ComponentEmbed path=\"/story/forms-field--horizontal-layout\" />",
+      "source_content_hash": "1a6b85af1241df22377b77a9523a70be8fe2743d6ae26dbdf1d57b686a94b588",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_6127963f"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-docs/current/05-components/field.mdx",
+  "last_updated_timestamp": "2025-06-06T08:53:12.755939+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "f5fb8ffc5916b021b360510b59b23785c4422a3a7113bcbe60a59f4ef9be6787"
+  }
+}

@@ -1,0 +1,332 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "docs/06-patterns/navigation.mdx",
+  "source_file_content_hash": "6112f0d6f554e2a187e7de6ebcb0dbe3f503fcbcfb57b1ea87b61e3a4a6ef209",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\ntitle: Navigation\ndescription: Navigation patterns are crucial for ensuring users can seamlessly move through an application.\nhide_title: true\n---",
+      "source_content_hash": "666756a5d69a1d41883bead15cbabadccd0ddc76c997e703fbd25fbd1ed339e9",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "a703643c",
+      "source_content": "# Navigation <Badge text='ready' color='green'></Badge>",
+      "source_content_hash": "3250ac1bd094458ca8110909182498fe93459fb92c6d26bb96304f8d5e9a78c5",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "# ナビゲーション <Badge text='ready' color='green'></Badge>"
+      }
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Navigation patterns are crucial for ensuring users can seamlessly move through an application. In Grafana, two key components play a vital role in navigation: the Megamenu and the Breadcrumbs. Let's delve into how these components contribute to effective navigation patterns.",
+      "source_content_hash": "eba8db9308a1623f7be2c644bf0bf9463b62570ef66c427e86c9c5ef7c58ef51",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "ナビゲーションパターンは、ユーザーがアプリケーション内をシームレスに移動できるようにするために重要です。Grafanaでは、メガメニューとブレッドクラムの2つの主要コンポーネントがナビゲーションにおいて重要な役割を果たします。これらのコンポーネントが効果的なナビゲーションパターンにどのように貢献するかを見ていきましょう。"
+      }
+    },
+    {
+      "segment_id": "1cc03ec8",
+      "source_content": "## Megamenu navigation",
+      "source_content_hash": "341b6a36f436da27fd4c7b30996a6c74b8a34c2d406d8ba4ebc033a33b8b599a",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## メガメニューナビゲーション"
+      }
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "**Overview:**  \nThe Grafana megamenu is the primary navigation component for all of Grafana, including core, plugins, and other apps. It exists in three states - opened, closed, and “docked” open. When open, the menu acts as an overlay. When docked, the page content responds to a narrowed viewport.",
+      "source_content_hash": "29858509161c8c73ee95eaddc2b4e58c8559c7769bae038dac6ad635097cb194",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**概要:**  \nGrafanaのメガメニューは、コア、プラグイン、その他のアプリを含むGrafana全体の主要なナビゲーションコンポーネントです。メガメニューには、開いた状態、閉じた状態、および「ドッキング」された開いた状態の3つの状態があります。開いた状態では、メニューはオーバーレイとして機能します。ドッキングされた状態では、ページコンテンツが狭まったビューポートに対応します。"
+      }
+    },
+    {
+      "segment_id": "cf898102",
+      "source_content": "**When to use:**  \nThe megamenu provides access to levels 1, 2, and 3 of the Grafana information architecture. Levels beyond this should be handled by tabs on a page (level 4) or inline elements using headings, steppers or other design elements (level 5 and up).",
+      "source_content_hash": "70f86e33320fdda195a020640c634fe21a7baaabd6a214f0993139c59373c3c9",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**使用するタイミング:**  \nメガメニューは、Grafanaの情報アーキテクチャのレベル1、2、および3へのアクセスを提供します。これ以上のレベルは、ページ上のタブ（レベル4）または見出し、ステッパー、その他のデザイン要素を使用したインライン要素（レベル5以上）で処理する必要があります。"
+      }
+    },
+    {
+      "segment_id": "d350c018",
+      "source_content": "### Usage guidelines",
+      "source_content_hash": "be1c4f18c45299aba827c7b287341a440e6469288810b567754a69a5e1176fbb",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 使用ガイドライン"
+      }
+    },
+    {
+      "segment_id": "f6168993",
+      "source_content": "To ensure users have a consistent and expected experience when they are navigating through Grafana, it is important to follow the following Dos and Don'ts.",
+      "source_content_hash": "89da297a6f3489f868ab8af19f37ed031ffbaf475b47089d61f7df57b70d8ced",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "ユーザーがGrafanaをナビゲートする際に一貫性のある期待通りの体験を得られるようにするためには、以下の「推奨事項」と「禁止事項」に従うことが重要です。"
+      }
+    },
+    {
+      "segment_id": "f5f6d2ce",
+      "source_content": "**Dos:**",
+      "source_content_hash": "42f28bb7f9645b600c6a7db93fd6acbd4730efbe3827bf76f606b32b5bde74d4",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**推奨事項:**"
+      }
+    },
+    {
+      "segment_id": "da23c906",
+      "source_content": "- Utilize a landing page for all overview/category pages.\n- Ensure all entries have a corresponding page or place to go for consistent breadcrumb behavior.\n- Be sure to include an icon next to any level 1 content. \n- Ensure all megamenu entries are in sentence case.\n- Consider standardizing labels used across Grafana and using nouns over verbs for page titles.\n- Consider the number of pages you place in the megamenu.\n- Be careful with page title length to avoid truncation.\n- Strive for consistency within the Grafana ecosystem.",
+      "source_content_hash": "6d472771630c6d27089cd011ed881de2f29b42fff998f93c6cf08000f3943aaa",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- すべての概要/カテゴリページにランディングページを利用する。\n- すべてのエントリに対応するページまたは移動先を確保し、ブレッドクラムの動作を一貫させる。\n- レベル1のコンテンツには必ずアイコンを追加する。\n- メガメニューのすべてのエントリはセンテンスケース（文のケース）で記述する。\n- Grafana全体で使用するラベルの標準化を検討し、ページタイトルには動詞ではなく名詞を使用する。\n- メガメニューに配置するページの数を考慮する。\n- ページタイトルの長さに注意し、切り詰めを避ける。\n- Grafanaエコシステム内での一貫性を追求する。"
+      }
+    },
+    {
+      "segment_id": "dfe931a2",
+      "source_content": "**Don'ts:**",
+      "source_content_hash": "5bd575b142e655f5bd3f372f291a7f9984e462fa04a0e0f83cb04fe2044dc25f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**禁止事項:**"
+      }
+    },
+    {
+      "segment_id": "86b525ab",
+      "source_content": "- Redirect within the megamenu to compensate for a lack of a landing page.\n- Do not use an icon any content that **is not level 1.**\n- Do not place cloud applications at level 1 of the megamenu.\n- Use title case.\n- Include external links.\n- Nest tabs to indicate levels 5 and up.",
+      "source_content_hash": "63ca82800957a2a729435dcd5aac1780966f7bae7b7c22be0d641186f93c0e7d",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- ランディングページがないことを補うためにメガメニュー内でリダイレクトを行わない。\n- **レベル1以外のコンテンツ**にアイコンを使用しない。\n- クラウドアプリケーションをメガメニューのレベル1に配置しない。\n- タイトルケースを使用しない。\n- 外部リンクを含めない。\n- レベル5以上を示すためにタブをネストしない。"
+      }
+    },
+    {
+      "segment_id": "9438ce36",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "---"
+      }
+    },
+    {
+      "segment_id": "9f9e64f5",
+      "source_content": "## Breadcrumbs component documentation",
+      "source_content_hash": "e26a8898a52ed219bb426f8f4ddfa7a64897fe56648a1834c47eebde3d66b3a1",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## ブレッドクラムコンポーネントのドキュメント"
+      }
+    },
+    {
+      "segment_id": "1042b50d",
+      "source_content": "Grafana’s topnav breadcrumbs are a key part of the overall navigation experience. They are the very top most popular part of the 2022-2023 navigation redesign, and so it is critical to the user experience that they behave in a consistent and uniform manner.",
+      "source_content_hash": "4a8fb6a7936b0ca431769c7cb962de96d8e99007cfc039633f3187a31c60e4a9",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Grafanaのトップナビゲーションブレッドクラムは、全体的なナビゲーション体験の重要な部分です。これらは2022-2023年のナビゲーション再設計の中で最も人気のある部分であり、ユーザー体験にとって一貫した均一な動作が不可欠です。"
+      }
+    },
+    {
+      "segment_id": "aa1e7006",
+      "source_content": "**When to use:**  \nBreadcrumbs are automatically generated by the page hierarchy, so they are used on all pages.",
+      "source_content_hash": "e33b1c872e0c916891e08ec1eb0bd85bf668fdd1dfad27eb03c40dd23076578b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**使用するタイミング:**  \nブレッドクラムはページ階層によって自動生成されるため、すべてのページで使用されます。"
+      }
+    },
+    {
+      "segment_id": "c674e260",
+      "source_content": "### Usage guidelines:",
+      "source_content_hash": "f3d3a80afe9315a6bb63df29b5e6d3cfd3b26230e88ec0fc2621cb5d4978a49d",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 使用ガイドライン:"
+      }
+    },
+    {
+      "segment_id": "29528c8d",
+      "source_content": "Breadcrumbs provide users with a critical indicator of where they are within the product space. Having breadcrumbs behave consistently throughout the product, ensures that users have a good experience and are able to understand where they are regardless of what part of the product they are currently viewing. The following guidelines will ensure we are providing a consistent and expected experience.",
+      "source_content_hash": "3fe798a149caf96661fc16620a42b94a32a23db272303f8d1aae32207866374c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "ブレッドクラムは、ユーザーに製品空間内での現在地を示す重要な指標を提供します。ブレッドクラムが製品全体で一貫して動作することで、ユーザーは良好な体験を得られ、現在表示している製品の部分に関係なく自分の位置を理解できます。以下のガイドラインに従うことで、一貫した期待通りの体験を提供できます。"
+      }
+    },
+    {
+      "segment_id": "c504c207",
+      "source_content": "**Dos:**",
+      "source_content_hash": "42f28bb7f9645b600c6a7db93fd6acbd4730efbe3827bf76f606b32b5bde74d4",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**推奨事項:**"
+      }
+    },
+    {
+      "segment_id": "b4ef1e56",
+      "source_content": "- Utilize breadcrumbs for information architecture hierarchy.\n- Utilize a separate page for anything reflected as a breadcrumb.\n- Ensure all breadcrumb entries are in sentence case.\n- Strive for consistency within the Grafana ecosystem.\n- Be cautious with page title length to avoid truncation.",
+      "source_content_hash": "7949367281be73cbd9df28d162823d58ae22b626c90a977f7bde80a6ba386e44",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- 情報アーキテクチャの階層を示すためにブレッドクラムを利用する。\n- ブレッドクラムとして反映されるものには別のページを利用する。\n- すべてのブレッドクラムエントリはセンテンスケースで記述する。\n- Grafanaエコシステム内での一貫性を追求する。\n- ページタイトルの長さに注意し、切り詰めを避ける。"
+      }
+    },
+    {
+      "segment_id": "e536ea0d",
+      "source_content": "**Don'ts:**",
+      "source_content_hash": "5bd575b142e655f5bd3f372f291a7f9984e462fa04a0e0f83cb04fe2044dc25f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**禁止事項:**"
+      }
+    },
+    {
+      "segment_id": "30193704",
+      "source_content": "- Override breadcrumb behavior to be reflective of history.\n- Redirect breadcrumbs to compensate for a lack of a landing page.\n- Use title case.",
+      "source_content_hash": "c638bdceb32da5aa89851f0a5c8cc02aee9835899fe7d2e0a4351e67e139baea",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- ブレッドクラムの動作を履歴を反映するようにオーバーライドしない。\n- ランディングページがないことを補うためにブレッドクラムをリダイレクトしない。\n- タイトルケースを使用しない。"
+      }
+    },
+    {
+      "segment_id": "df6e96a7",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "---"
+      }
+    },
+    {
+      "segment_id": "126950d7",
+      "source_content": "## Return to previous",
+      "source_content_hash": "ef744d49593c697614d9690f5899b6141c4800304939d2e96d79eac9f1328039",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 前の画面に戻る"
+      }
+    },
+    {
+      "segment_id": "0bb95128",
+      "source_content": "Because of Grafana’s technical and information architecture, it is a common experience for a user to work on an item in one area and then follow a link to see the results of their work, ending in a different area (such as SLO configuration that creates alert rules or cloud apps that create dashboards). Additionally, the more we weave cloud app experiences into core Grafana through extensions, the more we link our users from one branch of the information architecture “tree” to a very distant branch.",
+      "source_content_hash": "953ae39205e784be62dc2dcedc807d4e6ae36c44e59a192334f43ab54c1eb9dd",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Grafanaの技術的および情報アーキテクチャのため、ユーザーがある領域でアイテムを操作し、その作業結果を確認するためにリンクをたどると、別の領域（例えばSLO設定がアラートルールを作成したり、クラウドアプリがダッシュボードを作成したりする）に移動することがよくあります。さらに、クラウドアプリの体験を拡張機能を通じてコアGrafanaに組み込むほど、情報アーキテクチャの「ツリー」の一方の枝から非常に遠い別の枝へユーザーをリンクさせることになります。"
+      }
+    },
+    {
+      "segment_id": "657c2b20",
+      "source_content": "This causes a switch in context that requires a full understanding of Grafana’s information architecture to truly understand.",
+      "source_content_hash": "e7957731100bcbf7baf0050d8f8dd4accfc497628e493ea4228fc11be1664ed4",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "このため、コンテキストの切り替えが発生し、Grafanaの情報アーキテクチャを完全に理解する必要があります。"
+      }
+    },
+    {
+      "segment_id": "e7772088",
+      "source_content": "Because breadcrumbs are reserved for hierarchy rather than history, users are unable to utilize breadcrumbs to “go back.” Additionally, the browser “Back” button is only intermittently helpful - and many users have been trained to ignore the browser button in web applications.",
+      "source_content_hash": "0df427b6e687de278248405ee73352692799a0564cc064759a8b3aadb45a139f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "ブレッドクラムは履歴ではなく階層構造のために予約されているため、ユーザーはブレッドクラムを使って「戻る」ことができません。さらに、ブラウザの「戻る」ボタンは時折役立つ程度であり、多くのユーザーはWebアプリケーションではブラウザのボタンを無視するように訓練されています。"
+      }
+    },
+    {
+      "segment_id": "eab056be",
+      "source_content": "“Return to pevious\" is a helper component that restores the previous context for users encountering this situation.",
+      "source_content_hash": "3c6162755b9be84f4d72097855d04db06f82aad077523e2c2739111676c74f21",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "「前の画面に戻る」は、このような状況に遭遇したユーザーに対して前のコンテキストを復元するヘルパーコンポーネントです。"
+      }
+    },
+    {
+      "segment_id": "f01228d3",
+      "source_content": "**When to use:**\nUse \"Return to previous\" any time a link sends a user to a distant part of Grafana’s information architecture. Though the component was originally designed with cloud apps in mind, it is helpful across Grafana’s core product as well.",
+      "source_content_hash": "702f795e55562aa84e47b654a145afe2a0efe2320432998d039d7cff9607b0de",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**使用するタイミング:**\nリンクがユーザーをGrafanaの情報アーキテクチャの離れた部分に送る場合は、いつでも「前の画面に戻る」を使用してください。このコンポーネントは当初クラウドアプリを念頭に置いて設計されましたが、Grafanaのコア製品全体でも役立ちます。"
+      }
+    },
+    {
+      "segment_id": "93028a4e",
+      "source_content": "### Usage guidelines:",
+      "source_content_hash": "f3d3a80afe9315a6bb63df29b5e6d3cfd3b26230e88ec0fc2621cb5d4978a49d",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 使用ガイドライン:"
+      }
+    },
+    {
+      "segment_id": "d0dd855b",
+      "source_content": "Use \"Return to previous\" to provide users with help navigating back to where they came from.",
+      "source_content_hash": "afee3dc46191a11c343ca3bbdb3377bc3250cf9759094a07fbbb13eb71f6ee53",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "「前の画面に戻る」を使用して、ユーザーが元の場所に戻るためのナビゲーション支援を提供します。"
+      }
+    },
+    {
+      "segment_id": "7736989b",
+      "source_content": "Developer-specific documentation is available on the [Developer portal](https://grafana.com/developers/plugin-tools/create-a-plugin/extend-a-plugin/add-return-to-previous-functionality).",
+      "source_content_hash": "e0e1ccadd32d0bf1ec7ae23894ec8506e296ded2a27b8c20db005000c6e12547",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "開発者向けのドキュメントは[Developer portal](https://grafana.com/developers/plugin-tools/create-a-plugin/extend-a-plugin/add-return-to-previous-functionality)で利用可能です。"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-docs/current/06-patterns/navigation.mdx",
+  "last_updated_timestamp": "2025-06-06T08:53:12.751189+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "6112f0d6f554e2a187e7de6ebcb0dbe3f503fcbcfb57b1ea87b61e3a4a6ef209"
+  }
+}

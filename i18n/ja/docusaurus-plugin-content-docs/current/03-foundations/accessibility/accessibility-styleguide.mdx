@@ -1,0 +1,84 @@
+---
+title: Accessibility styleguide
+description: At Grafana we pay special attention to accessibility and that's why it's important that all components are written with it in mind.
+hide_title: true
+---
+
+import { Badge } from '@grafana/ui';
+
+# アクセシビリティスタイルガイド <Badge text='ready' color='green'></Badge>
+
+Grafanaではアクセシビリティに特に注意を払っており、すべてのコンポーネントがアクセシビリティを考慮して作成されることが重要です。
+
+このドキュメントの目的は、アクセシブルなコンポーネントを作成する際のベストプラクティスと推奨事項をリストアップすることです。
+
+### Grafana/UIコンポーネント
+
+grafana/uiの一部のコンポーネントには、アクセシブルなコンポーネントを簡単に作成できるようにするための特定のメカニズムが組み込まれています。
+
+#### フォーム要素
+
+フォーム要素を扱う際の重要なアクセシビリティ考慮事項の1つは、フォームコントロールに適切なラベルを付けることです。そのためには、`label`要素を対応するフォームコントロールに関連付ける必要があります。1つの方法は、ラベルに`for`属性を指定し、フォームコントロールの`id`属性と一致させることです。
+
+grafana/uiのフォームコンポーネントは、これを簡単に実現する方法を提供します。`Field`コンポーネント内で使用されるフォーム要素は、要素に`id`（`Select`の場合は`inputId`プロップ）が指定されている場合、適切に`label`が関連付けられます。
+
+例として、このコード
+
+```tsx
+<Field label="Name">
+  <Input id="name" placeholder="Enter a name" />
+</Field>
+```
+
+は（簡略化して）次のようにレンダリングされます
+
+```html
+<div>
+  <label for="name"> Name </label>
+  <input name="name" type="text" id="name" placeholder="Enter a name" value="" />
+</div>
+```
+
+フォーム要素に一意の`id`属性が指定されている限り、レンダリング時に自動的にアクセシブルになります。
+
+#### `aria-live`ガイドライン
+
+`aria-live`は控えめに使用する必要があります。スクリーンリーダーユーザーに対して過剰なアナウンスが発生する可能性があるためです。`aria-live`の処理の主な責任は消費者側にあり、grafana/uiは適切なツールを提供する必要があります。
+
+- Grafana/uiコンポーネントには`aria-live="assertive"`や`role="alert"`を含めるべきではありません
+- `aria-live`と`role`プロップは、grafana/uiコンポーネントで適切な場合に公開される場合があります
+- `aria-live="assertive"`や`role="alert"`は、ユーザーの直接的なアクションに対する重要なフィードバックを提供する場合にのみ使用してください（例：ユーザーが検索に入力し、クエリからこれ以上の結果がない場合）
+- 要素に直接関連しないユーザーアクションによって更新される領域には`aria-live="polite"`を使用してください
+
+### アクセシビリティを考慮したテストの作成
+
+ユニットテストの作成には[React Testing Library](https://testing-library.com/docs/react-testing-library/intro)（RTL）を使用しています。このライブラリはアクセシビリティを考慮して構築されており、作成されたコードがすべてのユーザーにとってアクセシブルであることを確認しやすくします。RTLでDOM要素をクエリする際は、`*ByRole`クエリを使用することを推奨します。これらは、ユーザーがページと対話する方法（マウス/視覚表示と支援技術の両方）に近いからです。経験則として、アクセシビリティの懸念を考慮してコードが書かれている場合、`*ByRole`クエリはほとんどの場合十分です。すべての要素が[ARIAロール](https://www.w3.org/TR/html-aria/#docconformance)を定義しているわけではないため、例外は確かに存在します。
+
+例として、このコード
+
+```tsx
+<Field label="Username">
+  <Input id="username" placeholder="Enter a name" value={'Test'} />
+</Field>
+```
+
+に対するテストケースは次のようになります
+
+```tsx
+it('has username set', () => {
+  expect(screen.getByRole('textbox', { name: 'Username' })).toHaveValue('Test');
+});
+```
+
+`text`型（デフォルトの型値）のInputは`textbox`ロールを持ち、`name`オプションはInput要素に与えられるname属性ではなく、その[アクセシブルな名前](https://www.tpgi.com/what-is-an-accessible-name/)です。この場合、Inputに関連付けられたラベルのテキストコンテンツがそれに当たります。
+
+### アクセシビリティ(a11y)エラーを導入するプルリクエスト:
+
+[pa11y-ci](https://github.com/pa11y/pa11y-ci)を使用して、[プロジェクト内のいくつかのURL](https://github.com/grafana/grafana/issues/36555)でアクセシビリティエラーを収集しています。エラーの閾値はURLごとに指定されています。
+
+もし貢献内容が新しいアクセシビリティ(a11y)エラーを引き起こす場合、継続的インテグレーションが失敗し、mainブランチへのマージが阻止されます。そのような場合、次の2つの選択肢があります：
+
+- パイプラインのステップ`test-a11y-frontend-pr`でエラーログを確認し、どのエラーが発生したかを特定して修正する。
+- ローカルで`yarn test:accessibility-report`コマンドを実行してHTMLアクセシビリティレポートを生成し、変更を含むURLに移動してエラーを特定・修正する。なお、ローカルのe2e Grafanaインスタンスは`http://localhost:3001`で実行されます。
+
+また、ブラウザにa11yプラグイン（例えばaxe DevToolsやAccessibility Insights for Webなど）をインストールすることで、a11yエラーの発生を事前に防ぐこともできます。

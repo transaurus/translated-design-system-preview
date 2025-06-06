@@ -1,0 +1,72 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "docs/05-components/file-dropzone.mdx",
+  "source_file_content_hash": "857c8bf567eafe4a275eb6e03c3946eb8f1f48604f043ce08c4a5a993a3a69d7",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\ntitle: File Dropzone\ndescription: Grafana Labs File Dropzone component\ndraft: true\n---",
+      "source_content_hash": "6ddcf51441c09cc5390cba8875ed5186fd68f8b04b7abadfe2ee0f95c5e661bb",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "a703643c",
+      "source_content": "# FileDropzone <Badge text='draft' color='orange'></Badge> <a href='https://developers.grafana.com/ui/latest/index.html?path=/story/forms-filedropzone--basic' target='_blank' className='header-links'>Storybook <Icon name=\"external-link-alt\"/> </a>",
+      "source_content_hash": "82bc138324ee270f9cacd0c39f5013f587b4d4cf1f0f608a0a3fb1657354d0ef",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "# FileDropzone <Badge text='draft' color='orange'></Badge> <a href='https://developers.grafana.com/ui/latest/index.html?path=/story/forms-filedropzone--basic' target='_blank' className='header-links'>Storybook <Icon name=\"external-link-alt\"/> </a>"
+      }
+    },
+    {
+      "segment_id": "53eaf0e1",
+      "source_content": "A dropzone component to use for file uploads.",
+      "source_content_hash": "a116ed3bd39a12742956f33c07e0931af9aef5b1a9fb45592638078364fd3c80",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "ファイルアップロード用のドロップゾーンコンポーネント。"
+      }
+    },
+    {
+      "segment_id": "88aa2da8",
+      "source_content": "<iframe\n  src=\"https://developers.grafana.com/ui/latest/index.html?path=/story/forms-filedropzone--basic&full=1&shortcuts=false&singleStory=true\"\n  width=\"100%\"\n  height=\"500px\"\n></iframe>",
+      "source_content_hash": "e5c19ed8e1f3e64490402895cddf7e5cb20cc5006a28c9bed776c5a34227d549",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_88aa2da8"
+      }
+    },
+    {
+      "segment_id": "3daf1b88",
+      "source_content": "## Usage",
+      "source_content_hash": "63bfd61a0561b255a2caa0a2e3add091ca7e327f2fa06a407cbb2ff341b858d8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 使用方法"
+      }
+    },
+    {
+      "segment_id": "940e34e3",
+      "source_content": "```jsx\nimport { FileDropzone } from '@grafana/ui';\n\n<FileDropzone onLoad={(result) => console.log(result)} />;\n```",
+      "source_content_hash": "20592a1057c96ee67e7e3f4349c648762e83b13a9c6d0bb6e6b84ee46b9025b2",
+      "node_type": "code",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_940e34e3"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-docs/current/05-components/file-dropzone.mdx",
+  "last_updated_timestamp": "2025-06-06T08:53:12.746996+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "857c8bf567eafe4a275eb6e03c3946eb8f1f48604f043ce08c4a5a993a3a69d7"
+  }
+}

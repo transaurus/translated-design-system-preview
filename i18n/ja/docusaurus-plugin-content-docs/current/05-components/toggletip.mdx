@@ -1,0 +1,98 @@
+---
+title: Toggletip
+description: Toggletips, similar to Tooltips, provide contextual support for users when needed. They are hidden by default, a UI trigger or text link is clicked to set them to their visible state.
+hide_title: true
+---
+
+# Toggletip <Badge text='ready' color='green'></Badge> <StorybookLink path="/story/overlays-toggletip--basic" />
+
+Toggletipは[Tooltip](/components/tooltip)と同様に、ユーザーが必要な際にコンテキストサポートを提供します。デフォルトでは非表示になっており、UIトリガーまたはテキストリンクをクリックすることで表示状態になります。Tooltipとは異なり、Toggletipはユーザーが「X」（閉じる）トリガーをクリックして明示的に閉じるまで表示されたままになります。
+
+```tsx live
+<Toggletip
+  title={'Title of the Toggletip'}
+  content={'This is the content of the Toggletip'}
+  footer={'Footer of the Toggletip'}
+>
+  <Button>Click to show Toggletip with header and footer!</Button>
+</Toggletip>
+```
+
+## 使用するタイミング
+
+Toggletipは、ユーザーがボタンや他のUI要素をクリックしたときに**補足コンテンツ**を表示し、ユーザーが閉じるまでアクティブに開いたままになります。
+
+### 推奨する使い方
+
+- トピックを理解するために追加のコンテキストが必要な場合に使用します。
+- サポートドキュメントやコンテンツへのリンクを提供します。
+- ツールチップのようなコンポーネント内にインタラクティブ要素を配置する必要がある場合に使用します。
+- ユーザーが参照できるように、閉じるまでコンテンツを保持する必要がある場合に使用します。
+- ユーザーが現在取り組んでいる内容に関連する情報を提供する場合に使用します。
+- さらに学習するためのドキュメントへのナビゲーション方法をユーザーに提供します。
+
+### 非推奨の使い方
+
+- ユーザーがページ上で設定、選択、データ入力、またはコンテンツの編集を行う場合には使用しないでください。
+- [Tooltip](/components/tooltip)で説明文を表示するだけで十分な場合には使用しないでください。
+- ユーザーのタスク完了に不可欠な情報を格納しないでください。
+- ユーザーがタスクやワークフローを完了するために必要な情報を隠さないでください。
+- ユーザーにアクションを表示するために使用しないでください。
+
+## アクセシビリティ
+
+Toggletipはホバーやフォーカスではなく、クリックによって表示されます。クリックイベントの後にスクリーンリーダーが情報をアナウンスできるようにすることが重要です。
+
+- [ARIAライブリージョン](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions)を含めます。
+- トリガーが送信ボタンと誤解されないように、**type="button"**を使用します。
+- UIトリガーに説明可能なラベルまたはaria-labelを使用し、ユーザーがToggletipコンテンツ内の追加情報を理解できるようにします（例：「詳細情報」）。
+
+## コンテンツ
+
+Toggletipには、説明テキストからボタンやリンクなどのインタラクティブ要素まで、さまざまな情報を含めることができます。
+
+## 動作
+
+### トリガー
+
+- Toggletipは以下の場合に表示されます：
+  - UIトリガーの**ユーザークリック**。
+  - トリガー要素にフォーカスがある状態で**ENTER**または**SPACE**キーを押したとき。
+- Toggletipは以下の場合に閉じます：
+  - 閉じるアイコン（x）の**ユーザークリック**（オプション）。
+  - ポップオーバーコンテナの外側をクリックしたとき。
+  - **ESC**キーを押したとき。
+
+### ユーザーインタラクション
+
+- Toggletipは内部にインタラクティブ要素を含めることを想定しています。ボタン、テキストリンク、ドロップダウンなどのUI要素は、Toggletip内で完全に操作可能です。
+
+### スクロール
+
+- Toggletipがコンテンツのスクロールを必要とする場合（例：ドロップダウンがある場合）、Toggletipのヘッダーとフッターは固定されたまま、ボディ部分がスクロール可能になります。
+
+### 状態
+
+Toggletipには2つの状態があります。
+
+- 非表示 — Toggletipのデフォルト状態。
+- 表示 — UIトリガーのクリックまたはキーボードのENTERによって状態が変化します。
+
+## 関連コンポーネント
+
+- [Tooltip](/components/tooltip)
+
+### 実装例
+
+- [SLOガイダンス](https://www.figma.com/file/oaki8dAryJXWyZlw1g2wh0/SLO-creation?node-id=829%3A26026)
+
+### 参考資料
+
+**アクセシビリティ関連リソース:**
+
+- [Inclusive Components: ツールチップとトグルチップ](https://inclusive-components.design/tooltips-toggletips/)
+- [アクセシブルな名前と説明の提供](https://www.w3.org/WAI/ARIA/apg/practices/names-and-descriptions/)
+
+## プレイグラウンド
+
+<ComponentEmbed path="path=/story/overlays-toggletip--basic" />

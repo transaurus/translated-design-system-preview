@@ -1,0 +1,32 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "docs/06-patterns/disabled-state.mdx",
+  "source_file_content_hash": "78d187c32352c732f8f902a130326130d992f3aeb466c55eb1ae70e8588cca7a",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\ntitle: Disabled State\ndescription: Description for search engines and results\ndraft: true\n---",
+      "source_content_hash": "7ed370ac3e531905722fbb474d43910732e7ac82a010be7b77c878af98b0c79b",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "6ef78e84",
+      "source_content": "This document is a WIP.",
+      "source_content_hash": "e43e4ae2a07be9af10a6de7f0b3402b588a5a1483e1516639ead91813e407f5a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "このドキュメントは作業中です。"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-docs/current/06-patterns/disabled-state.mdx",
+  "last_updated_timestamp": "2025-06-06T08:53:12.740021+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "78d187c32352c732f8f902a130326130d992f3aeb466c55eb1ae70e8588cca7a"
+  }
+}

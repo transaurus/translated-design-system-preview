@@ -1,0 +1,77 @@
+---
+title: InteractiveTable
+description: The table is used to display and select data efficiently. The table component allows for the display and modification of detailed information. With additional functionality it allows for batch editing, as needed by your feature’s users.
+hide_title: true
+---
+
+# InteractiveTable <Badge text='ready' color='green'></Badge> <StorybookLink path='/story/experimental-interactivetable--docs' />
+
+テーブルはデータを効率的に表示・選択するために使用されます。このテーブルコンポーネントでは、詳細な情報の表示と変更が可能です。追加機能により、ユーザーのニーズに応じて一括編集も行えます。
+
+## 使用法
+
+```tsx live noInline
+const data = [
+  { size: 'Small', width: '24px', fontSize: '12px' },
+  { size: 'Medium', width: '32px', fontSize: '14px' },
+  { size: 'Large', width: '48px', fontSize: '18px' },
+];
+const columns = [
+  { id: 'size', header: 'Size' },
+  { id: 'width', header: 'Width' },
+  { id: 'fontSize', header: 'Font Size' },
+];
+render(<InteractiveTable columns={columns} data={data} />);
+```
+
+### 推奨事項
+
+- 管理者ユーザー向けのワークフローでテーブルを使用する
+- 複数行のデータを一括選択・操作/編集する場合に使用する
+- 特定のコンテンツを検索する場合、ページネーションが最適。コンテンツ探索には無限スクロールが適している
+- 主なワークフローが探索である場合、無限スクロールを使用する
+- ユースケース分析を行い、主テーブルに表示すべき情報と展開セクションに移動可能な情報を決定し、UI全体の煩雑さを軽減する
+
+### 非推奨事項
+
+- ダッシュボードやパネルでInteractiveTableを使用しない
+- モバイルやレスポンシブ対応が必要な場面では使用を避け、代わりに要約リストと個別ページへのアクセスを提供するパターンを検討する
+- 展開行セクションに一括編集コントロールを重複させない
+
+## 考慮事項
+
+InteractiveTableコンポーネントは、大規模なデータセットを操作する必要があるワークフローをサポートします。最もシンプルな形では、既存データの一括選択とさらなる処理が可能です。機能を拡張することで、データセットの作成や一括編集も可能になります。
+
+テーブルは通常、読み取り専用または編集ワークフローをサポートする上部セクションで補完されます。読み取り専用テーブルには通常、データセットの特定のプロパティや計算属性の要約が表示されます。設計中の機能によっては、インポート/エクスポートオプションが含まれる場合があります。編集ワークフローでは、ユーザーがテーブル下部に行を追加します。既存行に対する一括編集オプションもヘッダーセクションに配置されます。
+
+個々の行を展開して追加の詳細を表示したり、行作成時に定義されたプロパティを再設定できます。行を編集する場合、表示されるUIは行作成時に使用されたヘッダーセクションの複製であるべきです。編集不可のプロパティは表示されたまま無効化/グレーアウトする必要があります。展開行エリアは、データの主要表示を整理するために使用します。一目で確認すべき情報と行展開ボタンの背後に隠す情報を慎重に検討してください。一般的に、データセット全体で一貫したデータ型は主テーブルに、バリエーションは各行の展開セクションに配置します。
+
+設計中の機能に対する要件としてこれらを理解・定義することが重要です。InteractiveTableは**レスポンシブではなく、小型画面やタッチスクリーンでは良好なUXを提供しません**。
+
+## コンテンツ
+
+| Element                         | Details                                                                                                                                                                                                                                                                                                                |
+| ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Tri-state batch selector**    | The tri-state checkbox **can be checked, not checked, or partially checked.** The condition of being partially checked is based on the selection of child elements. If all child elements are selected, the parent checkbox is checked. If some child elements are selected, the parent checkbox is partially checked. |
+| **Row selector**                | Select, deselect row                                                                                                                                                                                                                                                                                                   |
+| **Row expand/collapse**         | The expander control is used to show and hide additional details and potentially controls/modifiers. and therefore declutter your app                                                                                                                                                                                  |
+| **Row details**                 | This section is utilised to either show additional details or to provide the user with row specific controls or modifiers. Typically batch editing controls found outside the table should not be duplicated here.                                                                                                     |
+| **Column Label**                | Descriptive identifier or header assigned to a column                                                                                                                                                                                                                                                                  |
+| **Column Sort**                 | Sort alphabetically, numerically etc.                                                                                                                                                                                                                                                                                  |
+| **Row level Read-Only actions** | Duplicate                                                                                                                                                                                                                                                                                                              |
+| **Row level Editing action**    | Duplicate, Delete                                                                                                                                                                                                                                                                                                      |
+
+## 典型的なワークフロー
+
+### 読み取り専用と編集の混合
+
+テーブルに読み取り専用要素と編集可能要素が混在している場合、ユーザーが読み取り専用要素を選択すると、テーブル上部の編集一括操作が無効になります。どの行が編集可能でどの行が読み取り専用かを示す列を追加することを検討してください。
+
+## 関連情報
+
+- [Visualizations Table Storybook](https://developers.grafana.com/ui/canary/index.html?path=/story/visualizations-table--bar-gauge-cell)
+- [Grafanaにおける他のテーブル実装のカタログ](https://docs.google.com/document/d/11dpltzvNmBzL00CU4yp4S9ofmpJC4bl0MREFRlsCOcw/edit) (社内限定)
+
+## プレイグラウンド
+
+<ComponentEmbed path="/story/experimental-interactivetable--docs" />

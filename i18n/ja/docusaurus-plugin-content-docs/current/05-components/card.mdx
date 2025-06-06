@@ -1,0 +1,246 @@
+---
+title: Card
+description: Grafana Labs Card component
+draft: true
+---
+
+# カード <Badge text='draft' color='orange'></Badge> <a href='https://developers.grafana.com/ui/latest/index.html?path=/story/general-card--basic' target='_blank' className='header-links'>Storybook <Icon name="external-link-alt"/> </a>
+
+## 使用方法
+
+<iframe
+  src="https://developers.grafana.com/ui/latest/index.html?path=/story/general-card--full&full=1&shortcuts=false&singleStory=true"
+  width="100%"
+  height="500px"
+></iframe>
+
+### 基本
+
+基本的な `Card` コンポーネントには、少なくともタイトルとして使用する見出しが必要です。
+
+```jsx
+<Card>
+  <Card.Heading>Filter by name</Card.Heading>
+  <Card.Description>Filter data by query.</Card.Description>
+</Card>
+```
+
+### 複数のメタデータ要素
+
+メタデータ要素（カードの追加情報）を提供するには、`Card.Meta` コンポーネントを使用する必要があります。メタデータが複数の文字列で構成されている場合、それぞれを中括弧 `{}` で囲むか、配列として渡すことが推奨されます。
+
+```jsx
+<Card>
+  <Card.Heading>Test dashboard</Card.Heading>
+  <Card.Meta>{['Folder: Test', 'Views: 100']}</Card.Meta>
+</Card>
+```
+
+メタデータはHTML要素（例えばリンク）も受け入れます。文字列以外の要素の場合、`key` プロパティを手動で指定する必要があります。
+
+```jsx
+<Card>
+  <Card.Heading>Test dashboard</Card.Heading>
+  <Card.Meta>
+    Grafana
+    <a key="prom-link" href="https://ops-us-east4.grafana.net/api/prom">
+      https://ops-us-east4.grafana.net/api/prom
+    </a>
+  </Card.Meta>
+</Card>
+```
+
+複数のメタデータ要素の区切り文字はデフォルトで縦棒 `|` ですが、カスタマイズ可能です。
+
+```jsx
+<Card>
+  <Card.Heading>Test dashboard</Card.Heading>
+  <Card.Meta separator={'-'}>
+    Grafana
+    <a key="prom-link" href="https://ops-us-east4.grafana.net/api/prom">
+      https://ops-us-east4.grafana.net/api/prom
+    </a>
+  </Card.Meta>
+</Card>
+```
+
+### タグ
+
+タグは `Card.Tags` コンポーネント内にラップすることでカード内に表示できます。このコンポーネント自体はタグのスタイリングを提供しないため、子要素で処理する必要があります。Grafana-UIの `TagList` コンポーネントとの併用が推奨されます。
+
+### リンクとして使用
+
+`href` プロパティを指定することで、カードをクリック可能なリンクアイテムとして使用できます。
+
+```jsx
+<Card href="https://grafana.com">
+  <Card.Heading>Redirect to Grafana</Card.Heading>
+  <Card.Description>Clicking this card will redirect to grafana website</Card.Description>
+</Card>
+```
+
+### ボタンとして使用
+
+`onClick` プロパティを指定することで、カードをクリック可能なボタンアイテムとして使用できます。
+
+```jsx
+<Card onClick={() => alert('Hello, Grafana!')}>
+  <Card.Heading>Hello, Grafana</Card.Heading>
+  <Card.Description>Clicking this card will create an alert</Card.Description>
+</Card>
+```
+
+#### 注意
+
+メタデータ要素と併用する場合、`<Card.Meta>` 内の要素をクリックすると、カードのアクション（`href` の遷移または `onClick` の呼び出し）が実行されなくなります。
+
+例:
+
+```jsx
+<Card onClick={() => alert('Hello, Grafana!')}>
+  <Card.Heading>Hello, Grafana</Card.Heading>
+  <Card.Meta>Clicking on this text (Meta) WILL NOT trigger the alert!</Card.Meta>
+  <Card.Description>Clicking on this text (Description) WILL trigger the alert!</Card.Description>
+</Card>
+```
+
+### リスト項目内での使用
+
+カードをリスト内に表示するには、`li` 要素内にネストすることが可能です。
+
+```jsx
+<ul>
+  <li>
+    <Card>
+      <Card.Heading>List card item</Card.Heading>
+      <Card.Description>Card that is rendered inside li element.</Card.Description>
+    </Card>
+  </li>
+  <li>
+    <Card>
+      <Card.Heading>List card item</Card.Heading>
+      <Card.Description>Card that is rendered inside li element.</Card.Description>
+    </Card>
+  </li>
+  <li>
+    <Card>
+      <Card.Heading>List card item</Card.Heading>
+      <Card.Description>Card that is rendered inside li element.</Card.Description>
+    </Card>
+  </li>
+  <li>
+    <Card>
+      <Card.Heading>List card item</Card.Heading>
+      <Card.Description>Card that is rendered inside li element.</Card.Description>
+    </Card>
+  </li>
+</ul>
+```
+
+### メディア要素との併用
+
+カードはアイコンや画像などのメディアコンテンツと一緒に表示することもできます。これらの要素は `Card.Figure` コンポーネントでラップする必要があります。
+
+```jsx
+<Card>
+  <Card.Heading>1-ops-tools1-fallback</Card.Heading>
+  <Card.Figure>
+    <img src={logo} alt="Grafana Logo" width="40" height="40" />
+  </Card.Figure>
+  <Card.Meta>
+    Grafana
+    <a key="prom-link" href="https://ops-us-east4.grafana.net/api/prom">
+      https://ops-us-east4.grafana.net/api/prom
+    </a>
+  </Card.Meta>
+</Card>
+```
+
+### アクションカード
+
+カードはプライマリとセカンダリのアクションも受け入れます。通常、プライマリアクションはボタンとして、セカンダリアクションはアイコンボタンとして表示されます。アクションはそれぞれ `Card.Actions` と `Card.SecondaryActions` コンポーネントでラップする必要があります。
+
+```jsx
+<Card>
+  <Card.Heading>1-ops-tools1-fallback</Card.Heading>
+  <Card.Meta>
+    Grafana
+    <a key="prom-link" href="https://ops-us-east4.grafana.net/api/prom">
+      https://ops-us-east4.grafana.net/api/prom
+    </a>
+  </Card.Meta>
+  <Card.Figure>
+    <img src={logo} alt="Grafana Logo" width="40" height="40" />
+  </Card.Figure>
+  <Card.Actions>
+    <Button key="settings" variant="secondary">
+      Settings
+    </Button>
+    <Button key="explore" variant="secondary">
+      Explore
+    </Button>
+  </Card.Actions>
+  <Card.SecondaryActions>
+    <IconButton key="showAll" name="apps" tooltip="Show all dashboards for this data source" />
+    <IconButton key="delete" name="trash-alt" tooltip="Delete this data source" />
+  </Card.SecondaryActions>
+</Card>
+```
+
+### 無効状態
+
+カードを無効状態に設定でき、これによりカードとそのアクションがクリック不可になります。アクションがある場合、カード全体ではなくアクションが無効化されます。
+
+```jsx
+<Card disabled>
+  <Card.Heading>1-ops-tools1-fallback</Card.Heading>
+  <Card.Meta>
+    Grafana
+    <a key="prom-link" href="https://ops-us-east4.grafana.net/api/prom">
+      https://ops-us-east4.grafana.net/api/prom
+    </a>
+  </Card.Meta>
+  <Card.Figure>
+    <img src={logo} alt="Grafana Logo" width="40" height="40" />
+  </Card.Figure>
+</Card>
+```
+
+```jsx
+<Card disabled>
+  <Card.Heading>1-ops-tools1-fallback</Card.Heading>
+  <Card.Meta>
+    Grafana
+    <a key="prom-link" href="https://ops-us-east4.grafana.net/api/prom">
+      https://ops-us-east4.grafana.net/api/prom
+    </a>
+  </Card.Meta>
+  <Card.Figure>
+    <img src={logo} alt="Grafana Logo" width="40" height="40" />
+  </Card.Figure>
+  <Card.Actions>
+    <Button key="settings" variant="secondary">
+      Settings
+    </Button>
+    <Button key="explore" variant="secondary">
+      Explore
+    </Button>
+  </Card.Actions>
+  <Card.SecondaryActions>
+    <IconButton key="showAll" name="apps" tooltip="Show all dashboards for this data source" />
+    <IconButton key="delete" name="trash-alt" tooltip="Delete this data source" />
+  </Card.SecondaryActions>
+</Card>
+```
+
+### 選択可能
+
+```jsx
+<Card isSelected disabled>
+  <Card.Heading>Option #1</Card.Heading>
+  <Card.Meta>This is a really great option, you won't regret it.</Card.Meta>
+  <Card.Figure>
+    <img src={logo} alt="Grafana Logo" width="40" height="40" />
+  </Card.Figure>
+</Card>
+```

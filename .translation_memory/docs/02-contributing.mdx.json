@@ -1,0 +1,272 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "docs/02-contributing.mdx",
+  "source_file_content_hash": "f89a777b1e827a3bb657f06b0bfb0ecf536f04d31782c141c7913d751c16a0e8",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\ntitle: Contributing\ndescription: Our design system is never complete, it’s constantly changing and evolving. We need help from Grafanistas like you to innovate and solve problems! Read this page to learn how you can contribute — we would love your help!\nhide_title: true\nsidebar_position: 2\n---",
+      "source_content_hash": "b2afd8f802486c4bd1f8417e5e4b7b5e73594b0c144f339779807bbd7c857cd2",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "50387553",
+      "source_content": "import { Badge } from '@grafana/ui';",
+      "source_content_hash": "af7b58551bb42fea6572a2bde03c95c99d8529feeec9e1a0d48c3da4f931ca67",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_50387553"
+      }
+    },
+    {
+      "segment_id": "1cc03ec8",
+      "source_content": "# Contributing <Badge text='ready' color='green'></Badge>",
+      "source_content_hash": "b6152adfb9bb2102b90d7e6e8ccf707d0bb353adc14c4428b0bd2b7ed3c31c6d",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "# 貢献 <Badge text='ready' color='green'></Badge>"
+      }
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "Our design system is never complete, it’s constantly changing and evolving. We need help from Grafanistas like you to innovate and solve problems! Read this page to learn how you can contribute — we would love your help!",
+      "source_content_hash": "b29be5a4c647f0d86d6018bc8bb097edf41c9a0cefedd7d0724eabe2f0267b3e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "私たちのデザインシステムは決して完成したものではなく、常に変化し進化しています。Grafanistaの皆さんの助けが必要です！このページを読んで貢献方法を学び、ぜひ協力してください！"
+      }
+    },
+    {
+      "segment_id": "70153c6e",
+      "source_content": "## Participation",
+      "source_content_hash": "b4d688f629477fe027ef73e28c9c994693a1dd9811c54092aec2cd5aa4c0fcd7",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 参加方法"
+      }
+    },
+    {
+      "segment_id": "86b54d44",
+      "source_content": "Having an open line of communication between the design system, designers and developers is important for success and the best way to improve everyone's awareness of the solutions we do and do not have.",
+      "source_content_hash": "c96dc647cccb4cbe101d1e0edba90ecbc9e77dd3cca97041865bdc4515245be6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "デザインシステム、デザイナー、開発者間のオープンなコミュニケーションは成功のために重要であり、既存のソリューションや不足している部分についての認識を高める最良の方法です。"
+      }
+    },
+    {
+      "segment_id": "11c829ab",
+      "source_content": "- **[Design system GitHub project](https://github.com/orgs/grafana/projects/176/views/4)**.\n  See what we’re working on now and later. This will be a good place to track the work of any contribution\n\n- **[#grafana-design-system](https://raintank-corp.slack.com/archives/CT7S455SP)**  \n  An internal Slack channel to post your questions, get answers, share your thoughts, even get updates on design system releases\n\n- **UX feedback sessions**.\n  An internal-Grafana stage to get peer feedback to improve your work. The [#ux](https://raintank-corp.slack.com/archives/C0F5GDR4P) Slack channel posts reminders and shares agendas for these sessions. If you want to get added to these recurring meetings, ask to be included in that channel.\n  - [Early session agenda](https://docs.google.com/document/d/1m2yciWfQa-rp-KLUrMLYOge00GAd8bLPzmDtDwDFt0o/edit?usp=sharing)\n  - [Late session agenda](https://docs.google.com/document/d/1oeaCzAyy3W-TguKUTaOqT2wIiAabuAO_Gr3TMOZKxcA/edit)",
+      "source_content_hash": "9f8d4d6266104a2e7485432f38369f637d3813bb103825bf047349ed8a400314",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- **[デザインシステム GitHubプロジェクト](https://github.com/orgs/grafana/projects/176/views/4)**  \n  現在進行中の作業や今後の計画を確認できます。貢献内容を追跡するのに適した場所です。\n\n- **[#grafana-design-system](https://raintank-corp.slack.com/archives/CT7S455SP)**  \n  質問を投稿したり、回答を得たり、意見を共有したり、デザインシステムのリリース更新を受け取るための内部Slackチャンネルです。\n\n- **UXフィードバックセッション**  \n  作業を改善するためのピアフィードバックを得るための内部Grafanaの場です。[#ux](https://raintank-corp.slack.com/archives/C0F5GDR4P) Slackチャンネルでリマインダーやアジェンダが共有されます。これらの定例会議に参加したい場合は、チャンネルで追加を依頼してください。\n  - [早期セッションアジェンダ](https://docs.google.com/document/d/1m2yciWfQa-rp-KLUrMLYOge00GAd8bLPzmDtDwDFt0o/edit?usp=sharing)\n  - [後期セッションアジェンダ](https://docs.google.com/document/d/1oeaCzAyy3W-TguKUTaOqT2wIiAabuAO_Gr3TMOZKxcA/edit)"
+      }
+    },
+    {
+      "segment_id": "f2f30ae8",
+      "source_content": "## Guiding Principles",
+      "source_content_hash": "c4ed5f83101b4f6d354368355a761fb7ae015a28fe6564b4fc701dc6819d08b7",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## ガイドライン原則"
+      }
+    },
+    {
+      "segment_id": "dfe931a2",
+      "source_content": "To make the design system a better product, keep these principles in mind:",
+      "source_content_hash": "4a790514d1dc4e1f71fb7bdacf220a3517d5167320d894285130fd4d1b27d415",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "デザインシステムをより良い製品にするために、以下の原則を心に留めてください："
+      }
+    },
+    {
+      "segment_id": "4daf5cdd",
+      "source_content": "![Saga guiding principles](/img/GuidingPrinciples.png 'Image showing graphs and charts related to the guiding principles of the Saga design system')",
+      "source_content_hash": "c52bb2afab72f185d39543d0ee9aa34a1d843ae3bd9ee5cc7628b277ba2f4050",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "![Sagaガイドライン原則](/img/GuidingPrinciples.png 'Sagaデザインシステムのガイドライン原則に関連するグラフやチャートを示す画像')"
+      }
+    },
+    {
+      "segment_id": "f422383e",
+      "source_content": "## Contributions and Levels",
+      "source_content_hash": "b30c18f6188bbae982ac4d2767a935dfb02468819df181af422a8a05ac770933",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 貢献の種類とレベル"
+      }
+    },
+    {
+      "segment_id": "97ae4a01",
+      "source_content": "Contributions are not limited to components or code. We welcome any feedback, documentation, tools, designs, or even tools. Below are the various levels of contributions we’ve identified and some examples.",
+      "source_content_hash": "df882cbcaf6c6a71666d8fcf8a5325d513aba167eb69d272993ef238ca3bd20f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "貢献はコンポーネントやコードに限定されません。フィードバック、ドキュメント、ツール、デザイン、その他のツールも歓迎します。以下に、私たちが特定したさまざまなレベルの貢献とその例を示します。"
+      }
+    },
+    {
+      "segment_id": "33808f76",
+      "source_content": "1. **Fix:** Bugs in code, misalignments in designs, or clarify documentation to improve conciseness.\n\n2. **Small Enhancement:** Additions or expansions that don’t create breaking changes such as adding icons to the icon library or introducing a new variant to an existing component.\n\n3. **Large Enhancement:** These changes usually require system-wide alignment and coordination. Things like how we handle saving or deleting. Usually, these changes require adjustments to code, design, and documentation.\n\n4. **New:** A utterly new component or pattern that includes variants, documentation, and coded counterparts to the contribution. This can also include existing UI within Grafana that hasn’t historically been included in the design system and requires proper documentation and product alignment.",
+      "source_content_hash": "c95d330b4e6548925ea67968d1c8eae4c3f7edc95f922b043db755e18e92ea4a",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "1. **修正:** コードのバグ、デザインの不整合、ドキュメントの明確化など、簡潔さを改善するための修正。\n\n2. **小規模な拡張:** 既存のコンポーネントに新しいバリアントを追加するなど、破壊的変更を伴わない追加や拡張。\n\n3. **大規模な拡張:** システム全体の調整と連携が必要な変更。保存や削除の処理方法などが該当します。通常、コード、デザイン、ドキュメントの調整が必要です。\n\n4. **新規:** 完全に新しいコンポーネントやパターンで、バリアント、ドキュメント、コード化された対応物を含みます。これには、デザインシステムに歴史的に含まれていなかったGrafana内の既存UIで、適切なドキュメントと製品調整が必要なものも含まれます。"
+      }
+    },
+    {
+      "segment_id": "f44c1398",
+      "source_content": "## Before you contribute",
+      "source_content_hash": "ed5f8c06493db637d5853c613a78e2b5ce457a10f10a38e889af14d2034f0fd7",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 貢献前に"
+      }
+    },
+    {
+      "segment_id": "29528c8d",
+      "source_content": "Take a moment to review the areas mentioned above in [Participation](/contributing#participation) to see if a solution already exists or look in the component libraries (see; [Resources](/contributing#resources)) if you feel something might already exist.",
+      "source_content_hash": "a91e54be7fc494f2c6ca0396d8b7240a9c6369526562aa70fcbc7ef27482e04f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[参加方法](/contributing#participation)で言及された領域を確認し、既存のソリューションがあるかどうかを確認してください。または、コンポーネントライブラリ（[リソース](/contributing#resources)参照）をチェックして、既に存在する可能性があるものを探してください。"
+      }
+    },
+    {
+      "segment_id": "11c76fcc",
+      "source_content": "## Component Contributions",
+      "source_content_hash": "51f15b2cbc427da192fa585cc5ab8250f1854d9e87cbae1a16e69986b5be71a4",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## コンポーネント貢献"
+      }
+    },
+    {
+      "segment_id": "98d26038",
+      "source_content": "Component contributions usually include the following",
+      "source_content_hash": "99443af4535e59f9e90b8e3295c93bf6ebaeb3e7fd80d79c2e5ffcf0803c1f4a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "コンポーネント貢献には通常、以下が含まれます"
+      }
+    },
+    {
+      "segment_id": "c94a9c0e",
+      "source_content": "1. **A reason**\n   Explain how your component solves a problem and brings value to the system and Grafana. Be sure to include the various areas across Grafana this supports to show its **shared value.**\n\n2. **Figma component**\n   Put your component in a Figma **branch** ([Figma Branching Best Practices](https://www.figma.com/best-practices/branching-in-figma/)) of the [Grafana design system - dark theme](https://www.figma.com/file/htVIFrTq8e7sx8Olo7L6kZ/Grafana-design-system---Dark-theme?node-id=8444%3A13469&t=cS6yqqfuFLwhDQR9-1) file to capture your adjustments. and be sure to use the current Figma functions when building out your component — auto layout, component properties, variant properties, states, and variants.\n3. **Design specifications**\n   Provide developers with everything they need to build the component in code properly. This could include things like spacing, color, and typography.\n\n4. **Usage documentation**\n   Included proper usage, and specific configuration requirements, any types of interactions that need to be specified including what accessibility requirements are needed. View our [documentation template](https://docs.google.com/document/d/1wTaSWYif6Kz-2aBuP4R-HUkj9JwFsyYIwZroALQTQOs/edit?usp=share_link) for reference and a guide.\n   **Code**\n   Grafana uses React as its primary code base. For a component to be a complete contribution, the needed code to build this component in React must be included.",
+      "source_content_hash": "0435015eab46e296d5a85018b3c395e5b167e5e629d2b9b7e76a000581225ea2",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "1. **理由**\n   コンポーネントがどのように問題を解決し、システムとGrafanaに価値をもたらすかを説明してください。**共有価値**を示すため、このコンポーネントがサポートするGrafana内のさまざまな領域を含めるようにしてください。\n\n2. **Figmaコンポーネント**\n   コンポーネントを[Grafanaデザインシステム - ダークテーマ](https://www.figma.com/file/htVIFrTq8e7sx8Olo7L6kZ/Grafana-design-system---Dark-theme?node-id=8444%3A13469&t=cS6yqqfuFLwhDQR9-1)ファイルのFigma**ブランチ**（[Figmaブランチングのベストプラクティス](https://www.figma.com/best-practices/branching-in-figma/)）に配置し、調整内容を記録してください。コンポーネントを作成する際は、現在のFigma機能（自動レイアウト、コンポーネントプロパティ、バリアントプロパティ、状態、バリアントなど）を使用してください。\n\n3. **デザイン仕様**\n   開発者がコードでコンポーネントを適切に構築するために必要なすべての情報を提供してください。これには、間隔、色、タイポグラフィなどが含まれる場合があります。\n\n4. **使用法ドキュメント**\n   適切な使用法、特定の設定要件、指定が必要なインタラクションの種類、および必要なアクセシビリティ要件を含めてください。参考とガイドとして[ドキュメントテンプレート](https://docs.google.com/document/d/1wTaSWYif6Kz-2aBuP4R-HUkj9JwFsyYIwZroALQTQOs/edit?usp=share_link)を参照してください。\n   **コード**\n   Grafanaは主要なコードベースとしてReactを使用しています。コンポーネントが完全な貢献となるためには、Reactでこのコンポーネントを構築するために必要なコードを含める必要があります。"
+      }
+    },
+    {
+      "segment_id": "bd92edfc",
+      "source_content": "## Pattern Contribution",
+      "source_content_hash": "4bb545e4ebac19bbb58de3f58eeadcc20c2b0d1de694ce1be12c1772f505691a",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## パターン貢献"
+      }
+    },
+    {
+      "segment_id": "7f71ff2a",
+      "source_content": "Patterns are recurring solutions that solve common design problems. Try to provide a general idea of pattern and be sure to include any important details. Below are some things to consider including:",
+      "source_content_hash": "2209f86d3c6a184453a36f0ace4df49b77f6583f04a0edd08f5bc3f777710356",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "パターンは、一般的なデザイン問題を解決する繰り返し可能なソリューションです。パターンの一般的なアイデアを提供し、重要な詳細を含めるようにしてください。以下は、考慮すべきいくつかのポイントです："
+      }
+    },
+    {
+      "segment_id": "76dbcc76",
+      "source_content": "1. **Overview**\n   Explain what problem this pattern is addressing, what areas are impacted and how it provides value across the organization.\n\n2. **Implementation**\n   Specify how this pattern works and what components are incorporated with it. Are there varying tiers of how this be included\n\n3. **Accessibility**\n   What important details are needed to ensure that this pattern is accessible? Be clear and concise here, as we tak accessibility very seriously.\n\n4. **Related**\n   Is there an alternative pattern or similar one that designers or developers might be looking for instead or should use depending on use case?\n\n5. **References**\n   If there is any content or resources that help support this pattern? Perhaps internal documentation or general best practices — include them here.",
+      "source_content_hash": "cb75fb9b489a8093d2c7b591d5a4134c106bc1e52b92de1b1110725f8304e350",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "1. **概要**\n   このパターンが解決する問題、影響を受ける領域、および組織全体にどのように価値を提供するかを説明してください。\n\n2. **実装**\n   このパターンがどのように機能し、どのコンポーネントが組み込まれているかを指定してください。これを含める方法にさまざまな階層がありますか？\n\n3. **アクセシビリティ**\n   このパターンがアクセシブルであることを保証するために必要な重要な詳細は何ですか？アクセシビリティを非常に重視しているため、ここでは明確かつ簡潔に記述してください。\n\n4. **関連**\n   代替パターンや、使用ケースに応じてデザイナーや開発者が探しているかもしれない類似のパターンはありますか？\n\n5. **参考文献**\n   このパターンをサポートするコンテンツやリソースはありますか？内部ドキュメントや一般的なベストプラクティスなどがあれば、ここに含めてください。"
+      }
+    },
+    {
+      "segment_id": "759d12dd",
+      "source_content": "## Resources",
+      "source_content_hash": "75c6211de8f8951e8037d10289e3e5d0177b8a172b593345006b5b42a8e08e0e",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## リソース"
+      }
+    },
+    {
+      "segment_id": "74dd7937",
+      "source_content": "We have several tools available to help developers and designers build better solutions.",
+      "source_content_hash": "e127773e22f037ba09b9c8a3c6f97c4a57ba2bff2b719292d50739fbc27b3b02",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "開発者とデザイナーがより良いソリューションを構築するために利用できるいくつかのツールがあります。"
+      }
+    },
+    {
+      "segment_id": "49f9f337",
+      "source_content": "- [A11y style guide](https://github.com/grafana/grafana/blob/main/contribute/style-guides/accessibility.md)\n- [Figma component library - dark mode](https://www.figma.com/file/htVIFrTq8e7sx8Olo7L6kZ/Grafana-design-system---Dark-theme?node-id=8443%3A13519)\n- [Storybook component library](https://developers.grafana.com/ui/latest/index.html?path=/docs/docs-overview-intro--page)",
+      "source_content_hash": "c35726710b566be1506ee4cd8d9573e8576507d1dd363475555d8068c5a8570a",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- [A11yスタイルガイド](https://github.com/grafana/grafana/blob/main/contribute/style-guides/accessibility.md)\n- [Figmaコンポーネントライブラリ - ダークモード](https://www.figma.com/file/htVIFrTq8e7sx8Olo7L6kZ/Grafana-design-system---Dark-theme?node-id=8443%3A13519)\n- [Storybookコンポーネントライブラリ](https://developers.grafana.com/ui/latest/index.html?path=/docs/docs-overview-intro--page)"
+      }
+    },
+    {
+      "segment_id": "e33a2404",
+      "source_content": "## Feedback?",
+      "source_content_hash": "03a72bd1d7c4740d5d1f420d4e05bada77d4e530fd6b1da0ae6609561aa2a85b",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## フィードバック"
+      }
+    },
+    {
+      "segment_id": "82e90254",
+      "source_content": "See something here that can be improved or added? Reach out on [Slack](https://raintank-corp.slack.com/archives/CT7S455SP) or directly message **Staton Hysell**, **Joao Silva**, or **Natacha de Jesus**. We’d love to hear from you!",
+      "source_content_hash": "5e51e1f64f567748d39a37e0a6068fa4a2a5611d78ba7dd17ca64313bc4a3384",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "ここで改善や追加が必要な点を見つけましたか？[Slack](https://raintank-corp.slack.com/archives/CT7S455SP)で連絡するか、**Staton Hysell**、**Joao Silva**、または**Natacha de Jesus**に直接メッセージを送ってください。ぜひお聞かせください！"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-docs/current/02-contributing.mdx",
+  "last_updated_timestamp": "2025-06-06T08:53:12.758556+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "f89a777b1e827a3bb657f06b0bfb0ecf536f04d31782c141c7913d751c16a0e8"
+  }
+}

@@ -1,0 +1,382 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "docs/05-components/alert.mdx",
+  "source_file_content_hash": "74db5d186e085dac6816eda36b649babec01df8edd4f56d023543c8c6e22a23e",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\ntitle: Alert\ndescription: Alert is a fundamental element used for displaying important messages or notifications to users.\n---",
+      "source_content_hash": "988bf6dbabd036f50f9c8fabe09a6937c02e2a734700685e6daee3d55812ccb5",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "b3de8742",
+      "source_content": "# Alert <Badge text='ready' color='green'></Badge> <StorybookLink path='/story/overlays-alert-inlinebanner--basic'/>",
+      "source_content_hash": "ff269db754a3e170bf2b5ac2c9f334e31df393dca920aab2bac867dee8d836f3",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "# アラート <Badge text='ready' color='green'></Badge> <StorybookLink path='/story/overlays-alert-inlinebanner--basic'/>"
+      }
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Alert is a fundamental element used for displaying important messages or notifications to users.",
+      "source_content_hash": "8a2834d625fb2eca9d1de619fcc378907ce7306e677a9beb93678380a8602f4b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "アラートは、ユーザーに重要なメッセージや通知を表示するための基本的な要素です。"
+      }
+    },
+    {
+      "segment_id": "1cc03ec8",
+      "source_content": "## When to use",
+      "source_content_hash": "d57fe8233a0bcc964af649dd3059fbd5aa2ba0bba9b4b44f225cdd2f0dd1c432",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 使用する場面"
+      }
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "Use Alerts to inform users of updates, changes, or issues. Providing users feedback, keeping them informed, and keeping disruptions to a minimum is important. There are two different use-cases for Alerts: task-generated and system-generated Alerts.",
+      "source_content_hash": "ffc57088a3ecbadc65dedab60df61f431bface3e3a7ee81e03d3829fdec3a214",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "アラートは、更新、変更、または問題についてユーザーに通知するために使用します。ユーザーにフィードバックを提供し、情報を伝え、中断を最小限に抑えることが重要です。アラートには、タスク生成とシステム生成の2つの異なる使用ケースがあります。"
+      }
+    },
+    {
+      "segment_id": "70153c6e",
+      "source_content": "## Usage",
+      "source_content_hash": "63bfd61a0561b255a2caa0a2e3add091ca7e327f2fa06a407cbb2ff341b858d8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 使用方法"
+      }
+    },
+    {
+      "segment_id": "cbe57f9d",
+      "source_content": "### Task-Generated",
+      "source_content_hash": "60050a6d8cc94e99b31574807c32b93d85a0ead62ef1da7dddeb2ce1a11020b7",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### タスク生成"
+      }
+    },
+    {
+      "segment_id": "39b3772c",
+      "source_content": "Task-generated Alerts are triggered based on the behaviours of the user and provide quick, direct feedback. This type of Alert should be placed closely to the area the user is actively working in.",
+      "source_content_hash": "f347a471455d12f4767da491a40318bc658caba1018975c89e11300b37dd8adf",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "タスク生成アラートは、ユーザーの行動に基づいてトリガーされ、迅速で直接的なフィードバックを提供します。このタイプのアラートは、ユーザーが現在作業している領域の近くに配置する必要があります。"
+      }
+    },
+    {
+      "segment_id": "bc633244",
+      "source_content": "### System-Generated",
+      "source_content_hash": "7d5d1a39430cf5a47585a5f85bd52b85d5c48c46b31836742d8b0c3257902805",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### システム生成"
+      }
+    },
+    {
+      "segment_id": "2df4f75f",
+      "source_content": "System-generated Alerts are triggered by the system, unconnected to the actions of a user. Use these Alerts to provide explanation of system status or other events that have occurred elsewhere.",
+      "source_content_hash": "a45a78b460c30277f6b8f4a5f43afcc355a505922ae6b286cfd2aa599c8973d7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "システム生成アラートは、ユーザーの行動とは関係なく、システムによってトリガーされます。システムの状態や他の場所で発生したイベントの説明を提供するために、これらのアラートを使用します。"
+      }
+    },
+    {
+      "segment_id": "95b38f97",
+      "source_content": "## Implementation / Options",
+      "source_content_hash": "3a0afb06ad162cceca636b7c4095a0eb370acea7ea3534d4976e5a2cb174c458",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 実装 / オプション"
+      }
+    },
+    {
+      "segment_id": "79b2d0b9",
+      "source_content": "### Content",
+      "source_content_hash": "3a037e422de1ef3802d0cc35cab39bed395748e526b1717fe1e0f0dd064ba08a",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### コンテンツ"
+      }
+    },
+    {
+      "segment_id": "3c36424c",
+      "source_content": "#### Title",
+      "source_content_hash": "52632ce289dc3c72373d5bb4784ad3d59b309928bae96cb421ad01b7c228491d",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "#### タイトル"
+      }
+    },
+    {
+      "segment_id": "26524352",
+      "source_content": "Titles in Alerts are required, always. They should be concise, human-focused and jargon free so users can easily understand them.",
+      "source_content_hash": "64c9c1c0d81fb23c5b4e9418a9bb337e4ee9020c3437bfce66fb9e1a8b0306fa",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "アラートのタイトルは必須です。簡潔で、人間中心の、専門用語を使わないようにし、ユーザーが簡単に理解できるようにする必要があります。"
+      }
+    },
+    {
+      "segment_id": "b25f21be",
+      "source_content": "#### Description",
+      "source_content_hash": "c53762a2994529d59e531b006fcd472aef0c8629009b356c47ffaf0599225b18",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "#### 説明"
+      }
+    },
+    {
+      "segment_id": "7499a4e7",
+      "source_content": "Description copy is optional and should be used sparingly. Keep the description copy short and focused on the reason for the Alert and include possible solutions or paths forward to prevent users from being blocked.",
+      "source_content_hash": "745a1f6aa8162f77dca4ae87f8635ebac59aac5bf75d15c86301e3555e3e2468",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "説明文はオプションで、控えめに使用する必要があります。説明文は短く、アラートの理由に焦点を当て、ユーザーがブロックされないようにするための解決策や次のステップを含めるようにします。"
+      }
+    },
+    {
+      "segment_id": "109ace10",
+      "source_content": "#### Content guidelines (how to write)",
+      "source_content_hash": "661771539141c8444bc93ead89730fd71a2b4bbe282242407f8b5a651f02e616",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "#### コンテンツガイドライン（書き方）"
+      }
+    },
+    {
+      "segment_id": "135468ee",
+      "source_content": "It is important to always use simple and concise language when crafting messaging for Alerts. Avoid using jargon or system errors in the content of the Alerts. Provide users with a path forward or possible solution. For more recommendations on writing, view the [UX writing guidelines](https://grafana.com/docs/writers-toolkit/write/style-guide/ux-writing/).",
+      "source_content_hash": "3b946f91dcbb7c68652627ec82eaa01a682cc5eccd0f398902eff612e7531b02",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "アラートのメッセージを作成する際には、常にシンプルで簡潔な言語を使用することが重要です。専門用語やシステムエラーをアラートの内容に使用しないでください。ユーザーに次のステップや可能な解決策を提供します。書き方の詳細については、[UXライティングガイドライン](https://grafana.com/docs/writers-toolkit/write/style-guide/ux-writing/)を参照してください。"
+      }
+    },
+    {
+      "segment_id": "782c902a",
+      "source_content": "#### Severity",
+      "source_content_hash": "cea345e9683fb4b79f056eb6ff7766c2b32fdef2097196b831e6e989420edab7",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "#### 深刻度"
+      }
+    },
+    {
+      "segment_id": "50746522",
+      "source_content": "There are four (4) different message types Alerts can have:",
+      "source_content_hash": "93de769b2f692a3583101263948fb46807a594dc11709c31c9dbce3d3ec1b484",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "アラートには4つの異なるメッセージタイプがあります："
+      }
+    },
+    {
+      "segment_id": "aa83231c",
+      "source_content": "- _Info_ - Provide information to users, and don’t interrupt any current actions\n- _Success_ - When any action is successful, it is confirmed when a task is completed as expected\n- _Warning_ - Informing users that an action is undesirable\n- _Error_ - When an action doesn't happen as expected, usually something has failed and the user is expected to take action",
+      "source_content_hash": "fa851a9f04ce003a328d0779fe63503b4ffde78e33bd7a3d170ac904daf5532e",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- _情報_ - ユーザーに情報を提供し、現在の行動を中断しない\n- _成功_ - タスクが期待通りに完了したことを確認する\n- _警告_ - 望ましくない行動をユーザーに通知する\n- _エラー_ - 期待通りに行動が行われなかった場合、通常何かが失敗し、ユーザーが行動を取る必要がある"
+      }
+    },
+    {
+      "segment_id": "6f930b2f",
+      "source_content": "#### Calls to Action",
+      "source_content_hash": "efc25b091ddd1d7ef85073b1963b5cc5a23058e3471c490697fb056f0826a39a",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "#### コール・トゥ・アクション"
+      }
+    },
+    {
+      "segment_id": "c504c207",
+      "source_content": "Alerts (Inline Alerts specifically) can contain calls to action (CTAs), especially if there is an action a user can take remedy or correct the reason the Alert is being shown. When providing a CTA within an Alert be sure to keep the label concise and ensure the action the user can take is clear, and try to keep the labels short (a few words at most). See Grafana's [UX Writing guidelines](https://grafana.com/docs/writers-toolkit/write/style-guide/ux-writing/).",
+      "source_content_hash": "a72aa3af099c00ff1b5eba073d3273893956d0ffe9f4c70483c2e53d25d23f6e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "アラート（特にインラインアラート）には、コール・トゥ・アクション（CTA）を含めることができます。特に、アラートが表示されている理由を修正または改善するためにユーザーが取れる行動がある場合です。アラート内にCTAを提供する場合は、ラベルを簡潔に保ち、ユーザーが取れる行動が明確であることを確認し、ラベルを短く（数語程度）に保つようにします。Grafanaの[UXライティングガイドライン](https://grafana.com/docs/writers-toolkit/write/style-guide/ux-writing/)を参照してください。"
+      }
+    },
+    {
+      "segment_id": "c6cc90a0",
+      "source_content": "## Types and Behaviors",
+      "source_content_hash": "b90359698fa5684efb4be758e1e814d8607d08ed24f820399d51edc79ab2526b",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## タイプと動作"
+      }
+    },
+    {
+      "segment_id": "d3649a1e",
+      "source_content": "Grafana uses Alert in two ways: Inline, and Toast. These two different types of Alerts have different purposes and behaviours. It’s important to understand the differences to make sure you use the right one.",
+      "source_content_hash": "ebf2059343897867b54820d5a4d96964c253f816d29fba8a94c5e2be1b9e4af4",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Grafanaでは、アラートを2つの方法で使用します：インラインとトーストです。これら2つの異なるタイプのアラートは、異なる目的と動作を持っています。適切なものを使用するために、違いを理解することが重要です。"
+      }
+    },
+    {
+      "segment_id": "e50bebbf",
+      "source_content": "### Inline",
+      "source_content_hash": "dba5de6c37a5a7d7062700ba2d2178190b9821f844fe876f963e9f186bd642da",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### インライン"
+      }
+    },
+    {
+      "segment_id": "23dfb152",
+      "source_content": "Inline Alerts notify users of both system and user triggered events. They appear at the top or bottom of the main content area near where the user is actively working. This maintains context and supports understanding. These messages are task-generated and provide direct, contextual feedback.",
+      "source_content_hash": "8a7e501da9c944533fe76a015460d75a9a5409cc8d5a753e0566c5f7f9d43892",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "インラインアラートは、システムおよびユーザーによってトリガーされたイベントをユーザーに通知します。ユーザーが現在作業しているメインコンテンツ領域の上部または下部に表示されます。これにより、コンテキストが維持され、理解が促進されます。これらのメッセージはタスク生成であり、直接的で文脈に沿ったフィードバックを提供します。"
+      }
+    },
+    {
+      "segment_id": "c05ad55e",
+      "source_content": "```tsx live\n<Alert title=\"Inline alert\">\n  <div>Child content that includes some alert details, like maybe what actually happened.</div>\n</Alert>\n```",
+      "source_content_hash": "51609be99f1073c375b8ad98eb264556f82fe24e8f67e3ec40b27f61b7b99a0b",
+      "node_type": "code",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_c05ad55e"
+      }
+    },
+    {
+      "segment_id": "a5a4323e",
+      "source_content": "### Toast",
+      "source_content_hash": "8784980c915c673ac14a201ca1bd301c6a93ca7fb0938e5d8cd1874f738dde69",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### トースト"
+      }
+    },
+    {
+      "segment_id": "657c2b20",
+      "source_content": "Toasts are temporary window elements used to display short messages; they appear in the top-right corner of the screen and can be dismissed by clicking the `X` or it will disappear after a few seconds",
+      "source_content_hash": "647fb75263f4deacf3054be3eed5d9f09bc02755c5eb6195dc9c0af4f89a8259",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "トーストは、短いメッセージを表示するための一時的なウィンドウ要素です。画面の右上隅に表示され、`X`をクリックするか、数秒後に自動的に消えます。"
+      }
+    },
+    {
+      "segment_id": "17c579d2",
+      "source_content": "```tsx live\n<Alert title=\"Toast\" elevated>\n  <div>Child content that includes some alert details, like maybe what actually happened.</div>\n</Alert>\n```",
+      "source_content_hash": "d2db742506ea032482c4e0332d750419c95f13f79d1567ff956e061066f14d93",
+      "node_type": "code",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_17c579d2"
+      }
+    },
+    {
+      "segment_id": "93028a4e",
+      "source_content": "#### Behavior",
+      "source_content_hash": "88dc7eb29a12e0e29316779ae89d7ce09ba050c9951d496f17a947fad1825d5f",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "#### 動作"
+      }
+    },
+    {
+      "segment_id": "1316cb90",
+      "source_content": "- Toasts display for a short period of time\n- Contain a close `X` action so users can dismiss the Alert\n- If more than one displays at the same time, the most recent Alert is always displayed at the top. Older toasts stack in order under the most recent Alert.",
+      "source_content_hash": "3e68bb8769b775286034bdaa2be5b035b1a596ffa838a694656aed6336dcd0a8",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- トーストは短時間表示されます\n- ユーザーがアラートを閉じられるように閉じる「X」アクションを含みます\n- 複数が同時に表示される場合、最新のアラートは常に最上部に表示されます。古いトーストは最新のアラートの下に順番に積み重なります。"
+      }
+    },
+    {
+      "segment_id": "66819c78",
+      "source_content": "## Further Reading & Sources",
+      "source_content_hash": "5b0ec7b3b7da133660d8ca0913c64e3de32a7f5d3e0ec0a8fdf0fcc9752da303",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 参考資料"
+      }
+    },
+    {
+      "segment_id": "5dbc17cf",
+      "source_content": "- [NNG — Indicators, Validations, and Notifications: Pick the Correct Communication Option](https://www.nngroup.com/articles/indicators-validations-notifications/)\n- [NNG — How to Report Errors in Forms: 10 Design Guidelines](https://www.nngroup.com/articles/errors-forms-design-guidelines/)\n- [NNG - 10 Usability Heuristics for Users](https://www.nngroup.com/articles/ten-usability-heuristics/)\n- [NNG - Plain Language is for Everyone](https://www.nngroup.com/articles/plain-language-experts/)",
+      "source_content_hash": "4da20c2343e5b4626eda192859d7d7e6720319424b17801d7e2f6e26ea06290e",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- [NNG — インジケーター、バリデーション、通知: 適切なコミュニケーションオプションを選ぶ](https://www.nngroup.com/articles/indicators-validations-notifications/)\n- [NNG — フォームのエラー報告方法: 10のデザインガイドライン](https://www.nngroup.com/articles/errors-forms-design-guidelines/)\n- [NNG - ユーザーのための10のユーザビリティヒューリスティック](https://www.nngroup.com/articles/ten-usability-heuristics/)\n- [NNG - 平易な言語はすべての人のため](https://www.nngroup.com/articles/plain-language-experts/)"
+      }
+    },
+    {
+      "segment_id": "90d35b51",
+      "source_content": "## Playground",
+      "source_content_hash": "54192e25d4cfb303fa3f3761b5d777cd0a2b671840c2cd9c87abb3ab38f58e62",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## プレイグラウンド"
+      }
+    },
+    {
+      "segment_id": "9cb0b344",
+      "source_content": "<ComponentEmbed path=\"/story/overlays-alert-toast--basic\" />",
+      "source_content_hash": "9501b9ac25af38b6d521fe42270ba8ff3d346655e6e4a14069d2a018b51890c8",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_9cb0b344"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-docs/current/05-components/alert.mdx",
+  "last_updated_timestamp": "2025-06-06T08:53:12.750395+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "74db5d186e085dac6816eda36b649babec01df8edd4f56d023543c8c6e22a23e"
+  }
+}

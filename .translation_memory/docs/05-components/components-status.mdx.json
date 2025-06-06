@@ -1,0 +1,52 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "docs/05-components/components-status.mdx",
+  "source_file_content_hash": "d338cdcfc3ed83bc065172a06a0145224277ed8cdfdb314a668258a7a3bfd334",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\ntitle: Components status\ndescription: Grafana Labs Components Status\nsidebar_position: 1\nhide_title: true\n---",
+      "source_content_hash": "355e12e7ae5f00a8e11a822f6de4ffb29eb7e366dd2bdc44742c3d38b42fc8b3",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "50387553",
+      "source_content": "import { StatusTable } from '../../src/theme/StatusTable/index.tsx';\nimport { ComponentsStatusInfo } from '../../src/theme/StatusTable/utils.ts';",
+      "source_content_hash": "ee6beae7ff456f5f232fd4384101b935050120bb98c13b8cb281ce53632c7224",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_50387553"
+      }
+    },
+    {
+      "segment_id": "8a5f6a7b",
+      "source_content": "# Component Status <Badge text=\"draft\" color=\"orange\"></Badge>",
+      "source_content_hash": "3aab01c1ceca3544cf235f4ceb773b2c692940c384185409f9a152033c92e0b7",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "# コンポーネントステータス <Badge text=\"draft\" color=\"orange\"></Badge>"
+      }
+    },
+    {
+      "segment_id": "5da3670c",
+      "source_content": "<StatusTable componentsData={ComponentsStatusInfo} />",
+      "source_content_hash": "60134d0185fffebb84e7a9b74404869ce3c20fa688529cc255db018c7be6487f",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_5da3670c"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-docs/current/05-components/components-status.mdx",
+  "last_updated_timestamp": "2025-06-06T08:53:12.746216+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "d338cdcfc3ed83bc065172a06a0145224277ed8cdfdb314a668258a7a3bfd334"
+  }
+}

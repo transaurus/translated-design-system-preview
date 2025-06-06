@@ -1,0 +1,252 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "docs/05-components/03-primitives/stack.mdx",
+  "source_file_content_hash": "ce1632a73b8f58499d06fe07c8c2e7479e43b84c8c9d62ac9dd625cdaca8fecc",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\ntitle: Stack\ndescription: Grafana Labs Stack component\ndraft: false\n---",
+      "source_content_hash": "6d4dd110057ba77a1e0c4a0e5739d23e5a526ff688270f045738f2d24ed5a90b",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "10c4cb47",
+      "source_content": "import { Stack } from '@grafana/ui';",
+      "source_content_hash": "7db22b9bfc4228170ed2858cab6cebd2284d5141936a0dc2761a27e6465ec554",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_10c4cb47"
+      }
+    },
+    {
+      "segment_id": "d912d376",
+      "source_content": "# Stack <Badge text='ready' color='green'></Badge> <StorybookLink path='/story/general-layout-stack--basic'/>",
+      "source_content_hash": "860c9c1a8322ed83f77e9e26814e881a8f9308cc4269a60f25764b669a3930d7",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "# Stack <Badge text='ready' color='green'></Badge> <StorybookLink path='/story/general-layout-stack--basic'/>"
+      }
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "_Available from v10.2.3_",
+      "source_content_hash": "5ca15552645c908d7ecdf38149751c4b3aab2186cbb8809017e02dcb1dc80003",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "_v10.2.3 から利用可能_"
+      }
+    },
+    {
+      "segment_id": "9fcbdce9",
+      "source_content": "## Overview",
+      "source_content_hash": "7337f3d0aa29e9a82b8f1650b743a98eef90794631fa763a319686e69c546821",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 概要"
+      }
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "The Stack component is a simple wrapper around the flexbox layout model that allows to easily create responsive and flexible layouts. It provides a simple and intuitive way to align and distribute items within a container either horizontally or vertically.",
+      "source_content_hash": "8d8d6f3c9a9bea0e4aa5929e491211098a5a1af22f9dd4975a0ead1ecf92e2b5",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Stackコンポーネントは、フレックスボックスレイアウトモデルを簡単にラップしたもので、レスポンシブで柔軟なレイアウトを簡単に作成できます。コンテナ内のアイテムを水平または垂直に整列・配置するためのシンプルで直感的な方法を提供します。"
+      }
+    },
+    {
+      "segment_id": "cbe57f9d",
+      "source_content": "### When to Use",
+      "source_content_hash": "b34f6ac5c84a442cdd7bf9f6f9d8063102d6433c307a4006dbea6f79945be305",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 使用する場合"
+      }
+    },
+    {
+      "segment_id": "11c829ab",
+      "source_content": "- For creating responsive and flexible layouts that can adapt to different screen sizes and orientations.\n- When needing a simple and intuitive way to align and distribute items within a container either horizontally or vertically.\n- To easily reorder and rearrange elements without changing the HTML structure.\n- When aiming to create equal-height columns.\n- To create a grid-like structure with automatic wrapping and sizing of items based on the available space.",
+      "source_content_hash": "f2bf9e608c5f027547a50358d90bd7e7a063a849dbdf9298050e3d82a9362ee4",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- 異なる画面サイズや向きに適応できるレスポンシブで柔軟なレイアウトを作成する場合\n- コンテナ内のアイテムを水平または垂直に整列・配置するためのシンプルで直感的な方法が必要な場合\n- HTML構造を変更せずに要素の順序や配置を簡単に変更したい場合\n- 等しい高さの列を作成したい場合\n- 利用可能なスペースに基づいてアイテムの自動折り返しとサイズ調整を行うグリッドのような構造を作成したい場合"
+      }
+    },
+    {
+      "segment_id": "95b38f97",
+      "source_content": "### When not to Use",
+      "source_content_hash": "379566e9e1cb4d7b8249e4c9057893e8e8cb3761028da4583e13b354f06bee45",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 使用しない場合"
+      }
+    },
+    {
+      "segment_id": "0cc488ed",
+      "source_content": "- For complex multi-dimensional layouts with intricate requirements that are better suited for CSS frameworks or grid systems.\n- When precise control over spacing and positioning of elements is necessary.",
+      "source_content_hash": "bc6b88b57e57ee1b081085ff0e58faab6ec202f6004abc04f18fbf109c115637",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- CSSフレームワークやグリッドシステムが適した複雑な多次元レイアウトが必要な場合\n- 要素の間隔や位置を精密に制御する必要がある場合"
+      }
+    },
+    {
+      "segment_id": "f2f30ae8",
+      "source_content": "## Props",
+      "source_content_hash": "5b94a6cc928a22f2ff71078f7462cd97dbe259a0c4d1877ab3afc2a92dded915",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## プロパティ"
+      }
+    },
+    {
+      "segment_id": "48847fd4",
+      "source_content": "### Display",
+      "source_content_hash": "ed750ee1b1199e27442055f1eb4995366efd41bdc20650d6958b86512a1be9f5",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 表示"
+      }
+    },
+    {
+      "segment_id": "4daf5cdd",
+      "source_content": "There are 5 different props related to how the content is displayed:",
+      "source_content_hash": "eb4ead713fc2de391daf3d0ee3efa4abff42b47f8091b536cc3e1c679381b4c6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "コンテンツの表示方法に関連する5つの異なるプロパティがあります:"
+      }
+    },
+    {
+      "segment_id": "fc8eadc3",
+      "source_content": "- `direction`, with possible values: `row`, `row-reverse`, `column`, `column-reverse`\n- `wrap`, with possible values: `nowrap`, `wrap`, `wrap-reverse`\n- `alignItems`, with possible values: `stretch`, `flex-start`, `flex-end`, `center`, `baseline`, `start`, `end`, `self-start`, `self-end`\n- `justifyContent`, with possible values: `flex-start`, `flex-end`, `center`, `space-between`, `space-around`, `space-evenly`, `start`, `end`, `left`, `right`\n- `gap`, with possible values: ThemeSpacingTokens (0 | 0.25 | 0.5 | 1 | 1.5 | 2 | 2.5 | 3 | 4 | 5 | 6 | 8 | 10)",
+      "source_content_hash": "9496a133ff7d23aaad4f3c031a7c453ada54a5258e876f7df7944c6627510e93",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- `direction`: 可能な値 `row`, `row-reverse`, `column`, `column-reverse`\n- `wrap`: 可能な値 `nowrap`, `wrap`, `wrap-reverse`\n- `alignItems`: 可能な値 `stretch`, `flex-start`, `flex-end`, `center`, `baseline`, `start`, `end`, `self-start`, `self-end`\n- `justifyContent`: 可能な値 `flex-start`, `flex-end`, `center`, `space-between`, `space-around`, `space-evenly`, `start`, `end`, `left`, `right`\n- `gap`: 可能な値 ThemeSpacingTokens (0 | 0.25 | 0.5 | 1 | 1.5 | 2 | 2.5 | 3 | 4 | 5 | 6 | 8 | 10)"
+      }
+    },
+    {
+      "segment_id": "3cfe6286",
+      "source_content": "If you just need to create a Flex layout without any other styling to the box, please use the **[Stack](/components/primitives/stack)** component instead.",
+      "source_content_hash": "af49a5884f5df8f7b89721877e9c4c1979163ad278a5b1935cd832f3752a528d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "ボックスにスタイリングを加えずにFlexレイアウトのみを作成する必要がある場合は、代わりに**[Stack](/components/primitives/stack)**コンポーネントを使用してください。"
+      }
+    },
+    {
+      "segment_id": "d9330cd7",
+      "source_content": "```tsx live\n<Stack direction='row' wrap='wrap' alignItems='center' justifyContent='center' gap={5}>\n  <span>One</span>\n  <span>Two</span>\n  <span>Three</span>\n</Stack>\n```",
+      "source_content_hash": "349607a3ef52ef912e65f3fd849aa73af4cf986e04a340ed923a570196a954b0",
+      "node_type": "code",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_d9330cd7"
+      }
+    },
+    {
+      "segment_id": "11c76fcc",
+      "source_content": "### Responsiveness",
+      "source_content_hash": "137a273ed6dfcb8d2012b2f5893ec4a29256b5c005d4288b838a1d1af541e1df",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### レスポンシブ対応"
+      }
+    },
+    {
+      "segment_id": "98d26038",
+      "source_content": "All of the above props can be defined in a responsive way, meaning that different values will be set depending on the window size.",
+      "source_content_hash": "2bd05e2d9bca6796cae4a9ed03beeccf9a6adc9c23afa66e0a32b6762369fc8a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "上記のすべてのプロパティはレスポンシブに定義でき、ウィンドウサイズに応じて異なる値が設定されます。"
+      }
+    },
+    {
+      "segment_id": "d3649a1e",
+      "source_content": "To define any of them responsively, simply pass in an object with responsive breakpoints as keys. For instance, instead of defining direction in this way `direction='row'`\ndefine it like  `direction={{ xs: 'column', md: 'row' }}`.\nThis means that from the `xs` breakpoint up, direction is set to `column`, while from the `md` breakpoint up, it is set to `row`.",
+      "source_content_hash": "bb3ad4b984689c7c7d4e5a70f844ad96f50a24eb9ed91c3eee592bc4242609a4",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "レスポンシブに定義するには、単にレスポンシブブレークポイントをキーとしたオブジェクトを渡します。例えば、`direction='row'`のように定義する代わりに、`direction={{ xs: 'column', md: 'row' }}`のように定義します。\nこれは、`xs`ブレークポイント以上では方向が`column`に設定され、`md`ブレークポイント以上では`row`に設定されることを意味します。"
+      }
+    },
+    {
+      "segment_id": "23dfb152",
+      "source_content": "The possible breakpoints in the theme can be found [here](https://github.com/grafana/grafana/blob/main/packages/grafana-data/src/themes/breakpoints.ts#L28).",
+      "source_content_hash": "d0d298119311fa9b32e3d69290a7a12ab95d8dbb2500a9a3f2f7864f6dc0880d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "テーマで可能なブレークポイントは[こちら](https://github.com/grafana/grafana/blob/main/packages/grafana-data/src/themes/breakpoints.ts#L28)で確認できます。"
+      }
+    },
+    {
+      "segment_id": "e912d935",
+      "source_content": "### Further Reading & Sources",
+      "source_content_hash": "37196dc650fdb5bc8fd42c8dfeb22541acbf11893379b55c534799ab87551971",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 参考資料"
+      }
+    },
+    {
+      "segment_id": "ea0c7bae",
+      "source_content": "- [Storybook docs and props table](https://developers.grafana.com/ui/canary/index.html?path=/docs/general-layout-stack--docs)",
+      "source_content_hash": "552ed5afe02f58c614a17b3403008eb9938d5c79179582234183ec5fbaa595a6",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- [Storybookドキュメントとプロパティテーブル](https://developers.grafana.com/ui/canary/index.html?path=/docs/general-layout-stack--docs)"
+      }
+    },
+    {
+      "segment_id": "126950d7",
+      "source_content": "## Playground",
+      "source_content_hash": "54192e25d4cfb303fa3f3761b5d777cd0a2b671840c2cd9c87abb3ab38f58e62",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## プレイグラウンド"
+      }
+    },
+    {
+      "segment_id": "9032d03f",
+      "source_content": "<ComponentEmbed path=\"/story/general-layout-stack--basic\" />",
+      "source_content_hash": "b2c1b83f9a7bd9c3ab010ddbbc1c94405b6829228d9cbcb45464dd1e998698ad",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_9032d03f"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-docs/current/05-components/03-primitives/stack.mdx",
+  "last_updated_timestamp": "2025-06-06T08:53:12.758306+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "ce1632a73b8f58499d06fe07c8c2e7479e43b84c8c9d62ac9dd625cdaca8fecc"
+  }
+}

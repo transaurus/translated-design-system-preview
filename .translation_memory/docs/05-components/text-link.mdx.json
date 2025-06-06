@@ -1,0 +1,402 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "docs/05-components/text-link.mdx",
+  "source_file_content_hash": "91411484cf6fd28089720e67a373eb611fb21c975ae281298e28b423330f2818",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\ntitle: TextLink\ndescription: The TextLink component renders an anchor tag <a> that takes users to another page, external or internal to Grafana.\nhide_title: true\n---",
+      "source_content_hash": "d3446e59392cc2f450651a19d82ab573f1e5d90809c00a24991b258f3f7bc3ac",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "a703643c",
+      "source_content": "# TextLink <Badge text='ready' color='green'></Badge> <StorybookLink path='/docs/general-textlink--docs' />",
+      "source_content_hash": "b8fdccaa099a8a031b912604e66c2138e7be20deeaee84b70af594bac2ea40e0",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "# テキストリンク <Badge text='ready' color='green'></Badge> <StorybookLink path='/docs/general-textlink--docs' />"
+      }
+    },
+    {
+      "segment_id": "53eaf0e1",
+      "source_content": "The TextLink component renders an anchor tag `<a>` that takes users to another page, external or internal to Grafana.",
+      "source_content_hash": "e9585963908498d8261179bd3bbca5dc74329e4c9bf4bf78dc5f34f5a354a040",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "TextLinkコンポーネントは、Grafana内外の別ページへユーザーを誘導するアンカータグ`<a>`をレンダリングします。"
+      }
+    },
+    {
+      "segment_id": "43a8bc7e",
+      "source_content": "```tsx live\n<TextLink href=\"https://google.com\" external>\n  Go to Google\n</TextLink>\n```",
+      "source_content_hash": "fa28aeeddd7fb7732fed62419b03ebbeccca9110d2f743690535c25d55dd4686",
+      "node_type": "code",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_43a8bc7e"
+      }
+    },
+    {
+      "segment_id": "3daf1b88",
+      "source_content": "## Usage",
+      "source_content_hash": "63bfd61a0561b255a2caa0a2e3add091ca7e327f2fa06a407cbb2ff341b858d8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 使用方法"
+      }
+    },
+    {
+      "segment_id": "aee0e40d",
+      "source_content": "### When to use",
+      "source_content_hash": "b21c0dd54908a2e06fa9af94ecd22a039429ad358933386b8754657f6a207e14",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 使用する場合"
+      }
+    },
+    {
+      "segment_id": "0787cf7f",
+      "source_content": "- To redirect the user to another page, external or internal.\n- When redirecting the user through a link in a word or phrase within a paragraph.\n- When redirecting the user through a link in a word or phrase, not within a paragraph but surrounded by other blocks of text.",
+      "source_content_hash": "f29fe86d39b6d8857cf9f531b7890eccbb93e3e9690d1622fb424908a133dd0f",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- ユーザーを外部または内部の別ページへリダイレクトする場合\n- 段落内の単語やフレーズにリンクを設置してリダイレクトする場合\n- 段落外で他のテキストブロックに囲まれた単語やフレーズにリンクを設置する場合"
+      }
+    },
+    {
+      "segment_id": "ed7dde9c",
+      "source_content": "### When not to use",
+      "source_content_hash": "0ed2e5d477ec3714e4863b0b18d58081eef8a83b32b6e2f7c835eb6024ace413",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 使用しない場合"
+      }
+    },
+    {
+      "segment_id": "b3f5c97c",
+      "source_content": "- When its purpose is to trigger an action, please use a Button or IconButton component.\n- When it still redirects the user, but it should have the same appearance as a button, please use the LinkButton component.\n- When the link is solely comprised of an icon, use the IconButton component.",
+      "source_content_hash": "6226006f68b438252428159c2c2510d6fb59606c99b39c2e157355fb4b14d5b6",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- アクションをトリガーする目的の場合は、ButtonまたはIconButtonコンポーネントを使用\n- リダイレクト機能を持つがボタンと同じ見た目が必要な場合は、LinkButtonコンポーネントを使用\n- アイコンのみで構成されるリンクの場合は、IconButtonコンポーネントを使用"
+      }
+    },
+    {
+      "segment_id": "48847fd4",
+      "source_content": "### Do’s",
+      "source_content_hash": "96969fa9c3edac6b2a52fa582cc432e51609894e1c5870efe82c9f4fe7f06ad6",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 推奨事項"
+      }
+    },
+    {
+      "segment_id": "cd471e4e",
+      "source_content": "- Use the default styles as the first and main option as they are designed to be accessible and consistent.\n- Use the external icon (the default one) when the TextLink directs to an external page as its meaning is broadly known.\n- In the instance the default icon does not fit, please use one of the icons from our [library](https://developers.grafana.com/ui/latest/index.html?path=/story/docs-overview-icon--icons-overview).",
+      "source_content_hash": "6b70f1c570fdf584300d4b77a6324acce55bb542c206257df949033bf8cc3104",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- アクセシビリティと一貫性を考慮したデフォルトスタイルを第一選択として使用\n- 外部ページへのリンクには一般的に認知されている外部リンクアイコン（デフォルト）を使用\n- デフォルトアイコンが適さない場合は、[アイコンライブラリ](https://developers.grafana.com/ui/latest/index.html?path=/story/docs-overview-icon--icons-overview)から適切なアイコンを選択"
+      }
+    },
+    {
+      "segment_id": "3b7478ea",
+      "source_content": "### Don’ts",
+      "source_content_hash": "10a29e689467403a41094904f95701105e5679d03a4d001390e97ed74a34be5c",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 禁止事項"
+      }
+    },
+    {
+      "segment_id": "33808f76",
+      "source_content": "- Do not use the ‘primary’ color in a standalone link unless it is a special use case such as the ‘Dashboard list’, menu items or similar.\n- Do not override any styles in any way. Instead, [ask the Design System team](/contributing/) for an improvement of this component.\n- Do not attempt to add a new icon. You should follow a contribution path to first add the icon to our Design System and then use it in this component.",
+      "source_content_hash": "c9502799adec2ded8c05877db0a9ac3a6f5da5bf9954de5f6830313d53759ac1",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- 特別なケース（ダッシュボードリストやメニュー項目など）を除き、スタンドアロンリンクに'primary'カラーを使用しない\n- スタイルを上書きせず、必要に応じて[デザインシステムチーム](/contributing/)に改善を要請\n- 新しいアイコンを追加せず、まずデザインシステムにアイコンを追加する貢献プロセスに従う"
+      }
+    },
+    {
+      "segment_id": "06c0f776",
+      "source_content": "## Content",
+      "source_content_hash": "8a7454c28fea26099276cbed1827658cd2a47942d6ef32e76e645c81358bf357",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## コンテンツ"
+      }
+    },
+    {
+      "segment_id": "4c077b92",
+      "source_content": "- The _TextLink_ component mainly contains text and, optionally, an icon.\n- Make link text abundantly clear as to what the subsequent page is about.\n- Avoid using phrases such as _Click here_, _More_, and _Read more_ unless they are within a card component or similar. Do not use them as standalone link text, as they can be confusing when a screen reader reads them out of context.\n- Aim for a maximum of two links per paragraph.\n- Keep link text short and concise.\n- Never start with articles: _a_, _an_, or _the_.\n- Avoid linking whole sentences; aim for a maximum of four to five words.",
+      "source_content_hash": "d1ceb1e580de985a88ac406bbdd2235b44b4807c2bcc08b02ed3e504578f98cf",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- _TextLink_コンポーネントは主にテキストと（オプションで）アイコンで構成\n- リンクテキストは遷移先ページの内容が明確に分かるように記述\n- 「ここをクリック」「詳細」「続きを読む」などのフレーズはカードコンポーネント内以外では使用せず、特にスタンドアロンリンクではスクリーンリーダーが文脈外で読み上げると混乱を招くため避ける\n- 1段落あたり最大2リンクまでを推奨\n- リンクテキストは簡潔に保つ\n- 冠詞（a/an/the）で始めない\n- 全文をリンクにせず、最大4～5単語程度に収める"
+      }
+    },
+    {
+      "segment_id": "c6cc90a0",
+      "source_content": "## Types",
+      "source_content_hash": "d3501a7dcfa1381a6da5936cfbc54568288cfa6d68304d6725d36311896e982c",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## タイプ"
+      }
+    },
+    {
+      "segment_id": "d3649a1e",
+      "source_content": "Within Grafana, there are two different types of _text links_: inline or standalone. They can either be wrapped by text or serve as a standalone element.",
+      "source_content_hash": "8c94724aa39736d4ea393e84d8b94796e2cff5fd9d1293c339c89440620c3ca0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Grafanaでは_テキストリンク_に2種類のタイプが存在：インライン型とスタンドアロン型。これらはテキストに埋め込まれるか、独立した要素として機能します。"
+      }
+    },
+    {
+      "segment_id": "0b4652a4",
+      "source_content": "| Types          | Purpose                                                                                                                                                             |\n| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n| **Inline**     | It is part of a broader text. It will be surrounded by text, before, after or in both directions. Although it can show an icon at its end, we advise not to do that |\n| **Standalone** | It is a block not surrounded immediately by more text                                                                                                               |",
+      "source_content_hash": "e8ec07b618e56caaaa4c2e80dba202f6ce2673b0c7bdeeb447f6b2188171b5fa",
+      "node_type": "table",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_0b4652a4"
+      }
+    },
+    {
+      "segment_id": "c431704b",
+      "source_content": "### Subtypes",
+      "source_content_hash": "c7c412c0f9052ab4201d10328d2dc1f0212da53b5aa31039eec128d31334c3e0",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### サブタイプ"
+      }
+    },
+    {
+      "segment_id": "79ad944d",
+      "source_content": "Both inline and standalone _text links_ will redirect the user to a specific page. Therefore, depending on their function, they can be either internal or external.",
+      "source_content_hash": "38fc892866a2e96ee1484cea28b1f677bf8f5a8dc40dab0003de0ab09db68f9d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "インライン/スタンドアロン型の_テキストリンク_は、その機能に応じて内部リンクと外部リンクに分類されます。"
+      }
+    },
+    {
+      "segment_id": "67976856",
+      "source_content": "| Subtypes     | Purpose                                                                                                                                                                                                                                                                                                                                                                 |\n| ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n| **Internal** | Redirect the user to a page inside Grafana                                                                                                                                                                                                                                                                                                                              |\n| **External** | Redirect the user to a page outside Grafana. The page will open a new window as we use `target=\"_blank\"` and `rel=\"noreferrer\"` to ensure that it is a safe [cross-origin destination](https://developer.chrome.com/docs/lighthouse/best-practices/external-anchors-use-rel-noopener/) link. By default, an external _text link_ will show the `external-link-alt` icon |",
+      "source_content_hash": "27f0eb990e6e1b77580254d7bcf97b114cfdff7e2bea83a8ca2a88c614c71d92",
+      "node_type": "table",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_67976856"
+      }
+    },
+    {
+      "segment_id": "52388877",
+      "source_content": "## Formatting",
+      "source_content_hash": "cb82e74c9e00ff9a5e2865caca13ab1d7cb66c586dfd902974890130b34e22b8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 書式設定"
+      }
+    },
+    {
+      "segment_id": "d422fb13",
+      "source_content": "### Anatomy",
+      "source_content_hash": "ed10eaa0642d1e95db06d74e961546b7fe21b7d98225e7b3355c72eb9c1afdc2",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 構成要素"
+      }
+    },
+    {
+      "segment_id": "aa0bd54f",
+      "source_content": "- Text: The link's text informs the user where they will be directed.\n- Icon: The icon provides context about the destination. For example, by default, an external link will display the ‘external-link-alt’ icon. If the link leads to another part of the same page, the icon might be ‘anchor’.",
+      "source_content_hash": "dd2847ad685398cc23a1a293201fa144068d126f18d655ea1fdf7a9bfaee505e",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- テキスト：リンク先をユーザーに伝える文言\n- アイコン：遷移先のコンテキストを提供（例：外部リンクにはデフォルトで'external-link-alt'アイコン、同一ページ内リンクには'anchor'アイコンを使用）"
+      }
+    },
+    {
+      "segment_id": "98355e36",
+      "source_content": "## Placement",
+      "source_content_hash": "928fb1e2a91cd69c15eea3341c3d8ef8bbc99c249f1e2244963916f0e8030e2a",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 配置"
+      }
+    },
+    {
+      "segment_id": "ca1573da",
+      "source_content": "- Inline: (default) The inline text link will follow the alignment of the text wrapped around it.\n- Standalone: This type of text link requires a parent element / container in which to set the appropriate display value.",
+      "source_content_hash": "035712e917b6e40a41185e93c20742b1ebb42a08b1b870dea61277025979e066",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- インライン型（デフォルト）：周囲のテキストの配置に従う\n- スタンドアロン型：適切なdisplay値を設定する親要素/コンテナが必要"
+      }
+    },
+    {
+      "segment_id": "66819c78",
+      "source_content": "## Behaviour",
+      "source_content_hash": "8c1455dda16e063aba7285b01bae8d98ca25b02b7b538d55e18ee4fd095d5351",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 動作"
+      }
+    },
+    {
+      "segment_id": "fbc2db85",
+      "source_content": "The following is the default behaviour and will be applied according to its type.",
+      "source_content_hash": "96d3a5fca81b94c3e8fe0a8b50e0fe34895916ceb44bbe6e696c7bbfa92c7559",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "以下に記載するデフォルトの動作は、リンクタイプに応じて適用されます。"
+      }
+    },
+    {
+      "segment_id": "e032fbc6",
+      "source_content": "1. Inline:\n\n   Default: Blue and underlined. The user will be able to change this value through the color prop, but the rest will remain the same.\n\n   On hover: Blue and not underlined.\n\n2. Standalone:\n\n   Default: Blue and not underlined.\n\n   On hover: Blue and underlined.",
+      "source_content_hash": "3a139d6ce6d8b7a6929a4cc902f37b18bd999507ce1388110a383a08a4a0dc7d",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "1. インライン:\n\n   デフォルト: 青色で下線付き。ユーザーはcolorプロパティを通じてこの値を変更できますが、それ以外は同じままです。\n\n   ホバー時: 青色で下線なし。\n\n2. スタンドアロン:\n\n   デフォルト: 青色で下線なし。\n\n   ホバー時: 青色で下線付き。"
+      }
+    },
+    {
+      "segment_id": "e06c002e",
+      "source_content": "## Spacing",
+      "source_content_hash": "257b255f6aa409066341391165d905f10c315a311aa2a8f965c43991239c1bd2",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## スペーシング"
+      }
+    },
+    {
+      "segment_id": "9f974d3d",
+      "source_content": "- Between text and icon: the gap is set to 0.5em, so it will adapt itself to the change of the font size\n- The text itself: there is no margin or padding applied\n- Between the block text and the text link the space is not modified, so will be the same as the existing between the words of the paragraph.",
+      "source_content_hash": "de56654c99bdb579fed5b00bf88d97a1c7e104e26c9af7f270e251d2afddf737",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- テキストとアイコンの間: 0.5emのgapが設定されており、フォントサイズの変化に応じて自動調整されます\n- テキスト自体: marginやpaddingは適用されません\n- ブロックテキストとテキストリンクの間のスペースは変更されず、段落内の単語間と同じになります"
+      }
+    },
+    {
+      "segment_id": "54bafb10",
+      "source_content": "## Accessibility",
+      "source_content_hash": "5905e6d1f8fe9000c019119d1b35481573e90f36f72c18c510ba2efec231093d",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## アクセシビリティ"
+      }
+    },
+    {
+      "segment_id": "f6db2c30",
+      "source_content": "- The text that contains the link should be informative\n- The aria-describedby attribute can be used to provide extra text for a screen reader besides the link text.\n- Assistive technology may consider an ARIA label to replace the link text, so if there is a need for more context please use aria-describedby.",
+      "source_content_hash": "3448fd22e6b2b4abba4cd6d0c0f21b5fed43ff98e4f4b84a836c0fab7401200b",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- リンクを含むテキストは情報量が豊富であるべきです\n- aria-describedby属性を使用して、リンクテキストに加えてスクリーンリーダー用の追加テキストを提供できます\n- 支援技術はARIAラベルをリンクテキストの代わりに使用する場合があるため、より多くのコンテキストが必要な場合はaria-describedbyを使用してください"
+      }
+    },
+    {
+      "segment_id": "d1f76d04",
+      "source_content": "## Related",
+      "source_content_hash": "630a5d69a70931054a3387840411306fb495280bfa0b3554006321cccbae0d00",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 関連コンポーネント"
+      }
+    },
+    {
+      "segment_id": "b0465fca",
+      "source_content": "- [Button](https://developers.grafana.com/ui/latest/index.html?path=/story/buttons-button--basic)\n- [LinkButton](https://developers.grafana.com/ui/latest/index.html?path=/docs/buttons-button--basic)\n- [IconButton](https://developers.grafana.com/ui/latest/index.html?path=/story/buttons-iconbutton--basic)",
+      "source_content_hash": "dbaa8e903c5dc77c2d60674d1920268b374736ec24cbd4035a51e756ad37eb8c",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- [Button](https://developers.grafana.com/ui/latest/index.html?path=/story/buttons-button--basic)\n- [LinkButton](https://developers.grafana.com/ui/latest/index.html?path=/docs/buttons-button--basic)\n- [IconButton](https://developers.grafana.com/ui/latest/index.html?path=/story/buttons-iconbutton--basic)"
+      }
+    },
+    {
+      "segment_id": "48155948",
+      "source_content": "## Further Reading & Sources",
+      "source_content_hash": "5b0ec7b3b7da133660d8ca0913c64e3de32a7f5d3e0ec0a8fdf0fcc9752da303",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 参考資料"
+      }
+    },
+    {
+      "segment_id": "2ddd26d5",
+      "source_content": "- [Writers Toolkit: Write useful link text](https://grafana.com/docs/writers-toolkit/write/links/useful-link-text/)\n- [Accessibility: WCAG | Link purpose in content](https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-in-context.html)",
+      "source_content_hash": "e2a64faa49c185ccaacaf8e2670f5ac53388207a79e3a719e0e59e5a76913834",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- [Writers Toolkit: 有用なリンクテキストの書き方](https://grafana.com/docs/writers-toolkit/write/links/useful-link-text/)\n- [アクセシビリティ: WCAG | コンテキスト内でのリンクの目的](https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-in-context.html)"
+      }
+    },
+    {
+      "segment_id": "cbd60296",
+      "source_content": "## Playground",
+      "source_content_hash": "54192e25d4cfb303fa3f3761b5d777cd0a2b671840c2cd9c87abb3ab38f58e62",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## プレイグラウンド"
+      }
+    },
+    {
+      "segment_id": "d4059883",
+      "source_content": "<ComponentEmbed path=\"/story/general-textlink--basic\" />",
+      "source_content_hash": "c2e85ac056faea07a945d2c4cd9b24c9f5d8173bb48edf6d9ce9134acd31b1ce",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_d4059883"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-docs/current/05-components/text-link.mdx",
+  "last_updated_timestamp": "2025-06-06T08:53:12.755642+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "91411484cf6fd28089720e67a373eb611fb21c975ae281298e28b423330f2818"
+  }
+}

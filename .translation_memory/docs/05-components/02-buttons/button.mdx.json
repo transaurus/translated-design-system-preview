@@ -1,0 +1,322 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "docs/05-components/02-buttons/button.mdx",
+  "source_file_content_hash": "cb20d6fa44ca07a3522ca14ecff1b5ec554a088b7e1186e77986426ff5920124",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\ntitle: Button\ndescription: Clickable elements that are used to trigger actions. Buttons communicate what action will occur when users interact with it.\nhide_title: true\n---",
+      "source_content_hash": "5bedd3786f9a7fb8ea3bd8787778ac0da40cd7106b1505ef631f4b7855a9eb9d",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "a703643c",
+      "source_content": "# Button <Badge text='ready' color='green'></Badge> <StorybookLink path='/story/buttons-button--basic'/>",
+      "source_content_hash": "447c0109fa5fcd05f2fefa048b3a85e746d8369db0614744889b939357ac9c8a",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "# ボタン <Badge text='ready' color='green'></Badge> <StorybookLink path='/story/buttons-button--basic'/>"
+      }
+    },
+    {
+      "segment_id": "53eaf0e1",
+      "source_content": "Clickable elements that are used to trigger actions. Buttons communicate what action will occur when users interact with it.",
+      "source_content_hash": "321ed07804ff6a196508526a1a980e2e87dcd1caa614dad2447b500bae4e3898",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "クリック可能な要素で、アクションをトリガーするために使用されます。ボタンは、ユーザーが操作したときに発生するアクションを伝えます。"
+      }
+    },
+    {
+      "segment_id": "43a8bc7e",
+      "source_content": "```tsx live\n<Button>Save</Button>\n```",
+      "source_content_hash": "fadbb3c906a478e39f2a917dd73cd15c251f8aaf81a37e22823d02f36627575e",
+      "node_type": "code",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_43a8bc7e"
+      }
+    },
+    {
+      "segment_id": "e14c9928",
+      "source_content": "### Do’s",
+      "source_content_hash": "96969fa9c3edac6b2a52fa582cc432e51609894e1c5870efe82c9f4fe7f06ad6",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 推奨事項"
+      }
+    },
+    {
+      "segment_id": "84758135",
+      "source_content": "- Apply the same width of the container for all buttons when they are in a group.\n- Use only one primary button and two of the same lower emphasis when in the button group.\n- Maintain the same style about using or not an icon with the label text in the button group.",
+      "source_content_hash": "07e78fb849c0c1bb60c89a3c14f0e02a232ec046c1df5a44ac3ada239b8d6421",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- ボタングループ内では、すべてのボタンに同じコンテナ幅を適用します。\n- ボタングループ内では、プライマリボタンを1つだけ使用し、同じ低い強調度のボタンを2つまで使用します。\n- ボタングループ内では、ラベルテキストとアイコンの使用スタイルを統一します。"
+      }
+    },
+    {
+      "segment_id": "418617bd",
+      "source_content": "### Don’ts",
+      "source_content_hash": "10a29e689467403a41094904f95701105e5679d03a4d001390e97ed74a34be5c",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 非推奨事項"
+      }
+    },
+    {
+      "segment_id": "1b8c1887",
+      "source_content": "- Do not use two primary buttons in a button group.\n- Do not use buttons with icons and buttons without icons in a button group.\n- Do not have more than one primary action.\n- Do not pair a solid primary and solid destructive button - one must take precedence over the other.\n- Do not use buttons with icons only (in case this is impossible please always add text for a tooltip and an aria label as they are needed to meet accessible requirements)",
+      "source_content_hash": "273ae238a9e5844fdd8f362713b36f0276902eaf3222b8e5bc23a293cec7e82e",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- ボタングループ内でプライマリボタンを2つ使用しないでください。\n- ボタングループ内でアイコン付きボタンとアイコンなしボタンを混在させないでください。\n- 複数のプライマリアクションを設定しないでください。\n- ソリッドなプライマリボタンと破壊的ボタンをペアにしないでください。一方が他方よりも優先される必要があります。\n- アイコンのみのボタンを使用しないでください（やむを得ない場合は、ツールチップ用のテキストとariaラベルを必ず追加してください。アクセシビリティ要件を満たすために必要です）。"
+      }
+    },
+    {
+      "segment_id": "f2f30ae8",
+      "source_content": "## Emphasis",
+      "source_content_hash": "66421f6977196d18d72572b8acd49ea81e80da3cc73a14783db0721d53755540",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 強調度"
+      }
+    },
+    {
+      "segment_id": "c6dea11f",
+      "source_content": "- **High:** Are used for the most important and common actions on the screen.These are Primary and Destructive buttons\n- **Default:** Used as secondary actions that can be more than one on the same page. This is the most common button usage within Grafana.\n- **Low:** Are complementary actions or links that are optional on the page.",
+      "source_content_hash": "18338188e1b6c9a2fb8c2663b7bdde15d00341dbe527c231b0b391d98c49b4c7",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- **高:** 画面で最も重要で一般的なアクションに使用されます。プライマリボタンと破壊的ボタンが該当します。\n- **標準:** 同じページに複数存在できるセカンダリアクションに使用されます。Grafana内で最も一般的なボタン使用法です。\n- **低:** ページ上の補助的なアクションやオプションのリンクに使用されます。"
+      }
+    },
+    {
+      "segment_id": "bdc231b1",
+      "source_content": "![button emphasis](/img/button.emphasis.png 'Visual representation of button emphasis')",
+      "source_content_hash": "e78a9f93ee8695a1255082a512a93e928ac0a8cd9e2066229c539f2ca7c9c4cf",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "![button emphasis](/img/button.emphasis.png 'ボタンの強調度の視覚的表現')"
+      }
+    },
+    {
+      "segment_id": "3b7478ea",
+      "source_content": "## Variants",
+      "source_content_hash": "f4ace3b7f4ca4d7185db7e0f3b58b6f2dd737dafa3bcdb3562310455d4b6527e",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## バリアント"
+      }
+    },
+    {
+      "segment_id": "c83a1f29",
+      "source_content": "| Type          | Component                                                                                                                        | Emphasis | Purpose                                                                                                                                                                                                                                                                                                                                                               |\n| ------------- | -------------------------------------------------------------------------------------------------------------------------------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n| **Primary**   | <p>Filled with Label</p> <p>Filled with Icon + Label </p> <p>Filled with Label + Icon</p> <p>Filled with Icon + Label + Icon</p> | High     | Used for \"call to action\", i.e. triggering the main action. There should never be more than one on a page. If you need multiple buttons for different actions, decide which action is the most important and make that the primary Button. All other Button components should be secondary. If there is no primary action, all Button components should be secondary. |\n| **Secondary** | <p>Filled</p> <p>Outline</p> <p>Ghost</p>                                                                                        | Default  | The secondary Button is the default button style and can trigger various actions. How it is used depends on its surroundings: 1. When next to the primary Button, the Secondary style can for example be used for \"Cancel\" or \"Abort\" actions. 2. When there is no main important action on a given page, all Button components should use the secondary style.       |",
+      "source_content_hash": "541fc78ca6f38bfcf4ebf7efc2d89319e7b1d859f8d2a2c3de2ccd74525f89a8",
+      "node_type": "table",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_c83a1f29"
+      }
+    },
+    {
+      "segment_id": "54268405",
+      "source_content": "## Formatting",
+      "source_content_hash": "cb82e74c9e00ff9a5e2865caca13ab1d7cb66c586dfd902974890130b34e22b8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## フォーマット"
+      }
+    },
+    {
+      "segment_id": "8bddee80",
+      "source_content": "### Anatomy",
+      "source_content_hash": "ed10eaa0642d1e95db06d74e961546b7fe21b7d98225e7b3355c72eb9c1afdc2",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 構造"
+      }
+    },
+    {
+      "segment_id": "2f83a0f4",
+      "source_content": "<div className='two-images-comparison'>\n\n<div>\n\n![Do](/img/button.anatomy.a.png)\n\n#### Icon + Label Button\n\n1. Solid container\n2. Icon\n3. Text label\n\n</div>\n\n<div>\n\n![Dont](/img/button.anatomy.b.png)\n\n#### Icon Button\n\n**Note:** Before using buttons without text always consider using IconButton instead.\n\n1. Solid container (optional)\n2. Icon\n\n</div>\n\n</div>",
+      "source_content_hash": "37aba99d02d7681ead28347fbf7a5c9544ca8713b8cd807c71426f82c7f4d89a",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_2f83a0f4"
+      }
+    },
+    {
+      "segment_id": "93028a4e",
+      "source_content": "### Button Sizes & Label Typography",
+      "source_content_hash": "86a795fdfac58b0b9e3fca7befc4c29693012b810adb2303c64c0b539be19bbb",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### ボタンサイズとラベルタイポグラフィ"
+      }
+    },
+    {
+      "segment_id": "feacddee",
+      "source_content": "| Size       | Width-Height (px - rem) | Font-Size | Font-Weight |\n| ---------- | ----------------------- | --------- | ----------- |\n| **Small**  | Auto - 24px             | 12px      | 500         |\n| **Medium** | Auto - 32px             | 14px      | 500         |\n| **Large**  | Auto - 48px             | 18px      | 500         |",
+      "source_content_hash": "41c94f20b6d2b91055737f0bde1819d056cf8be8268ce1ab01d3d924f02714f7",
+      "node_type": "table",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_feacddee"
+      }
+    },
+    {
+      "segment_id": "fbc2db85",
+      "source_content": "![button sizes](/img/button.sizes.png 'Visual representation of button sizes')",
+      "source_content_hash": "f2fa212927d2851ddb91d89cec7c5ffe5a51ddad37906dd9f0c2895a21247e27",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "![button sizes](/img/button.sizes.png 'ボタンサイズの視覚的表現')"
+      }
+    },
+    {
+      "segment_id": "759d12dd",
+      "source_content": "### Hierarchy & Button Pairings",
+      "source_content_hash": "ceac60a4e4b5a9cd24eeb1d4f828f5cf77b3ba5e45fefd98e6d1f7ae12b43b4a",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 階層とボタンペアリング"
+      }
+    },
+    {
+      "segment_id": "9e8f150c",
+      "source_content": "- **Primary/Destructive Button — High Emphasis:**\n\n  A single page should only display one button with the highest importance for the main action. Other buttons should have lower emphasis and be visually different within the UI. This primary button has to attract the user's attention.\n\n- **Secondary/Icon Button — Default Emphasis:**\n\n  A single screen can show more than one button, the other buttons can be in the same page with a primary button, these buttons have to be less important according to the actions, and do not distract users from the main content page. You should only group calls to action that are related to each other. A higher emphasis button can be paired with multiple buttons which are lower emphasis.\n\n- **Outline/Text Button — Low Emphasis:**\n\n  These buttons have less impact and are less distracting to the user's attention, on the same screen several of them can be used. They are actionable to take users to a new page, the main objective being to provide more information about that section.",
+      "source_content_hash": "5526135ddcd634ece6ea67a94a1e3c9d77aa0d5939d93a7180b5e73143d86f7d",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- **プライマリ/破壊的ボタン — 高強調度:**\n\n  1つのページには、メインアクションとして最も重要なボタンを1つだけ表示する必要があります。他のボタンは強調度を下げ、UI内で視覚的に区別する必要があります。このプライマリボタンはユーザーの注意を引く必要があります。\n\n- **セカンダリ/アイコンボタン — 標準強調度:**\n\n  1つの画面に複数のボタンを表示できます。他のボタンはプライマリボタンと同じページに配置できますが、アクションの重要性が低く、メインコンテンツページからユーザーの注意をそらさないようにする必要があります。関連するコールトゥアクションのみをグループ化してください。高強調度のボタンは、複数の低強調度ボタンとペアにできます。\n\n- **アウトライン/テキストボタン — 低強調度:**\n\n  これらのボタンは影響力が小さく、ユーザーの注意をあまり引きません。同じ画面に複数使用できます。新しいページに移動するためのアクションを提供し、そのセクションに関する詳細情報を提供するのが主な目的です。"
+      }
+    },
+    {
+      "segment_id": "99d0dd9b",
+      "source_content": "### Margin & Padding",
+      "source_content_hash": "99b3aa8a1f918797d248eccfa7a52298e1a7b0d0792cd9a58097abb42ab89956",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### マージンとパディング"
+      }
+    },
+    {
+      "segment_id": "baeab777",
+      "source_content": "| Type       | Margin           | Padding  |\n| ---------- | ---------------- | -------- |\n| **Small**  | 0px 8px 0px 0px  | 0px 8px  |\n| **Medium** | 0px 0px 0px 16px | 0px 16px |\n| **Large**  | 0px 0px 0px 16px | 0px 16px |",
+      "source_content_hash": "5900d41def69d99661146f3a28643939d51cbe2cabfa9ce45a6eebc2a9f8578f",
+      "node_type": "table",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_baeab777"
+      }
+    },
+    {
+      "segment_id": "f947c8e4",
+      "source_content": "### Placement",
+      "source_content_hash": "51e334c4f8d29f81432136a3e68f98019240174ae8ced469dd8bf0c1bb9fb02c",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 配置"
+      }
+    },
+    {
+      "segment_id": "38417f80",
+      "source_content": "- Primary\n\n  - On the page on the top-right\n  - Inside the content page on the center\n\n- Default\n\n  - Inside cards on the bottom-right\n  - Inside content page on the bottom-left\n\n- Text link\n\n  - Inside cards on the top-right\n  - Inside cards on the bottom-center",
+      "source_content_hash": "3f8aaa38817859ace9d9806c110d3bccabf8e42a2d1b323a6ee4688b1eafd557",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- プライマリ\n\n  - ページの右上\n  - コンテンツページ内の中央\n\n- 標準\n\n  - カード内の右下\n  - コンテンツページ内の左下\n\n- テキストリンク\n\n  - カード内の右上\n  - カード内の中央下部"
+      }
+    },
+    {
+      "segment_id": "47516512",
+      "source_content": "## Accessibility",
+      "source_content_hash": "5905e6d1f8fe9000c019119d1b35481573e90f36f72c18c510ba2efec231093d",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## アクセシビリティ"
+      }
+    },
+    {
+      "segment_id": "683a33d9",
+      "source_content": "- Use ARIA tags when using buttons to ensure they are accessible.\n  - For example buttons represented by icons, the accessible name may be provided from the aria-label or aria-labelledby attributes.\n  - Using role=\"button\" instead of the semantic &lt;button> or &lt;input type=\"button\"> (iOS \"clickable elements\" fix for role=\"button\")",
+      "source_content_hash": "a437dce1fdb444e5c1b3f57f96a00408e870f0595349fc990c68ed08193752a9",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- ボタンを使用する際は、アクセシビリティを確保するためにARIAタグを使用してください。\n  - 例: アイコンで表現されるボタンの場合、アクセシブルな名前はaria-labelまたはaria-labelledby属性から提供できます。\n  - セマンティックな&lt;button&gt;や&lt;input type=\"button\"&gt;の代わりにrole=\"button\"を使用します（iOSの「クリック可能要素」に対するrole=\"button\"の修正）"
+      }
+    },
+    {
+      "segment_id": "47cd8dd6",
+      "source_content": "### Further Reading & Sources",
+      "source_content_hash": "37196dc650fdb5bc8fd42c8dfeb22541acbf11893379b55c534799ab87551971",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 参考資料と情報源"
+      }
+    },
+    {
+      "segment_id": "d30a9380",
+      "source_content": "- [Buttons UX best practices](https://uxplanet.org/5-best-practices-for-designing-effective-buttons-71a4a33e6d26)\n- [7 Basic Rules for Button Design](https://uxplanet.org/7-basic-rules-for-button-design-63dcdf5676b4)\n- [A comprehensive to designing UX buttons](https://www.invisionapp.com/inside-design/comprehensive-guide-designing-ux-buttons/)",
+      "source_content_hash": "2d4397fefef46b1371efb38951c9b2a2c77cb7ad858dddc1a6a5964b082ae7d1",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- [ボタンUXのベストプラクティス](https://uxplanet.org/5-best-practices-for-designing-effective-buttons-71a4a33e6d26)\n- [ボタンデザインの7つの基本ルール](https://uxplanet.org/7-basic-rules-for-button-design-63dcdf5676b4)\n- [UXボタンデザインの包括的ガイド](https://www.invisionapp.com/inside-design/comprehensive-guide-designing-ux-buttons/)"
+      }
+    },
+    {
+      "segment_id": "13292277",
+      "source_content": "## Playground",
+      "source_content_hash": "54192e25d4cfb303fa3f3761b5d777cd0a2b671840c2cd9c87abb3ab38f58e62",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## プレイグラウンド"
+      }
+    },
+    {
+      "segment_id": "3c293157",
+      "source_content": "<ComponentEmbed path=\"/story/buttons-button--basic\" />",
+      "source_content_hash": "d37e825e9e4d82606edb9d03695ef2681d269bca28d4ba779d2ce388f07c9fd7",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_3c293157"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-docs/current/05-components/02-buttons/button.mdx",
+  "last_updated_timestamp": "2025-06-06T08:53:12.748295+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "cb20d6fa44ca07a3522ca14ecff1b5ec554a088b7e1186e77986426ff5920124"
+  }
+}

@@ -1,0 +1,23 @@
+---
+title: Filter Pill
+description: Grafana Labs Filter Pill component
+draft: true
+---
+
+# FilterPill <Badge text='draft' color='orange'></Badge> <a href='https://developers.grafana.com/ui/latest/index.html?path=/story/general-filterpill--basic' target='_blank' className='header-links'>Storybook <Icon name="external-link-alt"/> </a>
+
+フィルターのオン/オフを素早く切り替えるためのコンポーネント。主にインラインフォームコンポーネントや変換/クエリエディターで使用されます。
+
+<iframe
+  src="https://developers.grafana.com/ui/latest/index.html?path=/story/general-filterpill--basic&full=1&shortcuts=false&singleStory=true"
+  width="100%"
+  height="500px"
+></iframe>
+
+## 使用方法
+
+```jsx
+import { FilterPill } from '@grafana/ui';
+
+<FilterPill label={'Test'} onClick={() => console.log('toggle')} />;
+```

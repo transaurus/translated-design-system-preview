@@ -1,0 +1,32 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "docs/06-patterns/loading-state.mdx",
+  "source_file_content_hash": "3995dd81696ac4d473a61c7ffcd90770de5f1e36be15b5b08b03e68065979b8a",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\ntitle: Loading State\ndescription: Description for search engines and results\ndraft: true\n---",
+      "source_content_hash": "95d21d5c4cf76f2e3483af7ba046e2e7c53da7c4ba7c9e4f82889a10b5bebab8",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "6ef78e84",
+      "source_content": "This document is a WIP.",
+      "source_content_hash": "e43e4ae2a07be9af10a6de7f0b3402b588a5a1483e1516639ead91813e407f5a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "このドキュメントは作業中です。"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-docs/current/06-patterns/loading-state.mdx",
+  "last_updated_timestamp": "2025-06-06T08:53:12.743297+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "3995dd81696ac4d473a61c7ffcd90770de5f1e36be15b5b08b03e68065979b8a"
+  }
+}

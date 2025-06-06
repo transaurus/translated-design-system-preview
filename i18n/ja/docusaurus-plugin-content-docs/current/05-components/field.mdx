@@ -1,0 +1,49 @@
+---
+title: Field
+description: The Field component is a wrapper for handling form input elements, such as text inputs, switches, or other custom input components, within a form. It provides features like labelling, descriptions, validation states, and layout options.
+---
+
+# Field <Badge text='ready' color='green'></Badge> <StorybookLink path='/story/forms-field--horizontal-layout' />
+
+Fieldコンポーネントは、テキスト入力、スイッチ、その他のカスタム入力コンポーネントなど、フォーム内の入力要素を扱うためのラッパーです。ラベル付け、説明文、検証状態、レイアウトオプションなどの機能を提供します。
+
+## 使用する場面
+
+Fieldコンポーネントは、Reactアプリケーションにフォーム入力を組み込む必要があるさまざまなシナリオに適しています。主な使用例は以下の通りです：
+
+- ラベル付き入力要素を含むフォームの作成
+- 入力の目的をユーザーが理解できるように説明文を追加
+- フォームフィールドへの検証とエラーメッセージの適用
+- 入力フィールドの読み込み中または無効状態の表示
+
+## 実装/オプション
+
+Fieldコンポーネントは、`undefined`でない限り、`invalid`、`disabled`、`loading`の各プロパティを子コンポーネントに渡します。これにより、子コンポーネントに設定されているこれらのプロパティが上書きされます。
+
+```tsx live
+<Field label="API key" description="Your instance API key">
+  <Input id="api-key" />
+</Field>
+```
+
+### 推奨事項
+
+- アクセシビリティを向上させるため、フィールドに意味のあるラベルを付ける
+- ユーザーが入力の目的を理解できるように、フィールドに説明文を提供する
+
+### 非推奨事項
+
+- ラベルを提供せずに`description`プロパティを使用しない
+- エラーメッセージを提供せずに`invalid`プロパティを使用しない
+
+### 検証
+
+入力が無効であることを示すには`invalid`プロパティを使用します。これにより、入力に赤い枠線が追加され、`error`プロパティで指定されたエラーメッセージが表示されます。この機能を動作させるには、`invalid`と`error`の両方のプロパティを設定する必要があります。
+
+### 読み込み中
+
+入力が読み込み中であることを示すには`loading`プロパティを使用します。これにより、入力にスピナーが表示されます。
+
+## プレイグラウンド
+
+<ComponentEmbed path="/story/forms-field--horizontal-layout" />

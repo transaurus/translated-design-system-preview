@@ -1,0 +1,272 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "docs/05-components/02-buttons/iconButton.mdx",
+  "source_file_content_hash": "c645b3e1e5fbb020c1f767ad30e5bc7ef370ab6618e9e16132f32a4b62a68317",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\ntitle: IconButton\ndescription: IconButtons are actionable buttons that only display an icon. Since there is no standard label, it's critical to include a tooltip with all IconButtons so the label can be accessed upon hover.\nhide_title: true\n---",
+      "source_content_hash": "ff4f3b6a0d7a4932041d56eded11d8a3b6ab3d891a7f28f5fbaac33e263705fd",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "a703643c",
+      "source_content": "# IconButton <Badge text='ready' color='green'></Badge> <StorybookLink path='/story/buttons-iconbutton--basic'/>",
+      "source_content_hash": "a77aacacd06dc09ada442a05ba5d135d2ec22d0620e3cbb09b213356d544f9a2",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "# IconButton <Badge text='ready' color='green'></Badge> <StorybookLink path='/story/buttons-iconbutton--basic'/>"
+      }
+    },
+    {
+      "segment_id": "53eaf0e1",
+      "source_content": "`IconButton`s are actionable buttons that only display an icon. Since there is no standard label, it's critical to include a tooltip with all IconButtons so the label can be accessed upon hover.",
+      "source_content_hash": "f8d61e8fbb53257e071bb896d32143537f5bd3dc03b69d578081a266da5a8dda",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "`IconButton`はアイコンのみを表示する操作可能なボタンです。標準的なラベルがないため、ホバー時にラベルを表示できるよう、すべてのIconButtonにツールチップを含めることが重要です。"
+      }
+    },
+    {
+      "segment_id": "43a8bc7e",
+      "source_content": "```tsx live\n<IconButton tooltip=\"Add new\" name=\"plus\" />\n```",
+      "source_content_hash": "c8be01cdcce794ca9d67f97b0d1678b43fc0784a12715ef71fe2533596ebae4f",
+      "node_type": "code",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_43a8bc7e"
+      }
+    },
+    {
+      "segment_id": "e14c9928",
+      "source_content": "### Do’s",
+      "source_content_hash": "96969fa9c3edac6b2a52fa582cc432e51609894e1c5870efe82c9f4fe7f06ad6",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 推奨事項"
+      }
+    },
+    {
+      "segment_id": "84758135",
+      "source_content": "- Always include the button's label in a tooltip.\n- In exceptional cases where the tooltip does not make sense and the icon is unambiguous (e.g., <Icon name=\"angle-down\" /> for expanding a folder), add an aria-label and the tooltip will be removed.\n- When using an `IconButton` together with text, ensure they are aligned by adding a wrapper with `display: flex` and `align-items: center`.\n- Use in areas that are limited in space and are in a low-context environment.\n- Make sure the icon's significance is clear and unambiguous.\n- Use `IconButton` instead of a `Button` when only an icon is needed.",
+      "source_content_hash": "ea939650ff33b2d1fe47b54bd88321a9bcb63d849b9385e34859b3618799258d",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- 必ずボタンのラベルをツールチップに含めてください。\n- ツールチップが意味をなさず、アイコンが明確な場合（例：フォルダを展開するための<Icon name=\"angle-down\" />など）は、aria-labelを追加し、ツールチップを削除します。\n- `IconButton`をテキストと一緒に使用する場合、`display: flex`と`align-items: center`を設定したラッパーを追加して、整列させるようにしてください。\n- スペースが限られており、コンテキストが少ない環境で使用してください。\n- アイコンの意味が明確で曖昧でないことを確認してください。\n- アイコンのみが必要な場合は、`Button`の代わりに`IconButton`を使用してください。"
+      }
+    },
+    {
+      "segment_id": "95b38f97",
+      "source_content": "### Don’ts",
+      "source_content_hash": "10a29e689467403a41094904f95701105e5679d03a4d001390e97ed74a34be5c",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 非推奨事項"
+      }
+    },
+    {
+      "segment_id": "0cc488ed",
+      "source_content": "- Avoid using it in high-context situations.",
+      "source_content_hash": "c356d1cecfcb1e7efa73b1bb46e33dd7a8b606f3111f0d993468f5abea3bde9e",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- コンテキストが複雑な状況での使用は避けてください。"
+      }
+    },
+    {
+      "segment_id": "3c36424c",
+      "source_content": "## Types and behaviors",
+      "source_content_hash": "a96d7d193cbad48332a5949a319c4c154765cd57f8a470562fb3633075744866",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## タイプと動作"
+      }
+    },
+    {
+      "segment_id": "d06306f7",
+      "source_content": "### Variants",
+      "source_content_hash": "b6123fd6debaa1bf80055c0cf5a2ada072c6b9052e30b8e7216ebe3fbd46e4d9",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### バリアント"
+      }
+    },
+    {
+      "segment_id": "84112082",
+      "source_content": "| Type            | Style | Purpose                                                                                                                                           |\n| --------------- | ----- | ------------------------------------------------------------------------------------------------------------------------------------------------- |\n| **Primary**     | Ghost | Used for primary-based actions. Only use one per section. If there is no primary action, all Button components should be secondary.               |\n| **Secondary**   | Ghost | This is the default-styling for buttons. It's used most frequently within Grafana and can trigger a variety of actions.                           |\n| **Destructive** | Ghost | This is used for delete actions.                                                                                                                  |\n| **Disabled**    | Ghost | Use this if the functionality the IconButton provides is not currently available, but the IconButton needs to indicate that this function exists. |",
+      "source_content_hash": "26d8ceb22332cec70456d7f5244293c38587cb92f660cfdc69779f628fae4efc",
+      "node_type": "table",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_84112082"
+      }
+    },
+    {
+      "segment_id": "62a6890b",
+      "source_content": "### Anatomy",
+      "source_content_hash": "ed10eaa0642d1e95db06d74e961546b7fe21b7d98225e7b3355c72eb9c1afdc2",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 構成要素"
+      }
+    },
+    {
+      "segment_id": "8a01ee7b",
+      "source_content": "- Icon\n- Container (on hover)",
+      "source_content_hash": "25cd567fc667fb45ca3824c1fc0a91178d5ea652c46e8ba80b04deb6ba92fe1b",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- アイコン\n- コンテナ（ホバー時）"
+      }
+    },
+    {
+      "segment_id": "54268405",
+      "source_content": "### Placement",
+      "source_content_hash": "51e334c4f8d29f81432136a3e68f98019240174ae8ced469dd8bf0c1bb9fb02c",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 配置"
+      }
+    },
+    {
+      "segment_id": "8af76f3d",
+      "source_content": "`IconButton`s are best used in areas that are limited in space and are action-heavy. These could be toolbars or in areas that provide inline editing such as tables or cards.",
+      "source_content_hash": "17caaa9e19bbe6e0eca4ccc0daa1a416e8b6c593f3414695cfe421628d3d1086",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "`IconButton`は、スペースが限られており、操作が多い領域で最も効果的に使用されます。これにはツールバーや、テーブルやカードなどのインライン編集を提供する領域が含まれます。"
+      }
+    },
+    {
+      "segment_id": "c674e260",
+      "source_content": "### Button Sizes",
+      "source_content_hash": "ae3cfdec0ed31ae169dfca4d5e6e2322a83b9484309828b0541e03ce0bd31700",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### ボタンサイズ"
+      }
+    },
+    {
+      "segment_id": "8b0f8d70",
+      "source_content": "| Icon size | Name & size in Figma | Name & size in code |\n| --------- | -------------------- | ------------------- |\n| 12px      | **small:** 20px      | **xs:** 20px        |\n| 14px      |                      | **sm:** 22px        |\n| 16px      | **medium:** 28px     | **md:** 24px        |\n| 18px      |                      | **lg:** 26px        |\n| 24px      | **large:** 48px      | **xl:** 32px        |\n| 24px      |                      | **xxl:** 32px       |\n| 24px      |                      | **xxxl:** 32px      |",
+      "source_content_hash": "2c548b009ea7f47b4dc41d5171e0e7563a07405aa944de469b8883d1ad828d34",
+      "node_type": "table",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_8b0f8d70"
+      }
+    },
+    {
+      "segment_id": "ab5fc5b5",
+      "source_content": "### Accessibility",
+      "source_content_hash": "321ff451abff7aadf8af30548109eae882e802908be7ec73ab484ea66a8bce6f",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### アクセシビリティ"
+      }
+    },
+    {
+      "segment_id": "24c174ca",
+      "source_content": "- Add a text for tooltip (it will also be used as the aria-label)\n- In exceptional cases where the tooltip does not make sense add the aria-label.",
+      "source_content_hash": "3c165505b698e9e39f2b1fcc482a5f8f7fa756d7179a5747f0c7e50adc0a1021",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- ツールチップ用のテキストを追加してください（これはaria-labelとしても使用されます）\n- ツールチップが意味をなさない例外的な場合は、aria-labelを追加してください。"
+      }
+    },
+    {
+      "segment_id": "126950d7",
+      "source_content": "## Behaviours",
+      "source_content_hash": "175047379395a4ab362eb9a2152aca163fcadf301add983f542676740db812bc",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 動作"
+      }
+    },
+    {
+      "segment_id": "a5a4323e",
+      "source_content": "### Hover",
+      "source_content_hash": "3652e74a2c0eb3b91a8f05fe0de7bce508be262504b886dcfb9512e18ba6f23b",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### ホバー"
+      }
+    },
+    {
+      "segment_id": "657c2b20",
+      "source_content": "On hover, the `IconButton` displays a tooltip that includes the IconButton’s label.",
+      "source_content_hash": "7f104a6c520366004d862f9ebc73084465ff00e25b48cd1d1239bac6f1312c31",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "ホバー時、`IconButton`はIconButtonのラベルを含むツールチップを表示します。"
+      }
+    },
+    {
+      "segment_id": "52388877",
+      "source_content": "## Links and Resources",
+      "source_content_hash": "57d581580e86693c42ea3eb4dc1b4a0063cd3cc026df6f294c294b4d30916606",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## リンクとリソース"
+      }
+    },
+    {
+      "segment_id": "69c1f590",
+      "source_content": "- [Figma](https://www.figma.com/file/htVIFrTq8e7sx8Olo7L6kZ/Saga-Components--Dark-theme?type=design&node-id=8444-13444&mode=design&t=HOUJYSYNbbYEZMUl-0)\n- [Story in Storybook](https://developers.grafana.com/ui/latest/index.html?path=/story/buttons-iconbutton--basic)\n- [Example with `IconButton`s in different sizes e.g. <Icon name=\"bars\" />, <Icon name=\"share-alt\" />, <Icon name=\"trash-alt\" />, <Icon name=\"eye\" />](https://play.grafana.org/explore?orgId=1&left=%7B%22datasource%22:%22aDCxdqe7k%22,%22queries%22:%5B%7B%22metrics%22:%5B%7B%22id%22:%221%22,%22type%22:%22logs%22%7D%5D,%22query%22:%22%22,%22refId%22:%22A%22,%22datasource%22:%7B%22type%22:%22elasticsearch%22,%22uid%22:%22aDCxdqe7k%22%7D,%22alias%22:%22%22,%22bucketAggs%22:%5B%7B%22type%22:%22date_histogram%22,%22id%22:%222%22,%22settings%22:%7B%22interval%22:%22auto%22%7D,%22field%22:%22order_date%22%7D%5D,%22timeField%22:%22order_date%22%7D%5D,%22range%22:%7B%22from%22:%22now-1h%22,%22to%22:%22now%22%7D%7D)",
+      "source_content_hash": "290d9f0433da37c469f0728ce49f1c8df40a6127cecea179b256d551ea4b796d",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- [Figma](https://www.figma.com/file/htVIFrTq8e7sx8Olo7L6kZ/Saga-Components--Dark-theme?type=design&node-id=8444-13444&mode=design&t=HOUJYSYNbbYEZMUl-0)\n- [Storybookのストーリー](https://developers.grafana.com/ui/latest/index.html?path=/story/buttons-iconbutton--basic)\n- [さまざまなサイズの`IconButton`の例（例：<Icon name=\"bars\" />、<Icon name=\"share-alt\" />、<Icon name=\"trash-alt\" />、<Icon name=\"eye\" />）](https://play.grafana.org/explore?orgId=1&left=%7B%22datasource%22:%22aDCxdqe7k%22,%22queries%22:%5B%7B%22metrics%22:%5B%7B%22id%22:%221%22,%22type%22:%22logs%22%7D%5D,%22query%22:%22%22,%22refId%22:%22A%22,%22datasource%22:%7B%22type%22:%22elasticsearch%22,%22uid%22:%22aDCxdqe7k%22%7D,%22alias%22:%22%22,%22bucketAggs%22:%5B%7B%22type%22:%22date_histogram%22,%22id%22:%222%22,%22settings%22:%7B%22interval%22:%22auto%22%7D,%22field%22:%22order_date%22%7D%5D,%22timeField%22:%22order_date%22%7D%5D,%22range%22:%7B%22from%22:%22now-1h%22,%22to%22:%22now%22%7D%7D)"
+      }
+    },
+    {
+      "segment_id": "93028a4e",
+      "source_content": "## Playground",
+      "source_content_hash": "54192e25d4cfb303fa3f3761b5d777cd0a2b671840c2cd9c87abb3ab38f58e62",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## プレイグラウンド"
+      }
+    },
+    {
+      "segment_id": "5f852894",
+      "source_content": "<ComponentEmbed path=\"/story/buttons-iconbutton--basic\" />",
+      "source_content_hash": "abcb9fbc987d8cdaf22f22bae7e6a1f4830c3a5bf071f80e48c1c58ce24ccb6c",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_5f852894"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-docs/current/05-components/02-buttons/iconButton.mdx",
+  "last_updated_timestamp": "2025-06-06T08:53:12.759553+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "c645b3e1e5fbb020c1f767ad30e5bc7ef370ab6618e9e16132f32a4b62a68317"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "docs/03-foundations/typography.mdx",
+  "source_file_content_hash": "138d98023bdecac44a19042c5f6c46778f0e5ab09ba989c16ddcb9d56fd39e33",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\ntitle: Typography\ndescription: Description for search engines and results\ndraft: true\n---",
+      "source_content_hash": "fbd8d82eea2c4fbdc23dd3dcd502aa267069c9da225e8c55a347004f62843a2d",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "6ef78e84",
+      "source_content": "This document is a WIP.",
+      "source_content_hash": "e43e4ae2a07be9af10a6de7f0b3402b588a5a1483e1516639ead91813e407f5a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "このドキュメントは作業中です。"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-docs/current/03-foundations/typography.mdx",
+  "last_updated_timestamp": "2025-06-06T08:53:12.743043+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "138d98023bdecac44a19042c5f6c46778f0e5ab09ba989c16ddcb9d56fd39e33"
+  }
+}

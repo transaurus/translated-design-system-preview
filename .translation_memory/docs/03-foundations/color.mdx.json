@@ -1,0 +1,32 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "docs/03-foundations/color.mdx",
+  "source_file_content_hash": "a477a3a5d24f0ee36d3a0c7211c00103595ee6e16582283b2bd0e58bb2a9a605",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\ntitle: Color\ndescription: Description for search engines and results\ndraft: true\n---",
+      "source_content_hash": "d5cfd35a3d0c7118819759820b507d02fd57a9473e16b2d2b79f8166dc5cae8c",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "6ef78e84",
+      "source_content": "This document is a WIP.",
+      "source_content_hash": "e43e4ae2a07be9af10a6de7f0b3402b588a5a1483e1516639ead91813e407f5a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "このドキュメントは作業中です。"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-docs/current/03-foundations/color.mdx",
+  "last_updated_timestamp": "2025-06-06T08:53:12.742762+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "a477a3a5d24f0ee36d3a0c7211c00103595ee6e16582283b2bd0e58bb2a9a605"
+  }
+}

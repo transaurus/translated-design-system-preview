@@ -1,0 +1,98 @@
+---
+title: Contributing
+description: Our design system is never complete, it’s constantly changing and evolving. We need help from Grafanistas like you to innovate and solve problems! Read this page to learn how you can contribute — we would love your help!
+hide_title: true
+sidebar_position: 2
+---
+
+import { Badge } from '@grafana/ui';
+
+# 貢献 <Badge text='ready' color='green'></Badge>
+
+私たちのデザインシステムは決して完成したものではなく、常に変化し進化しています。Grafanistaの皆さんの助けが必要です！このページを読んで貢献方法を学び、ぜひ協力してください！
+
+## 参加方法
+
+デザインシステム、デザイナー、開発者間のオープンなコミュニケーションは成功のために重要であり、既存のソリューションや不足している部分についての認識を高める最良の方法です。
+
+- **[デザインシステム GitHubプロジェクト](https://github.com/orgs/grafana/projects/176/views/4)**  
+  現在進行中の作業や今後の計画を確認できます。貢献内容を追跡するのに適した場所です。
+
+- **[#grafana-design-system](https://raintank-corp.slack.com/archives/CT7S455SP)**  
+  質問を投稿したり、回答を得たり、意見を共有したり、デザインシステムのリリース更新を受け取るための内部Slackチャンネルです。
+
+- **UXフィードバックセッション**  
+  作業を改善するためのピアフィードバックを得るための内部Grafanaの場です。[#ux](https://raintank-corp.slack.com/archives/C0F5GDR4P) Slackチャンネルでリマインダーやアジェンダが共有されます。これらの定例会議に参加したい場合は、チャンネルで追加を依頼してください。
+  - [早期セッションアジェンダ](https://docs.google.com/document/d/1m2yciWfQa-rp-KLUrMLYOge00GAd8bLPzmDtDwDFt0o/edit?usp=sharing)
+  - [後期セッションアジェンダ](https://docs.google.com/document/d/1oeaCzAyy3W-TguKUTaOqT2wIiAabuAO_Gr3TMOZKxcA/edit)
+
+## ガイドライン原則
+
+デザインシステムをより良い製品にするために、以下の原則を心に留めてください：
+
+![Sagaガイドライン原則](/img/GuidingPrinciples.png 'Sagaデザインシステムのガイドライン原則に関連するグラフやチャートを示す画像')
+
+## 貢献の種類とレベル
+
+貢献はコンポーネントやコードに限定されません。フィードバック、ドキュメント、ツール、デザイン、その他のツールも歓迎します。以下に、私たちが特定したさまざまなレベルの貢献とその例を示します。
+
+1. **修正:** コードのバグ、デザインの不整合、ドキュメントの明確化など、簡潔さを改善するための修正。
+
+2. **小規模な拡張:** 既存のコンポーネントに新しいバリアントを追加するなど、破壊的変更を伴わない追加や拡張。
+
+3. **大規模な拡張:** システム全体の調整と連携が必要な変更。保存や削除の処理方法などが該当します。通常、コード、デザイン、ドキュメントの調整が必要です。
+
+4. **新規:** 完全に新しいコンポーネントやパターンで、バリアント、ドキュメント、コード化された対応物を含みます。これには、デザインシステムに歴史的に含まれていなかったGrafana内の既存UIで、適切なドキュメントと製品調整が必要なものも含まれます。
+
+## 貢献前に
+
+[参加方法](/contributing#participation)で言及された領域を確認し、既存のソリューションがあるかどうかを確認してください。または、コンポーネントライブラリ（[リソース](/contributing#resources)参照）をチェックして、既に存在する可能性があるものを探してください。
+
+## コンポーネント貢献
+
+コンポーネント貢献には通常、以下が含まれます
+
+1. **理由**
+   コンポーネントがどのように問題を解決し、システムとGrafanaに価値をもたらすかを説明してください。**共有価値**を示すため、このコンポーネントがサポートするGrafana内のさまざまな領域を含めるようにしてください。
+
+2. **Figmaコンポーネント**
+   コンポーネントを[Grafanaデザインシステム - ダークテーマ](https://www.figma.com/file/htVIFrTq8e7sx8Olo7L6kZ/Grafana-design-system---Dark-theme?node-id=8444%3A13469&t=cS6yqqfuFLwhDQR9-1)ファイルのFigma**ブランチ**（[Figmaブランチングのベストプラクティス](https://www.figma.com/best-practices/branching-in-figma/)）に配置し、調整内容を記録してください。コンポーネントを作成する際は、現在のFigma機能（自動レイアウト、コンポーネントプロパティ、バリアントプロパティ、状態、バリアントなど）を使用してください。
+
+3. **デザイン仕様**
+   開発者がコードでコンポーネントを適切に構築するために必要なすべての情報を提供してください。これには、間隔、色、タイポグラフィなどが含まれる場合があります。
+
+4. **使用法ドキュメント**
+   適切な使用法、特定の設定要件、指定が必要なインタラクションの種類、および必要なアクセシビリティ要件を含めてください。参考とガイドとして[ドキュメントテンプレート](https://docs.google.com/document/d/1wTaSWYif6Kz-2aBuP4R-HUkj9JwFsyYIwZroALQTQOs/edit?usp=share_link)を参照してください。
+   **コード**
+   Grafanaは主要なコードベースとしてReactを使用しています。コンポーネントが完全な貢献となるためには、Reactでこのコンポーネントを構築するために必要なコードを含める必要があります。
+
+## パターン貢献
+
+パターンは、一般的なデザイン問題を解決する繰り返し可能なソリューションです。パターンの一般的なアイデアを提供し、重要な詳細を含めるようにしてください。以下は、考慮すべきいくつかのポイントです：
+
+1. **概要**
+   このパターンが解決する問題、影響を受ける領域、および組織全体にどのように価値を提供するかを説明してください。
+
+2. **実装**
+   このパターンがどのように機能し、どのコンポーネントが組み込まれているかを指定してください。これを含める方法にさまざまな階層がありますか？
+
+3. **アクセシビリティ**
+   このパターンがアクセシブルであることを保証するために必要な重要な詳細は何ですか？アクセシビリティを非常に重視しているため、ここでは明確かつ簡潔に記述してください。
+
+4. **関連**
+   代替パターンや、使用ケースに応じてデザイナーや開発者が探しているかもしれない類似のパターンはありますか？
+
+5. **参考文献**
+   このパターンをサポートするコンテンツやリソースはありますか？内部ドキュメントや一般的なベストプラクティスなどがあれば、ここに含めてください。
+
+## リソース
+
+開発者とデザイナーがより良いソリューションを構築するために利用できるいくつかのツールがあります。
+
+- [A11yスタイルガイド](https://github.com/grafana/grafana/blob/main/contribute/style-guides/accessibility.md)
+- [Figmaコンポーネントライブラリ - ダークモード](https://www.figma.com/file/htVIFrTq8e7sx8Olo7L6kZ/Grafana-design-system---Dark-theme?node-id=8443%3A13519)
+- [Storybookコンポーネントライブラリ](https://developers.grafana.com/ui/latest/index.html?path=/docs/docs-overview-intro--page)
+
+## フィードバック
+
+ここで改善や追加が必要な点を見つけましたか？[Slack](https://raintank-corp.slack.com/archives/CT7S455SP)で連絡するか、**Staton Hysell**、**Joao Silva**、または**Natacha de Jesus**に直接メッセージを送ってください。ぜひお聞かせください！

@@ -1,0 +1,44 @@
+---
+title: Switch
+description: The Switch component is used to toggle between two states, typically representing an on/off or enabled/disabled state.
+---
+
+# スイッチ <Badge text='ready' color='green'></Badge> <StorybookLink path='/story/forms-switch--controlled' />
+
+`Switch`コンポーネントは、通常オン/オフや有効/無効といった2つの状態を切り替えるために使用されます。
+
+## 使用する場面
+
+機能の有効化/無効化、設定の変更、二者択一の選択肢を提供する場合など、ユーザーが2つの状態を切り替えられる必要がある場合に`Switch`コンポーネントを使用します。
+
+スイッチは変更を即座に反映します。フォーム送信後にのみ変更を反映させたい場合は、`RadioButtonGroup`または`Checkbox`の使用を検討してください。
+
+さらに、スイッチはグループ化できません。各`Switch`は独立した状態更新をトリガーします。相互に排他的な複数の選択肢を提供したい場合は、`RadioButtonGroup`が適しています。同じグループまたはコンテキスト内で相互に排他的でない複数の選択肢を提供する場合は、代わりに`Checkbox`を使用してください。
+
+## 実装/オプション
+
+### プロパティ
+
+`Switch`コンポーネントは以下のプロパティを受け付けます:
+
+- `value` (boolean, オプション): スイッチの初期値を設定します。trueの場合、スイッチは「オン」状態、falseの場合は「オフ」状態になります。
+- `transparent` (boolean, オプション): インライン使用のためにスイッチの背景と境界線を透明にします。
+- `invalid` (boolean, オプション): 入力周辺に無効状態を表示し、通常はエラーを示すために使用されます。
+
+### 使用例
+
+### スイッチ
+
+```jsx live
+<Switch invalid={false} label="Toggle feature" disabled={false} />
+```
+
+### インラインスイッチ
+
+```jsx live
+<InlineSwitch />
+```
+
+## プレイグラウンド
+
+<ComponentEmbed path="/story/forms-switch--controlled" />

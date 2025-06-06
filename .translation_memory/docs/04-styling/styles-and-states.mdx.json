@@ -1,0 +1,42 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "docs/04-styling/styles-and-states.mdx",
+  "source_file_content_hash": "70d444ba3b1c714118f232e53973fc12ac2836f90a980cfe3ea8de6b49bbd0e3",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\ntitle: Styles & States\ndescription: Description for search engines and results\ndraft: true\n---",
+      "source_content_hash": "852826d4ead9e47a1999adfca8911749e86396178bfbc855eb316380f09c977a",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "10c4cb47",
+      "source_content": "import { Badge } from '@grafana/ui';",
+      "source_content_hash": "af7b58551bb42fea6572a2bde03c95c99d8529feeec9e1a0d48c3da4f931ca67",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_10c4cb47"
+      }
+    },
+    {
+      "segment_id": "d912d376",
+      "source_content": "# Styles & States <Badge text='draft' color='orange'></Badge>",
+      "source_content_hash": "d811ab71f5d964fda47fd1e7bc8f462a56078ac9a714a2f91b03b464c9aec8ff",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "# スタイルと状態 <Badge text='draft' color='orange'></Badge>"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-docs/current/04-styling/styles-and-states.mdx",
+  "last_updated_timestamp": "2025-06-06T08:53:12.744242+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "70d444ba3b1c714118f232e53973fc12ac2836f90a980cfe3ea8de6b49bbd0e3"
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "docs/05-components/inline-field.mdx",
+  "source_file_content_hash": "1eb2b4537fb27e177b05bc076db0575827f1649ae9e86d864e747a82525dc5b2",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\ntitle: Inline Field\ndescription: Grafana Labs Inline Field component\ndraft: true\n---",
+      "source_content_hash": "c659cfa1aa7b3d61b8a924437ac020df20372d1e229dc5adb81b0b14423820e2",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "a703643c",
+      "source_content": "# InlineField <Badge text='draft' color='orange'></Badge> <a href='https://developers.grafana.com/ui/latest/index.html?path=/story/forms-inlinefield--basic' target='_blank' className='header-links'>Storybook <Icon name=\"external-link-alt\"/> </a>",
+      "source_content_hash": "281fd3804e86aa616385e65a45ceef3008d343cb5eeaaa3fcc1ef46a8d07a5ff",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "# InlineField <Badge text='draft' color='orange'></Badge> <a href='https://developers.grafana.com/ui/latest/index.html?path=/story/forms-inlinefield--basic' target='_blank' className='header-links'>Storybook <Icon name=\"external-link-alt\"/> </a>"
+      }
+    },
+    {
+      "segment_id": "53eaf0e1",
+      "source_content": "A basic component for rendering form elements, like `Input`, `Select`, `Checkbox`, etc, inline together with `InlineLabel`. If the child element has `id` specified, the label's `htmlFor` attribute, pointing to the id, will be added.",
+      "source_content_hash": "c97d1f57463867cbb2d1360582521bb4e62c9fc75853f77e5876a37f2b67d53a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "`Input`、`Select`、`Checkbox`などのフォーム要素を`InlineLabel`と一緒にインラインでレンダリングするための基本コンポーネント。子要素に`id`が指定されている場合、そのidを指す`htmlFor`属性がラベルに追加されます。"
+      }
+    },
+    {
+      "segment_id": "88aa2da8",
+      "source_content": "<iframe\n  src=\"https://developers.grafana.com/ui/latest/index.html?path=/story/forms-inlinefield--basic&full=1&shortcuts=false&singleStory=true\"\n  width=\"100%\"\n  height=\"500px\"\n></iframe>",
+      "source_content_hash": "70dc07568503dbe717a1f63864adde4d436d691e618e5014f09ebc485003062c",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_88aa2da8"
+      }
+    },
+    {
+      "segment_id": "42ad8e83",
+      "source_content": "The width of the `InlineLabel` can be modified via `labelWidth` prop, which is a multiple of 8px. For example, an `InlineField` with `labelWidth={20}` will have a label 160px wide.",
+      "source_content_hash": "8a993e59f07f200f64e5928d259bfb15679e27dc1d907f41e84654d82187869a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "`InlineLabel`の幅は`labelWidth`プロパティで変更可能で、8pxの倍数で指定します。例えば`labelWidth={20}`の`InlineField`は160px幅のラベルを持ちます。"
+      }
+    },
+    {
+      "segment_id": "f6168993",
+      "source_content": "If `tooltip` prop is provided, an info icon with supplied tooltip content will be rendered inside the label.",
+      "source_content_hash": "cf229faabee5e42b9254d63a31b174d940a898e868edb55fe5973b1032f933bb",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "`tooltip`プロパティが指定されている場合、ラベル内にツールチップ内容付きの情報アイコンが表示されます。"
+      }
+    },
+    {
+      "segment_id": "418617bd",
+      "source_content": "## Usage",
+      "source_content_hash": "63bfd61a0561b255a2caa0a2e3add091ca7e327f2fa06a407cbb2ff341b858d8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 使用方法"
+      }
+    },
+    {
+      "segment_id": "41a8ae85",
+      "source_content": "```jsx\n<InlineField label=\"Inline field\">\n  <Input placeholder=\"Inline input\" />\n</InlineField>\n```",
+      "source_content_hash": "cbaef4fb8999c909cc5eeaef219c8992bb6af6446502ee71d2d0cc1dbda39e8e",
+      "node_type": "code",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_41a8ae85"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-docs/current/05-components/inline-field.mdx",
+  "last_updated_timestamp": "2025-06-06T08:53:12.750053+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "1eb2b4537fb27e177b05bc076db0575827f1649ae9e86d864e747a82525dc5b2"
+  }
+}

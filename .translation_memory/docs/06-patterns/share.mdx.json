@@ -1,0 +1,32 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "docs/06-patterns/share.mdx",
+  "source_file_content_hash": "5d598cada65b23ba8f7ff1849160cbd3d7c6d3952cdb1071405c13126c087267",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\ntitle: Share\ndescription: Description for search engines and results\ndraft: true\n---",
+      "source_content_hash": "3fd35bb40afcc5da4c2eb0d1d1253efa1992854c14178bac33542a5218f85900",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "6ef78e84",
+      "source_content": "This document is a WIP.",
+      "source_content_hash": "e43e4ae2a07be9af10a6de7f0b3402b588a5a1483e1516639ead91813e407f5a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "このドキュメントは作業中です。"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-docs/current/06-patterns/share.mdx",
+  "last_updated_timestamp": "2025-06-06T08:53:12.744861+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "5d598cada65b23ba8f7ff1849160cbd3d7c6d3952cdb1071405c13126c087267"
+  }
+}

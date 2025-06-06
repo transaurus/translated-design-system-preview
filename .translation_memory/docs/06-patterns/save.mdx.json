@@ -1,0 +1,602 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "docs/06-patterns/save.mdx",
+  "source_file_content_hash": "b4a71e9e32eba7794c4e6d30ff9531f2e80eeca1cc244c5bc1488e829d9c8a17",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\ntitle: Save\ndescription: Saving within Grafana is a multi-tiered pattern that varies depending on the required amount of friction and importance of the item being saved.\nhide_title: true\n---",
+      "source_content_hash": "29c2c7968523a7b3c14d73331e30ecf7144ad26ecb1e9ec101e388d99b3a13c4",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "10c4cb47",
+      "source_content": "import { Badge, InfoBox } from '@grafana/ui';",
+      "source_content_hash": "ac659334444e59b0ee3d021fcd661bbcba231bb5d08d6a0ad9967a854b59db14",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_10c4cb47"
+      }
+    },
+    {
+      "segment_id": "d912d376",
+      "source_content": "# Save <Badge text='ready' color='green'></Badge>",
+      "source_content_hash": "cb7b94ccc6e0099d83f1b0cbb42c00c80f0d3a78863cd6be9bb62c2fce5c21cf",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "# 保存 <Badge text='ready' color='green'></Badge>"
+      }
+    },
+    {
+      "segment_id": "8ac585fb",
+      "source_content": "Saving within Grafana is a multi-tiered pattern that varies depending on the required amount of friction (see: [Design Principle: Tasteful Friction](/foundations/design-principles#tasteful-friction)) and importance of the item being saved.",
+      "source_content_hash": "b814ad34e70a00fa834a535d7251f1c0304cd7f0b242b443c54513a5ea908959",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Grafanaにおける保存は、必要な摩擦の量（参照: [デザイン原則: 適度な摩擦](/foundations/design-principles#tasteful-friction)）と保存対象の重要度に応じて多段階のパターンが存在します。"
+      }
+    },
+    {
+      "segment_id": "ba4f48ff",
+      "source_content": "## Tiers",
+      "source_content_hash": "9aed725c4ffd0edd9883db5740eb856791c2679dca68c87eccd3c994bf08d519",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 階層"
+      }
+    },
+    {
+      "segment_id": "cf898102",
+      "source_content": "To ensure the appropriate save pattern is used, we’ve provided definitions and use cases for each below",
+      "source_content_hash": "b746bf0546dc009e309beb61d1f7819dd1eb747e7ba6568bcd7e64a35181c029",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "適切な保存パターンを使用するために、以下に各パターンの定義と使用例を示します。"
+      }
+    },
+    {
+      "segment_id": "3daf1b88",
+      "source_content": "### Autosave",
+      "source_content_hash": "cd859641ed5c7c733940371927712f6ad9ece065c6fb9575d0707c48e8d1f584",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 自動保存"
+      }
+    },
+    {
+      "segment_id": "f6168993",
+      "source_content": "This pattern has the least amount of user friction from all save patterns. The user does not have to explicitly tell the system to save, the system automatically saves the value on a change, waiting a specified amount of time to trigger the request. Autosave relies on an inline toast notification to indicate to users that the save was successful.",
+      "source_content_hash": "be53c3bfa2c72fe63e7929c99c45149ceb6b53bbba8b9d60f9c6892e93622852",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "このパターンはすべての保存パターンの中でユーザーへの摩擦が最も少ないものです。ユーザーは明示的にシステムに保存を指示する必要がなく、システムは変更を検知して指定された時間待機した後、自動的にリクエストをトリガーします。自動保存は、保存が成功したことをユーザーに通知するインラインのトースト通知に依存しています。"
+      }
+    },
+    {
+      "segment_id": "418617bd",
+      "source_content": "#### Implementation",
+      "source_content_hash": "acd5d677a7a9f404489cd1edd54efad0001ce3e9277630edd28bc5b299cc7736",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "#### 実装"
+      }
+    },
+    {
+      "segment_id": "2fdadb08",
+      "source_content": "Autosave fields are only to be implemented in areas that are considered low impact. With this being such a friction-free pattern, it’s important to only enable this in areas where users will do no harm. Things like changing team or display names are great candidates for this component. Because currently Grafana does not have a concept of “undo,” only uses autosave for items that a user can easily undo manually.",
+      "source_content_hash": "c0fca5859781a377dde078c67c760d6349646e27f5f9e5a641fb12e5651b62d5",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "自動保存フィールドは、影響度が低いと見なされる領域でのみ実装されます。このような摩擦の少ないパターンであるため、ユーザーが害を及ぼさない領域でのみ有効にすることが重要です。チーム名や表示名の変更などは、このコンポーネントの適切な使用例です。現在Grafanaには「元に戻す」機能がないため、ユーザーが手動で簡単に元に戻せる項目にのみ自動保存を使用してください。"
+      }
+    },
+    {
+      "segment_id": "f2c2bdd0",
+      "source_content": "Each autosave field is required to come with inline validation and a loading state to ensure that users are aware of the system updating their adjustments. Each field will also check for changes before saving to minimize the number of saves being pushed. Note that this is the newest save pattern for Grafana, and so adding loading and invalid states is a work in progress for some input types.",
+      "source_content_hash": "86ac43153de60373dd87f52ee7041abc8c5668097a3d098c8a17a2845437d46f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "各自動保存フィールドには、インライン検証とローディング状態が必須です。これにより、ユーザーはシステムが調整を更新していることを認識できます。また、各フィールドは保存前に変更をチェックし、保存リクエストの数を最小限に抑えます。これはGrafanaの最新の保存パターンであるため、一部の入力タイプではローディング状態や無効状態の追加が進行中であることに注意してください。"
+      }
+    },
+    {
+      "segment_id": "fa430ad4",
+      "source_content": "#### Usage",
+      "source_content_hash": "28703c5691cd4548c1bd98f3de1601e70fbf25cc6786a57b79da47bb2c21fc6f",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "#### 使用法"
+      }
+    },
+    {
+      "segment_id": "4b1d2d7d",
+      "source_content": "**Do**",
+      "source_content_hash": "455479187ed6c2c582e2fd60d91b2ca0bddde8a038f406cef679c625ea00e548",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**推奨**"
+      }
+    },
+    {
+      "segment_id": "c6dea11f",
+      "source_content": "- Use autosave when the changes aren’t sensitive and don’t need added friction.\n- Use autosave when the user expects an instant response to the change they have made.\n- Ensure an inline toast appears to confirm the save has happened.",
+      "source_content_hash": "9124e9ccacebf2ff5afdbe0decd19d7123aa367c7d5deab799a3c8a8b2d0f16e",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- 変更が機密的でなく、追加の摩擦が必要ない場合に自動保存を使用します。\n- ユーザーが変更に対して即時の反応を期待する場合に自動保存を使用します。\n- 保存が行われたことを確認するインラインのトーストが表示されるようにします。"
+      }
+    },
+    {
+      "segment_id": "bdc231b1",
+      "source_content": "**Don't**",
+      "source_content_hash": "8fe3bc64e51667c664fb1f63673591c9f7da7fa8a5a1df82582d6b5b33a89902",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**非推奨**"
+      }
+    },
+    {
+      "segment_id": "5d66c9dc",
+      "source_content": "- Use autosave on a page that also uses other save patterns\n- Use autosave for an action that will affect other users (default language for orgs, dashboard changes)",
+      "source_content_hash": "7a77d881ec6ac19414dc50e441731e56765dd72c76cf71b1823928f625059318",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- 他の保存パターンも使用されているページで自動保存を使用しないでください。\n- 他のユーザーに影響を与えるアクション（組織のデフォルト言語、ダッシュボードの変更など）に自動保存を使用しないでください。"
+      }
+    },
+    {
+      "segment_id": "782c902a",
+      "source_content": "### Inline save",
+      "source_content_hash": "e4c5639fcb5a768da27555e0c00c41a0e2a5a3d45714a940a424aed423c0ff74",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### インライン保存"
+      }
+    },
+    {
+      "segment_id": "50746522",
+      "source_content": "The inline save pattern is leveraged inside of forms and provides users with a button to trigger the system to save and update various user inputs that have been edited or updated.",
+      "source_content_hash": "f2ba72f4b97825efeb3b7d880be17ec30be16273da5967d0101467726d8a7758",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "インライン保存パターンはフォーム内で利用され、編集または更新されたさまざまなユーザー入力をシステムに保存して更新するためのボタンをユーザーに提供します。"
+      }
+    },
+    {
+      "segment_id": "54268405",
+      "source_content": "#### Implementation",
+      "source_content_hash": "acd5d677a7a9f404489cd1edd54efad0001ce3e9277630edd28bc5b299cc7736",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "#### 実装"
+      }
+    },
+    {
+      "segment_id": "8af76f3d",
+      "source_content": "Inline save should be used in areas that require an explicit save action for an object. In particular, this pattern is helpful for cases where entities are displayed in rows and users are editing one or more rows.",
+      "source_content_hash": "ff7047ae75c7f7f9cfff80bcfc12f0ceabd498c1541f2c76b6339361125cbfdb",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "インライン保存は、オブジェクトに対して明示的な保存アクションが必要な領域で使用する必要があります。特に、エンティティが行で表示され、ユーザーが1つ以上の行を編集している場合に有用です。"
+      }
+    },
+    {
+      "segment_id": "c674e260",
+      "source_content": "#### Usage",
+      "source_content_hash": "28703c5691cd4548c1bd98f3de1601e70fbf25cc6786a57b79da47bb2c21fc6f",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "#### 使用法"
+      }
+    },
+    {
+      "segment_id": "a44047a5",
+      "source_content": "**Do**",
+      "source_content_hash": "455479187ed6c2c582e2fd60d91b2ca0bddde8a038f406cef679c625ea00e548",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**推奨**"
+      }
+    },
+    {
+      "segment_id": "b4ef1e56",
+      "source_content": "- Enable the save button after the field has been changed.\n- Show the save action at all times, even if it is disabled.\n- Show the unsaved changes warning when users navigate away from an unsaved change.\n- Show a toast message to indicate a successful save.",
+      "source_content_hash": "214cbfc1157235fee069f7302a8b472daea20e54acc779e37a3d5043d25e876a",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- フィールドが変更された後に保存ボタンを有効にします。\n- 無効であっても保存アクションを常に表示します。\n- 未保存の変更がある状態でユーザーが別のページに移動しようとした場合、未保存変更の警告を表示します。\n- 保存が成功したことを示すトーストメッセージを表示します。"
+      }
+    },
+    {
+      "segment_id": "4d52a261",
+      "source_content": "**Don't**",
+      "source_content_hash": "8fe3bc64e51667c664fb1f63673591c9f7da7fa8a5a1df82582d6b5b33a89902",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**非推奨**"
+      }
+    },
+    {
+      "segment_id": "30193704",
+      "source_content": "- Enable the save button even when there are no unsaved changes.\n- Hide the save button behind additional clicks or until something changes.\n- Show additional unneeded save buttons that don’t act on the entire page.",
+      "source_content_hash": "65cc8deb5e1e857ea5991a6408b3611c4350218d928082df4d1b8f2649146c1e",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- 未保存の変更がない場合でも保存ボタンを有効にしないでください。\n- 保存ボタンを追加のクリックの背後に隠したり、何かが変更されるまで表示しないでください。\n- ページ全体に作用しない不必要な保存ボタンを追加表示しないでください。"
+      }
+    },
+    {
+      "segment_id": "9e95fc4a",
+      "source_content": "### Apply and save",
+      "source_content_hash": "3b381506e78f4d3a4ab4d68787a36da6760d8658fa393827a90b6799ef290107",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 適用して保存"
+      }
+    },
+    {
+      "segment_id": "5dae11e3",
+      "source_content": "‘Apply’ lets the user test the result of the changes made but does not save that value, which allows users to preview their changes/updates. An unsaved warning should be shown when the user wants to move to another page without saving.",
+      "source_content_hash": "99b80560292946548c5b0eee6d04cc3919d52cf069c6ab8e3e7f9e58b9d5cbb9",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "「適用」は、ユーザーが変更の結果をテストできるようにしますが、その値を保存しないため、ユーザーは変更/更新をプレビューできます。未保存の変更がある状態でユーザーが別のページに移動しようとした場合、未保存変更の警告が表示されます。"
+      }
+    },
+    {
+      "segment_id": "0bb95128",
+      "source_content": "‘Save’ changes the values permanently. The success or the error while saving should be shown to the user through a toast.",
+      "source_content_hash": "24c16d9dc31194ed29c37f3a9bd2e4e7fe525aa943a89b622f07fbbd18e86393",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "「保存」は値を永続的に変更します。保存の成功またはエラーは、トーストを通じてユーザーに表示されます。"
+      }
+    },
+    {
+      "segment_id": "657c2b20",
+      "source_content": "If a user navigates away after they have used ‘Apply’ but have not yet used ‘Save,’ an unsaved changes warning should be used.",
+      "source_content_hash": "6414d29714b7a401e7da5254985bc9925de7b0f82e8a4098d160a380075bfbf1",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "ユーザーが「適用」を使用した後、「保存」する前に別のページに移動しようとした場合、未保存変更の警告が表示される必要があります。"
+      }
+    },
+    {
+      "segment_id": "52388877",
+      "source_content": "#### Implementation",
+      "source_content_hash": "acd5d677a7a9f404489cd1edd54efad0001ce3e9277630edd28bc5b299cc7736",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "#### 実装"
+      }
+    },
+    {
+      "segment_id": "eab056be",
+      "source_content": "Apply and save should be used in areas where users might want to preview their changes before actually committing to them. This pattern should be used in areas that are medium- to medium-high impact. In Grafana, this pattern is most commonly used with dashboard editing. In order to be helpful to users, there should be a strong indication when something has been applied but is still unsaved, vs something that has already been saved.",
+      "source_content_hash": "05d9edb84e6d4325ecd947b9be8c1b591ad7771497fd097f79f6fa3c9c779b35",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "「適用して保存」は、ユーザーが変更を実際に確定する前にプレビューしたい場合に使用するべきパターンです。中程度から中高程度の影響がある領域でこのパターンを使用します。Grafanaでは、このパターンはダッシュボードの編集で最も一般的に使用されます。ユーザーにとって有用であるためには、適用済みだが未保存の状態と、既に保存済みの状態を明確に区別する必要があります。"
+      }
+    },
+    {
+      "segment_id": "f01228d3",
+      "source_content": "**Do**",
+      "source_content_hash": "455479187ed6c2c582e2fd60d91b2ca0bddde8a038f406cef679c625ea00e548",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**推奨事項**"
+      }
+    },
+    {
+      "segment_id": "caffd879",
+      "source_content": "- Show the unsaved changes warning when users have applied but not yet saved.\n- Show a toast message to indicate a successful save.\n- Allow some kind of cancellation of the change so that users can back out of their applied changes before saving.\n- Ideally, disable the Apply button unless there has been a change; also disable the Save button unless there has been a change.",
+      "source_content_hash": "2d38bea9fd834a4d13338bc8107ad8293ddf0381d5f4c53fe7f9cffb3e45b39d",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- ユーザーが適用したがまだ保存していない場合に、未保存の変更警告を表示する。\n- 保存が成功したことを示すトーストメッセージを表示する。\n- 変更を保存する前に、適用した変更をキャンセルできる手段を提供する。\n- 理想的には、変更がない限り「適用」ボタンを無効にし、同様に変更がない限り「保存」ボタンも無効にする。"
+      }
+    },
+    {
+      "segment_id": "6270d577",
+      "source_content": "**Don’t**",
+      "source_content_hash": "ae88b7998f2242e00992e84f2e6c2c135950734a8784df26edbb58ada721278c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**非推奨事項**"
+      }
+    },
+    {
+      "segment_id": "c142abbb",
+      "source_content": "- Save when the user has clicked Apply.",
+      "source_content_hash": "2c3566d210a1a898cf9874ac80d2dc1b92b45ac4cd11f365d8c8c290c8badd8e",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- ユーザーが「適用」をクリックした時点で保存しない。"
+      }
+    },
+    {
+      "segment_id": "1c598ecd",
+      "source_content": "### Page save",
+      "source_content_hash": "66026039953242cc8a6f6050a92883c60063dadb98660459557e7fb09e66fe9a",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### ページ保存"
+      }
+    },
+    {
+      "segment_id": "2547a6bb",
+      "source_content": "Most often seen in forms, page save is usually indicated with a primary save button that will save all form contents when clicked. An unsaved warning should be shown when the user wants to move to another page without saving.",
+      "source_content_hash": "d468facc617456573704d40689a8ebb951fddbabfeee4e94c348290570d546b2",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "フォームで最もよく見られるパターンで、通常はプライマリの保存ボタンで示され、クリックするとフォームのすべての内容が保存されます。ユーザーが保存せずに別のページに移動しようとする場合、未保存の警告が表示されるべきです。"
+      }
+    },
+    {
+      "segment_id": "0750bfa1",
+      "source_content": "‘Save’ changes the values permanently. The success or the error while saving should be shown to the user through a toast. If a user navigates away after they have used ‘Apply’ but have not yet used ‘Save’, an unsaved changes warning should be used.",
+      "source_content_hash": "836eddac01a0265859b529773b999640cec7277acbfbf93f9ccc80a26ce9d426",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "「保存」は値を永続的に変更します。保存の成功またはエラーはトーストでユーザーに表示されるべきです。ユーザーが「適用」を使用したがまだ「保存」していない状態で移動しようとする場合、未保存の変更警告が表示されるべきです。"
+      }
+    },
+    {
+      "segment_id": "bd30d33e",
+      "source_content": "#### Implementation",
+      "source_content_hash": "acd5d677a7a9f404489cd1edd54efad0001ce3e9277630edd28bc5b299cc7736",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "#### 実装方法"
+      }
+    },
+    {
+      "segment_id": "6b77b644",
+      "source_content": "Page save should be used in areas that are medium impact. Most often seen in forms, page save is usually indicated with a primary save button that will save all form contents when clicked. This pattern is for saving the page, not the section of the page. If you want to save only a section of a page, consider using in-line save instead.",
+      "source_content_hash": "5066e8c4f45dcc18ee8d78c3a43301116b65c9b91c1d755d4f22ce3c90dd54f7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "ページ保存は中程度の影響がある領域で使用するべきです。フォームで最もよく見られ、通常はプライマリの保存ボタンで示され、クリックするとフォームのすべての内容が保存されます。このパターンはページ全体を保存するためのもので、ページの一部のみを保存したい場合は、代わりにインライン保存を検討してください。"
+      }
+    },
+    {
+      "segment_id": "a311e967",
+      "source_content": "**Do**",
+      "source_content_hash": "455479187ed6c2c582e2fd60d91b2ca0bddde8a038f406cef679c625ea00e548",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**推奨事項**"
+      }
+    },
+    {
+      "segment_id": "cfea4c31",
+      "source_content": "- Enable the save button after something on the page has been changed.\n- Show the save action at all times, even if it is disabled.\n- Show the unsaved changes warning when users navigate away from an unsaved change.\n- Show a toast message to indicate a successful save.",
+      "source_content_hash": "cfd41da35e71d9d01a76a27922f0d8a3fd86c1bf7071f6b251aaa845e9434236",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- ページ上で何かが変更された後に保存ボタンを有効にする。\n- 無効な場合でも常に保存アクションを表示する。\n- ユーザーが未保存の変更がある状態で移動しようとする場合、未保存の変更警告を表示する。\n- 保存が成功したことを示すトーストメッセージを表示する。"
+      }
+    },
+    {
+      "segment_id": "d79a4831",
+      "source_content": "**Don’t**",
+      "source_content_hash": "ae88b7998f2242e00992e84f2e6c2c135950734a8784df26edbb58ada721278c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**非推奨事項**"
+      }
+    },
+    {
+      "segment_id": "dea0598f",
+      "source_content": "- Enable the save button even when there are no unsaved changes.\n- Hide the save button behind additional clicks or until something changes.\n- Show multiple save buttons per page.",
+      "source_content_hash": "7ddb1bb0da17e3e14d19499aedd990c959105b3c705e66f632f5ba17b45d9faa",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- 未保存の変更がない場合でも保存ボタンを有効にしない。\n- 保存ボタンを追加のクリックの背後に隠したり、何かが変更されるまで表示しない。\n- 1ページに複数の保存ボタンを表示しない。"
+      }
+    },
+    {
+      "segment_id": "f947c8e4",
+      "source_content": "### Dialog save",
+      "source_content_hash": "95683514994b8af0f8240c39c54459a41f86b25a0ac59d90f1b76c857163fb52",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### ダイアログ保存"
+      }
+    },
+    {
+      "segment_id": "7bc8bb24",
+      "source_content": "The pattern with the most friction, this pattern requires the entire focus of the user to ensure they are fully aware of the changes they are submitting. The changes made have rippling effects that make it necessary for the user to acknowledge and accept the resulting consequences of the update.",
+      "source_content_hash": "7af1cc74511c753065d3d8af199f5275ade127635d6ec38baa519a248a8d6c12",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "最も摩擦の多いこのパターンは、ユーザーが変更を完全に認識していることを確認するために、ユーザーの全集中を必要とします。変更には波及効果があり、ユーザーが更新の結果を認識し受け入れる必要があります。"
+      }
+    },
+    {
+      "segment_id": "8574d51c",
+      "source_content": "#### Implementation",
+      "source_content_hash": "acd5d677a7a9f404489cd1edd54efad0001ce3e9277630edd28bc5b299cc7736",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "#### 実装方法"
+      }
+    },
+    {
+      "segment_id": "e9313fef",
+      "source_content": "Dialog save is most often triggered in these two ways:",
+      "source_content_hash": "6a1efec5f9649706bd5a957dbeb31020c422150c40f6035effe502d4bb758c7d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "ダイアログ保存は、主に以下の2つの方法でトリガーされます："
+      }
+    },
+    {
+      "segment_id": "2890f5b2",
+      "source_content": "1. **Unsaved changes warning**: when users navigate away from unsaved work, display the unsaved change warning dialog to give users the option to save or discard their changes before continuing.\n2. **High impact changes**: when users save a critical change, display a confirmation modal that describes the impact of their changes and allows them to save or discard their changes.",
+      "source_content_hash": "d25adc066b5cac3b7fb92e8617ab9435a4717cfd1ca7b57515266784efe1da21",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "1. **未保存の変更警告**: ユーザーが未保存の作業から移動しようとする場合、未保存の変更警告ダイアログを表示し、ユーザーに変更を保存または破棄するオプションを提供します。\n2. **高影響の変更**: ユーザーが重要な変更を保存する場合、変更の影響を説明し、変更を保存または破棄することを許可する確認モーダルを表示します。"
+      }
+    },
+    {
+      "segment_id": "396efb28",
+      "source_content": "Problems that come up (will probably turn this into a do/don’t section):\nOften called from an unsaved warning - which doesn’t always appear when expected",
+      "source_content_hash": "309f937c6d899d1509aaa84e1ccc52cee819672ade52bfc162a04eb921581196",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "発生する可能性のある問題（おそらく推奨/非推奨セクションに変更します）：\n未保存の警告から呼び出されることが多いが、期待通りに表示されないことがある。"
+      }
+    },
+    {
+      "segment_id": "a6c928a1",
+      "source_content": "**Do**",
+      "source_content_hash": "455479187ed6c2c582e2fd60d91b2ca0bddde8a038f406cef679c625ea00e548",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**推奨事項**"
+      }
+    },
+    {
+      "segment_id": "82abb0a4",
+      "source_content": "- Show the unsaved changes warning upon any navigation that will cause users to lose their changes.\n- Clearly describe the scale or scope of the high impact changes. For example: “This change will affect 75 users. Are you sure you want to save?”",
+      "source_content_hash": "37d543d93fcd64ce8b24f237f2a5ef44adbf844555eaeab4dc5d8931dd90c40a",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- 変更が失われる可能性のあるナビゲーション時に未保存の変更警告を表示する。\n- 高影響の変更の規模や範囲を明確に説明する。例：「この変更は75人のユーザーに影響します。保存してもよろしいですか？」"
+      }
+    },
+    {
+      "segment_id": "6fc234cf",
+      "source_content": "**Don’t**",
+      "source_content_hash": "ae88b7998f2242e00992e84f2e6c2c135950734a8784df26edbb58ada721278c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**非推奨事項**"
+      }
+    },
+    {
+      "segment_id": "d9b1e67e",
+      "source_content": "- Just assume the users will want to save as they navigate away. **The choice is theirs, not ours.**",
+      "source_content_hash": "219aede988117ae358e81f2cf91eb6483fadef0575c57362eee6afbb1ce5dce3",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- ユーザーが移動する際に自動的に保存すると仮定しない。**選択はユーザーに委ねるべきであり、私たちが決めるものではありません。**"
+      }
+    },
+    {
+      "segment_id": "47cd8dd6",
+      "source_content": "### Unsaved changes",
+      "source_content_hash": "b022d7d3a66895dbc45360b79b3a23da71b452252851f90f27c5f302bd31c554",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 未保存の変更"
+      }
+    },
+    {
+      "segment_id": "692c6053",
+      "source_content": "If a user tries to navigate away from a page that has unsaved changes, an alert or a modal must be used to warn them that their changes will be lost unless they save. This pattern happens as a consequence of an indirect user’s action, such as when a user closes a tab, uses the browser back button, or clicks some other navigation element. See Dialog save for more details.",
+      "source_content_hash": "2ac5c305d643d079ff85e117aded7f3ba1ca8323dc16f701be525e4a1ea987dc",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "ユーザーが未保存の変更があるページから離れようとした場合、変更を保存しないと失われることを警告するアラートまたはモーダルを使用する必要があります。このパターンは、ユーザーがタブを閉じる、ブラウザの戻るボタンを使用する、または他のナビゲーション要素をクリックするなど、間接的なユーザーアクションの結果として発生します。詳細は「ダイアログ保存」を参照してください。"
+      }
+    },
+    {
+      "segment_id": "c83259bb",
+      "source_content": "### Redirecting",
+      "source_content_hash": "fde37ab2001b9231c5a5913a7880716498adba4b9a494f3f553d70dffdd5d57b",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### リダイレクト"
+      }
+    },
+    {
+      "segment_id": "14bc6b75",
+      "source_content": "When creating new content like users, teams, or even larger entities such as reports or SLOs, you should redirect the user to the content they just created at the end of the creation flow. Be sure to be consistent with the redirection actions on a particular page.",
+      "source_content_hash": "47c6eb08683361e29c8a8ba33b27264d53c71e507ec41c09b0b5667e1fd44658",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "ユーザー、チーム、レポートやSLOなどのより大きなエンティティなど、新しいコンテンツを作成する際には、作成フローの最後にユーザーを新しく作成したコンテンツにリダイレクトする必要があります。特定のページでのリダイレクトアクションは一貫性を保つようにしてください。"
+      }
+    },
+    {
+      "segment_id": "e478ec2c",
+      "source_content": "The exception here is in the panel editor; after saving changes, you should redirect to the dashboard so that users can see their changes in the context of the whole dashboard. Note that panel edit’s behavior is a work in progress so this pattern shouldn’t be reused at this time.",
+      "source_content_hash": "c5de91e43be2405e36333183bb41910d58c11e9459ae2f47349e16a6fbec7af8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "ただし、パネルエディタは例外です。変更を保存した後は、ユーザーが変更をダッシュボード全体のコンテキストで確認できるように、ダッシュボードにリダイレクトする必要があります。なお、パネルエディタの動作は現在作業中であるため、現時点ではこのパターンを再利用しないでください。"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-docs/current/06-patterns/save.mdx",
+  "last_updated_timestamp": "2025-06-06T08:53:12.750722+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "b4a71e9e32eba7794c4e6d30ff9531f2e80eeca1cc244c5bc1488e829d9c8a17"
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "docs/07-templates/list-page.mdx",
+  "source_file_content_hash": "15faf0b61da35341375dd7c1c7dfbcf0a78861561eede28f80cd21522950d95f",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\ntitle: List Page\ndescription: Template for List Page\nhide_table_of_contents: true\ndraft: false\n---",
+      "source_content_hash": "1c20e8a85d4bf25964d7ae6724c41fd0d553da4251d24a31ca7e91bd8f23a31f",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "50387553",
+      "source_content": "import { Page } from '@site/src/components/templates/Page/Page';\nimport { CodeCollapse } from '@site/src/components/templates/CodeCollapse';\nimport ListPage from '@site/src/components/templates/ListPage/ListPage';\nimport { DataProvider } from '@site/src/components/templates/ListPage/DataProvider';",
+      "source_content_hash": "f66f0ebeb07cf92805a9b6dcb58609452d66c4866ae5738b133f54a025eceac5",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_50387553"
+      }
+    },
+    {
+      "segment_id": "1c302051",
+      "source_content": "import ListPageRaw from '!!raw-loader!@site/src/components/templates/ListPage/ListPage';\nimport types from '!!raw-loader!@site/src/components/templates/GridPage/types';",
+      "source_content_hash": "aab7f3b2e05336a47baae1ce68d58161d01db043e478d6875ddfa22f5038fb18",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_1c302051"
+      }
+    },
+    {
+      "segment_id": "cbe57f9d",
+      "source_content": "## Overview",
+      "source_content_hash": "7337f3d0aa29e9a82b8f1650b743a98eef90794631fa763a319686e69c546821",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 概要"
+      }
+    },
+    {
+      "segment_id": "39b3772c",
+      "source_content": "A page that displays a list of items. Each item is a link to a new page where either detail or create view can be displayed.",
+      "source_content_hash": "f8fb2aeeb6d853f93f745476f06c7d3bda4b953b76a455406df046d495f1967c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "アイテムのリストを表示するページです。各アイテムは詳細ビューまたは作成ビューを表示できる新しいページへのリンクとなっています。"
+      }
+    },
+    {
+      "segment_id": "8f488ab5",
+      "source_content": "<Page title={'Authentication'} subTitle={'Manage your auth settings and configure single sign-on.'} height={700}>\n  <DataProvider>\n    <ListPage />\n  </DataProvider>\n</Page>",
+      "source_content_hash": "b29ac630e1753ae32cef0e98adfcc84d0a2d42a55ed9ba56090fdf143bcef75d",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_8f488ab5"
+      }
+    },
+    {
+      "segment_id": "79b2d0b9",
+      "source_content": "## Source code",
+      "source_content_hash": "8b39531b3401a1ba9bedef02f05e4d01ad5b8686bff547368174d3e783183dbf",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## ソースコード"
+      }
+    },
+    {
+      "segment_id": "2a3434e4",
+      "source_content": "<CodeCollapse label=\"ListPage.tsx\" isOpen>\n  {ListPageRaw}\n</CodeCollapse>",
+      "source_content_hash": "1c4c4ed16297a12127804ff722b43bbcfc332393aea27185a0b8260b1b24ee64",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_2a3434e4"
+      }
+    },
+    {
+      "segment_id": "ea37d64a",
+      "source_content": "<CodeCollapse label=\"types.ts\">{types}</CodeCollapse>",
+      "source_content_hash": "5ebbe562fa403efa3bca860a78b4dc8a71668d479e25d57ed5acaae6f19e2c5f",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_ea37d64a"
+      }
+    },
+    {
+      "segment_id": "0037ff70",
+      "source_content": "## Usage",
+      "source_content_hash": "63bfd61a0561b255a2caa0a2e3add091ca7e327f2fa06a407cbb2ff341b858d8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 使用方法"
+      }
+    },
+    {
+      "segment_id": "fc8eadc3",
+      "source_content": "- Use a combination of the `Stack` component with the `column` direction and `Card` components to create a list layout.\n- Use the `Card` component to create a list item.\n- For showing the empty state, use the `EmptySearchResult` component.\n- If filters are present, the primary action should be located after the filters, on the right side of the page.",
+      "source_content_hash": "66f8435f280417dd82b82f0e83900b31a7511b60f86741e8e67002805bfc4b8b",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- `Stack`コンポーネントと`column`方向、`Card`コンポーネントを組み合わせてリストレイアウトを作成します。\n- `Card`コンポーネントを使用してリストアイテムを作成します。\n- 空の状態を表示するには、`EmptySearchResult`コンポーネントを使用します。\n- フィルターが存在する場合、主要なアクションはフィルターの後、ページの右側に配置する必要があります。"
+      }
+    },
+    {
+      "segment_id": "782c902a",
+      "source_content": "## Visual guidelines",
+      "source_content_hash": "f588b3a8803a28d5634fecc1279288ba069eda742db2a9b2c1083a6b63042876",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## ビジュアルガイドライン"
+      }
+    },
+    {
+      "segment_id": "8612da05",
+      "source_content": "- [Lists of objects](/templates/lists-of-objects)",
+      "source_content_hash": "5e33862024453efe59d9f535939ad49d0a00d816a01d1c561737369a1ca6ed07",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- [オブジェクトのリスト](/templates/lists-of-objects)"
+      }
+    },
+    {
+      "segment_id": "54268405",
+      "source_content": "## Figma designs",
+      "source_content_hash": "defd60ba0eee64d5c1d1427c599a88829c8e3fe66d84c5a261c32b166242fb1b",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## Figmaデザイン"
+      }
+    },
+    {
+      "segment_id": "824626b3",
+      "source_content": "- [Anatomy of the List View](https://www.figma.com/file/Jk9PWNElaPZh2oSBWOxoWm/Joseph-Breitreiter-%7C-List-View---In-Progress?type=design&node-id=454-6362&mode=design&t=INSTd153rtu6sbBU-0)",
+      "source_content_hash": "abe2b92db710038a6ce012a71c686c217f304d075949eb213b8d3010250d398f",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- [リストビューの構造](https://www.figma.com/file/Jk9PWNElaPZh2oSBWOxoWm/Joseph-Breitreiter-%7C-List-View---In-Progress?type=design&node-id=454-6362&mode=design&t=INSTd153rtu6sbBU-0)"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-docs/current/07-templates/list-page.mdx",
+  "last_updated_timestamp": "2025-06-06T08:53:12.751505+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "15faf0b61da35341375dd7c1c7dfbcf0a78861561eede28f80cd21522950d95f"
+  }
+}

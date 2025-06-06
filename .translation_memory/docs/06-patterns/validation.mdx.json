@@ -1,0 +1,32 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "docs/06-patterns/validation.mdx",
+  "source_file_content_hash": "93c83cb2ac81e1756527c26235001318bff6d8841b0191ca7cfe5a577670d318",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\ntitle: Validation\ndescription: Description for search engines and results\ndraft: true\n---",
+      "source_content_hash": "c1d2ffccd06d7e38b5745753773a35e06cf952f14cb02d6f560e026f07044887",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "6ef78e84",
+      "source_content": "This document is a WIP.",
+      "source_content_hash": "e43e4ae2a07be9af10a6de7f0b3402b588a5a1483e1516639ead91813e407f5a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "このドキュメントは作業中です。"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-docs/current/06-patterns/validation.mdx",
+  "last_updated_timestamp": "2025-06-06T08:53:12.742447+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "93c83cb2ac81e1756527c26235001318bff6d8841b0191ca7cfe5a577670d318"
+  }
+}

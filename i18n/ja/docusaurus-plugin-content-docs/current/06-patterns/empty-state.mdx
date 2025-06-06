@@ -1,0 +1,109 @@
+---
+title: Empty State
+description: Use an empty state to communicate to the user that there is no data to display, or that a search query returned no results.
+---
+
+# 空状態 <Badge text='ready' color='green'></Badge> <StorybookLink path='/story/general-emptystate--basic'/>
+
+_バージョン11.0.0以降で利用可能_
+
+空状態はメッセージと、オプションで画像、ボタン、追加情報で構成されます。
+
+## 使用タイミング
+
+空状態は、表示するデータがなく、次に取るべき行動をユーザーに伝えるために使用します。
+使用例:
+
+- ユーザーが特定のリソースをまだ作成していない場合
+- フィルターや検索クエリで結果が返されない場合
+- 受信箱や通知をすべてクリアするなど、すべてのアクションを完了した場合
+
+一般的な空状態のユースケースに対応するため、`EmptyState`コンポーネントにはさまざまなバリアントが用意されており、適切なデフォルト画像が提供されます。
+
+## 使用方法
+
+### `variant="call-to-action"`
+
+表示するデータがなく、ユーザーにアクションを促したい場合に使用します。通常、初期設定を完了させるか、アイテムを作成するよう促す場合です。
+
+```tsx
+import { EmptyState, LinkButton, TextLink } from '@grafana/ui';
+
+<EmptyState
+  variant="call-to-action"
+  message="You haven't created any playlists yet"
+  button={
+    <LinkButton icon="plus" href="playlists/new" size="lg">
+      Create playlist
+    </LinkButton>
+  }
+>
+  You can use playlists to cycle dashboards on TVs without user control.{' '}
+  <TextLink external href="<externalDocsLink>">
+    Learn more.
+  </TextLink>
+</EmptyState>;
+```
+
+アイテム作成のためにクリックできる単一のボタンがないシナリオでは、`button`プロップを省略できます。代わりに、特定のリソースを作成する方法をユーザーが理解できるよう追加情報を提供してください。
+
+```tsx
+import { EmptyState, TextLink } from '@grafana/ui';
+
+<EmptyState variant="call-to-action" message="You haven't created any library panels yet">
+  Create a library panel from any existing dashboard panel through the panel context menu.{' '}
+  <TextLink external href="<externalDocsLink>">
+    Learn more.
+  </TextLink>
+</EmptyState>;
+```
+
+### `variant="not-found"`
+
+検索クエリやフィルターで結果が返されない場合に、コンテンツの代わりとして使用します。
+
+適切なデフォルト画像が用意されているため、ほとんどの場合、メッセージを提供するだけで十分です。
+
+```tsx
+import { EmptyState } from '@grafana/ui';
+
+<EmptyState variant="not-found" message="No playlists found" />
+```
+
+### `variant="completed"`
+
+通知をすべて読むなど、ページ上のすべてのタスクをユーザーが完了した場合に使用します。
+
+```tsx
+import { EmptyState } from '@grafana/ui';
+
+<EmptyState variant="completed" message="You're all caught up" />;
+```
+
+### カスタマイズ
+
+すべてのバリアントで以下のことが可能です:
+
+- カスタム画像を提供するか、画像を完全に非表示にする
+- ボタンを提供する（例：アクションを促す、または検索クエリをクリアする）
+- Reactのchildrenを通じて追加情報を提供する
+
+```tsx
+import { Button, EmptyState, TextLink } from '@grafana/ui';
+
+<EmptyState
+  button={<Button variant="secondary" onClick={clearSearchQuery} />}
+  image={<AnyReactNode />}
+  message="No playlists found"
+  variant="not-found"
+>
+  Optionally provide some additional information here. Maybe even a link to{' '}
+  <TextLink href="<externalDocsLink>" external>
+    documentation.
+  </TextLink>
+</EmptyState>
+```
+
+## プレイグラウンド
+
+<ComponentEmbed height={500} path="/story/general-emptystate--basic" />

@@ -1,0 +1,72 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "docs/05-components/pagination.mdx",
+  "source_file_content_hash": "cfec20c63d012fb3509f13908f4a886bbf87e7428897a471e8e056097cd3edad",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\ntitle: Pagination\ndescription: Grafana Labs Pagination component\ndraft: true\n---",
+      "source_content_hash": "a4855368781e208bf90294778866dc0a5ccd92cd16e47a209cd9764a04a83911",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "a703643c",
+      "source_content": "# Pagination <Badge text='draft' color='orange'></Badge> <a href='https://developers.grafana.com/ui/latest/index.html?path=/story/buttons-pagination--with-pages' target='_blank' className='header-links'>Storybook <Icon name=\"external-link-alt\"/> </a>",
+      "source_content_hash": "fc1d379087fc66d01e7059a676932c6da030376d6459057d10374cc06001480a",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "# ページネーション <Badge text='draft' color='orange'></Badge> <a href='https://developers.grafana.com/ui/latest/index.html?path=/story/buttons-pagination--with-pages' target='_blank' className='header-links'>Storybook <Icon name=\"external-link-alt\"/> </a>"
+      }
+    },
+    {
+      "segment_id": "53eaf0e1",
+      "source_content": "Component used for rendering a page selector below paginated content.",
+      "source_content_hash": "410a134d471a3d55d8e7ab9112b795eaa998b7817ed494d205506469d57b1284",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "ページネーションされたコンテンツの下部にページセレクターを表示するためのコンポーネントです。"
+      }
+    },
+    {
+      "segment_id": "88aa2da8",
+      "source_content": "<iframe\n  src=\"https://developers.grafana.com/ui/latest/index.html?path=/story/buttons-pagination--with-pages&full=1&shortcuts=false&singleStory=true\"\n  width=\"100%\"\n  height=\"500px\"\n></iframe>",
+      "source_content_hash": "aeb5c6c250a419174b8845e75244f49a2a5531948e78183d5d3f960cf1ae4ee3",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_88aa2da8"
+      }
+    },
+    {
+      "segment_id": "3daf1b88",
+      "source_content": "## Usage",
+      "source_content_hash": "63bfd61a0561b255a2caa0a2e3add091ca7e327f2fa06a407cbb2ff341b858d8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 使用方法"
+      }
+    },
+    {
+      "segment_id": "940e34e3",
+      "source_content": "```jsx\n<div>\n  <div>Page 1 content</div>\n  <Pagination currentPage={1} numberOfPages={5} onNavigate={() => fetchPage(2)} />\n</div>\n```",
+      "source_content_hash": "e4315e2c212a7622ecca5fae8c2eac6fce4c4661914293265d04406ca4b46933",
+      "node_type": "code",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_940e34e3"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-docs/current/05-components/pagination.mdx",
+  "last_updated_timestamp": "2025-06-06T08:53:12.747195+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "cfec20c63d012fb3509f13908f4a886bbf87e7428897a471e8e056097cd3edad"
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "docs/01-about/roadmap.mdx",
+  "source_file_content_hash": "21769570bd1188635d845b7e0708dee9c25d3b6a681fb9b9692118a7d4411ece",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\ntitle: Roadmap\ndescription: This is the roadmap for the Saga Design System. Plans are subject to change based on our user needs and feedback. Our full backlog can be found on GitHub\nsidebar_position: 2\nhide_title: true\n---",
+      "source_content_hash": "be30ae6f574e168925fe22a7a5ec83b27cb00648d6974427507289275cf6bc95",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "50387553",
+      "source_content": "import { Badge } from '@grafana/ui';",
+      "source_content_hash": "af7b58551bb42fea6572a2bde03c95c99d8529feeec9e1a0d48c3da4f931ca67",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_50387553"
+      }
+    },
+    {
+      "segment_id": "1cc03ec8",
+      "source_content": "# Roadmap",
+      "source_content_hash": "565f11e9c179df6219ac059610f79652f6cf4128892b6a8d8759934c48bbdd44",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "# ロードマップ"
+      }
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "Here is an idea for what is coming up next for the Saga Design System. Plans are subject to change based on our user needs and feedback. Our full backlog can be found on [GitHub](https://github.com/orgs/grafana/projects/78/views/42)",
+      "source_content_hash": "20dbb4480bb2d600545d2b7108945e15feb5187d3c92970ec0171a8d26f8488e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Sagaデザインシステムの今後の予定案を以下に示します。計画はユーザーのニーズやフィードバックに基づいて変更される可能性があります。完全なバックログは[GitHub](https://github.com/orgs/grafana/projects/78/views/42)で確認できます。"
+      }
+    },
+    {
+      "segment_id": "70153c6e",
+      "source_content": "## Q1 2024",
+      "source_content_hash": "d40f7cc9e15cea3c47761820230477bd3653e94c89087e9891b3251d109108fc",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 2024年第1四半期"
+      }
+    },
+    {
+      "segment_id": "4ddf6ae7",
+      "source_content": "- Improve design system metrics\n- Iconography package separation\n- Figma experience V2\n- Internal tooling audit\n- Design token POC\n  - Design token creation\n  - Pipeline creation\n  - Token architecture and packaging",
+      "source_content_hash": "6f8fce690800f31972d680738e6b7b3ee38bd2d010e1c264488274a2e4f69e3d",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- デザインシステムのメトリクス改善\n- アイコンライブラリのパッケージ分離\n- FigmaエクスペリエンスV2\n- 内部ツールの監査\n- デザイントークンPOC\n  - デザイントークンの作成\n  - パイプラインの構築\n  - トークンアーキテクチャとパッケージ化"
+      }
+    },
+    {
+      "segment_id": "ed7dde9c",
+      "source_content": "## Q4 2023",
+      "source_content_hash": "b47b54db82839b8cc3c1d8428a2c8432970d25ba070423f605dfaacf094d78bc",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 2023年第4四半期"
+      }
+    },
+    {
+      "segment_id": "b3f5c97c",
+      "source_content": "- ~~Improve design system metrics~~ (reprioritized)\n- ~~Identify and create page templates~~\n- ~~New feature highlight pattern~~ (reprioritized)\n- ~~Modal component and pattern~~ (reprioritized)\n- ~~Add iconography on Saga~~ (reprioritized)",
+      "source_content_hash": "e04538ca6c9f7345732ab6368dec43b3acc5ca235027e6503e892c6a0faecffc",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- ~~デザインシステムのメトリクス改善~~ (優先順位変更)\n- ~~ページテンプレートの特定と作成~~\n- ~~新機能ハイライトパターン~~ (優先順位変更)\n- ~~モーダルコンポーネントとパターン~~ (優先順位変更)\n- ~~Sagaへのアイコンライブラリ追加~~ (優先順位変更)"
+      }
+    },
+    {
+      "segment_id": "0037ff70",
+      "source_content": "## Q3 2023",
+      "source_content_hash": "7f81f93956d16a0af9150ebe6eb9b9771025b98a98f586b233fc5b0151715f19",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 2023年第3四半期"
+      }
+    },
+    {
+      "segment_id": "fc8eadc3",
+      "source_content": "- ~~Developing primitives layout components~~\n- ~~Create documentation for different input type components~~\n- ~~Review and update contribuition, accessibility, pattern and styling documentation~~\n- ~~Set the configuration needed to make Saga website public~~\n- ~~Documentation DoD~~\n- ~~Expand A11y representation~~",
+      "source_content_hash": "ea7b602e0ce4f6a3ba20ca492d356a00df96f1c674751d6539807cbb14a7c6d2",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "- ~~プリミティブレイアウトコンポーネントの開発~~\n- ~~各種入力タイプコンポーネントのドキュメント作成~~\n- ~~コントリビューション、アクセシビリティ、パターン、スタイリングドキュメントのレビューと更新~~\n- ~~Sagaウェブサイトを公開するための設定~~\n- ~~ドキュメントの完了定義~~\n- ~~アクセシビリティ表現の拡充~~"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-docs/current/01-about/roadmap.mdx",
+  "last_updated_timestamp": "2025-06-06T08:53:12.754239+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "21769570bd1188635d845b7e0708dee9c25d3b6a681fb9b9692118a7d4411ece"
+  }
+}
